@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form2 : Form
+    public partial class welcomePage : Form
     {
-        public Form2()
+        public welcomePage()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmRegister login = new frmRegister();
+            Homepage login = new Homepage();
             login.Show();
             this.Hide();
         }

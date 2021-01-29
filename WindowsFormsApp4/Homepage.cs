@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form6 : Form
+    public partial class Homepage : Form
     {
-        public Form6()
+        public Homepage()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form7 login = new Form7();
+            Form5 login = new Form5();
+            login.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ongoingTournamentHomepage login = new ongoingTournamentHomepage();
             login.Show();
             this.Hide();
         }

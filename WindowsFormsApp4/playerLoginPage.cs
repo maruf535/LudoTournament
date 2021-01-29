@@ -19,9 +19,14 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form6 login = new Form6();
+            colourChoicePage login = new colourChoicePage();
             login.Show();
             this.Hide();
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp4
 {
-    partial class Form6
+    partial class colourChoicePage
     {
         /// <summary>
         /// Required designer variable.
@@ -44,9 +44,10 @@ namespace WindowsFormsApp4
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(310, 46);
+            this.label1.Location = new System.Drawing.Point(413, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 61);
+            this.label1.Size = new System.Drawing.Size(199, 75);
             this.label1.TabIndex = 1;
             this.label1.Text = "Choose Colour";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,22 +55,24 @@ namespace WindowsFormsApp4
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Black;
+            this.checkBox1.BackColor = System.Drawing.Color.RoyalBlue;
             this.checkBox1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.checkBox1.Location = new System.Drawing.Point(329, 152);
+            this.checkBox1.Location = new System.Drawing.Point(415, 194);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(53, 17);
+            this.checkBox1.Size = new System.Drawing.Size(58, 21);
             this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Black";
+            this.checkBox1.Text = "Blue";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Green;
-            this.checkBox2.Location = new System.Drawing.Point(329, 187);
+            this.checkBox2.BackColor = System.Drawing.Color.LimeGreen;
+            this.checkBox2.Location = new System.Drawing.Point(415, 237);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(55, 17);
+            this.checkBox2.Size = new System.Drawing.Size(70, 21);
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Green";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -78,9 +81,10 @@ namespace WindowsFormsApp4
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.Yellow;
-            this.checkBox3.Location = new System.Drawing.Point(329, 230);
+            this.checkBox3.Location = new System.Drawing.Point(541, 194);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(57, 17);
+            this.checkBox3.Size = new System.Drawing.Size(70, 21);
             this.checkBox3.TabIndex = 4;
             this.checkBox3.Text = "Yellow";
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -89,35 +93,39 @@ namespace WindowsFormsApp4
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.Red;
-            this.checkBox4.Location = new System.Drawing.Point(329, 270);
+            this.checkBox4.Location = new System.Drawing.Point(541, 237);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(46, 17);
+            this.checkBox4.Size = new System.Drawing.Size(56, 21);
             this.checkBox4.TabIndex = 5;
             this.checkBox4.Text = "Red";
             this.checkBox4.UseVisualStyleBackColor = false;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(372, 319);
+            this.button1.Location = new System.Drawing.Point(461, 310);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.Size = new System.Drawing.Size(100, 41);
             this.button1.TabIndex = 10;
-            this.button1.Text = "SUBMIT";
+            this.button1.Text = "Continue";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form6
+            // colourChoicePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form6";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "colourChoicePage";
             this.Text = "Form6";
             this.ResumeLayout(false);
             this.PerformLayout();

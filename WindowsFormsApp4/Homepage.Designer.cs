@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp4
 {
-    partial class Form4
+    partial class Homepage
     {
         /// <summary>
         /// Required designer variable.

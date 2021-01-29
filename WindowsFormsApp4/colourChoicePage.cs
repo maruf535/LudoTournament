@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form3 : Form
+    public partial class colourChoicePage : Form
     {
-        public Form3()
+        public colourChoicePage()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 login = new Form4();
+            tournamentNamePage login = new tournamentNamePage();
             login.Show();
             this.Hide();
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

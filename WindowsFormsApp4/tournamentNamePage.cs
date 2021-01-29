@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Form7 : Form
+    public partial class tournamentNamePage : Form
     {
-        public Form7()
+        public tournamentNamePage()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmRegister login = new frmRegister();
-            login.Show();
+            //frmRegister login = new frmRegister();
+            //login.Show();
             this.Hide();
+        }
+
+        private void tournamentNamePage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
