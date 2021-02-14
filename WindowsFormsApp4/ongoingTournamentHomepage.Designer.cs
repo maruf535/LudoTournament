@@ -214,7 +214,6 @@ namespace WindowsFormsApp4
             this.Name = "ongoingTournamentHomepage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form8";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ongoingTournamentHomepage_Load);
             this.ResumeLayout(false);
 

@@ -19,7 +19,7 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 login = new Form5();
+            tournamentNamePage login = new tournamentNamePage();
             login.Show();
             this.Hide();
         }
@@ -29,6 +29,11 @@ namespace WindowsFormsApp4
             ongoingTournamentHomepage login = new ongoingTournamentHomepage();
             login.Show();
             this.Hide();
+        }
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

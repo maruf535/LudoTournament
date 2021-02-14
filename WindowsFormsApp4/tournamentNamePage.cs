@@ -19,12 +19,17 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //frmRegister login = new frmRegister();
-            //login.Show();
+            Form5 player1 = new Form5();
+            player1.Show();
             this.Hide();
         }
 
         private void tournamentNamePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
         {
 
         }
