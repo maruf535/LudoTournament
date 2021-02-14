@@ -23,5 +23,15 @@ namespace WindowsFormsApp4
             login.Show();
             this.Hide();
         }
+
+        private void welcomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
