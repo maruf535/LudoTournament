@@ -20,7 +20,7 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 player1 = new Form5();
+            player1choice player1 = new player1choice();
             player1.Show();
             this.Hide();
         }
@@ -33,6 +33,7 @@ namespace WindowsFormsApp4
         private void backBtn_Click(object sender, EventArgs e)
         {
             goBack.Show();
+            this.Hide();
         }
     }
 }
