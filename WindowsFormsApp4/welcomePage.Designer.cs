@@ -31,7 +31,7 @@ namespace WindowsFormsApp4
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(welcomePage));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.enterBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -55,20 +55,20 @@ namespace WindowsFormsApp4
             this.label1.UseWaitCursor = true;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // enterBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.button1.Location = new System.Drawing.Point(445, 370);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Let\'s  Roll";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.enterBtn.BackColor = System.Drawing.Color.Transparent;
+            this.enterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enterBtn.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.enterBtn.Location = new System.Drawing.Point(445, 370);
+            this.enterBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enterBtn.Name = "enterBtn";
+            this.enterBtn.Size = new System.Drawing.Size(213, 60);
+            this.enterBtn.TabIndex = 1;
+            this.enterBtn.Text = "Let\'s  Roll";
+            this.enterBtn.UseVisualStyleBackColor = false;
+            this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // label2
             // 
@@ -91,7 +91,7 @@ namespace WindowsFormsApp4
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.enterBtn);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -106,7 +106,7 @@ namespace WindowsFormsApp4
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button enterBtn;
         private System.Windows.Forms.Label label2;
     }
 }

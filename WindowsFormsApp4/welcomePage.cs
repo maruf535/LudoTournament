@@ -17,10 +17,13 @@ namespace WindowsFormsApp4
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void enterBtn_Click(object sender, EventArgs e)
         {
-            Homepage login = new Homepage();
-            login.Show();
+            Homepage homePage = new Homepage();
+            homePage.Show();
+            //jekhane r back ashar dorkar hobe na shetake hide na kore 
+            //direct close kore dile bhalo, memory kom use hobe
+            //nah first page e close korle jhamela hoitese 
             this.Hide();
         }
 

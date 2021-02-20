@@ -22,9 +22,7 @@ namespace WindowsFormsApp4
             tournamentNamePage login = new tournamentNamePage();
             login.goBack = this;
             login.Show();
-            //jekhane r back ashar dorkar hobe na shetake hide na kore 
-            //direct close kore dile bhalo, memory kom use hobe
-            this.Close();
+            this.Hide();
         }
         //kono function er naam change korle sheta jodi event handler hoy, 
         //aage copy kore, real ta rekhe notun tar naam change kore,
