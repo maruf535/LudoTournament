@@ -17,15 +17,21 @@ namespace WindowsFormsApp4
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void newTourBtn_Click(object sender, EventArgs e)
         {
             tournamentNamePage login = new tournamentNamePage();
             login.goBack = this;
             login.Show();
-            this.Hide();
+            //jekhane r back ashar dorkar hobe na shetake hide na kore 
+            //direct close kore dile bhalo, memory kom use hobe
+            this.Close();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        //kono function er naam change korle sheta jodi event handler hoy, 
+        //aage copy kore, real ta rekhe notun tar naam change kore,
+        //design theke event e function er naam select kore aste hobe
+        //direct naam change kore dile error ashbe 
+        //R error ashle "ignore and continue" deoa jabe na, problem koi hoyeche sheta dekhate bollei tjik kora jabe
+        private void ongTourBtn_Click(object sender, EventArgs e)
         {
             ongoingTournamentHomepage login = new ongoingTournamentHomepage();
             login.Show();
