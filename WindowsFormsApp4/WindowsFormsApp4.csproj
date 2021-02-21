@@ -59,6 +59,7 @@
     <Compile Include="Player1register.Designer.cs">
       <DependentUpon>Player1register.cs</DependentUpon>
     </Compile>
+    <Compile Include="processData.cs" />
     <Compile Include="welcomePage.cs">
       <SubType>Form</SubType>
     </Compile>
