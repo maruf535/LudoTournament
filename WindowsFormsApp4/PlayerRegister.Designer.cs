@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp4
 {
-    partial class Player1register
+    partial class PlayerRegister
     {
         /// <summary>
         /// Required designer variable.

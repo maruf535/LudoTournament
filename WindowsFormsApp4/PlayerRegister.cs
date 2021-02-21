@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Player1register : Form
+    public partial class PlayerRegister : Form
     {
-        public Player1register()
+        public PlayerRegister()
         {
             InitializeComponent();
         }

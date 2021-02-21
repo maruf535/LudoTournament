@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class player1choice : Form
+    public partial class playerChoice : Form
     {
-        public player1choice()
+        public playerChoice()
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace WindowsFormsApp4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Player1register player1 = new Player1register();
+            PlayerRegister player1 = new PlayerRegister();
             player1.Show();
             this.Hide();
         }

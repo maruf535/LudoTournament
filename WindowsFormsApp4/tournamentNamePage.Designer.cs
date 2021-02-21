@@ -31,8 +31,8 @@ namespace WindowsFormsApp4
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tournamentNamePage));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tourNameInp = new System.Windows.Forms.TextBox();
+            this.nextBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -52,32 +52,32 @@ namespace WindowsFormsApp4
             this.label1.Text = "Enter the Tournament Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // tourNameInp
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(312, 234);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(436, 51);
-            this.textBox1.TabIndex = 9;
+            this.tourNameInp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tourNameInp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tourNameInp.Location = new System.Drawing.Point(312, 234);
+            this.tourNameInp.Margin = new System.Windows.Forms.Padding(4);
+            this.tourNameInp.Multiline = true;
+            this.tourNameInp.Name = "tourNameInp";
+            this.tourNameInp.Size = new System.Drawing.Size(436, 51);
+            this.tourNameInp.TabIndex = 9;
             // 
-            // button1
+            // nextBtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.button1.Location = new System.Drawing.Point(446, 363);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 60);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.nextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nextBtn.BackColor = System.Drawing.Color.Transparent;
+            this.nextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nextBtn.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.nextBtn.Location = new System.Drawing.Point(446, 363);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(169, 60);
+            this.nextBtn.TabIndex = 10;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = false;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // backBtn
             // 
@@ -119,8 +119,8 @@ namespace WindowsFormsApp4
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nextBtn);
+            this.Controls.Add(this.tourNameInp);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tournamentNamePage";
@@ -134,8 +134,8 @@ namespace WindowsFormsApp4
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tourNameInp;
+        private System.Windows.Forms.Button nextBtn;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button homeBtn;
     }
