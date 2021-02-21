@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using processHelper;//this namespace cintains the process data
 
 namespace WindowsFormsApp4
 {
@@ -14,6 +15,8 @@ namespace WindowsFormsApp4
     {
         public Homepage goBack;
         public Homepage home = new Homepage();
+        public processData prData;// prevous page theke paboi, to new create korar kono dorkar nai, just declare korlam
+
         public tournamentNamePage()
         {
             InitializeComponent();
@@ -28,6 +31,10 @@ namespace WindowsFormsApp4
 
         private void tournamentNamePage_Load(object sender, EventArgs e)
         {
+            if (prData.newTour == true)
+                MessageBox.Show("it works");
+            if (prData.ongTour == true)
+                MessageBox.Show("it doesnt work");
 
         }
 
