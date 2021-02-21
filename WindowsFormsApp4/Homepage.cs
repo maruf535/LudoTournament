@@ -31,8 +31,8 @@ namespace WindowsFormsApp4
         //R error ashle "ignore and continue" deoa jabe na, problem koi hoyeche sheta dekhate bollei tjik kora jabe
         private void ongTourBtn_Click(object sender, EventArgs e)
         {
-            ongoingTournamentHomepage login = new ongoingTournamentHomepage();
-            login.Show();
+            ongoingTournamentHomepage ongTour = new ongoingTournamentHomepage();
+            ongTour.Show();
             this.Hide();
         }
 

@@ -13,6 +13,7 @@ namespace WindowsFormsApp4
     public partial class tournamentNamePage : Form
     {
         public Homepage goBack;
+        public Homepage home = new Homepage();
         public tournamentNamePage()
         {
             InitializeComponent();
@@ -34,6 +35,12 @@ namespace WindowsFormsApp4
         {
             goBack.Show();
             this.Hide();
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            home.Show();
         }
     }
 }

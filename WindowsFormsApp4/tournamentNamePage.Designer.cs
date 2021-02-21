@@ -34,10 +34,12 @@ namespace WindowsFormsApp4
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.homeBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -52,6 +54,7 @@ namespace WindowsFormsApp4
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(312, 234);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -62,6 +65,7 @@ namespace WindowsFormsApp4
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,6 +94,22 @@ namespace WindowsFormsApp4
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+            // homeBtn
+            // 
+            this.homeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.homeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeBtn.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.homeBtn.Location = new System.Drawing.Point(932, 13);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(122, 43);
+            this.homeBtn.TabIndex = 12;
+            this.homeBtn.Text = "HOME";
+            this.homeBtn.UseVisualStyleBackColor = false;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
             // tournamentNamePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -97,6 +117,7 @@ namespace WindowsFormsApp4
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -116,5 +137,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button homeBtn;
     }
 }
