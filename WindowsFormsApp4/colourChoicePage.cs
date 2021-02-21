@@ -19,8 +19,8 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tournamentNamePage login = new tournamentNamePage();
-            login.Show();
+            tournamentNamePage tName = new tournamentNamePage();
+            tName.Show();
             this.Hide();
         }
 

@@ -19,9 +19,9 @@ namespace WindowsFormsApp4
 
         private void newTourBtn_Click(object sender, EventArgs e)
         {
-            tournamentNamePage login = new tournamentNamePage();
-            login.goBack = this;
-            login.Show();
+            tournamentNamePage tName = new tournamentNamePage();
+            tName.goBack = this;
+            tName.Show();
             this.Hide();
         }
         //kono function er naam change korle sheta jodi event handler hoy, 

@@ -19,8 +19,8 @@ namespace WindowsFormsApp4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            colourChoicePage login = new colourChoicePage();
-            login.Show();
+            colourChoicePage cChoicelogin = new colourChoicePage();
+            cChoicelogin.Show();
             this.Hide();
         }
 
