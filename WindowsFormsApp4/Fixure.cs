@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Fixure1 : Form
+    public partial class Fixure : Form
     {
-        public Fixure1()
+        public Fixure()
         {
             InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fixure_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
