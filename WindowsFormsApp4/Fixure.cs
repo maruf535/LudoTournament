@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class PlayerRegister : Form
+    public partial class Fixure : Form
     {
-        public PlayerRegister()
+        public Fixure()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void PlayerRegister_Load(object sender, EventArgs e)
+        private void Fixure_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

@@ -34,12 +34,12 @@ namespace WindowsFormsApp4
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.t1EnterBtn = new System.Windows.Forms.Button();
+            this.t1DeleteBtn = new System.Windows.Forms.Button();
+            this.t2EnterBtn = new System.Windows.Forms.Button();
+            this.t2DeleteBtn = new System.Windows.Forms.Button();
+            this.t3EnterBtn = new System.Windows.Forms.Button();
+            this.t3DeleteBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,90 +98,90 @@ namespace WindowsFormsApp4
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // button1
+            // t1EnterBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(438, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 43);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "ENTER";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.t1EnterBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.t1EnterBtn.FlatAppearance.BorderSize = 0;
+            this.t1EnterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t1EnterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t1EnterBtn.ForeColor = System.Drawing.Color.White;
+            this.t1EnterBtn.Location = new System.Drawing.Point(438, 180);
+            this.t1EnterBtn.Name = "t1EnterBtn";
+            this.t1EnterBtn.Size = new System.Drawing.Size(94, 43);
+            this.t1EnterBtn.TabIndex = 10;
+            this.t1EnterBtn.Text = "ENTER";
+            this.t1EnterBtn.UseVisualStyleBackColor = false;
+            this.t1EnterBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // t1DeleteBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(557, 180);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 43);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "DELETE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.t1DeleteBtn.BackColor = System.Drawing.Color.Red;
+            this.t1DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.t1DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t1DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t1DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.t1DeleteBtn.Location = new System.Drawing.Point(557, 180);
+            this.t1DeleteBtn.Name = "t1DeleteBtn";
+            this.t1DeleteBtn.Size = new System.Drawing.Size(94, 43);
+            this.t1DeleteBtn.TabIndex = 11;
+            this.t1DeleteBtn.Text = "DELETE";
+            this.t1DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // t2EnterBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.LimeGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(438, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 43);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "ENTER";
-            this.button3.UseVisualStyleBackColor = false;
+            this.t2EnterBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.t2EnterBtn.FlatAppearance.BorderSize = 0;
+            this.t2EnterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t2EnterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t2EnterBtn.ForeColor = System.Drawing.Color.White;
+            this.t2EnterBtn.Location = new System.Drawing.Point(438, 249);
+            this.t2EnterBtn.Name = "t2EnterBtn";
+            this.t2EnterBtn.Size = new System.Drawing.Size(94, 43);
+            this.t2EnterBtn.TabIndex = 12;
+            this.t2EnterBtn.Text = "ENTER";
+            this.t2EnterBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // t2DeleteBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(557, 249);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 43);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.t2DeleteBtn.BackColor = System.Drawing.Color.Red;
+            this.t2DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.t2DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t2DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t2DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.t2DeleteBtn.Location = new System.Drawing.Point(557, 249);
+            this.t2DeleteBtn.Name = "t2DeleteBtn";
+            this.t2DeleteBtn.Size = new System.Drawing.Size(94, 43);
+            this.t2DeleteBtn.TabIndex = 13;
+            this.t2DeleteBtn.Text = "DELETE";
+            this.t2DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // t3EnterBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.LimeGreen;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(438, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 43);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "ENTER";
-            this.button5.UseVisualStyleBackColor = false;
+            this.t3EnterBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.t3EnterBtn.FlatAppearance.BorderSize = 0;
+            this.t3EnterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t3EnterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t3EnterBtn.ForeColor = System.Drawing.Color.White;
+            this.t3EnterBtn.Location = new System.Drawing.Point(438, 322);
+            this.t3EnterBtn.Name = "t3EnterBtn";
+            this.t3EnterBtn.Size = new System.Drawing.Size(94, 43);
+            this.t3EnterBtn.TabIndex = 14;
+            this.t3EnterBtn.Text = "ENTER";
+            this.t3EnterBtn.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // t3DeleteBtn
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(557, 322);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(94, 43);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "DELETE";
-            this.button6.UseVisualStyleBackColor = false;
+            this.t3DeleteBtn.BackColor = System.Drawing.Color.Red;
+            this.t3DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.t3DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.t3DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t3DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.t3DeleteBtn.Location = new System.Drawing.Point(557, 322);
+            this.t3DeleteBtn.Name = "t3DeleteBtn";
+            this.t3DeleteBtn.Size = new System.Drawing.Size(94, 43);
+            this.t3DeleteBtn.TabIndex = 15;
+            this.t3DeleteBtn.Text = "DELETE";
+            this.t3DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // ongoingTournamentHomepage
             // 
@@ -190,12 +190,12 @@ namespace WindowsFormsApp4
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.t3DeleteBtn);
+            this.Controls.Add(this.t3EnterBtn);
+            this.Controls.Add(this.t2DeleteBtn);
+            this.Controls.Add(this.t2EnterBtn);
+            this.Controls.Add(this.t1DeleteBtn);
+            this.Controls.Add(this.t1EnterBtn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -215,11 +215,11 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button t1EnterBtn;
+        private System.Windows.Forms.Button t1DeleteBtn;
+        private System.Windows.Forms.Button t2EnterBtn;
+        private System.Windows.Forms.Button t2DeleteBtn;
+        private System.Windows.Forms.Button t3EnterBtn;
+        private System.Windows.Forms.Button t3DeleteBtn;
     }
 }
