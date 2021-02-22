@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class Player1register : Form
+    public partial class Fixure1 : Form
     {
-        public Player1register()
+        public Fixure1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

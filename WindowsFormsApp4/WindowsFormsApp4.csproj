@@ -47,17 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
-    <Compile Include="player1choice.cs">
+    <Compile Include="TournamentName.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="player1choice.Designer.cs">
-      <DependentUpon>player1choice.cs</DependentUpon>
+    <Compile Include="TournamentName.Designer.cs">
+      <DependentUpon>TournamentName.cs</DependentUpon>
     </Compile>
-    <Compile Include="Player1register.cs">
+    <Compile Include="playerChoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Player1register.Designer.cs">
-      <DependentUpon>Player1register.cs</DependentUpon>
+    <Compile Include="playerChoice.Designer.cs">
+      <DependentUpon>playerChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerRegister.Designer.cs">
+      <DependentUpon>PlayerRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="processData.cs" />
     <Compile Include="welcomePage.cs">
@@ -98,11 +104,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="player1choice.resx">
-      <DependentUpon>player1choice.cs</DependentUpon>
+    <EmbeddedResource Include="playerChoice.resx">
+      <DependentUpon>playerChoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Player1register.resx">
-      <DependentUpon>Player1register.cs</DependentUpon>
+    <EmbeddedResource Include="PlayerRegister.resx">
+      <DependentUpon>PlayerRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomePage.resx">
       <DependentUpon>welcomePage.cs</DependentUpon>

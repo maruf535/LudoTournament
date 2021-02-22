@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    class DBAccess
+    public class DBAccess
     {
         public SqlConnection con;
         public SqlCommand cmd;
@@ -18,12 +18,12 @@ namespace DatabaseProject
 
         public void connection()
         {
-            con = new SqlConnection(@"Data Source=DESKTOP-SSEFC8E\SQLEXPRESS;Initial Catalog=Info;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=localhost;Initial Catalog=Ludo_tounament_database;Integrated Security=True");
             con.Open();
         }
         public static string connectionDatabase()
         {
-            return "Data Source=DESKTOP-SSEFC8E\\SQLEXPRESS;Initial Catalog=Info;Integrated Security=True";
+            return "Data Source=localhost;Initial Catalog=Ludo_tounament_database;Integrated Security=True";
 
         }
 

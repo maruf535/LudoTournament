@@ -10,30 +10,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    public partial class player1choice : Form
+    public partial class DecisionPage : Form
     {
-        public player1choice()
+        public DecisionPage()
         {
             InitializeComponent();
         }
 
-        private void player1choice_Load(object sender, EventArgs e)
+        private void TournamentName_Load(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 player1 = new Form5();
-            player1.Show();
-            this.Hide();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            Player1register player1 = new Player1register();
-            player1.Show();
-            this.Hide();
+
         }
     }
 }
