@@ -42,7 +42,7 @@ namespace WindowsFormsApp4
             this.button2.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkKhaki;
             this.button2.Location = new System.Drawing.Point(592, 244);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(257, 66);
             this.button2.TabIndex = 3;
@@ -57,7 +57,7 @@ namespace WindowsFormsApp4
             this.button1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkKhaki;
             this.button1.Location = new System.Drawing.Point(219, 244);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 66);
             this.button1.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace WindowsFormsApp4
             this.label1.Text = "Player 1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // player1choice
+            // playerChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +88,8 @@ namespace WindowsFormsApp4
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "player1choice";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "playerChoice";
             this.Text = "player1choice";
             this.Load += new System.EventHandler(this.player1choice_Load);
             this.ResumeLayout(false);
