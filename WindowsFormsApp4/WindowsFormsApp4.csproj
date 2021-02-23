@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
-<<<<<<< HEAD
     <Compile Include="playerChoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,29 +56,6 @@
     <Compile Include="PlayerRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-=======
-    <Compile Include="DecisionPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DecisionPage.Designer.cs">
-      <DependentUpon>DecisionPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fixure.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fixure.Designer.cs">
-      <DependentUpon>Fixure.cs</DependentUpon>
-    </Compile>
-    <Compile Include="playerChoice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="playerChoice.Designer.cs">
-      <DependentUpon>playerChoice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PlayerRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
->>>>>>> version.2
     <Compile Include="PlayerRegister.Designer.cs">
       <DependentUpon>PlayerRegister.cs</DependentUpon>
     </Compile>
@@ -122,22 +98,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <EmbeddedResource Include="playerChoice.resx">
       <DependentUpon>playerChoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlayerRegister.resx">
       <DependentUpon>PlayerRegister.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Fixure.resx">
-      <DependentUpon>Fixure.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PlayerRegister.resx">
-      <DependentUpon>PlayerRegister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DecisionPage.resx">
-      <DependentUpon>DecisionPage.cs</DependentUpon>
->>>>>>> version.2
     </EmbeddedResource>
     <EmbeddedResource Include="welcomePage.resx">
       <DependentUpon>welcomePage.cs</DependentUpon>

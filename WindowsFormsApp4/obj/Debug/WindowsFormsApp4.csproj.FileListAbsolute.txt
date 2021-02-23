@@ -49,5 +49,3 @@ C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFo
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Player1register.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.player1choice.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Player1register.resources
-C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
-C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.DecisionPage.resources

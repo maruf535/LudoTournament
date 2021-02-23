@@ -21,10 +21,5 @@ namespace WindowsFormsApp4
         {
 
         }
-
-        private void PlayerRegister_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

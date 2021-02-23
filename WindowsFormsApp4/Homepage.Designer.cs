@@ -31,46 +31,49 @@ namespace WindowsFormsApp4
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage));
             this.newTourBtn = new System.Windows.Forms.Button();
-            this.onGoBtn = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // newTourBtn
             // 
             this.newTourBtn.BackColor = System.Drawing.Color.Transparent;
             this.newTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.newTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newTourBtn.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.newTourBtn.Location = new System.Drawing.Point(162, 182);
+            this.newTourBtn.Location = new System.Drawing.Point(216, 224);
+            this.newTourBtn.Margin = new System.Windows.Forms.Padding(4);
             this.newTourBtn.Name = "newTourBtn";
-            this.newTourBtn.Size = new System.Drawing.Size(195, 54);
+            this.newTourBtn.Size = new System.Drawing.Size(260, 66);
             this.newTourBtn.TabIndex = 0;
             this.newTourBtn.Text = "New Tournament";
             this.newTourBtn.UseVisualStyleBackColor = false;
             this.newTourBtn.Click += new System.EventHandler(this.newTourBtn_Click);
             // 
-            // onGoBtn
+            // button2
             // 
-            this.onGoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.onGoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.onGoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onGoBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.onGoBtn.Location = new System.Drawing.Point(442, 182);
-            this.onGoBtn.Name = "onGoBtn";
-            this.onGoBtn.Size = new System.Drawing.Size(193, 54);
-            this.onGoBtn.TabIndex = 1;
-            this.onGoBtn.Text = "Ongoing Tournaments";
-            this.onGoBtn.UseVisualStyleBackColor = false;
-            this.onGoBtn.Click += new System.EventHandler(this.ongTourBtn_Click);
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.button2.Location = new System.Drawing.Point(589, 224);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(257, 66);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Ongoing Tournaments";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.ongTourBtn_Click);
             // 
             // Homepage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.onGoBtn);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.newTourBtn);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Homepage";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Homepage_Load);
@@ -81,6 +84,6 @@ namespace WindowsFormsApp4
         #endregion
 
         private System.Windows.Forms.Button newTourBtn;
-        private System.Windows.Forms.Button onGoBtn;
+        private System.Windows.Forms.Button button2;
     }
 }

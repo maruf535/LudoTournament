@@ -31,9 +31,9 @@ namespace WindowsFormsApp4
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
-            this.playerLgnBtn = new System.Windows.Forms.Button();
-            this.passwordInp = new System.Windows.Forms.TextBox();
-            this.usernameInp = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -44,72 +44,79 @@ namespace WindowsFormsApp4
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(310, 22);
+            this.label1.Location = new System.Drawing.Point(413, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 61);
+            this.label1.Size = new System.Drawing.Size(199, 75);
             this.label1.TabIndex = 0;
             this.label1.Text = "Player ONE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // playerLgnBtn
+            // button1
             // 
-            this.playerLgnBtn.BackColor = System.Drawing.Color.Transparent;
-            this.playerLgnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playerLgnBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.playerLgnBtn.Location = new System.Drawing.Point(429, 249);
-            this.playerLgnBtn.Name = "playerLgnBtn";
-            this.playerLgnBtn.Size = new System.Drawing.Size(75, 23);
-            this.playerLgnBtn.TabIndex = 9;
-            this.playerLgnBtn.Text = "LOGIN";
-            this.playerLgnBtn.UseVisualStyleBackColor = false;
-            this.playerLgnBtn.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.button1.Location = new System.Drawing.Point(572, 307);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "LOGIN";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // passwordInp
+            // textBox2
             // 
-            this.passwordInp.Location = new System.Drawing.Point(357, 197);
-            this.passwordInp.Name = "passwordInp";
-            this.passwordInp.PasswordChar = '*';
-            this.passwordInp.Size = new System.Drawing.Size(148, 20);
-            this.passwordInp.TabIndex = 8;
+            this.textBox2.Location = new System.Drawing.Point(476, 242);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(196, 22);
+            this.textBox2.TabIndex = 8;
             // 
-            // usernameInp
+            // textBox1
             // 
-            this.usernameInp.Location = new System.Drawing.Point(357, 148);
-            this.usernameInp.Name = "usernameInp";
-            this.usernameInp.Size = new System.Drawing.Size(148, 20);
-            this.usernameInp.TabIndex = 7;
+            this.textBox1.Location = new System.Drawing.Point(476, 182);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(196, 22);
+            this.textBox1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 197);
+            this.label2.Location = new System.Drawing.Point(307, 242);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Enter Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(230, 151);
+            this.label3.Location = new System.Drawing.Point(307, 186);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(111, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Enter Username";
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.playerLgnBtn);
-            this.Controls.Add(this.passwordInp);
-            this.Controls.Add(this.usernameInp);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -121,9 +128,9 @@ namespace WindowsFormsApp4
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button playerLgnBtn;
-        private System.Windows.Forms.TextBox passwordInp;
-        private System.Windows.Forms.TextBox usernameInp;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
