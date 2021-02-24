@@ -73,6 +73,16 @@ namespace WindowsFormsApp4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blueToken {
+            get {
+                object obj = ResourceManager.GetObject("blueToken", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap california_1751455_1920 {
             get {
                 object obj = ResourceManager.GetObject("california-1751455_1920", resourceCulture);
@@ -86,6 +96,16 @@ namespace WindowsFormsApp4.Properties {
         internal static System.Drawing.Bitmap dice_169063 {
             get {
                 object obj = ResourceManager.GetObject("dice-169063", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ludoBoard {
+            get {
+                object obj = ResourceManager.GetObject("ludoBoard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="functions.cs" />
+    <Compile Include="game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game.Designer.cs">
+      <DependentUpon>game.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +111,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="game.resx">
+      <DependentUpon>game.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dice-169063.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ludoBoard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueToken.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
