@@ -20,6 +20,12 @@ namespace WindowsFormsApp4
             HomePanel.Hide();
             tourNamePanel.Hide();
             PlayerChoicePanel.Hide();
+            PlayerOneLoginPanel.Hide();
+            PlayerOneRegisterPanel.Hide();
+            ChooseColourPanel.Hide();
+            OngoingTournamentPanel.Hide();
+            DecisionPagePanel.Hide();
+            FixurePanel.Hide();
         }
         public void hideTopButtons()
         {
@@ -99,11 +105,18 @@ namespace WindowsFormsApp4
 
         private void lgnChcBtn_Click(object sender, EventArgs e)
         {
-            
+            hideAll();
+            goBack = PlayerChoicePanel;
+           // showPlayerChoice();
+            PlayerOneLoginPanel.Show();
+            showTopButtons();
         }
         private void regChcBtn_Click(object sender, EventArgs e)
         {
-
+            hideAll();
+            goBack = PlayerOneLoginPanel;
+            PlayerOneRegisterPanel.Show();
+            showTopButtons();
         }
 
         private void ongTourBtn_Click(object sender, EventArgs e)
@@ -111,6 +124,11 @@ namespace WindowsFormsApp4
             goBack = HomePanel;
             hideAll();
             showTopButtons();
+        }
+
+        private void playerLgnBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
