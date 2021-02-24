@@ -45,8 +45,15 @@ C:\Users\Mannaf\Source\Repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFo
 C:\Users\Mannaf\Source\Repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
 C:\Users\Mannaf\Source\Repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 C:\Users\Mannaf\Source\Repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
+<<<<<<< HEAD
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.player1choice.resources
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Player1register.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
+=======
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.player1choice.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Player1register.resources
+C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
+C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
+>>>>>>> 5f1cffb4875edcc6c2a3f89ff5bc35f1b48db4d3
