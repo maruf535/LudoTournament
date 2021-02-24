@@ -57,3 +57,4 @@ C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\ob
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
 >>>>>>> 5f1cffb4875edcc6c2a3f89ff5bc35f1b48db4d3
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
