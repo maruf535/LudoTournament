@@ -13,6 +13,8 @@ namespace WindowsFormsApp4
     public partial class MainPage : Form
     {
         int playerCnt;
+        int tourState;
+        int[] playerId;
         Panel goBack;
         public void hideAll()
         {
@@ -45,7 +47,7 @@ namespace WindowsFormsApp4
         public MainPage()
         {
             InitializeComponent();
-            
+
         }
 
         private void MainPage_Load(object sender, EventArgs e)
@@ -80,7 +82,7 @@ namespace WindowsFormsApp4
             tourNamePanel.Show();
             playerCnt = 1;
             showTopButtons();
-            
+
         }
 
         private void nextBtn_Click(object sender, EventArgs e)
@@ -92,12 +94,14 @@ namespace WindowsFormsApp4
             //otherwise insert it into database
             //and move to the next panel, that is first player info
             hideAll();
+            tourState = 4;
             goBack = tourNamePanel;
             showPlayerChoice();
         }
         public void showPlayerChoice()
         {
-            PlayerTitle.Text = "PLAYER " + playerCnt;
+            //jemon ta ekhane korsi
+            PlayerTitle.Text = "PLAYER " + playerCnt;//erokom oh accha accha ami kortesi tumi dekho
             PlayerChoicePanel.Show();
 
         }
@@ -107,28 +111,65 @@ namespace WindowsFormsApp4
         {
             hideAll();
             goBack = PlayerChoicePanel;
-           // showPlayerChoice();
+            //ekhon oi function ta ekhan theke  call kore dibo
+            playerLoginPanelShow();
+        }
+        public void playerLoginPanelShow()
+        {
+            //ekhane theke player login panel ta show hocche
+            //tai amra ekhanei oi title ta change korbo
+            //kintu jehetu ei player login panel amra aro koek jayga theke show korte pari
+            //tai etake playerLoginPanelShow naame ekta function e rekhe dibo
+            //shudhu playerCnt disilam, sathe"Player " eta add kore dite hobe shurute
+            lgnPageTitle.Text ="PLAYER " + playerCnt.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
             PlayerOneLoginPanel.Show();
-            showTopButtons();
         }
         private void regChcBtn_Click(object sender, EventArgs e)
         {
             hideAll();
             goBack = PlayerOneLoginPanel;
-            PlayerOneRegisterPanel.Show();
-            showTopButtons();
+            playerRegisterPanelShow();
         }
-
+        public void playerRegisterPanelShow()
+        {
+            regPageTitle.Text = "PLAYER " + playerCnt.ToString();
+            PlayerOneRegisterPanel.Show();
+        }
         private void ongTourBtn_Click(object sender, EventArgs e)
         {
-            goBack = HomePanel;
             hideAll();
+            goBack = HomePanel;
+            OngoingTournamentPanel.Show();
             showTopButtons();
         }
 
         private void playerLgnBtn_Click(object sender, EventArgs e)
         {
 
+
+        }
+        private void playerRegLgnBtn_Click(object sender, EventArgs e)
+        {
+            //data entry korte hbe
+            if (playerCnt < tourState)
+            {
+                hideAll();
+                playerCnt++;
+                //PlayerChoicePanel.Show();
+                showPlayerChoice();
+            }
+        }
+
+        private void plyrLgnBtn_Click(object sender, EventArgs e)
+        {
+            //data entry korte hbe
+            if (playerCnt < tourState)
+            {
+                hideAll();
+                playerCnt++;
+                //PlayerChoicePanel.Show();
+                showPlayerChoice();
+            }
         }
     }
 }
