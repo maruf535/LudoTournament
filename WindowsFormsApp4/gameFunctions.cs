@@ -77,6 +77,7 @@ namespace WindowsFormsApp4
                 playerTurn = 1;
             showPlayerRollBtn();
             diceNumber = 1;
+            hideAllDiceBoxes();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
 
 namespace WindowsFormsApp4
 {
@@ -54,13 +55,13 @@ namespace WindowsFormsApp4
 
         }
 
-        public void hitRollBtn()
+        public async void hitRollBtn()
         {
-            gmf.hideAllDiceBoxes();
             gmf.shot = rnd.Next(1, 7);
             gmf.setDice();
             if (gmf.shot < 6)
             {
+                await System.Threading.Tasks.Task.Delay(500);
                 gmf.changeTurn();
             }
         }
@@ -82,5 +83,16 @@ namespace WindowsFormsApp4
             gmf.diceBoxes[6] = diceBox6;
             gmf.hideAllDiceBoxes();
         }
+        //private static void delay(int Time_delay)
+        //{
+        //    int i = 0;
+        //    //  ameTir = new System.Timers.Timer();
+        //    _delayTimer = new System.Timers.Timer();
+        //    _delayTimer.Interval = Time_delay;
+        //    _delayTimer.AutoReset = false; //so that it only calls the method once
+        //    _delayTimer.Elapsed += (s, args) => i = 1;
+        //    _delayTimer.Start();
+        //    while (i == 0) { };
+        //}
     }
 }
