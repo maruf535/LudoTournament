@@ -54,6 +54,7 @@
     <Compile Include="game.Designer.cs">
       <DependentUpon>game.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameFunctions.cs" />
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +195,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\femalePotrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleFemalePotrait2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
