@@ -13,8 +13,8 @@ namespace WindowsFormsApp4
 {
     public partial class game : Form
     {
-        Random rnd = new Random();
-        gameFunctions gmf = new gameFunctions();
+        Random rnd = new Random();//random number generate korar object
+        gameFunctions gmf = new gameFunctions();//ei class er bhitore shob method and properties ache
 
         public game()
         {
@@ -24,30 +24,30 @@ namespace WindowsFormsApp4
 
         private void game_Load(object sender, EventArgs e)
         {
-            setPlayerRollBtns();
-            setDiceBoxes();
-            gmf.showPlayerRollBtn();
+            setPlayerRollBtns();//sets the player roll buttons to an array which is contained in gameFunctions class
+            setDiceBoxes();//sets the 6 dice roll result boxes to an array which is contained in gameFunctions class
+            gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
 
         private void redPlayerRollBtn_Click(object sender, EventArgs e)
         {
-            hitRollBtn();
+            hitRollBtn();//the actions after hitting the roll button
         }
 
         private void bluePlayerRollBtn_Click(object sender, EventArgs e)
         {
 
-            hitRollBtn();
+            hitRollBtn();//the actions after hitting the roll button
         }
 
         private void greenPlayerRollBtn_Click(object sender, EventArgs e)
         {
-            hitRollBtn();
+            hitRollBtn();//the actions after hitting the roll button
         }
 
         private void yellowPlayerRollBtn_Click(object sender, EventArgs e)
         {
-            hitRollBtn();
+            hitRollBtn();//the actions after hitting the roll button
         }
 
         private void diceBox3_Click(object sender, EventArgs e)
@@ -57,24 +57,31 @@ namespace WindowsFormsApp4
 
         public async void hitRollBtn()
         {
-            gmf.shot = rnd.Next(1, 7);
-            gmf.setDice();
-            if (gmf.shot < 6)
+            gmf.shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
+            gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(7);
+            await System.Threading.Tasks.Task.Delay(500);
+            gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(gmf.shot);
+            gmf.setDice();//sets the result to current dice box 
+            if (gmf.shot < 6)//checking if the shot is less then 6, then the turn is passed to the next player
             {
-                await System.Threading.Tasks.Task.Delay(500);
-                gmf.changeTurn();
+                await System.Threading.Tasks.Task.Delay(400);//eta just testing perpose e inlcude kora,j turn passing thikmoto hocche kina
+                gmf.changeTurn();//turn change korbe, dicebox clear korbe, next player er roll button show korabe
             }
+            else
+                gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(0);
         }
 
         public void setPlayerRollBtns()
         {
+            //gameFunctios er roll button er array te object initialized hocche
             gmf.playerRollBtns[1] = redPlayerRollBtn;
             gmf.playerRollBtns[2] = greenPlayerRollBtn;
-            gmf.playerRollBtns[3] = bluePlayerRollBtn;
-            gmf.playerRollBtns[4] = yellowPlayerRollBtn;
+            gmf.playerRollBtns[3] = yellowPlayerRollBtn;
+            gmf.playerRollBtns[4] = bluePlayerRollBtn;
         }
         public void setDiceBoxes()
         {
+            //gameFunctions er dice box er array te object initialize hocche
             gmf.diceBoxes[1] = diceBox1;
             gmf.diceBoxes[2] = diceBox2;
             gmf.diceBoxes[3] = diceBox3;

@@ -220,5 +220,8 @@
   <ItemGroup>
     <None Include="Resources\dice6.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diceRoll.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

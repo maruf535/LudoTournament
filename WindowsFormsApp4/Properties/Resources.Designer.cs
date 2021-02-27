@@ -173,6 +173,16 @@ namespace WindowsFormsApp4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap diceRoll {
+            get {
+                object obj = ResourceManager.GetObject("diceRoll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap femalePotrait {
             get {
                 object obj = ResourceManager.GetObject("femalePotrait", resourceCulture);
