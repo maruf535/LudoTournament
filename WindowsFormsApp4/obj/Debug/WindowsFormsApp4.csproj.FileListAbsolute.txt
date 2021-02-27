@@ -57,4 +57,45 @@ C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\ob
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
 C:\Users\Mannaf\source\repos\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
 >>>>>>> 5f1cffb4875edcc6c2a3f89ff5bc35f1b48db4d3
+<<<<<<< HEAD
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
+=======
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.welcomePage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Homepage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form5.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.colourChoicePage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.tournamentNamePage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ongoingTournamentHomepage.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.GenerateResource.cache
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
+G:\SDP-2  project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.welcomePage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Homepage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form5.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.colourChoicePage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.tournamentNamePage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ongoingTournamentHomepage.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.GenerateResource.cache
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
+G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
+>>>>>>> 4fe93e2f6d7d6f9300e414ddffbe74937d3686ff
