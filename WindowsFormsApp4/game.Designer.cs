@@ -96,16 +96,13 @@ namespace WindowsFormsApp4
             this.ludoBoard.Controls.Add(this.greenToken3);
             this.ludoBoard.Controls.Add(this.greenToken2);
             this.ludoBoard.Controls.Add(this.greenToken1);
-<<<<<<< HEAD
             this.ludoBoard.Controls.Add(this.blueToken4);
             this.ludoBoard.Controls.Add(this.blueToken3);
             this.ludoBoard.Controls.Add(this.blueToken1);
             this.ludoBoard.Controls.Add(this.blueToken2);
             this.ludoBoard.Location = new System.Drawing.Point(301, 90);
-=======
             this.ludoBoard.Location = new System.Drawing.Point(226, 73);
             this.ludoBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> 4fe93e2f6d7d6f9300e414ddffbe74937d3686ff
             this.ludoBoard.Name = "ludoBoard";
             this.ludoBoard.Size = new System.Drawing.Size(481, 497);
             this.ludoBoard.TabIndex = 0;
@@ -223,20 +220,17 @@ namespace WindowsFormsApp4
             // 
             // greenToken1
             // 
-<<<<<<< HEAD
             this.greenToken1.Image = global::WindowsFormsApp4.Properties.Resources.greenToken;
             this.greenToken1.Location = new System.Drawing.Point(430, 50);
             this.greenToken1.Name = "greenToken1";
             this.greenToken1.Size = new System.Drawing.Size(38, 38);
             this.greenToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken1.TabIndex = 4;
-=======
             this.greenToken1.Location = new System.Drawing.Point(32, 199);
             this.greenToken1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.greenToken1.Name = "greenToken1";
             this.greenToken1.Size = new System.Drawing.Size(28, 32);
             this.greenToken1.TabIndex = 0;
->>>>>>> 4fe93e2f6d7d6f9300e414ddffbe74937d3686ff
             this.greenToken1.TabStop = false;
             // 
             // blueToken4
@@ -396,7 +390,7 @@ namespace WindowsFormsApp4
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1181, 766);
             this.Controls.Add(this.greenPlayerRollBtn);
             this.Controls.Add(this.yellowPlayerRollButton);
@@ -407,9 +401,9 @@ namespace WindowsFormsApp4
             this.Controls.Add(this.greenPlayerPotrait);
             this.Controls.Add(this.bluePlayerPotrait);
             this.Controls.Add(this.redPlayerPotrait);
-=======
+
             this.ClientSize = new System.Drawing.Size(886, 609);
->>>>>>> 4fe93e2f6d7d6f9300e414ddffbe74937d3686ff
+
             this.Controls.Add(this.ludoBoard);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "game";
