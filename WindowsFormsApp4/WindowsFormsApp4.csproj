@@ -73,7 +73,9 @@
     <Compile Include="PlayerRegister.Designer.cs">
       <DependentUpon>PlayerRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="playersClass.cs" />
     <Compile Include="processData.cs" />
+    <Compile Include="tokensClass.cs" />
     <Compile Include="welcomePage.cs">
       <SubType>Form</SubType>
     </Compile>

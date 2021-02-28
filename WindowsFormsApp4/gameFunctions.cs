@@ -10,6 +10,7 @@ namespace WindowsFormsApp4
     class gameFunctions
     {
         //properties starts
+        public playersObj[] playersArray = new playersObj[5];
         public PictureBox[] playerRollBtns = new PictureBox[5];//array of roll buttins of 4 players,[1]=red,[2]=green,[3]=yellow,[4]=blue
         public PictureBox[] diceBoxes = new PictureBox[7];//array of diceBox objects
         public int[] diceBoxVals = new int[7];//contains the values of six dice boxes' values
@@ -65,6 +66,7 @@ namespace WindowsFormsApp4
 
         public void setDice()
         {
+            diceBoxVals[diceNumber] = shot;//keeping the value of the diceBox
             diceBoxes[diceNumber].Show();//joto number dice ekhon free ache, shetake show korabe
             diceBoxes[diceNumber].Image = getDiceImage(shot);//joto shot, oi shot er image set kore dicchi
             diceNumber++;//next dice k point koracchi, incase jodi oi player er aro turn thake
@@ -88,7 +90,13 @@ namespace WindowsFormsApp4
                 playerTurn = 1;
             showPlayerRollBtn();
             diceNumber = 1;
+            selectedDice = -1;
             hideAllDiceBoxes();
+        }
+
+        public void moveToken(int player, int tokenNum)
+        {
+
         }
     }
 }

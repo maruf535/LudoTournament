@@ -29,42 +29,39 @@ namespace WindowsFormsApp4
             gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
 
-        private void redPlayerRollBtn_Click(object sender, EventArgs e)
-        {
-            hitRollBtn();//the actions after hitting the roll button
-        }
+        //private void redPlayerRollBtn_Click(object sender, EventArgs e)
+        //{
+        //    hitRollBtn();//the actions after hitting the roll button
+        //}
 
-        private void bluePlayerRollBtn_Click(object sender, EventArgs e)
-        {
+        //private void bluePlayerRollBtn_Click(object sender, EventArgs e)
+        //{
 
-            hitRollBtn();//the actions after hitting the roll button
-        }
+        //    hitRollBtn();//the actions after hitting the roll button
+        //}
 
-        private void greenPlayerRollBtn_Click(object sender, EventArgs e)
-        {
-            hitRollBtn();//the actions after hitting the roll button
-        }
+        //private void greenPlayerRollBtn_Click(object sender, EventArgs e)
+        //{
+        //    hitRollBtn();//the actions after hitting the roll button
+        //}
 
-        private void yellowPlayerRollBtn_Click(object sender, EventArgs e)
-        {
-            hitRollBtn();//the actions after hitting the roll button
-        }
+        //private void yellowPlayerRollBtn_Click(object sender, EventArgs e)
+        //{
+        //    hitRollBtn();//the actions after hitting the roll button
+        //}
+        //ei 4 tar khetre eki kaaj hocche, tai shob gular click event e same function die diechi
 
-        private void diceBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public async void hitRollBtn()
+        
+        public async void hitRollBtn_Click(object sender, EventArgs e)
         {
             gmf.shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
             gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(7);
-            await System.Threading.Tasks.Task.Delay(500);
+            await System.Threading.Tasks.Task.Delay(2000);
             gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(gmf.shot);
             gmf.setDice();//sets the result to current dice box 
             if (gmf.shot < 6)//checking if the shot is less then 6, then the turn is passed to the next player
             {
-                await System.Threading.Tasks.Task.Delay(400);//eta just testing perpose e inlcude kora,j turn passing thikmoto hocche kina
+                await System.Threading.Tasks.Task.Delay(800);//eta just testing perpose e inlcude kora,j turn passing thikmoto hocche kina
                 gmf.changeTurn();//turn change korbe, dicebox clear korbe, next player er roll button show korabe
             }
             else
@@ -90,6 +87,50 @@ namespace WindowsFormsApp4
             gmf.diceBoxes[6] = diceBox6;
             gmf.hideAllDiceBoxes();
         }
+
+        private void diceBox1_Click(object sender, EventArgs e)
+        {
+            gmf.selectedDice = 1;
+        }
+
+        private void diceBox2_Click(object sender, EventArgs e)
+        {
+
+            gmf.selectedDice = 2;
+        }
+
+        private void diceBox3_Click(object sender, EventArgs e)
+        {
+            gmf.selectedDice = 3;
+
+        }
+
+        private void diceBox4_Click(object sender, EventArgs e)
+        {
+            gmf.selectedDice = 4;
+
+        }
+
+        private void diceBox5_Click(object sender, EventArgs e)
+        {
+            gmf.selectedDice = 5;
+
+        }
+
+        private void diceBox6_Click(object sender, EventArgs e)
+        {
+            gmf.selectedDice = 6;
+
+        }
+
+        private void redToken1_Click(object sender, EventArgs e)
+        {
+            if(gmf.playerTurn==1 && gmf.selectedDice != -1)
+            {
+                //gmf.moveToken(1, 1);
+            }
+        }
+
         //private static void delay(int Time_delay)
         //{
         //    int i = 0;
