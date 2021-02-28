@@ -171,5 +171,52 @@ namespace WindowsFormsApp4
                 showPlayerChoice();
             }
         }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FixurePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            hideAll();
+            goBack = OngoingTournamentPanel;
+            FixurePanel.Show();
+        }
+
+        private void ongTourNextBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

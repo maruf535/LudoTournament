@@ -127,10 +127,25 @@
   <data name="background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="greenToken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\greenToken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellowToken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellowToken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePotrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePotrait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dice-169063" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dice-169063.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="redToken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redToken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="blueToken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blueToken.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePotrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePotrait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

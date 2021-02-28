@@ -180,5 +180,20 @@
   <ItemGroup>
     <None Include="Resources\blueToken.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenToken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowToken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redToken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePotrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePotrait.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
