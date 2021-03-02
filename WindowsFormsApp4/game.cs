@@ -55,17 +55,12 @@ namespace WindowsFormsApp4
         
         public async void hitRollBtn_Click(object sender, EventArgs e)
         {
+
             gmf.shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
             gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(7);
             await System.Threading.Tasks.Task.Delay(300);
             gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(gmf.shot);
-            gmf.setDice();//sets the result to current dice box 
-            if (gmf.shot < 6)//checking if the shot is less then 6, then the turn is passed to the next player
-            {
-                await System.Threading.Tasks.Task.Delay(200);//eta just testing perpose e inlcude kora,j turn passing thikmoto hocche kina
-                gmf.changeTurn();//turn change korbe, dicebox clear korbe, next player er roll button show korabe
-            }
-            gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(0);
+            gmf.rollDice();
         }
 
         public void setPlayerRollBtns()
@@ -110,167 +105,166 @@ namespace WindowsFormsApp4
         }
         private void diceBox1_Click(object sender, EventArgs e)
         {
-            gmf.selectedDice = 1;
-            diceBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            gmf.selectDiceBox(1);
         }
 
         private void diceBox2_Click(object sender, EventArgs e)
         {
 
-            gmf.selectedDice = 2;
+            gmf.selectDiceBox(2);
         }
 
         private void diceBox3_Click(object sender, EventArgs e)
         {
-            gmf.selectedDice = 3;
+            gmf.selectDiceBox(3);
 
         }
 
         private void diceBox4_Click(object sender, EventArgs e)
         {
-            gmf.selectedDice = 4;
+            gmf.selectDiceBox(4);
 
         }
 
         private void diceBox5_Click(object sender, EventArgs e)
         {
-            gmf.selectedDice = 5;
+            gmf.selectDiceBox(5);
 
         }
 
         private void diceBox6_Click(object sender, EventArgs e)
         {
-            gmf.selectedDice = 6;
+            gmf.selectDiceBox(6);
 
         }
 
         private void redToken1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(gmf.playerTurn.ToString() + ", " + gmf.selectedDice.ToString());
-            if (gmf.playerTurn == 1 && gmf.selectedDice != -1)
+            //MessageBox.Show(gmf.playerTurn.ToString() + ", " + gmf.selectedDice.ToString());
+            if (gmf.playerTurn == 1 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(1, 1);
+                gmf.moveToken(1);
             }
 
         }
 
         private void redToken2_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 1 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 1 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(1, 2);
+                gmf.moveToken(2);
             }
         }
 
         private void redToken3_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 1 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 1 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(1, 3);
+                gmf.moveToken(3);
             }
         }
 
         private void redToken4_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 1 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 1 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(1, 4);
+                gmf.moveToken(4);
             }
         }
 
         private void greenToken1_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 2 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 2 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(2, 1);
+                gmf.moveToken(1);
             }
         }
 
         private void greenToken2_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 2 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 2 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(2, 2);
+                gmf.moveToken(2);
             }
         }
 
         private void greenToken3_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 2 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 2 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(2, 3);
+                gmf.moveToken(3);
             }
         }
 
         private void greenToken4_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 2 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 2 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(2, 4);
+                gmf.moveToken(4);
             }
         }
 
         private void yellowToken1_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 3 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 3 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(3, 1);
+                gmf.moveToken(1);
             }
         }
 
         private void yellowToken2_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 3 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 3 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(3, 2);
+                gmf.moveToken(2);
             }
         }
 
         private void yellowToken3_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 3 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 3 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(3, 3);
+                gmf.moveToken(3);
             }
         }
 
         private void yellowToken4_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 3 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 3 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(3, 4);
+                gmf.moveToken(4);
             }
         }
 
         private void blueToken1_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 4 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 4 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(4, 1);
+                gmf.moveToken(1);
             }
         }
 
         private void blueToken2_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 4 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 4 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(4, 2);
+                gmf.moveToken(2);
             }
         }
 
         private void blueToken3_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 4 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 4 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(4, 3);
+                gmf.moveToken(3);
             }
         }
 
         private void blueToken4_Click(object sender, EventArgs e)
         {
-            if (gmf.playerTurn == 4 && gmf.selectedDice != -1)
+            if (gmf.playerTurn == 4 && gmf.selectedDice != -1 && gmf.playerMove==true)
             {
-                gmf.moveToken(4, 4);
+                gmf.moveToken(4);
             }
         }
 

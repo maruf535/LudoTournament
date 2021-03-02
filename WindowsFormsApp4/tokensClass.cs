@@ -51,8 +51,8 @@ namespace WindowsFormsApp4
 
         private void setRedToken()
         {
-            positionsX[1] = 36;
-            positionsY[1] = 201;
+            positionsX[1] = 1;
+            positionsY[1] = 6;
             movesX= new int[,]{ { 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -87,8 +87,8 @@ namespace WindowsFormsApp4
         }
         private void setGreenToken()
         {
-            positionsX[1] = 269;
-            positionsY[1] = 36;
+            positionsX[1] = 8;
+            positionsY[1] = 1;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -123,8 +123,8 @@ namespace WindowsFormsApp4
         }
         private void setYellowToken()
         {
-            positionsX[1] = 432;
-            positionsY[1] = 267;
+            positionsX[1] = 13;
+            positionsY[1] = 8;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -159,8 +159,8 @@ namespace WindowsFormsApp4
         }
         private void setBlueToken()
         {
-            positionsX[1] = 201;
-            positionsY[1] = 432;
+            positionsX[1] = 6;
+            positionsY[1] = 13;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
                                 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -194,10 +194,56 @@ namespace WindowsFormsApp4
                                 { 0, 0, 0, 0, 0, 0, 0,-1, 0, 0, 0, 0, 0, 0, 0 }};
         }
 
+        public int getXpoint(int x)
+        {
+            int refineFactor = 3 + (x / 3);
+            return x * 33 + refineFactor;
+        }
+
+        public int getYpoint(int y)
+        {
+            int refineFactor = 3 + (y / 3);
+            return y * 33 + refineFactor;
+        }
+
+        public void moveIt(int index)
+        {
+            tokenPicture.Location = new System.Drawing.Point(getXpoint(positionsX[index]), getYpoint(positionsY[index]));
+        }
+
         public void StartingPosition()
         {
-            tokenPicture.Location = new System.Drawing.Point(positionsX[1], positionsY[1]);
             tokenState = 1;
+            positionsX[2] = positionsX[1];
+            positionsY[2] = positionsY[1];
+        }
+
+        public bool moveFromCurrentPos(int diceVal)
+        {
+            bool possible = false;
+            int x = positionsX[2];
+            int y = positionsY[2];
+            while (diceVal>0)
+            {
+                diceVal--;
+                int plusX = movesX[x, y];
+                int plusY = movesY[x, y];
+
+                if (plusX == 0 && plusY == 0)
+                    break;
+
+                x += plusX;
+                y += plusY;
+            }
+
+            if (diceVal == 0)
+            {
+                possible = true;
+                positionsX[2] = x;
+                positionsY[2] = y;
+            }
+
+            return possible;
         }
     }
 }

@@ -17,6 +17,7 @@ namespace WindowsFormsApp4
         public int selectedDice = -1;//jei diceBox select korbe tar number
         public int diceNumber = 1;//jei dice box currently khali ache result boshanor jonno
         public int playerTurn = 1; //kon plater er turn ekhon
+        public bool playerMove = false;
         public int shot=0;//joto shot ashe roll korar por
         //properties end
 
@@ -64,6 +65,37 @@ namespace WindowsFormsApp4
             playerRollBtns[playerTurn].Show();//shudhu jei player er ekhon turn tar ta show korbe
         }
 
+        public async void rollDice()
+        {
+            setDice();//sets the result to current dice box 
+            selectedDice = diceNumber-1;
+            playerMove = shot < 6;
+
+            if (diceNumber == 2)
+            {
+                if (!checkAllPossibleTokenMove())
+                {
+                    await System.Threading.Tasks.Task.Delay(400);
+                    changeTurn();
+                }
+            }
+
+        }
+
+        bool checkAllPossibleTokenMove()
+        {
+            bool possible = false;
+
+            for(int i = 1; i <= 4; i++)
+            {
+                possible = checkIfPossible(i);
+                if (possible)
+                    break;
+            }
+
+            return possible;
+        }
+
         public void setDice()
         {
             diceBoxVals[diceNumber] = shot;//keeping the value of the diceBox
@@ -78,6 +110,22 @@ namespace WindowsFormsApp4
             for(int i = 1; i <= 6; i++)
             {
                 diceBoxes[i].Hide();
+                diceBoxVals[i] = 0;
+            }
+        }
+
+        public void selectDiceBox(int num)
+        {
+            unSelectAllDiceBox();
+            selectedDice = num;
+            diceBoxes[num].BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+        }
+
+        public void unSelectAllDiceBox()
+        {
+            for(int i=1;i<=6;i++)
+            {
+                diceBoxes[i].BorderStyle = System.Windows.Forms.BorderStyle.None;
             }
         }
 
@@ -103,13 +151,38 @@ namespace WindowsFormsApp4
             }
         }
 
-        public void moveToken(int playerNum, int tokenNum)
+        public bool checkIfPossible(int tokenNum)
         {
-            MessageBox.Show(playerNum.ToString()+", "+ tokenNum.ToString());
-            int tokenState = playersArray[playerNum].PlayerTokens[tokenNum].tokenState;
-            if(tokenState==0 && diceBoxVals[selectedDice]==6)
+            bool diceUsed = false;
+            tokensObj tokenNow = playersArray[playerTurn].PlayerTokens[tokenNum];
+            if (tokenNow.tokenState == 0)
             {
-                playersArray[playerNum].PlayerTokens[tokenNum].StartingPosition();
+                if (diceBoxVals[selectedDice] == 6)
+                {
+                    tokenNow.StartingPosition();
+                    diceUsed = true;
+                }
+            }
+            else if (tokenNow.tokenState == 1)
+            {
+                diceUsed = tokenNow.moveFromCurrentPos(diceBoxVals[selectedDice]);
+            }
+            return diceUsed;
+        }
+
+        public void moveToken(int tokenNum)
+        {
+            bool diceUsed = checkIfPossible(tokenNum);
+            //MessageBox.Show(playerNum.ToString()+", "+ tokenNum.ToString());
+            tokensObj tokenNow = playersArray[playerTurn].PlayerTokens[tokenNum];
+
+            if (diceUsed)
+            {
+                tokenNow.moveIt(2);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Move");
             }
         }
     }
