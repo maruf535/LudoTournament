@@ -66,6 +66,7 @@ namespace WindowsFormsApp4
             this.bluePlayerRollBtn = new System.Windows.Forms.PictureBox();
             this.greenPlayerRollBtn = new System.Windows.Forms.PictureBox();
             this.yellowPlayerRollBtn = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.ludoBoard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken3)).BeginInit();
@@ -132,97 +133,105 @@ namespace WindowsFormsApp4
             // 
             this.yellowToken4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken4.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken4.Image")));
-            this.yellowToken4.Location = new System.Drawing.Point(418, 404);
+            this.yellowToken4.Location = new System.Drawing.Point(418, 405);
             this.yellowToken4.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken4.Name = "yellowToken4";
-            this.yellowToken4.Size = new System.Drawing.Size(28, 31);
+            this.yellowToken4.Size = new System.Drawing.Size(30, 30);
             this.yellowToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken4.TabIndex = 23;
             this.yellowToken4.TabStop = false;
+            this.yellowToken4.Click += new System.EventHandler(this.yellowToken4_Click);
             // 
             // yellowToken3
             // 
             this.yellowToken3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken3.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken3.Image")));
-            this.yellowToken3.Location = new System.Drawing.Point(352, 404);
+            this.yellowToken3.Location = new System.Drawing.Point(352, 405);
             this.yellowToken3.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken3.Name = "yellowToken3";
-            this.yellowToken3.Size = new System.Drawing.Size(28, 31);
+            this.yellowToken3.Size = new System.Drawing.Size(30, 30);
             this.yellowToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken3.TabIndex = 22;
             this.yellowToken3.TabStop = false;
+            this.yellowToken3.Click += new System.EventHandler(this.yellowToken3_Click);
             // 
             // yellowToken2
             // 
             this.yellowToken2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken2.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken2.Image")));
-            this.yellowToken2.Location = new System.Drawing.Point(418, 338);
+            this.yellowToken2.Location = new System.Drawing.Point(418, 339);
             this.yellowToken2.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken2.Name = "yellowToken2";
-            this.yellowToken2.Size = new System.Drawing.Size(28, 31);
+            this.yellowToken2.Size = new System.Drawing.Size(30, 30);
             this.yellowToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken2.TabIndex = 21;
             this.yellowToken2.TabStop = false;
+            this.yellowToken2.Click += new System.EventHandler(this.yellowToken2_Click);
             // 
             // yellowToken1
             // 
             this.yellowToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken1.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken1.Image")));
-            this.yellowToken1.Location = new System.Drawing.Point(352, 338);
+            this.yellowToken1.Location = new System.Drawing.Point(352, 339);
             this.yellowToken1.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken1.Name = "yellowToken1";
-            this.yellowToken1.Size = new System.Drawing.Size(28, 31);
+            this.yellowToken1.Size = new System.Drawing.Size(30, 30);
             this.yellowToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken1.TabIndex = 20;
             this.yellowToken1.TabStop = false;
+            this.yellowToken1.Click += new System.EventHandler(this.yellowToken1_Click);
             // 
             // greenToken4
             // 
             this.greenToken4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken4.Image = ((System.Drawing.Image)(resources.GetObject("greenToken4.Image")));
-            this.greenToken4.Location = new System.Drawing.Point(418, 108);
+            this.greenToken4.Location = new System.Drawing.Point(418, 106);
             this.greenToken4.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken4.Name = "greenToken4";
-            this.greenToken4.Size = new System.Drawing.Size(28, 31);
+            this.greenToken4.Size = new System.Drawing.Size(30, 30);
             this.greenToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken4.TabIndex = 19;
             this.greenToken4.TabStop = false;
+            this.greenToken4.Click += new System.EventHandler(this.greenToken4_Click);
             // 
             // greenToken3
             // 
             this.greenToken3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken3.Image = ((System.Drawing.Image)(resources.GetObject("greenToken3.Image")));
-            this.greenToken3.Location = new System.Drawing.Point(352, 108);
+            this.greenToken3.Location = new System.Drawing.Point(352, 106);
             this.greenToken3.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken3.Name = "greenToken3";
-            this.greenToken3.Size = new System.Drawing.Size(28, 31);
+            this.greenToken3.Size = new System.Drawing.Size(30, 30);
             this.greenToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken3.TabIndex = 18;
             this.greenToken3.TabStop = false;
+            this.greenToken3.Click += new System.EventHandler(this.greenToken3_Click);
             // 
             // greenToken2
             // 
             this.greenToken2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken2.Image = ((System.Drawing.Image)(resources.GetObject("greenToken2.Image")));
-            this.greenToken2.Location = new System.Drawing.Point(418, 42);
+            this.greenToken2.Location = new System.Drawing.Point(418, 40);
             this.greenToken2.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken2.Name = "greenToken2";
-            this.greenToken2.Size = new System.Drawing.Size(28, 31);
+            this.greenToken2.Size = new System.Drawing.Size(30, 30);
             this.greenToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken2.TabIndex = 17;
             this.greenToken2.TabStop = false;
+            this.greenToken2.Click += new System.EventHandler(this.greenToken2_Click);
             // 
             // greenToken1
             // 
             this.greenToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken1.Image = ((System.Drawing.Image)(resources.GetObject("greenToken1.Image")));
-            this.greenToken1.Location = new System.Drawing.Point(352, 42);
+            this.greenToken1.Location = new System.Drawing.Point(352, 40);
             this.greenToken1.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken1.Name = "greenToken1";
-            this.greenToken1.Size = new System.Drawing.Size(28, 31);
+            this.greenToken1.Size = new System.Drawing.Size(30, 30);
             this.greenToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken1.TabIndex = 16;
             this.greenToken1.TabStop = false;
+            this.greenToken1.Click += new System.EventHandler(this.greenToken1_Click);
             // 
             // redToken4
             // 
@@ -231,10 +240,11 @@ namespace WindowsFormsApp4
             this.redToken4.Location = new System.Drawing.Point(120, 106);
             this.redToken4.Margin = new System.Windows.Forms.Padding(2);
             this.redToken4.Name = "redToken4";
-            this.redToken4.Size = new System.Drawing.Size(28, 31);
+            this.redToken4.Size = new System.Drawing.Size(30, 30);
             this.redToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken4.TabIndex = 15;
             this.redToken4.TabStop = false;
+            this.redToken4.Click += new System.EventHandler(this.redToken4_Click);
             // 
             // redToken3
             // 
@@ -243,10 +253,11 @@ namespace WindowsFormsApp4
             this.redToken3.Location = new System.Drawing.Point(54, 106);
             this.redToken3.Margin = new System.Windows.Forms.Padding(2);
             this.redToken3.Name = "redToken3";
-            this.redToken3.Size = new System.Drawing.Size(28, 31);
+            this.redToken3.Size = new System.Drawing.Size(30, 30);
             this.redToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken3.TabIndex = 14;
             this.redToken3.TabStop = false;
+            this.redToken3.Click += new System.EventHandler(this.redToken3_Click);
             // 
             // redToken2
             // 
@@ -255,68 +266,73 @@ namespace WindowsFormsApp4
             this.redToken2.Location = new System.Drawing.Point(120, 40);
             this.redToken2.Margin = new System.Windows.Forms.Padding(2);
             this.redToken2.Name = "redToken2";
-            this.redToken2.Size = new System.Drawing.Size(28, 31);
+            this.redToken2.Size = new System.Drawing.Size(30, 30);
             this.redToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken2.TabIndex = 13;
             this.redToken2.TabStop = false;
+            this.redToken2.Click += new System.EventHandler(this.redToken2_Click);
             // 
             // redToken1
             // 
             this.redToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.redToken1.Image = ((System.Drawing.Image)(resources.GetObject("redToken1.Image")));
-            this.redToken1.Location = new System.Drawing.Point(36, 201);
+            this.redToken1.Location = new System.Drawing.Point(54, 40);
             this.redToken1.Margin = new System.Windows.Forms.Padding(2);
             this.redToken1.Name = "redToken1";
             this.redToken1.Size = new System.Drawing.Size(30, 30);
             this.redToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken1.TabIndex = 12;
             this.redToken1.TabStop = false;
-            this.redToken1.Tag = "{1,1}";
+            this.redToken1.Tag = "";
             this.redToken1.Click += new System.EventHandler(this.redToken1_Click);
             // 
             // blueToken4
             // 
             this.blueToken4.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken4.Location = new System.Drawing.Point(120, 404);
+            this.blueToken4.Location = new System.Drawing.Point(120, 405);
             this.blueToken4.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken4.Name = "blueToken4";
-            this.blueToken4.Size = new System.Drawing.Size(28, 31);
+            this.blueToken4.Size = new System.Drawing.Size(30, 30);
             this.blueToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken4.TabIndex = 3;
             this.blueToken4.TabStop = false;
+            this.blueToken4.Click += new System.EventHandler(this.blueToken4_Click);
             // 
             // blueToken3
             // 
             this.blueToken3.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken3.Location = new System.Drawing.Point(54, 404);
+            this.blueToken3.Location = new System.Drawing.Point(54, 405);
             this.blueToken3.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken3.Name = "blueToken3";
-            this.blueToken3.Size = new System.Drawing.Size(28, 31);
+            this.blueToken3.Size = new System.Drawing.Size(30, 30);
             this.blueToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken3.TabIndex = 2;
             this.blueToken3.TabStop = false;
+            this.blueToken3.Click += new System.EventHandler(this.blueToken3_Click);
             // 
             // blueToken1
             // 
             this.blueToken1.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken1.Location = new System.Drawing.Point(54, 338);
+            this.blueToken1.Location = new System.Drawing.Point(54, 339);
             this.blueToken1.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken1.Name = "blueToken1";
-            this.blueToken1.Size = new System.Drawing.Size(28, 31);
+            this.blueToken1.Size = new System.Drawing.Size(30, 30);
             this.blueToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken1.TabIndex = 1;
             this.blueToken1.TabStop = false;
+            this.blueToken1.Click += new System.EventHandler(this.blueToken1_Click);
             // 
             // blueToken2
             // 
             this.blueToken2.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken2.Location = new System.Drawing.Point(120, 338);
+            this.blueToken2.Location = new System.Drawing.Point(120, 339);
             this.blueToken2.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken2.Name = "blueToken2";
-            this.blueToken2.Size = new System.Drawing.Size(28, 31);
+            this.blueToken2.Size = new System.Drawing.Size(30, 30);
             this.blueToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken2.TabIndex = 0;
             this.blueToken2.TabStop = false;
+            this.blueToken2.Click += new System.EventHandler(this.blueToken2_Click);
             // 
             // redPlayerPotrait
             // 
@@ -567,12 +583,23 @@ namespace WindowsFormsApp4
             this.yellowPlayerRollBtn.TabStop = false;
             this.yellowPlayerRollBtn.Click += new System.EventHandler(this.hitRollBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "label1";
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(914, 631);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.yellowPlayerRollBtn);
             this.Controls.Add(this.greenPlayerRollBtn);
             this.Controls.Add(this.bluePlayerRollBtn);
@@ -667,5 +694,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.PictureBox diceBox4;
         private System.Windows.Forms.PictureBox diceBox3;
         private System.Windows.Forms.PictureBox diceBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

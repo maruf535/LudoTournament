@@ -14,7 +14,7 @@ namespace WindowsFormsApp4
         public PictureBox[] playerRollBtns = new PictureBox[5];//array of roll buttins of 4 players,[1]=red,[2]=green,[3]=yellow,[4]=blue
         public PictureBox[] diceBoxes = new PictureBox[7];//array of diceBox objects
         public int[] diceBoxVals = new int[7];//contains the values of six dice boxes' values
-        public int selectedDice = 1;//jei diceBox select korbe tar number
+        public int selectedDice = -1;//jei diceBox select korbe tar number
         public int diceNumber = 1;//jei dice box currently khali ache result boshanor jonno
         public int playerTurn = 1; //kon plater er turn ekhon
         public int shot=0;//joto shot ashe roll korar por
@@ -94,9 +94,23 @@ namespace WindowsFormsApp4
             hideAllDiceBoxes();
         }
 
-        public void moveToken(int player, int tokenNum)
+        public void initPlayerArray()
         {
+            for (int i = 1; i < 5; i++)
+            {
+                playersArray[i] = new playersObj();
+                playersArray[i].initTokenArray();
+            }
+        }
 
+        public void moveToken(int playerNum, int tokenNum)
+        {
+            MessageBox.Show(playerNum.ToString()+", "+ tokenNum.ToString());
+            int tokenState = playersArray[playerNum].PlayerTokens[tokenNum].tokenState;
+            if(tokenState==0 && diceBoxVals[selectedDice]==6)
+            {
+                playersArray[playerNum].PlayerTokens[tokenNum].StartingPosition();
+            }
         }
     }
 }

@@ -19,5 +19,13 @@ namespace WindowsFormsApp4
         //form objects
         public PictureBox playerPotrait;
         public Label playerNameLabel;
+
+        public void initTokenArray()
+        {
+            for(int i = 1; i < 5; i++)
+            {
+                PlayerTokens[i] = new tokensObj();
+            }
+        }
     }
 }
