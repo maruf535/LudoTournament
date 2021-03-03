@@ -10,6 +10,8 @@ namespace WindowsFormsApp4
     class gameFunctions
     {
         //properties starts
+        private bool test = true;
+        Random rnd = new Random();//random number generate korar object
         public playersObj[] playersArray = new playersObj[5];
         public PictureBox[] playerRollBtns = new PictureBox[5];//array of roll buttins of 4 players,[1]=red,[2]=green,[3]=yellow,[4]=blue
         public PictureBox[] diceBoxes = new PictureBox[7];//array of diceBox objects
@@ -63,13 +65,30 @@ namespace WindowsFormsApp4
                 playerRollBtns[i].Hide();
             }
             playerRollBtns[playerTurn].Show();//shudhu jei player er ekhon turn tar ta show korbe
+            playerRollBtns[playerTurn].Image = getDiceImage(0);
         }
 
         public async void rollDice()
         {
+            if (playerMove)
+                return;
+            shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
+            playerRollBtns[playerTurn].Image = getDiceImage(7);
+            await System.Threading.Tasks.Task.Delay(300);
+            playerRollBtns[playerTurn].Image = getDiceImage(shot);
             setDice();//sets the result to current dice box 
-            selectedDice = diceNumber-1;
+            selectDiceBox(diceNumber - 1);
             playerMove = shot < 6;
+
+            if (checkForThreeSixes())
+            {
+                await System.Threading.Tasks.Task.Delay(400);
+                changeTurn();
+            }
+            if (!playerMove)
+            {
+                playerRollBtns[playerTurn].Image = getDiceImage(0);
+            }
 
             if (diceNumber == 2)
             {
@@ -82,7 +101,18 @@ namespace WindowsFormsApp4
 
         }
 
-        bool checkAllPossibleTokenMove()
+        private bool checkForThreeSixes()
+        {
+            if (selectedDice > 2)
+            {
+                if (diceBoxVals[selectedDice] == 6 && diceBoxVals[selectedDice - 2] == 6 && diceBoxVals[selectedDice - 2] == 6)
+                    return true;
+            }
+
+            return false;
+        }
+
+        private bool checkAllPossibleTokenMove()
         {
             bool possible = false;
 
@@ -98,6 +128,8 @@ namespace WindowsFormsApp4
 
         public void setDice()
         {
+            if (diceNumber == 7)
+                return;
             diceBoxVals[diceNumber] = shot;//keeping the value of the diceBox
             diceBoxes[diceNumber].Show();//joto number dice ekhon free ache, shetake show korabe
             diceBoxes[diceNumber].Image = getDiceImage(shot);//joto shot, oi shot er image set kore dicchi
@@ -213,8 +245,10 @@ namespace WindowsFormsApp4
 
             diceNumber--;
             diceBoxes[diceNumber].Hide();
-            selectedDice = -1;
-            unSelectAllDiceBox();
+            if (diceNumber > 1)
+            {
+                selectDiceBox(diceNumber - 1);
+            }
         }
     }
 }

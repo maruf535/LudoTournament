@@ -13,7 +13,6 @@ namespace WindowsFormsApp4
 {
     public partial class game : Form
     {
-        Random rnd = new Random();//random number generate korar object
         gameFunctions gmf = new gameFunctions();//ei class er bhitore shob method and properties ache
 
         public game()
@@ -56,10 +55,6 @@ namespace WindowsFormsApp4
         public async void hitRollBtn_Click(object sender, EventArgs e)
         {
 
-            gmf.shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
-            gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(7);
-            await System.Threading.Tasks.Task.Delay(300);
-            gmf.playerRollBtns[gmf.playerTurn].Image = gmf.getDiceImage(gmf.shot);
             gmf.rollDice();
         }
 
@@ -88,7 +83,7 @@ namespace WindowsFormsApp4
             gmf.initPlayerArray();
             gmf.playersArray[1].PlayerTokens[1].setAll(redToken1,1);
             gmf.playersArray[1].PlayerTokens[2].setAll(redToken2,1);
-            gmf.playersArray[1].PlayerTokens[2].setAll(redToken3,1);
+            gmf.playersArray[1].PlayerTokens[3].setAll(redToken3,1);
             gmf.playersArray[1].PlayerTokens[4].setAll(redToken4,1);
             gmf.playersArray[2].PlayerTokens[1].setAll(greenToken1,2);
             gmf.playersArray[2].PlayerTokens[2].setAll(greenToken2,2);
@@ -96,7 +91,7 @@ namespace WindowsFormsApp4
             gmf.playersArray[2].PlayerTokens[4].setAll(greenToken4,2);
             gmf.playersArray[3].PlayerTokens[1].setAll(yellowToken1,3);
             gmf.playersArray[3].PlayerTokens[2].setAll(yellowToken2,3);
-            gmf.playersArray[3].PlayerTokens[4].setAll(yellowToken3,3);
+            gmf.playersArray[3].PlayerTokens[3].setAll(yellowToken3,3);
             gmf.playersArray[3].PlayerTokens[4].setAll(yellowToken4,3);
             gmf.playersArray[4].PlayerTokens[1].setAll(blueToken1,4);
             gmf.playersArray[4].PlayerTokens[2].setAll(blueToken2,4);

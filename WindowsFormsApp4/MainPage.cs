@@ -112,5 +112,10 @@ namespace WindowsFormsApp4
             hideAll();
             showTopButtons();
         }
+
+        private void HomePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
