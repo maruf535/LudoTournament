@@ -264,6 +264,12 @@ namespace WindowsFormsApp4
             }
         }
 
+        private void game_SizeChanged(object sender, EventArgs e)
+        {
+            this.gamePanel.Left = this.Width / 4;
+            this.gamePanel.Top = this.Height / 8;
+        }
+
 
         //private static void delay(int Time_delay)
         //{

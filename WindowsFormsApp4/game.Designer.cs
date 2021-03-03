@@ -66,6 +66,7 @@ namespace WindowsFormsApp4
             this.bluePlayerRollBtn = new System.Windows.Forms.PictureBox();
             this.greenPlayerRollBtn = new System.Windows.Forms.PictureBox();
             this.yellowPlayerRollBtn = new System.Windows.Forms.PictureBox();
+            this.gamePanel = new System.Windows.Forms.Panel();
             this.ludoBoard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken3)).BeginInit();
@@ -98,6 +99,7 @@ namespace WindowsFormsApp4
             ((System.ComponentModel.ISupportInitialize)(this.bluePlayerRollBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenPlayerRollBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowPlayerRollBtn)).BeginInit();
+            this.gamePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ludoBoard
@@ -122,7 +124,7 @@ namespace WindowsFormsApp4
             this.ludoBoard.Controls.Add(this.blueToken3);
             this.ludoBoard.Controls.Add(this.blueToken1);
             this.ludoBoard.Controls.Add(this.blueToken2);
-            this.ludoBoard.Location = new System.Drawing.Point(205, 107);
+            this.ludoBoard.Location = new System.Drawing.Point(114, 102);
             this.ludoBoard.Margin = new System.Windows.Forms.Padding(0);
             this.ludoBoard.Name = "ludoBoard";
             this.ludoBoard.Size = new System.Drawing.Size(500, 500);
@@ -337,7 +339,7 @@ namespace WindowsFormsApp4
             // 
             this.redPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.redPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.malePotrait;
-            this.redPlayerPotrait.Location = new System.Drawing.Point(101, 107);
+            this.redPlayerPotrait.Location = new System.Drawing.Point(10, 102);
             this.redPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.redPlayerPotrait.Name = "redPlayerPotrait";
             this.redPlayerPotrait.Size = new System.Drawing.Size(100, 100);
@@ -349,7 +351,7 @@ namespace WindowsFormsApp4
             // 
             this.bluePlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.bluePlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.femalePotrait;
-            this.bluePlayerPotrait.Location = new System.Drawing.Point(101, 507);
+            this.bluePlayerPotrait.Location = new System.Drawing.Point(10, 502);
             this.bluePlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bluePlayerPotrait.Name = "bluePlayerPotrait";
             this.bluePlayerPotrait.Size = new System.Drawing.Size(100, 100);
@@ -361,7 +363,7 @@ namespace WindowsFormsApp4
             // 
             this.greenPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.greenPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.femalePotrait;
-            this.greenPlayerPotrait.Location = new System.Drawing.Point(708, 107);
+            this.greenPlayerPotrait.Location = new System.Drawing.Point(617, 102);
             this.greenPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.greenPlayerPotrait.Name = "greenPlayerPotrait";
             this.greenPlayerPotrait.Size = new System.Drawing.Size(100, 100);
@@ -373,7 +375,7 @@ namespace WindowsFormsApp4
             // 
             this.yellowPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.yellowPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.malePotrait;
-            this.yellowPlayerPotrait.Location = new System.Drawing.Point(708, 507);
+            this.yellowPlayerPotrait.Location = new System.Drawing.Point(617, 502);
             this.yellowPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yellowPlayerPotrait.Name = "yellowPlayerPotrait";
             this.yellowPlayerPotrait.Size = new System.Drawing.Size(100, 100);
@@ -388,7 +390,7 @@ namespace WindowsFormsApp4
             this.redPlayerName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.redPlayerName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redPlayerName.ForeColor = System.Drawing.Color.White;
-            this.redPlayerName.Location = new System.Drawing.Point(128, 212);
+            this.redPlayerName.Location = new System.Drawing.Point(37, 207);
             this.redPlayerName.Name = "redPlayerName";
             this.redPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.redPlayerName.Size = new System.Drawing.Size(74, 25);
@@ -402,7 +404,7 @@ namespace WindowsFormsApp4
             this.bluePlayerName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bluePlayerName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bluePlayerName.ForeColor = System.Drawing.Color.White;
-            this.bluePlayerName.Location = new System.Drawing.Point(127, 477);
+            this.bluePlayerName.Location = new System.Drawing.Point(36, 472);
             this.bluePlayerName.Name = "bluePlayerName";
             this.bluePlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bluePlayerName.Size = new System.Drawing.Size(74, 25);
@@ -416,7 +418,7 @@ namespace WindowsFormsApp4
             this.greenPlayerName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.greenPlayerName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greenPlayerName.ForeColor = System.Drawing.Color.White;
-            this.greenPlayerName.Location = new System.Drawing.Point(708, 212);
+            this.greenPlayerName.Location = new System.Drawing.Point(617, 207);
             this.greenPlayerName.Name = "greenPlayerName";
             this.greenPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.greenPlayerName.Size = new System.Drawing.Size(74, 25);
@@ -430,7 +432,7 @@ namespace WindowsFormsApp4
             this.yellowPlayerName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yellowPlayerName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowPlayerName.ForeColor = System.Drawing.Color.Black;
-            this.yellowPlayerName.Location = new System.Drawing.Point(709, 477);
+            this.yellowPlayerName.Location = new System.Drawing.Point(618, 472);
             this.yellowPlayerName.Name = "yellowPlayerName";
             this.yellowPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.yellowPlayerName.Size = new System.Drawing.Size(74, 25);
@@ -447,7 +449,7 @@ namespace WindowsFormsApp4
             this.DiceBoxPanel.Controls.Add(this.diceBox3);
             this.DiceBoxPanel.Controls.Add(this.diceBox2);
             this.DiceBoxPanel.Controls.Add(this.diceBox1);
-            this.DiceBoxPanel.Location = new System.Drawing.Point(385, 12);
+            this.DiceBoxPanel.Location = new System.Drawing.Point(294, 7);
             this.DiceBoxPanel.Name = "DiceBoxPanel";
             this.DiceBoxPanel.Size = new System.Drawing.Size(136, 92);
             this.DiceBoxPanel.TabIndex = 26;
@@ -534,7 +536,7 @@ namespace WindowsFormsApp4
             // 
             this.redPlayerRollBtn.BackColor = System.Drawing.Color.Transparent;
             this.redPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
-            this.redPlayerRollBtn.Location = new System.Drawing.Point(161, 243);
+            this.redPlayerRollBtn.Location = new System.Drawing.Point(70, 238);
             this.redPlayerRollBtn.Name = "redPlayerRollBtn";
             this.redPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.redPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
@@ -547,7 +549,7 @@ namespace WindowsFormsApp4
             // 
             this.bluePlayerRollBtn.BackColor = System.Drawing.Color.Transparent;
             this.bluePlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
-            this.bluePlayerRollBtn.Location = new System.Drawing.Point(161, 432);
+            this.bluePlayerRollBtn.Location = new System.Drawing.Point(70, 427);
             this.bluePlayerRollBtn.Name = "bluePlayerRollBtn";
             this.bluePlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.bluePlayerRollBtn.Size = new System.Drawing.Size(40, 40);
@@ -560,7 +562,7 @@ namespace WindowsFormsApp4
             // 
             this.greenPlayerRollBtn.BackColor = System.Drawing.Color.Transparent;
             this.greenPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
-            this.greenPlayerRollBtn.Location = new System.Drawing.Point(708, 243);
+            this.greenPlayerRollBtn.Location = new System.Drawing.Point(617, 238);
             this.greenPlayerRollBtn.Name = "greenPlayerRollBtn";
             this.greenPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.greenPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
@@ -573,7 +575,7 @@ namespace WindowsFormsApp4
             // 
             this.yellowPlayerRollBtn.BackColor = System.Drawing.Color.Transparent;
             this.yellowPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
-            this.yellowPlayerRollBtn.Location = new System.Drawing.Point(708, 432);
+            this.yellowPlayerRollBtn.Location = new System.Drawing.Point(617, 427);
             this.yellowPlayerRollBtn.Name = "yellowPlayerRollBtn";
             this.yellowPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.yellowPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
@@ -582,31 +584,41 @@ namespace WindowsFormsApp4
             this.yellowPlayerRollBtn.TabStop = false;
             this.yellowPlayerRollBtn.Click += new System.EventHandler(this.hitRollBtn_Click);
             // 
+            // gamePanel
+            // 
+            this.gamePanel.BackColor = System.Drawing.Color.Transparent;
+            this.gamePanel.Controls.Add(this.ludoBoard);
+            this.gamePanel.Controls.Add(this.yellowPlayerRollBtn);
+            this.gamePanel.Controls.Add(this.redPlayerPotrait);
+            this.gamePanel.Controls.Add(this.greenPlayerRollBtn);
+            this.gamePanel.Controls.Add(this.bluePlayerPotrait);
+            this.gamePanel.Controls.Add(this.bluePlayerRollBtn);
+            this.gamePanel.Controls.Add(this.greenPlayerPotrait);
+            this.gamePanel.Controls.Add(this.redPlayerRollBtn);
+            this.gamePanel.Controls.Add(this.yellowPlayerPotrait);
+            this.gamePanel.Controls.Add(this.DiceBoxPanel);
+            this.gamePanel.Controls.Add(this.redPlayerName);
+            this.gamePanel.Controls.Add(this.yellowPlayerName);
+            this.gamePanel.Controls.Add(this.bluePlayerName);
+            this.gamePanel.Controls.Add(this.greenPlayerName);
+            this.gamePanel.Location = new System.Drawing.Point(62, 26);
+            this.gamePanel.Name = "gamePanel";
+            this.gamePanel.Size = new System.Drawing.Size(746, 656);
+            this.gamePanel.TabIndex = 31;
+            // 
             // game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
-            this.ClientSize = new System.Drawing.Size(914, 631);
-            this.Controls.Add(this.yellowPlayerRollBtn);
-            this.Controls.Add(this.greenPlayerRollBtn);
-            this.Controls.Add(this.bluePlayerRollBtn);
-            this.Controls.Add(this.redPlayerRollBtn);
-            this.Controls.Add(this.DiceBoxPanel);
-            this.Controls.Add(this.yellowPlayerName);
-            this.Controls.Add(this.greenPlayerName);
-            this.Controls.Add(this.bluePlayerName);
-            this.Controls.Add(this.redPlayerName);
-            this.Controls.Add(this.yellowPlayerPotrait);
-            this.Controls.Add(this.greenPlayerPotrait);
-            this.Controls.Add(this.bluePlayerPotrait);
-            this.Controls.Add(this.redPlayerPotrait);
-            this.Controls.Add(this.ludoBoard);
+            this.ClientSize = new System.Drawing.Size(871, 717);
+            this.Controls.Add(this.gamePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "game";
             this.Text = "game";
             this.Load += new System.EventHandler(this.game_Load);
+            this.SizeChanged += new System.EventHandler(this.game_SizeChanged);
             this.ludoBoard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowToken3)).EndInit();
@@ -639,8 +651,9 @@ namespace WindowsFormsApp4
             ((System.ComponentModel.ISupportInitialize)(this.bluePlayerRollBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenPlayerRollBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowPlayerRollBtn)).EndInit();
+            this.gamePanel.ResumeLayout(false);
+            this.gamePanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -682,5 +695,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.PictureBox diceBox4;
         private System.Windows.Forms.PictureBox diceBox3;
         private System.Windows.Forms.PictureBox diceBox2;
+        private System.Windows.Forms.Panel gamePanel;
     }
 }
