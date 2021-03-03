@@ -139,6 +139,7 @@ namespace WindowsFormsApp4
             showPlayerRollBtn();
             diceNumber = 1;
             selectedDice = -1;
+            playerMove = false;
             hideAllDiceBoxes();
         }
 
@@ -153,32 +154,48 @@ namespace WindowsFormsApp4
 
         public bool checkIfPossible(int tokenNum)
         {
+            //check korar jonno alada function korte hobe
             bool diceUsed = false;
             tokensObj tokenNow = playersArray[playerTurn].PlayerTokens[tokenNum];
-            if (tokenNow.tokenState == 0)
+            if (tokenNow.tokenState == 0 && diceBoxVals[selectedDice] == 6)
             {
-                if (diceBoxVals[selectedDice] == 6)
-                {
-                    tokenNow.StartingPosition();
-                    diceUsed = true;
-                }
+                diceUsed = true;
             }
             else if (tokenNow.tokenState == 1)
             {
-                diceUsed = tokenNow.moveFromCurrentPos(diceBoxVals[selectedDice]);
+                diceUsed = tokenNow.checkMoveFromCurrentPos(diceBoxVals[selectedDice]);
+                //ekhane position change hoye jacche
             }
             return diceUsed;
         }
 
         public void moveToken(int tokenNum)
         {
-            bool diceUsed = checkIfPossible(tokenNum);
+            bool diceUsed = false;
             //MessageBox.Show(playerNum.ToString()+", "+ tokenNum.ToString());
             tokensObj tokenNow = playersArray[playerTurn].PlayerTokens[tokenNum];
-
+            
+            if (tokenNow.tokenState == 0)
+            {
+                if (diceBoxVals[selectedDice] == 6)
+                {
+                    tokenNow.StartingPosition();
+                    //ekhane position change hoye jacche
+                    diceUsed = true;
+                }
+            }
+            else if (tokenNow.tokenState == 1)
+            {
+                diceUsed = tokenNow.moveFromCurrentPos(diceBoxVals[selectedDice]);
+                //ekhane position change hoye jacche
+            }
+            
             if (diceUsed)
             {
                 tokenNow.moveIt(2);
+                diceNumber--;
+                if (diceNumber == 1)
+                    changeTurn();
             }
             else
             {
