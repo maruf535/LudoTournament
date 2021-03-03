@@ -193,7 +193,7 @@ namespace WindowsFormsApp4
             if (diceUsed)
             {
                 tokenNow.moveIt(2);
-                diceNumber--;
+                removeDice();
                 if (diceNumber == 1)
                     changeTurn();
             }
@@ -201,6 +201,20 @@ namespace WindowsFormsApp4
             {
                 MessageBox.Show("Invalid Move");
             }
+        }
+
+        public void removeDice()
+        {
+            for(int i = selectedDice; i < diceNumber-1; i++)
+            {
+                diceBoxVals[i] = diceBoxVals[i + 1];
+                diceBoxes[i].Image = getDiceImage(diceBoxVals[i]);
+            }
+
+            diceNumber--;
+            diceBoxes[diceNumber].Hide();
+            selectedDice = -1;
+            unSelectAllDiceBox();
         }
     }
 }
