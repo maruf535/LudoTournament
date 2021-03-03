@@ -21,7 +21,7 @@ namespace WindowsFormsApp4
         public int tokenState=0;//token home e thakle 0, running mode e thakle 1, goal e chole gele 2
         public int[,] movesX = new int[15,15];//kono position e thakle okhan theke kothay x-axis borabor kothay jete parbe
         public int[,] movesY = new int[15,15];//kono position e thakle okhan theke kothay y-axis borabor kothay jete parbe
-
+        public int color;
         //form objects
         public PictureBox tokenPicture = new PictureBox();
 
@@ -51,6 +51,7 @@ namespace WindowsFormsApp4
 
         private void setRedToken()
         {
+            color = 1;
             positionsX[1] = 1;
             positionsY[1] = 6;
             movesX= new int[,]{ { 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
@@ -87,6 +88,7 @@ namespace WindowsFormsApp4
         }
         private void setGreenToken()
         {
+            color = 2;
             positionsX[1] = 8;
             positionsY[1] = 1;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -123,6 +125,7 @@ namespace WindowsFormsApp4
         }
         private void setYellowToken()
         {
+            color = 3;
             positionsX[1] = 13;
             positionsY[1] = 8;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
@@ -159,6 +162,7 @@ namespace WindowsFormsApp4
         }
         private void setBlueToken()
         {
+            color = 4;
             positionsX[1] = 6;
             positionsY[1] = 13;
             movesX = new int[,]{{ 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
@@ -225,7 +229,6 @@ namespace WindowsFormsApp4
             int y = positionsY[2];
             while (diceVal>0)
             {
-                diceVal--;
                 int plusX = movesX[y, x];
                 int plusY = movesY[y, x];
 
@@ -235,6 +238,7 @@ namespace WindowsFormsApp4
 
                 x += plusX;
                 y += plusY;
+                diceVal--;
             }
 
             if (diceVal == 0)
@@ -254,7 +258,6 @@ namespace WindowsFormsApp4
             int y = positionsY[2];
             while (diceVal>0)
             {
-                diceVal--;
                 int plusX = movesX[y, x];
                 int plusY = movesY[y, x];
 
@@ -264,6 +267,7 @@ namespace WindowsFormsApp4
 
                 x += plusX;
                 y += plusY;
+                diceVal--;
             }
 
             if (diceVal == 0)
