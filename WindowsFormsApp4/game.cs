@@ -26,6 +26,7 @@ namespace WindowsFormsApp4
             setPlayerRollBtns();//sets the player roll buttons to an array which is contained in gameFunctions class
             setDiceBoxes();//sets the 6 dice roll result boxes to an array which is contained in gameFunctions class
             setTokens();
+            gmf.theBoard = ludoBoard;
             gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
 

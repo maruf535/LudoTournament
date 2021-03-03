@@ -11,6 +11,7 @@ namespace WindowsFormsApp4
     {
         //properties starts
         private bool test = true;
+        public Panel theBoard = new Panel();
         Random rnd = new Random();//random number generate korar object
         public playersObj[] playersArray = new playersObj[5];
         public PictureBox[] playerRollBtns = new PictureBox[5];//array of roll buttins of 4 players,[1]=red,[2]=green,[3]=yellow,[4]=blue
@@ -173,6 +174,10 @@ namespace WindowsFormsApp4
             selectedDice = -1;
             playerMove = false;
             hideAllDiceBoxes();
+            for(int i = 1; i < 5; i++)
+            {
+                playersArray[playerTurn].PlayerTokens[i].tokenPicture.BringToFront();
+            }
         }
 
         public void initPlayerArray()
