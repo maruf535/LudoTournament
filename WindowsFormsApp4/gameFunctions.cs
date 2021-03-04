@@ -229,6 +229,7 @@ namespace WindowsFormsApp4
             
             if (diceUsed)
             {
+                multTokInThisPos(tokenNum);
                 tokenNow.moveIt(2);
                 removeDice();
                 if (diceNumber == 1)
@@ -238,6 +239,56 @@ namespace WindowsFormsApp4
             {
                 MessageBox.Show("Invalid Move");
             }
+        }
+
+        public void multTokInThisPos(int tokenNum)
+        {
+            bool homePos = isHome(tokenNum);
+            tokensObj tokenThis = playersArray[playerTurn].PlayerTokens[tokenNum];
+            List<tokensObj> similars = new List<tokensObj>();
+            int counter = 0;
+            for(int i = 1; i < 5; i++)
+            {
+                if(i!=playerTurn && !homePos)
+                {
+                    similars.Clear();
+                    counter = 0;
+                    for(int j = 1; j < 5; j++)
+                    {
+                        if (tokenThis.positionsX[2] == playersArray[i].PlayerTokens[j].positionsX[2])
+                        {
+                            if(tokenThis.positionsY[2] == playersArray[i].PlayerTokens[j].positionsY[2])
+                            {
+                                counter++;
+                                similars.Add(j);
+                            }
+                        }
+                        if (counter == 1)
+                        {
+                            //ektar beshi same color er token okhane thakle oder eliminate korte parbe na
+                            //different jekono color er ekta token thaklei take eliminate kore dibe
+                            similars[0].gotoHome();
+                        }
+                    }
+                }
+            }
+        }
+
+        public bool isHome(int tokenNum)
+        {
+
+            tokensObj tokenThis, tokenTemp;
+            tokenThis = playersArray[playerTurn].PlayerTokens[tokenNum];
+
+            for(int i = 1; i < 5; i++)
+            {
+                tokenTemp = playersArray[playerTurn].PlayerTokens[i];
+
+                if (tokenTemp.positionsX[1] == tokenThis.positionsY[2] && tokenThis.positionsY[2] == tokenTemp.positionsY[1])
+                    return true;
+            }
+
+            return false; 
         }
 
         public void removeDice()

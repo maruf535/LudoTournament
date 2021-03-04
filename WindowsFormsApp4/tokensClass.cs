@@ -277,5 +277,11 @@ namespace WindowsFormsApp4
 
             return possible;
         }
+
+        public void gotoHome()
+        {
+            tokenState = 0;
+            tokenPicture.Location = new System.Drawing.Point(positionsX[0], positionsY[0]);
+        }
     }
 }
