@@ -260,7 +260,7 @@ namespace WindowsFormsApp4
                             if(tokenThis.positionsY[2] == playersArray[i].PlayerTokens[j].positionsY[2])
                             {
                                 counter++;
-                                similars.Add(j);
+                                similars.Add(playersArray[i].PlayerTokens[j]);
                             }
                         }
                         if (counter == 1)
@@ -271,6 +271,29 @@ namespace WindowsFormsApp4
                         }
                     }
                 }
+            }
+
+            counter = 0;
+            similars.Clear();
+
+            for(int i = 1; i < 5; i++)
+            {
+                for(int j = 1; j < 5; j++)
+                {
+                    if (tokenThis.positionsX[2] == playersArray[i].PlayerTokens[j].positionsX[2])
+                    {
+                        if(tokenThis.positionsY[2] == playersArray[i].PlayerTokens[j].positionsY[2])
+                        {
+                            counter++;
+                            similars.Add(playersArray[i].PlayerTokens[j]);
+                        }
+                    }
+                }
+            }
+
+            if (counter > 1)
+            {
+                alignInSamePos(similars,counter);
             }
         }
 
@@ -289,6 +312,19 @@ namespace WindowsFormsApp4
             }
 
             return false; 
+        }
+
+        public void alignInSamePos(List<tokensObj> similars, int size)
+        {
+            int limit = size / 2;
+            int shiftBy = limit * 4;
+
+            for(int i=0; i<limit; i++)
+            {
+                similars[i].shiftX(shiftBy);
+                similars[size-1-i].shiftX((-1)*shiftBy);
+                shiftBy -= 4;
+            }
         }
 
         public void removeDice()

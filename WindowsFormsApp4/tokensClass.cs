@@ -283,5 +283,13 @@ namespace WindowsFormsApp4
             tokenState = 0;
             tokenPicture.Location = new System.Drawing.Point(positionsX[0], positionsY[0]);
         }
+
+        public void shiftX(int shiftBy)
+        {
+            int nowX = tokenPicture.Location.X;
+            int nowY = tokenPicture.Location.Y;
+            nowX += shiftBy;
+            tokenPicture.Location = new System.Drawing.Point(nowX, nowY);
+        }
     }
 }
