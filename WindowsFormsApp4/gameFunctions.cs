@@ -263,12 +263,12 @@ namespace WindowsFormsApp4
                                 similars.Add(playersArray[i].PlayerTokens[j]);
                             }
                         }
-                        if (counter == 1)
-                        {
-                            //ektar beshi same color er token okhane thakle oder eliminate korte parbe na
-                            //different jekono color er ekta token thaklei take eliminate kore dibe
-                            similars[0].gotoHome();
-                        }
+                    }
+                    if (counter == 1)
+                    {
+                        //ektar beshi same color er token okhane thakle oder eliminate korte parbe na
+                        //different jekono color er ekta token thaklei take eliminate kore dibe
+                        similars[0].gotoHome();
                     }
                 }
             }
@@ -314,7 +314,7 @@ namespace WindowsFormsApp4
             return false; 
         }
 
-        public void alignInSamePos(List<tokensObj> similars, int size)
+        public async void alignInSamePos(List<tokensObj> similars, int size)
         {
             int limit = size / 2;
             int shiftBy = limit * 8;
@@ -325,6 +325,8 @@ namespace WindowsFormsApp4
                 similars[size-1-i].shiftX((-1)*shiftBy);
                 shiftBy -= 4;
             }
+            if (limit * 2 != size)
+                similars[limit + 1].tokenPicture.BringToFront();
         }
 
         public void removeDice()

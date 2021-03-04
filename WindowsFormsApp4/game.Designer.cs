@@ -134,10 +134,10 @@ namespace WindowsFormsApp4
             // 
             this.yellowToken4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken4.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken4.Image")));
-            this.yellowToken4.Location = new System.Drawing.Point(418, 405);
-            this.yellowToken4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowToken4.Location = new System.Drawing.Point(423, 405);
+            this.yellowToken4.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken4.Name = "yellowToken4";
-            this.yellowToken4.Size = new System.Drawing.Size(30, 30);
+            this.yellowToken4.Size = new System.Drawing.Size(20, 30);
             this.yellowToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken4.TabIndex = 23;
             this.yellowToken4.TabStop = false;
@@ -147,10 +147,10 @@ namespace WindowsFormsApp4
             // 
             this.yellowToken3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken3.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken3.Image")));
-            this.yellowToken3.Location = new System.Drawing.Point(352, 405);
-            this.yellowToken3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowToken3.Location = new System.Drawing.Point(357, 405);
+            this.yellowToken3.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken3.Name = "yellowToken3";
-            this.yellowToken3.Size = new System.Drawing.Size(30, 30);
+            this.yellowToken3.Size = new System.Drawing.Size(20, 30);
             this.yellowToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken3.TabIndex = 22;
             this.yellowToken3.TabStop = false;
@@ -160,10 +160,10 @@ namespace WindowsFormsApp4
             // 
             this.yellowToken2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken2.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken2.Image")));
-            this.yellowToken2.Location = new System.Drawing.Point(418, 339);
-            this.yellowToken2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowToken2.Location = new System.Drawing.Point(423, 339);
+            this.yellowToken2.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken2.Name = "yellowToken2";
-            this.yellowToken2.Size = new System.Drawing.Size(30, 30);
+            this.yellowToken2.Size = new System.Drawing.Size(20, 30);
             this.yellowToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken2.TabIndex = 21;
             this.yellowToken2.TabStop = false;
@@ -173,10 +173,10 @@ namespace WindowsFormsApp4
             // 
             this.yellowToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowToken1.Image = ((System.Drawing.Image)(resources.GetObject("yellowToken1.Image")));
-            this.yellowToken1.Location = new System.Drawing.Point(352, 339);
-            this.yellowToken1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowToken1.Location = new System.Drawing.Point(357, 339);
+            this.yellowToken1.Margin = new System.Windows.Forms.Padding(2);
             this.yellowToken1.Name = "yellowToken1";
-            this.yellowToken1.Size = new System.Drawing.Size(30, 30);
+            this.yellowToken1.Size = new System.Drawing.Size(20, 30);
             this.yellowToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowToken1.TabIndex = 20;
             this.yellowToken1.TabStop = false;
@@ -186,10 +186,10 @@ namespace WindowsFormsApp4
             // 
             this.greenToken4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken4.Image = ((System.Drawing.Image)(resources.GetObject("greenToken4.Image")));
-            this.greenToken4.Location = new System.Drawing.Point(418, 106);
-            this.greenToken4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenToken4.Location = new System.Drawing.Point(423, 106);
+            this.greenToken4.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken4.Name = "greenToken4";
-            this.greenToken4.Size = new System.Drawing.Size(30, 30);
+            this.greenToken4.Size = new System.Drawing.Size(20, 30);
             this.greenToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken4.TabIndex = 19;
             this.greenToken4.TabStop = false;
@@ -199,10 +199,10 @@ namespace WindowsFormsApp4
             // 
             this.greenToken3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken3.Image = ((System.Drawing.Image)(resources.GetObject("greenToken3.Image")));
-            this.greenToken3.Location = new System.Drawing.Point(352, 106);
-            this.greenToken3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenToken3.Location = new System.Drawing.Point(357, 106);
+            this.greenToken3.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken3.Name = "greenToken3";
-            this.greenToken3.Size = new System.Drawing.Size(30, 30);
+            this.greenToken3.Size = new System.Drawing.Size(20, 30);
             this.greenToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken3.TabIndex = 18;
             this.greenToken3.TabStop = false;
@@ -212,10 +212,10 @@ namespace WindowsFormsApp4
             // 
             this.greenToken2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken2.Image = ((System.Drawing.Image)(resources.GetObject("greenToken2.Image")));
-            this.greenToken2.Location = new System.Drawing.Point(418, 40);
-            this.greenToken2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenToken2.Location = new System.Drawing.Point(423, 40);
+            this.greenToken2.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken2.Name = "greenToken2";
-            this.greenToken2.Size = new System.Drawing.Size(30, 30);
+            this.greenToken2.Size = new System.Drawing.Size(20, 30);
             this.greenToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken2.TabIndex = 17;
             this.greenToken2.TabStop = false;
@@ -225,10 +225,10 @@ namespace WindowsFormsApp4
             // 
             this.greenToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.greenToken1.Image = ((System.Drawing.Image)(resources.GetObject("greenToken1.Image")));
-            this.greenToken1.Location = new System.Drawing.Point(352, 40);
-            this.greenToken1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenToken1.Location = new System.Drawing.Point(357, 40);
+            this.greenToken1.Margin = new System.Windows.Forms.Padding(2);
             this.greenToken1.Name = "greenToken1";
-            this.greenToken1.Size = new System.Drawing.Size(30, 30);
+            this.greenToken1.Size = new System.Drawing.Size(20, 30);
             this.greenToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenToken1.TabIndex = 16;
             this.greenToken1.TabStop = false;
@@ -238,10 +238,10 @@ namespace WindowsFormsApp4
             // 
             this.redToken4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.redToken4.Image = ((System.Drawing.Image)(resources.GetObject("redToken4.Image")));
-            this.redToken4.Location = new System.Drawing.Point(120, 106);
-            this.redToken4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redToken4.Location = new System.Drawing.Point(124, 106);
+            this.redToken4.Margin = new System.Windows.Forms.Padding(2);
             this.redToken4.Name = "redToken4";
-            this.redToken4.Size = new System.Drawing.Size(30, 30);
+            this.redToken4.Size = new System.Drawing.Size(20, 30);
             this.redToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken4.TabIndex = 15;
             this.redToken4.TabStop = false;
@@ -251,10 +251,10 @@ namespace WindowsFormsApp4
             // 
             this.redToken3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.redToken3.Image = ((System.Drawing.Image)(resources.GetObject("redToken3.Image")));
-            this.redToken3.Location = new System.Drawing.Point(54, 106);
-            this.redToken3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redToken3.Location = new System.Drawing.Point(58, 106);
+            this.redToken3.Margin = new System.Windows.Forms.Padding(2);
             this.redToken3.Name = "redToken3";
-            this.redToken3.Size = new System.Drawing.Size(30, 30);
+            this.redToken3.Size = new System.Drawing.Size(20, 30);
             this.redToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken3.TabIndex = 14;
             this.redToken3.TabStop = false;
@@ -264,10 +264,10 @@ namespace WindowsFormsApp4
             // 
             this.redToken2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.redToken2.Image = ((System.Drawing.Image)(resources.GetObject("redToken2.Image")));
-            this.redToken2.Location = new System.Drawing.Point(120, 40);
-            this.redToken2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redToken2.Location = new System.Drawing.Point(124, 40);
+            this.redToken2.Margin = new System.Windows.Forms.Padding(2);
             this.redToken2.Name = "redToken2";
-            this.redToken2.Size = new System.Drawing.Size(30, 30);
+            this.redToken2.Size = new System.Drawing.Size(20, 30);
             this.redToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken2.TabIndex = 13;
             this.redToken2.TabStop = false;
@@ -277,10 +277,10 @@ namespace WindowsFormsApp4
             // 
             this.redToken1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.redToken1.Image = ((System.Drawing.Image)(resources.GetObject("redToken1.Image")));
-            this.redToken1.Location = new System.Drawing.Point(54, 40);
-            this.redToken1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redToken1.Location = new System.Drawing.Point(58, 40);
+            this.redToken1.Margin = new System.Windows.Forms.Padding(2);
             this.redToken1.Name = "redToken1";
-            this.redToken1.Size = new System.Drawing.Size(30, 30);
+            this.redToken1.Size = new System.Drawing.Size(20, 30);
             this.redToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redToken1.TabIndex = 12;
             this.redToken1.TabStop = false;
@@ -290,10 +290,10 @@ namespace WindowsFormsApp4
             // blueToken4
             // 
             this.blueToken4.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken4.Location = new System.Drawing.Point(120, 405);
-            this.blueToken4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blueToken4.Location = new System.Drawing.Point(124, 405);
+            this.blueToken4.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken4.Name = "blueToken4";
-            this.blueToken4.Size = new System.Drawing.Size(30, 30);
+            this.blueToken4.Size = new System.Drawing.Size(20, 30);
             this.blueToken4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken4.TabIndex = 3;
             this.blueToken4.TabStop = false;
@@ -302,10 +302,10 @@ namespace WindowsFormsApp4
             // blueToken3
             // 
             this.blueToken3.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken3.Location = new System.Drawing.Point(54, 405);
-            this.blueToken3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blueToken3.Location = new System.Drawing.Point(58, 405);
+            this.blueToken3.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken3.Name = "blueToken3";
-            this.blueToken3.Size = new System.Drawing.Size(30, 30);
+            this.blueToken3.Size = new System.Drawing.Size(20, 30);
             this.blueToken3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken3.TabIndex = 2;
             this.blueToken3.TabStop = false;
@@ -314,10 +314,10 @@ namespace WindowsFormsApp4
             // blueToken1
             // 
             this.blueToken1.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken1.Location = new System.Drawing.Point(54, 339);
-            this.blueToken1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blueToken1.Location = new System.Drawing.Point(58, 339);
+            this.blueToken1.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken1.Name = "blueToken1";
-            this.blueToken1.Size = new System.Drawing.Size(30, 30);
+            this.blueToken1.Size = new System.Drawing.Size(20, 30);
             this.blueToken1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken1.TabIndex = 1;
             this.blueToken1.TabStop = false;
@@ -326,10 +326,10 @@ namespace WindowsFormsApp4
             // blueToken2
             // 
             this.blueToken2.Image = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.blueToken2.Location = new System.Drawing.Point(120, 339);
-            this.blueToken2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.blueToken2.Location = new System.Drawing.Point(124, 339);
+            this.blueToken2.Margin = new System.Windows.Forms.Padding(2);
             this.blueToken2.Name = "blueToken2";
-            this.blueToken2.Size = new System.Drawing.Size(30, 30);
+            this.blueToken2.Size = new System.Drawing.Size(20, 30);
             this.blueToken2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blueToken2.TabIndex = 0;
             this.blueToken2.TabStop = false;
@@ -340,7 +340,7 @@ namespace WindowsFormsApp4
             this.redPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.redPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.malePotrait;
             this.redPlayerPotrait.Location = new System.Drawing.Point(10, 102);
-            this.redPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.redPlayerPotrait.Margin = new System.Windows.Forms.Padding(2);
             this.redPlayerPotrait.Name = "redPlayerPotrait";
             this.redPlayerPotrait.Size = new System.Drawing.Size(100, 100);
             this.redPlayerPotrait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -352,7 +352,7 @@ namespace WindowsFormsApp4
             this.bluePlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.bluePlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.femalePotrait;
             this.bluePlayerPotrait.Location = new System.Drawing.Point(10, 502);
-            this.bluePlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bluePlayerPotrait.Margin = new System.Windows.Forms.Padding(2);
             this.bluePlayerPotrait.Name = "bluePlayerPotrait";
             this.bluePlayerPotrait.Size = new System.Drawing.Size(100, 100);
             this.bluePlayerPotrait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -364,7 +364,7 @@ namespace WindowsFormsApp4
             this.greenPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.greenPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.femalePotrait;
             this.greenPlayerPotrait.Location = new System.Drawing.Point(617, 102);
-            this.greenPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.greenPlayerPotrait.Margin = new System.Windows.Forms.Padding(2);
             this.greenPlayerPotrait.Name = "greenPlayerPotrait";
             this.greenPlayerPotrait.Size = new System.Drawing.Size(100, 100);
             this.greenPlayerPotrait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -376,7 +376,7 @@ namespace WindowsFormsApp4
             this.yellowPlayerPotrait.BackColor = System.Drawing.Color.Transparent;
             this.yellowPlayerPotrait.Image = global::WindowsFormsApp4.Properties.Resources.malePotrait;
             this.yellowPlayerPotrait.Location = new System.Drawing.Point(617, 502);
-            this.yellowPlayerPotrait.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yellowPlayerPotrait.Margin = new System.Windows.Forms.Padding(2);
             this.yellowPlayerPotrait.Name = "yellowPlayerPotrait";
             this.yellowPlayerPotrait.Size = new System.Drawing.Size(100, 100);
             this.yellowPlayerPotrait.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -392,7 +392,7 @@ namespace WindowsFormsApp4
             this.redPlayerName.ForeColor = System.Drawing.Color.White;
             this.redPlayerName.Location = new System.Drawing.Point(37, 207);
             this.redPlayerName.Name = "redPlayerName";
-            this.redPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.redPlayerName.Padding = new System.Windows.Forms.Padding(5);
             this.redPlayerName.Size = new System.Drawing.Size(74, 25);
             this.redPlayerName.TabIndex = 22;
             this.redPlayerName.Text = "Player_1";
@@ -406,7 +406,7 @@ namespace WindowsFormsApp4
             this.bluePlayerName.ForeColor = System.Drawing.Color.White;
             this.bluePlayerName.Location = new System.Drawing.Point(36, 472);
             this.bluePlayerName.Name = "bluePlayerName";
-            this.bluePlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bluePlayerName.Padding = new System.Windows.Forms.Padding(5);
             this.bluePlayerName.Size = new System.Drawing.Size(74, 25);
             this.bluePlayerName.TabIndex = 23;
             this.bluePlayerName.Text = "Player_4";
@@ -420,7 +420,7 @@ namespace WindowsFormsApp4
             this.greenPlayerName.ForeColor = System.Drawing.Color.White;
             this.greenPlayerName.Location = new System.Drawing.Point(617, 207);
             this.greenPlayerName.Name = "greenPlayerName";
-            this.greenPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.greenPlayerName.Padding = new System.Windows.Forms.Padding(5);
             this.greenPlayerName.Size = new System.Drawing.Size(74, 25);
             this.greenPlayerName.TabIndex = 24;
             this.greenPlayerName.Text = "Player_2";
@@ -434,7 +434,7 @@ namespace WindowsFormsApp4
             this.yellowPlayerName.ForeColor = System.Drawing.Color.Black;
             this.yellowPlayerName.Location = new System.Drawing.Point(618, 472);
             this.yellowPlayerName.Name = "yellowPlayerName";
-            this.yellowPlayerName.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.yellowPlayerName.Padding = new System.Windows.Forms.Padding(5);
             this.yellowPlayerName.Size = new System.Drawing.Size(74, 25);
             this.yellowPlayerName.TabIndex = 25;
             this.yellowPlayerName.Text = "Player_3";
@@ -460,7 +460,7 @@ namespace WindowsFormsApp4
             this.diceBox6.Image = global::WindowsFormsApp4.Properties.Resources.dice6;
             this.diceBox6.Location = new System.Drawing.Point(93, 4);
             this.diceBox6.Name = "diceBox6";
-            this.diceBox6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox6.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox6.Size = new System.Drawing.Size(40, 40);
             this.diceBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox6.TabIndex = 28;
@@ -473,7 +473,7 @@ namespace WindowsFormsApp4
             this.diceBox5.Image = global::WindowsFormsApp4.Properties.Resources.dice5;
             this.diceBox5.Location = new System.Drawing.Point(48, 4);
             this.diceBox5.Name = "diceBox5";
-            this.diceBox5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox5.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox5.Size = new System.Drawing.Size(40, 40);
             this.diceBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox5.TabIndex = 28;
@@ -486,7 +486,7 @@ namespace WindowsFormsApp4
             this.diceBox4.Image = global::WindowsFormsApp4.Properties.Resources.dice4;
             this.diceBox4.Location = new System.Drawing.Point(3, 4);
             this.diceBox4.Name = "diceBox4";
-            this.diceBox4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox4.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox4.Size = new System.Drawing.Size(40, 40);
             this.diceBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox4.TabIndex = 31;
@@ -499,7 +499,7 @@ namespace WindowsFormsApp4
             this.diceBox3.Image = global::WindowsFormsApp4.Properties.Resources.dice3;
             this.diceBox3.Location = new System.Drawing.Point(93, 48);
             this.diceBox3.Name = "diceBox3";
-            this.diceBox3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox3.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox3.Size = new System.Drawing.Size(40, 40);
             this.diceBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox3.TabIndex = 31;
@@ -512,7 +512,7 @@ namespace WindowsFormsApp4
             this.diceBox2.Image = global::WindowsFormsApp4.Properties.Resources.dice2;
             this.diceBox2.Location = new System.Drawing.Point(48, 48);
             this.diceBox2.Name = "diceBox2";
-            this.diceBox2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox2.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox2.Size = new System.Drawing.Size(40, 40);
             this.diceBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox2.TabIndex = 31;
@@ -525,7 +525,7 @@ namespace WindowsFormsApp4
             this.diceBox1.Image = global::WindowsFormsApp4.Properties.Resources.dice1;
             this.diceBox1.Location = new System.Drawing.Point(3, 48);
             this.diceBox1.Name = "diceBox1";
-            this.diceBox1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.diceBox1.Padding = new System.Windows.Forms.Padding(3);
             this.diceBox1.Size = new System.Drawing.Size(40, 40);
             this.diceBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.diceBox1.TabIndex = 31;
@@ -538,7 +538,7 @@ namespace WindowsFormsApp4
             this.redPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
             this.redPlayerRollBtn.Location = new System.Drawing.Point(70, 238);
             this.redPlayerRollBtn.Name = "redPlayerRollBtn";
-            this.redPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.redPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3);
             this.redPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
             this.redPlayerRollBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.redPlayerRollBtn.TabIndex = 27;
@@ -551,7 +551,7 @@ namespace WindowsFormsApp4
             this.bluePlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
             this.bluePlayerRollBtn.Location = new System.Drawing.Point(70, 427);
             this.bluePlayerRollBtn.Name = "bluePlayerRollBtn";
-            this.bluePlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.bluePlayerRollBtn.Padding = new System.Windows.Forms.Padding(3);
             this.bluePlayerRollBtn.Size = new System.Drawing.Size(40, 40);
             this.bluePlayerRollBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bluePlayerRollBtn.TabIndex = 28;
@@ -564,7 +564,7 @@ namespace WindowsFormsApp4
             this.greenPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
             this.greenPlayerRollBtn.Location = new System.Drawing.Point(617, 238);
             this.greenPlayerRollBtn.Name = "greenPlayerRollBtn";
-            this.greenPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.greenPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3);
             this.greenPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
             this.greenPlayerRollBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.greenPlayerRollBtn.TabIndex = 29;
@@ -577,7 +577,7 @@ namespace WindowsFormsApp4
             this.yellowPlayerRollBtn.Image = global::WindowsFormsApp4.Properties.Resources.dice0;
             this.yellowPlayerRollBtn.Location = new System.Drawing.Point(617, 427);
             this.yellowPlayerRollBtn.Name = "yellowPlayerRollBtn";
-            this.yellowPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.yellowPlayerRollBtn.Padding = new System.Windows.Forms.Padding(3);
             this.yellowPlayerRollBtn.Size = new System.Drawing.Size(40, 40);
             this.yellowPlayerRollBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.yellowPlayerRollBtn.TabIndex = 30;
@@ -614,7 +614,7 @@ namespace WindowsFormsApp4
             this.ClientSize = new System.Drawing.Size(871, 717);
             this.Controls.Add(this.gamePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "game";
             this.Text = "game";
             this.Load += new System.EventHandler(this.game_Load);

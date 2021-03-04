@@ -200,7 +200,7 @@ namespace WindowsFormsApp4
 
         public int getXpoint(int x)
         {
-            int refineFactor = 3 + (x / 3);
+            int refineFactor = 8 + (x / 3);
             return x * 33 + refineFactor;
         }
 
@@ -281,6 +281,8 @@ namespace WindowsFormsApp4
         public void gotoHome()
         {
             tokenState = 0;
+            positionsX[2] = 0;
+            positionsY[2] = 0;
             tokenPicture.Location = new System.Drawing.Point(positionsX[0], positionsY[0]);
         }
 
