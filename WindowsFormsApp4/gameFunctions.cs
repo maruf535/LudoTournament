@@ -305,9 +305,9 @@ namespace WindowsFormsApp4
 
             for(int i = 1; i < 5; i++)
             {
-                tokenTemp = playersArray[playerTurn].PlayerTokens[i];
+                tokenTemp = playersArray[i].PlayerTokens[1];
 
-                if (tokenTemp.positionsX[1] == tokenThis.positionsY[2] && tokenThis.positionsY[2] == tokenTemp.positionsY[1])
+                if (tokenTemp.positionsX[1] == tokenThis.positionsX[2] && tokenThis.positionsY[2] == tokenTemp.positionsY[1])
                     return true;
             }
 
@@ -317,7 +317,7 @@ namespace WindowsFormsApp4
         public void alignInSamePos(List<tokensObj> similars, int size)
         {
             int limit = size / 2;
-            int shiftBy = limit * 4;
+            int shiftBy = limit * 8;
 
             for(int i=0; i<limit; i++)
             {
