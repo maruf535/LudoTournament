@@ -7,43 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using processHelper;
+using DatabaseProject;
 
 namespace WindowsFormsApp4
 {
     public partial class MainPage : Form
     {
-        int playerCnt;
-        int tourState;
-        int[] playerId;
+        processData prData = new processData();
         Panel goBack;
-        public void hideAll()
-        {
-            welcPanel.Hide();
-            HomePanel.Hide();
-            tourNamePanel.Hide();
-            PlayerChoicePanel.Hide();
-            PlayerOneLoginPanel.Hide();
-            PlayerOneRegisterPanel.Hide();
-            ChooseColourPanel.Hide();
-            OngoingTournamentPanel.Hide();
-            DecisionPagePanel.Hide();
-            FixurePanel.Hide();
-        }
-        public void hideTopButtons()
-        {
-            backBtn.Hide();
-            homeBtn.Hide();
-        }
-        public void showTopButtons()
-        {
-            backBtn.Show();
-            homeBtn.Show();
-        }
-        public void showHome()
-        {
-            hideTopButtons();
-            HomePanel.Show();
-        }
         public MainPage()
         {
             InitializeComponent();
@@ -80,12 +52,11 @@ namespace WindowsFormsApp4
             goBack = HomePanel;
             hideAll();
             tourNamePanel.Show();
-            playerCnt = 1;
             showTopButtons();
-
+            prData.tourType = 1;
         }
 
-        private void nextBtn_Click(object sender, EventArgs e)
+        private void tourCreateBtn_Click(object sender, EventArgs e)
         {
             //take the tounament name input
             //check if this name already exists
@@ -93,15 +64,35 @@ namespace WindowsFormsApp4
             //and take another input
             //otherwise insert it into database
             //and move to the next panel, that is first player info
+
+            string tourName = tourNameInp.Text;
+            //first check korte hobe ei naam e kono tournament already ache kina
+            //thakle abr input dite bolte hobe, insert hobe na, retrun kore dibo function
+            //then eta ke insert  kore dibo
+            prData.dbs.dataSend("insert into tournament values('" + tourName + "' , 3)");
+            prData.dbs.dataGet("select * from tournament where T_name = '" + tourName + "'");
+            DataTable dt = new DataTable();
+            prData.dbs.sda.Fill(dt);
+
+            foreach (DataRow row in dt.Rows)//jehetu username unique to ektai row pabe, no tension
+            {
+                prData.tourID = int.Parse(row["T_id"].ToString());
+            }
+
+            //MessageBox.Show(prData.tourID.ToString()); //check kortesi
+            prData.tourState = 4;//jehetu new tournament, to quaterfinal state e thakbe
+
+            prData.playerSerial = 1;
+            //ekhon prData playerchoice e pass kore dibo
             hideAll();
-            tourState = 4;
             goBack = tourNamePanel;
             showPlayerChoice();
+
         }
         public void showPlayerChoice()
         {
             //jemon ta ekhane korsi
-            PlayerTitle.Text = "PLAYER " + playerCnt;//erokom oh accha accha ami kortesi tumi dekho
+            PlayerTitle.Text = "PLAYER " + prData.playerSerial;//erokom oh accha accha ami kortesi tumi dekho
             PlayerChoicePanel.Show();
 
         }
@@ -121,18 +112,20 @@ namespace WindowsFormsApp4
             //kintu jehetu ei player login panel amra aro koek jayga theke show korte pari
             //tai etake playerLoginPanelShow naame ekta function e rekhe dibo
             //shudhu playerCnt disilam, sathe"Player " eta add kore dite hobe shurute
-            lgnPageTitle.Text ="PLAYER " + playerCnt.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
+            lgnPageTitle.Text ="PLAYER " + prData.playerSerial.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
             PlayerOneLoginPanel.Show();
         }
+
         private void regChcBtn_Click(object sender, EventArgs e)
         {
             hideAll();
             goBack = PlayerOneLoginPanel;
             playerRegisterPanelShow();
         }
+
         public void playerRegisterPanelShow()
         {
-            regPageTitle.Text = "PLAYER " + playerCnt.ToString();
+            regPageTitle.Text = "PLAYER " + prData.playerSerial.ToString();
             PlayerOneRegisterPanel.Show();
         }
         private void ongTourBtn_Click(object sender, EventArgs e)
@@ -143,58 +136,71 @@ namespace WindowsFormsApp4
             showTopButtons();
         }
 
-        private void playerLgnBtn_Click(object sender, EventArgs e)
-        {
-
-
-        }
-        private void playerRegLgnBtn_Click(object sender, EventArgs e)
+        private void playerRegBtn_Click(object sender, EventArgs e)
         {
             //data entry korte hbe
-            if (playerCnt < tourState)
+            string userName = regUserName.Text;
+            string pass = regPassword.Text;
+            string gender = "";
+
+            if (regMale.Checked)
+                gender = "1";
+            else if (regFemale.Checked)
+                gender = "2";
+
+            if (pass != regRePassword.Text)
+            {
+                MessageBox.Show("passwords don't match !!");
+                return;
+            }
+
+            if(!checkIfUnique("players", userName,"P_name"))
+            {
+                MessageBox.Show("This user name is taken, Enter a new one !");
+                return;
+            }
+
+            prData.dbs.dataSend("insert into players values('" + userName + "', '" + gender + "', '" + pass + "', " + 0 + ")");
+
+            //MessageBox.Show("All ok");
+            if (prData.playerSerial < prData.tourState)
             {
                 hideAll();
-                playerCnt++;
+                prData.playerSerial++;
                 //PlayerChoicePanel.Show();
                 showPlayerChoice();
             }
+        }
+
+        public bool checkIfUnique(string TableName, string toMatch, string colName)
+        {
+
+            prData.dbs.dataGet("select * from " + TableName + " where " + colName + " = '" + toMatch + "'");
+            DataTable dt = new DataTable();
+            prData.dbs.sda.Fill(dt);
+
+            int counter = 0;
+            foreach(DataRow row in dt.Rows)
+            {
+                counter++;
+            }
+
+            if (counter == 0)
+                return true;
+            return false;
+
         }
 
         private void plyrLgnBtn_Click(object sender, EventArgs e)
         {
             //data entry korte hbe
-            if (playerCnt < tourState)
+            if (prData.playerSerial < prData.tourState)
             {
                 hideAll();
-                playerCnt++;
+                prData.playerSerial++;
                 //PlayerChoicePanel.Show();
                 showPlayerChoice();
             }
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void FixurePanel_Paint(object sender, PaintEventArgs e)
@@ -202,10 +208,6 @@ namespace WindowsFormsApp4
 
         }
 
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button8_Click(object sender, EventArgs e)
         {
@@ -217,6 +219,34 @@ namespace WindowsFormsApp4
         private void ongTourNextBtn_Click(object sender, EventArgs e)
         {
 
+        }
+        public void hideAll()
+        {
+            welcPanel.Hide();
+            HomePanel.Hide();
+            tourNamePanel.Hide();
+            PlayerChoicePanel.Hide();
+            PlayerOneLoginPanel.Hide();
+            PlayerOneRegisterPanel.Hide();
+            ChooseColourPanel.Hide();
+            OngoingTournamentPanel.Hide();
+            DecisionPagePanel.Hide();
+            FixurePanel.Hide();
+        }
+        public void hideTopButtons()
+        {
+            backBtn.Hide();
+            homeBtn.Hide();
+        }
+        public void showTopButtons()
+        {
+            backBtn.Show();
+            homeBtn.Show();
+        }
+        public void showHome()
+        {
+            hideTopButtons();
+            HomePanel.Show();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    class playersObj
+    public class playersObj
     {
         public tokensObj[] PlayerTokens = new tokensObj[5];//4 ta token er jonno 4 ta array
         public int playerId;//from database

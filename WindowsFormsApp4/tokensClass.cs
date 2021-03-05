@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp4
 {
-    class tokensObj
+    public class tokensObj
     {
         //public int startingX;//home theke jekhan theke start hobe tar x-axis point
         //public int startingY;//home theke jekhan theke start hobe tar y-axis point

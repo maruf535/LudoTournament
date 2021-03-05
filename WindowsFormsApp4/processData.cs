@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp4;
+using DatabaseProject;
 
 namespace processHelper
 {
@@ -23,13 +25,13 @@ namespace processHelper
 
         public bool newTour;//new tournament khular shomoy eta tru kora thakbe
         public bool ongTour; //ongoing tournament e dhukar shomoy eta tru thakbe
+        public int tourType; //1 for new tournament, 2 for ongoing tournament
         public int playerSerial; //koto number player er login/reg info nite hobe ta ekhane thakbe
         public int tourState; //tournament ta ekhon kon state e ache ta ekhane ullekh thakeb
-        public int palye1ID; //player 1 er id ekhane thakbe
-        public int palye2ID; //player 2 er id ekhane thakbe
-        public int palye3ID; //player 3 er id ekhane thakbe
-        public int palye4ID; //player 4 er id ekhane thakbe
+        public int[] playersId = new int[5]; //oi tournament er player der just id ta thakbe ekhane
+        public playersObj[] players = new playersObj[5];
         public int tourID; //tournament er ID
+        public DBAccess dbs = new DBAccess();
     }
 
 }

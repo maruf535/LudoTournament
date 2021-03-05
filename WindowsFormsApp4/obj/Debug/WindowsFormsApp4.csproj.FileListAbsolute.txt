@@ -1,6 +1,7 @@
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
@@ -16,26 +17,3 @@ C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\ob
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
-<<<<<<< HEAD
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.welcomePage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Homepage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form5.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.colourChoicePage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.tournamentNamePage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ongoingTournamentHomepage.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.GenerateResource.cache
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
-G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
-=======
-C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
->>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
