@@ -16,6 +16,7 @@ C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\ob
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
+<<<<<<< HEAD
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
@@ -35,3 +36,6 @@ G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFo
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.CoreCompileInputs.cache
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
 G:\SDP-2  project\New folder\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
+=======
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b

@@ -143,6 +143,7 @@ namespace WindowsFormsApp4
             showTopButtons();
         }
 
+<<<<<<< HEAD
         private void playerLgnBtn_Click(object sender, EventArgs e)
         {
 
@@ -215,6 +216,9 @@ namespace WindowsFormsApp4
         }
 
         private void ongTourNextBtn_Click(object sender, EventArgs e)
+=======
+        private void HomePanel_Paint(object sender, PaintEventArgs e)
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
         {
 
         }

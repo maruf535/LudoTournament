@@ -33,10 +33,18 @@ namespace WindowsFormsApp4
             this.backBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.welcPanel = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.welcPictureBoxOne = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.enterBtn = new System.Windows.Forms.Button();
             this.welcName = new System.Windows.Forms.Label();
+=======
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.enterBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.HomePanel = new System.Windows.Forms.Panel();
             this.ongTourBtn = new System.Windows.Forms.Button();
             this.newTourBtn = new System.Windows.Forms.Button();
@@ -129,7 +137,12 @@ namespace WindowsFormsApp4
             this.decisionTitle = new System.Windows.Forms.Label();
             this.welcPictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.welcPanel.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.HomePanel.SuspendLayout();
             this.tourNamePanel.SuspendLayout();
             this.PlayerChoicePanel.SuspendLayout();
@@ -148,10 +161,17 @@ namespace WindowsFormsApp4
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.backBtn.Location = new System.Drawing.Point(10, 11);
             this.backBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(100, 48);
+=======
+            this.backBtn.Location = new System.Drawing.Point(13, 14);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(133, 59);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.backBtn.TabIndex = 0;
             this.backBtn.Text = "< BACK";
             this.backBtn.UseVisualStyleBackColor = false;
@@ -164,10 +184,17 @@ namespace WindowsFormsApp4
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.homeBtn.Location = new System.Drawing.Point(714, 9);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(100, 48);
+=======
+            this.homeBtn.Location = new System.Drawing.Point(1035, 12);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homeBtn.Name = "homeBtn";
+            this.homeBtn.Size = new System.Drawing.Size(133, 59);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.homeBtn.TabIndex = 1;
             this.homeBtn.Text = "HOME";
             this.homeBtn.UseVisualStyleBackColor = false;
@@ -181,13 +208,20 @@ namespace WindowsFormsApp4
             this.welcPanel.Controls.Add(this.welcPictureBoxTwo);
             this.welcPanel.Controls.Add(this.label2);
             this.welcPanel.Controls.Add(this.enterBtn);
+<<<<<<< HEAD
             this.welcPanel.Controls.Add(this.welcName);
             this.welcPanel.Location = new System.Drawing.Point(120, 87);
             this.welcPanel.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.welcPanel.Controls.Add(this.label1);
+            this.welcPanel.Location = new System.Drawing.Point(189, 143);
+            this.welcPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.welcPanel.Name = "welcPanel";
             this.welcPanel.Size = new System.Drawing.Size(609, 434);
             this.welcPanel.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // welcPictureBoxOne
             // 
             this.welcPictureBoxOne.BackColor = System.Drawing.Color.Transparent;
@@ -200,6 +234,34 @@ namespace WindowsFormsApp4
             this.welcPictureBoxOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.welcPictureBoxOne.TabIndex = 7;
             this.welcPictureBoxOne.TabStop = false;
+=======
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.PanNW;
+            this.pictureBox1.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 97);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox2.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
+            this.pictureBox2.Location = new System.Drawing.Point(717, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(93, 97);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             // 
             // label2
             // 
@@ -208,10 +270,16 @@ namespace WindowsFormsApp4
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(400, 225);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 17);
+=======
+            this.label2.Location = new System.Drawing.Point(533, 302);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(113, 20);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.label2.TabIndex = 6;
             this.label2.Text = "By cypherTrio";
             // 
@@ -222,14 +290,22 @@ namespace WindowsFormsApp4
             this.enterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.enterBtn.Location = new System.Drawing.Point(244, 350);
             this.enterBtn.Name = "enterBtn";
             this.enterBtn.Size = new System.Drawing.Size(149, 49);
+=======
+            this.enterBtn.Location = new System.Drawing.Point(325, 470);
+            this.enterBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enterBtn.Name = "enterBtn";
+            this.enterBtn.Size = new System.Drawing.Size(199, 60);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.enterBtn.TabIndex = 5;
             this.enterBtn.Text = "Let\'s  Roll";
             this.enterBtn.UseVisualStyleBackColor = false;
             this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
+<<<<<<< HEAD
             // welcName
             // 
             this.welcName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -247,6 +323,25 @@ namespace WindowsFormsApp4
             this.welcName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.welcName.UseCompatibleTextRendering = true;
             this.welcName.UseWaitCursor = true;
+=======
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.label1.Location = new System.Drawing.Point(88, 196);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(681, 134);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ludo Tournament";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.UseCompatibleTextRendering = true;
+            this.label1.UseWaitCursor = true;
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             // 
             // HomePanel
             // 
@@ -254,21 +349,39 @@ namespace WindowsFormsApp4
             this.HomePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.HomePanel.Controls.Add(this.ongTourBtn);
             this.HomePanel.Controls.Add(this.newTourBtn);
+<<<<<<< HEAD
             this.HomePanel.Location = new System.Drawing.Point(120, 87);
             this.HomePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HomePanel.Name = "HomePanel";
             this.HomePanel.Size = new System.Drawing.Size(609, 434);
             this.HomePanel.TabIndex = 9;
+=======
+            this.HomePanel.Location = new System.Drawing.Point(189, 143);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HomePanel.Name = "HomePanel";
+            this.HomePanel.Size = new System.Drawing.Size(812, 534);
+            this.HomePanel.TabIndex = 9;
+            this.HomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.HomePanel_Paint);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             // 
             // ongTourBtn
             // 
             this.ongTourBtn.BackColor = System.Drawing.Color.Transparent;
             this.ongTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.ongTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
             this.ongTourBtn.Location = new System.Drawing.Point(353, 188);
             this.ongTourBtn.Name = "ongTourBtn";
             this.ongTourBtn.Size = new System.Drawing.Size(193, 54);
+=======
+            this.ongTourBtn.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourBtn.Location = new System.Drawing.Point(471, 231);
+            this.ongTourBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ongTourBtn.Name = "ongTourBtn";
+            this.ongTourBtn.Size = new System.Drawing.Size(257, 66);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.ongTourBtn.TabIndex = 3;
             this.ongTourBtn.Text = "Ongoing Tournaments";
             this.ongTourBtn.UseVisualStyleBackColor = false;
@@ -278,11 +391,20 @@ namespace WindowsFormsApp4
             // 
             this.newTourBtn.BackColor = System.Drawing.Color.Transparent;
             this.newTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+<<<<<<< HEAD
             this.newTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
             this.newTourBtn.Location = new System.Drawing.Point(74, 188);
             this.newTourBtn.Name = "newTourBtn";
             this.newTourBtn.Size = new System.Drawing.Size(195, 54);
+=======
+            this.newTourBtn.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.newTourBtn.Location = new System.Drawing.Point(99, 231);
+            this.newTourBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.newTourBtn.Name = "newTourBtn";
+            this.newTourBtn.Size = new System.Drawing.Size(260, 66);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.newTourBtn.TabIndex = 2;
             this.newTourBtn.Text = "New Tournament";
             this.newTourBtn.UseVisualStyleBackColor = false;
@@ -294,8 +416,13 @@ namespace WindowsFormsApp4
             this.tourNamePanel.Controls.Add(this.nextBtn);
             this.tourNamePanel.Controls.Add(this.tourNameInp);
             this.tourNamePanel.Controls.Add(this.enterTourName);
+<<<<<<< HEAD
             this.tourNamePanel.Location = new System.Drawing.Point(120, 87);
             this.tourNamePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.tourNamePanel.Location = new System.Drawing.Point(189, 143);
+            this.tourNamePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.tourNamePanel.Name = "tourNamePanel";
             this.tourNamePanel.Size = new System.Drawing.Size(609, 434);
             this.tourNamePanel.TabIndex = 10;
@@ -307,7 +434,12 @@ namespace WindowsFormsApp4
             this.nextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nextBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.nextBtn.Location = new System.Drawing.Point(242, 318);
+=======
+            this.nextBtn.Location = new System.Drawing.Point(323, 391);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(125, 49);
             this.nextBtn.TabIndex = 13;
@@ -319,10 +451,18 @@ namespace WindowsFormsApp4
             // 
             this.tourNameInp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tourNameInp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+<<<<<<< HEAD
             this.tourNameInp.Location = new System.Drawing.Point(142, 213);
             this.tourNameInp.Multiline = true;
             this.tourNameInp.Name = "tourNameInp";
             this.tourNameInp.Size = new System.Drawing.Size(326, 41);
+=======
+            this.tourNameInp.Location = new System.Drawing.Point(189, 262);
+            this.tourNameInp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tourNameInp.Multiline = true;
+            this.tourNameInp.Name = "tourNameInp";
+            this.tourNameInp.Size = new System.Drawing.Size(435, 50);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.tourNameInp.TabIndex = 12;
             // 
             // enterTourName
@@ -332,7 +472,12 @@ namespace WindowsFormsApp4
             this.enterTourName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterTourName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterTourName.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.enterTourName.Location = new System.Drawing.Point(153, 67);
+=======
+            this.enterTourName.Location = new System.Drawing.Point(204, 82);
+            this.enterTourName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.enterTourName.Name = "enterTourName";
             this.enterTourName.Size = new System.Drawing.Size(304, 133);
             this.enterTourName.TabIndex = 11;
@@ -345,8 +490,13 @@ namespace WindowsFormsApp4
             this.PlayerChoicePanel.Controls.Add(this.PlayerTitle);
             this.PlayerChoicePanel.Controls.Add(this.regChcBtn);
             this.PlayerChoicePanel.Controls.Add(this.lgnChcBtn);
+<<<<<<< HEAD
             this.PlayerChoicePanel.Location = new System.Drawing.Point(120, 87);
             this.PlayerChoicePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.PlayerChoicePanel.Location = new System.Drawing.Point(187, 140);
+            this.PlayerChoicePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.PlayerChoicePanel.Name = "PlayerChoicePanel";
             this.PlayerChoicePanel.Size = new System.Drawing.Size(609, 434);
             this.PlayerChoicePanel.TabIndex = 14;
@@ -357,7 +507,12 @@ namespace WindowsFormsApp4
             this.PlayerTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayerTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayerTitle.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.PlayerTitle.Location = new System.Drawing.Point(190, 66);
+=======
+            this.PlayerTitle.Location = new System.Drawing.Point(253, 81);
+            this.PlayerTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.PlayerTitle.Name = "PlayerTitle";
             this.PlayerTitle.Size = new System.Drawing.Size(246, 61);
             this.PlayerTitle.TabIndex = 7;
@@ -370,7 +525,12 @@ namespace WindowsFormsApp4
             this.regChcBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.regChcBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regChcBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.regChcBtn.Location = new System.Drawing.Point(363, 226);
+=======
+            this.regChcBtn.Location = new System.Drawing.Point(484, 278);
+            this.regChcBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.regChcBtn.Name = "regChcBtn";
             this.regChcBtn.Size = new System.Drawing.Size(193, 54);
             this.regChcBtn.TabIndex = 6;
@@ -384,7 +544,12 @@ namespace WindowsFormsApp4
             this.lgnChcBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnChcBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgnChcBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+<<<<<<< HEAD
             this.lgnChcBtn.Location = new System.Drawing.Point(77, 226);
+=======
+            this.lgnChcBtn.Location = new System.Drawing.Point(103, 278);
+            this.lgnChcBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.lgnChcBtn.Name = "lgnChcBtn";
             this.lgnChcBtn.Size = new System.Drawing.Size(195, 54);
             this.lgnChcBtn.TabIndex = 5;
@@ -1482,6 +1647,7 @@ namespace WindowsFormsApp4
             this.AutoScroll = true;
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(823, 609);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
@@ -1497,12 +1663,27 @@ namespace WindowsFormsApp4
             this.Controls.Add(this.welcPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.ClientSize = new System.Drawing.Size(1181, 766);
+            this.Controls.Add(this.homeBtn);
+            this.Controls.Add(this.backBtn);
+            this.Controls.Add(this.HomePanel);
+            this.Controls.Add(this.welcPanel);
+            this.Controls.Add(this.PlayerChoicePanel);
+            this.Controls.Add(this.tourNamePanel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.Name = "MainPage";
             this.Text = " ";
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.welcPanel.ResumeLayout(false);
             this.welcPanel.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+>>>>>>> 6013dd14ac4849eef12e112fda7544691c58f56b
             this.HomePanel.ResumeLayout(false);
             this.tourNamePanel.ResumeLayout(false);
             this.tourNamePanel.PerformLayout();
