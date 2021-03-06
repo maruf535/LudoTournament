@@ -13,8 +13,8 @@ namespace WindowsFormsApp4
 {
     public partial class game : Form
     {
-        gameFunctions gmf = new gameFunctions();//ei class er bhitore shob method and properties ache
-
+        public gameFunctions gmf = new gameFunctions();//ei class er bhitore shob method and properties ache
+        
         public game()
         {
             InitializeComponent();

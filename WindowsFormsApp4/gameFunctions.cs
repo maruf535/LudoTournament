@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using processHelper;
 
 namespace WindowsFormsApp4
 {
-    class gameFunctions
+    public class gameFunctions
     {
         //properties starts
         private bool test = true;
@@ -22,6 +23,7 @@ namespace WindowsFormsApp4
         public int playerTurn = 1; //kon plater er turn ekhon
         public bool playerMove = false;
         public int shot=0;//joto shot ashe roll korar por
+        public processData prdata = new processData();
         //properties end
 
         public System.Drawing.Bitmap getPotrait(int g)

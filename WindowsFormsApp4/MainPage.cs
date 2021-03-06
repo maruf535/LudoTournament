@@ -154,7 +154,7 @@ namespace WindowsFormsApp4
                 return;
             }
 
-            if(!checkIfUnique("players", userName,"P_name"))
+            if(getIdFromTable("players", userName,"P_name","P_id")!=-1)
             {
                 MessageBox.Show("This user name is taken, Enter a new one !");
                 return;
@@ -162,45 +162,31 @@ namespace WindowsFormsApp4
 
             prData.dbs.dataSend("insert into players values('" + userName + "', '" + gender + "', '" + pass + "', " + 0 + ")");
 
-            //MessageBox.Show("All ok");
-            if (prData.playerSerial < prData.tourState)
-            {
-                hideAll();
-                prData.playerSerial++;
-                //PlayerChoicePanel.Show();
-                showPlayerChoice();
-            }
+            int playerId = getIdFromTable("players", userName, "P_name","P_id");
+            goToNextPlayer();
         }
 
-        public bool checkIfUnique(string TableName, string toMatch, string colName)
+       public int getIdFromTable(string TableName, string toMatch, string colName, string idCol)
         {
 
             prData.dbs.dataGet("select * from " + TableName + " where " + colName + " = '" + toMatch + "'");
             DataTable dt = new DataTable();
             prData.dbs.sda.Fill(dt);
 
-            int counter = 0;
+            int id = -1;
             foreach(DataRow row in dt.Rows)
             {
-                counter++;
+                id =int.Parse(row[idCol].ToString());
             }
 
-            if (counter == 0)
-                return true;
-            return false;
+            return id;
 
         }
 
         private void plyrLgnBtn_Click(object sender, EventArgs e)
         {
             //data entry korte hbe
-            if (prData.playerSerial < prData.tourState)
-            {
-                hideAll();
-                prData.playerSerial++;
-                //PlayerChoicePanel.Show();
-                showPlayerChoice();
-            }
+            goToNextPlayer();
         }
 
         private void FixurePanel_Paint(object sender, PaintEventArgs e)
@@ -219,6 +205,32 @@ namespace WindowsFormsApp4
         private void ongTourNextBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void goToNextPlayer()
+        {
+
+            //MessageBox.Show("All ok");
+            if (prData.playerSerial < prData.tourState)
+            {
+                hideAll();
+                prData.playerSerial++;
+                //PlayerChoicePanel.Show();
+                if (prData.tourType == 1)
+                    showPlayerChoice();
+                else if (prData.tourType == 2)
+                    playerLoginPanelShow();
+            }
+            else
+            {
+                if(prData.tourType == 1)
+                {
+                    game quaterFinal = new game();
+                    quaterFinal.gmf.prdata = prData;
+                    this.Hide();
+                    quaterFinal.Show();
+                }
+            }
         }
         public void hideAll()
         {
