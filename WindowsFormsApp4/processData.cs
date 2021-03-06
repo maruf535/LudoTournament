@@ -29,9 +29,20 @@ namespace processHelper
         public int playerSerial; //koto number player er login/reg info nite hobe ta ekhane thakbe
         public int tourState; //tournament ta ekhon kon state e ache ta ekhane ullekh thakeb
         public int[] playersId = new int[5]; //oi tournament er player der just id ta thakbe ekhane
+        public int[] playerColors = new int[5]; //oi tournament er player der just color er number ta thakbe ekhane
         public playersObj[] players = new playersObj[5];
         public int tourID; //tournament er ID
         public DBAccess dbs = new DBAccess();
+
+
+        public void initPlayerArray()
+        {
+            for (int i = 1; i < 5; i++)
+            {
+                players[i] = new playersObj();
+                players[i].initTokenArray();
+            }
+        }
     }
 
 }

@@ -81,7 +81,6 @@ namespace WindowsFormsApp4
 
         public void setTokens()
         {
-            gmf.initPlayerArray();
             gmf.playersArray[1].PlayerTokens[1].setAll(redToken1,1);
             gmf.playersArray[1].PlayerTokens[2].setAll(redToken2,1);
             gmf.playersArray[1].PlayerTokens[3].setAll(redToken3,1);

@@ -24,6 +24,8 @@ namespace WindowsFormsApp4
 
         private void MainPage_Load(object sender, EventArgs e)
         {
+            //ChooseColourPanel.Show();
+            prData.initPlayerArray();
             hideAll();
             hideTopButtons();
             welcPanel.Show();
@@ -69,7 +71,7 @@ namespace WindowsFormsApp4
             //first check korte hobe ei naam e kono tournament already ache kina
             //thakle abr input dite bolte hobe, insert hobe na, retrun kore dibo function
             //then eta ke insert  kore dibo
-            prData.dbs.dataSend("insert into tournament values('" + tourName + "' , 3)");
+            prData.dbs.dataSend("insert into tournament values('" + tourName + "' , 4)");
             prData.dbs.dataGet("select * from tournament where T_name = '" + tourName + "'");
             DataTable dt = new DataTable();
             prData.dbs.sda.Fill(dt);
@@ -91,6 +93,7 @@ namespace WindowsFormsApp4
         }
         public void showPlayerChoice()
         {
+            backBtn.Hide();
             //jemon ta ekhane korsi
             PlayerTitle.Text = "PLAYER " + prData.playerSerial;//erokom oh accha accha ami kortesi tumi dekho
             PlayerChoicePanel.Show();
@@ -100,6 +103,7 @@ namespace WindowsFormsApp4
 
         private void lgnChcBtn_Click(object sender, EventArgs e)
         {
+            backBtn.Show();
             hideAll();
             goBack = PlayerChoicePanel;
             //ekhon oi function ta ekhan theke  call kore dibo
@@ -118,8 +122,9 @@ namespace WindowsFormsApp4
 
         private void regChcBtn_Click(object sender, EventArgs e)
         {
+            backBtn.Show();
             hideAll();
-            goBack = PlayerOneLoginPanel;
+            goBack = PlayerChoicePanel;
             playerRegisterPanelShow();
         }
 
@@ -162,8 +167,19 @@ namespace WindowsFormsApp4
 
             prData.dbs.dataSend("insert into players values('" + userName + "', '" + gender + "', '" + pass + "', " + 0 + ")");
 
+            clearRegisterPage();
+
             int playerId = getIdFromTable("players", userName, "P_name","P_id");
+            prData.playersId[prData.playerSerial] = playerId;
             goToNextPlayer();
+        }
+        public void clearRegisterPage()
+        {
+            regUserName.Text = "";
+            regPassword.Text = "";
+            regRePassword.Text = "";
+            regMale.Checked = false;
+            regFemale.Checked = false;
         }
 
        public int getIdFromTable(string TableName, string toMatch, string colName, string idCol)
@@ -186,6 +202,7 @@ namespace WindowsFormsApp4
         private void plyrLgnBtn_Click(object sender, EventArgs e)
         {
             //data entry korte hbe
+
             goToNextPlayer();
         }
 
@@ -209,7 +226,7 @@ namespace WindowsFormsApp4
 
         public void goToNextPlayer()
         {
-
+            backBtn.Hide();
             //MessageBox.Show("All ok");
             if (prData.playerSerial < prData.tourState)
             {
@@ -225,10 +242,13 @@ namespace WindowsFormsApp4
             {
                 if(prData.tourType == 1)
                 {
-                    game quaterFinal = new game();
-                    quaterFinal.gmf.prdata = prData;
-                    this.Hide();
-                    quaterFinal.Show();
+                    //colorChocie page load korte hobe;
+                    hideAll();
+                    
+                    //game quaterFinal = new game();
+                    //quaterFinal.gmf.prdata = prData;
+                    //this.Hide();
+                    //quaterFinal.Show();
                 }
             }
         }
@@ -259,6 +279,40 @@ namespace WindowsFormsApp4
         {
             hideTopButtons();
             HomePanel.Show();
+        }
+
+
+        public void colorChoosed(object sender, EventArgs e)
+        {
+            string tag = (sender as RadioButton).Tag.ToString();
+            int tagInt = int.Parse(tag);
+
+            int color = tagInt % 10;
+            int player = tagInt / 10;
+            int colorTakenBy = checkIfColorTaken(color);
+
+            if (colorTakenBy!=-1)
+            {
+                removeColorFrom(color, colorTakenBy);
+            }
+            prData.playerColors[player] = color;
+        }
+
+        public int checkIfColorTaken(int color)
+        {
+            for(int i=1; i < 5; i++)
+            {
+                if (prData.playerColors[i] == color)
+                    return i;
+            }
+            return -1;
+        }
+
+        public void removeColorFrom(int color, int colorTakenBy)
+        {
+            (ChooseColourPanel.Controls[colorTakenBy-1].Controls[color-1] as RadioButton).Checked = false;
+
+            prData.playerColors[colorTakenBy] = 0;
         }
     }
 }

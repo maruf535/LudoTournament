@@ -57,29 +57,37 @@ namespace WindowsFormsApp4
             this.lgnUserNameLebel = new System.Windows.Forms.Label();
             this.lgnPageTitle = new System.Windows.Forms.Label();
             this.ChooseColourPanel = new System.Windows.Forms.Panel();
+            this.gameStartBtn = new System.Windows.Forms.Button();
+            this.player1Cols = new System.Windows.Forms.Panel();
+            this.bluePlayer1 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer1 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer1 = new System.Windows.Forms.RadioButton();
+            this.redPlayer1 = new System.Windows.Forms.RadioButton();
+            this.player2Cols = new System.Windows.Forms.Panel();
+            this.bluePlayer2 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer2 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer2 = new System.Windows.Forms.RadioButton();
+            this.redPlayer2 = new System.Windows.Forms.RadioButton();
+            this.player3Cols = new System.Windows.Forms.Panel();
+            this.bluePlayer3 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer3 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer3 = new System.Windows.Forms.RadioButton();
+            this.redPlayer3 = new System.Windows.Forms.RadioButton();
+            this.player4Cols = new System.Windows.Forms.Panel();
+            this.bluePlayer4 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer4 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer4 = new System.Windows.Forms.RadioButton();
+            this.redPlayer4 = new System.Windows.Forms.RadioButton();
             this.colorPlayerFour = new System.Windows.Forms.Label();
-            this.colorPlyrFourRed = new System.Windows.Forms.CheckBox();
-            this.colorPlyrFourYellow = new System.Windows.Forms.CheckBox();
-            this.colorPlyrFourGreen = new System.Windows.Forms.CheckBox();
-            this.colorPlyrFourBlue = new System.Windows.Forms.CheckBox();
             this.colorPlayerThree = new System.Windows.Forms.Label();
-            this.colorPlyrThreeRed = new System.Windows.Forms.CheckBox();
-            this.colorPlyrThreeYellow = new System.Windows.Forms.CheckBox();
-            this.colorPlyrThreeGreen = new System.Windows.Forms.CheckBox();
-            this.colorPlyrThreeBlue = new System.Windows.Forms.CheckBox();
             this.colorPlayeTwo = new System.Windows.Forms.Label();
-            this.colorPlyrTwoRed = new System.Windows.Forms.CheckBox();
-            this.colorPlyrTwoYellow = new System.Windows.Forms.CheckBox();
-            this.colorPlyrTwoGreen = new System.Windows.Forms.CheckBox();
-            this.colorPlyrTwoBlue = new System.Windows.Forms.CheckBox();
             this.colorPlayerOne = new System.Windows.Forms.Label();
-            this.continueBtn = new System.Windows.Forms.Button();
-            this.colorPlyrOneRed = new System.Windows.Forms.CheckBox();
-            this.colorPlyrOneYellow = new System.Windows.Forms.CheckBox();
-            this.colorPlyrOneGreen = new System.Windows.Forms.CheckBox();
-            this.colorPlyrOneBlue = new System.Windows.Forms.CheckBox();
             this.chooseColourTitle = new System.Windows.Forms.Label();
             this.PlayerOneRegisterPanel = new System.Windows.Forms.Panel();
+            this.femaleLabel = new System.Windows.Forms.Label();
+            this.regFemale = new System.Windows.Forms.RadioButton();
+            this.maleLabel = new System.Windows.Forms.Label();
+            this.regMale = new System.Windows.Forms.RadioButton();
             this.regRePassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -126,10 +134,6 @@ namespace WindowsFormsApp4
             this.restartBtn = new System.Windows.Forms.Button();
             this.resumeBtn = new System.Windows.Forms.Button();
             this.decisionTitle = new System.Windows.Forms.Label();
-            this.regMale = new System.Windows.Forms.RadioButton();
-            this.maleLabel = new System.Windows.Forms.Label();
-            this.femaleLabel = new System.Windows.Forms.Label();
-            this.regFemale = new System.Windows.Forms.RadioButton();
             this.welcPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxTwo)).BeginInit();
@@ -138,6 +142,10 @@ namespace WindowsFormsApp4
             this.PlayerChoicePanel.SuspendLayout();
             this.PlayerOneLoginPanel.SuspendLayout();
             this.ChooseColourPanel.SuspendLayout();
+            this.player1Cols.SuspendLayout();
+            this.player2Cols.SuspendLayout();
+            this.player3Cols.SuspendLayout();
+            this.player4Cols.SuspendLayout();
             this.PlayerOneRegisterPanel.SuspendLayout();
             this.OngoingTournamentPanel.SuspendLayout();
             this.FixurePanel.SuspendLayout();
@@ -150,10 +158,10 @@ namespace WindowsFormsApp4
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.backBtn.Location = new System.Drawing.Point(17, 17);
+            this.backBtn.Location = new System.Drawing.Point(17, 10);
             this.backBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(177, 73);
+            this.backBtn.Size = new System.Drawing.Size(140, 60);
             this.backBtn.TabIndex = 0;
             this.backBtn.Text = "< BACK";
             this.backBtn.UseVisualStyleBackColor = false;
@@ -166,10 +174,10 @@ namespace WindowsFormsApp4
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.homeBtn.Location = new System.Drawing.Point(952, 11);
+            this.homeBtn.Location = new System.Drawing.Point(945, 10);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(133, 59);
+            this.homeBtn.Size = new System.Drawing.Size(140, 60);
             this.homeBtn.TabIndex = 1;
             this.homeBtn.Text = "HOME";
             this.homeBtn.UseVisualStyleBackColor = false;
@@ -500,27 +508,15 @@ namespace WindowsFormsApp4
             // ChooseColourPanel
             // 
             this.ChooseColourPanel.BackColor = System.Drawing.Color.Transparent;
+            this.ChooseColourPanel.Controls.Add(this.player1Cols);
+            this.ChooseColourPanel.Controls.Add(this.player2Cols);
+            this.ChooseColourPanel.Controls.Add(this.player3Cols);
+            this.ChooseColourPanel.Controls.Add(this.player4Cols);
+            this.ChooseColourPanel.Controls.Add(this.gameStartBtn);
             this.ChooseColourPanel.Controls.Add(this.colorPlayerFour);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrFourRed);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrFourYellow);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrFourGreen);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrFourBlue);
             this.ChooseColourPanel.Controls.Add(this.colorPlayerThree);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrThreeRed);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrThreeYellow);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrThreeGreen);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrThreeBlue);
             this.ChooseColourPanel.Controls.Add(this.colorPlayeTwo);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrTwoRed);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrTwoYellow);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrTwoGreen);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrTwoBlue);
             this.ChooseColourPanel.Controls.Add(this.colorPlayerOne);
-            this.ChooseColourPanel.Controls.Add(this.continueBtn);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrOneRed);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrOneYellow);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrOneGreen);
-            this.ChooseColourPanel.Controls.Add(this.colorPlyrOneBlue);
             this.ChooseColourPanel.Controls.Add(this.chooseColourTitle);
             this.ChooseColourPanel.Location = new System.Drawing.Point(160, 107);
             this.ChooseColourPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -528,279 +524,378 @@ namespace WindowsFormsApp4
             this.ChooseColourPanel.Size = new System.Drawing.Size(812, 534);
             this.ChooseColourPanel.TabIndex = 17;
             // 
+            // gameStartBtn
+            // 
+            this.gameStartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gameStartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.gameStartBtn.Location = new System.Drawing.Point(495, 416);
+            this.gameStartBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.gameStartBtn.Name = "gameStartBtn";
+            this.gameStartBtn.Size = new System.Drawing.Size(100, 41);
+            this.gameStartBtn.TabIndex = 32;
+            this.gameStartBtn.Text = "Continue";
+            this.gameStartBtn.UseVisualStyleBackColor = true;
+            // 
+            // player1Cols
+            // 
+            this.player1Cols.Controls.Add(this.redPlayer1);
+            this.player1Cols.Controls.Add(this.greenPlayer1);
+            this.player1Cols.Controls.Add(this.yellowPlayer1);
+            this.player1Cols.Controls.Add(this.bluePlayer1);
+            this.player1Cols.Location = new System.Drawing.Point(376, 177);
+            this.player1Cols.Name = "player1Cols";
+            this.player1Cols.Size = new System.Drawing.Size(220, 34);
+            this.player1Cols.TabIndex = 49;
+            // 
+            // bluePlayer1
+            // 
+            this.bluePlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer1.FlatAppearance.BorderSize = 0;
+            this.bluePlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer1.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer1.Name = "bluePlayer1";
+            this.bluePlayer1.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer1.TabIndex = 50;
+            this.bluePlayer1.TabStop = true;
+            this.bluePlayer1.Tag = "14";
+            this.bluePlayer1.UseVisualStyleBackColor = true;
+            this.bluePlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer1
+            // 
+            this.yellowPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer1.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer1.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer1.Name = "yellowPlayer1";
+            this.yellowPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer1.TabIndex = 50;
+            this.yellowPlayer1.TabStop = true;
+            this.yellowPlayer1.Tag = "13";
+            this.yellowPlayer1.UseVisualStyleBackColor = true;
+            this.yellowPlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // greenPlayer1
+            // 
+            this.greenPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer1.FlatAppearance.BorderSize = 0;
+            this.greenPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer1.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer1.Name = "greenPlayer1";
+            this.greenPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer1.TabIndex = 50;
+            this.greenPlayer1.TabStop = true;
+            this.greenPlayer1.Tag = "12";
+            this.greenPlayer1.UseVisualStyleBackColor = true;
+            this.greenPlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // redPlayer1
+            // 
+            this.redPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.redPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.redToken;
+            this.redPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.redPlayer1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.redPlayer1.FlatAppearance.BorderSize = 0;
+            this.redPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.redPlayer1.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer1.Name = "redPlayer1";
+            this.redPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer1.TabIndex = 0;
+            this.redPlayer1.TabStop = true;
+            this.redPlayer1.Tag = "11";
+            this.redPlayer1.UseVisualStyleBackColor = true;
+            this.redPlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // player2Cols
+            // 
+            this.player2Cols.Controls.Add(this.redPlayer2);
+            this.player2Cols.Controls.Add(this.greenPlayer2);
+            this.player2Cols.Controls.Add(this.yellowPlayer2);
+            this.player2Cols.Controls.Add(this.bluePlayer2);
+            this.player2Cols.Location = new System.Drawing.Point(376, 238);
+            this.player2Cols.Name = "player2Cols";
+            this.player2Cols.Size = new System.Drawing.Size(220, 34);
+            this.player2Cols.TabIndex = 50;
+            // 
+            // bluePlayer2
+            // 
+            this.bluePlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer2.FlatAppearance.BorderSize = 0;
+            this.bluePlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer2.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer2.Name = "bluePlayer2";
+            this.bluePlayer2.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer2.TabIndex = 50;
+            this.bluePlayer2.TabStop = true;
+            this.bluePlayer2.Tag = "24";
+            this.bluePlayer2.UseVisualStyleBackColor = true;
+            this.bluePlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer2
+            // 
+            this.yellowPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer2.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer2.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer2.Name = "yellowPlayer2";
+            this.yellowPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer2.TabIndex = 50;
+            this.yellowPlayer2.TabStop = true;
+            this.yellowPlayer2.Tag = "23";
+            this.yellowPlayer2.UseVisualStyleBackColor = true;
+            this.yellowPlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // greenPlayer2
+            // 
+            this.greenPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer2.FlatAppearance.BorderSize = 0;
+            this.greenPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer2.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer2.Name = "greenPlayer2";
+            this.greenPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer2.TabIndex = 50;
+            this.greenPlayer2.TabStop = true;
+            this.greenPlayer2.Tag = "22";
+            this.greenPlayer2.UseVisualStyleBackColor = true;
+            this.greenPlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // redPlayer2
+            // 
+            this.redPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.redPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.redToken;
+            this.redPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.redPlayer2.FlatAppearance.BorderSize = 0;
+            this.redPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.redPlayer2.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer2.Name = "redPlayer2";
+            this.redPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer2.TabIndex = 0;
+            this.redPlayer2.TabStop = true;
+            this.redPlayer2.Tag = "21";
+            this.redPlayer2.UseVisualStyleBackColor = true;
+            this.redPlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // player3Cols
+            // 
+            this.player3Cols.Controls.Add(this.redPlayer3);
+            this.player3Cols.Controls.Add(this.greenPlayer3);
+            this.player3Cols.Controls.Add(this.yellowPlayer3);
+            this.player3Cols.Controls.Add(this.bluePlayer3);
+            this.player3Cols.Location = new System.Drawing.Point(375, 297);
+            this.player3Cols.Name = "player3Cols";
+            this.player3Cols.Size = new System.Drawing.Size(220, 34);
+            this.player3Cols.TabIndex = 51;
+            // 
+            // bluePlayer3
+            // 
+            this.bluePlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer3.FlatAppearance.BorderSize = 0;
+            this.bluePlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer3.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer3.Name = "bluePlayer3";
+            this.bluePlayer3.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer3.TabIndex = 50;
+            this.bluePlayer3.TabStop = true;
+            this.bluePlayer3.Tag = "34";
+            this.bluePlayer3.UseVisualStyleBackColor = true;
+            this.bluePlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer3
+            // 
+            this.yellowPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer3.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer3.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer3.Name = "yellowPlayer3";
+            this.yellowPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer3.TabIndex = 50;
+            this.yellowPlayer3.TabStop = true;
+            this.yellowPlayer3.Tag = "33";
+            this.yellowPlayer3.UseVisualStyleBackColor = true;
+            this.yellowPlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // greenPlayer3
+            // 
+            this.greenPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer3.FlatAppearance.BorderSize = 0;
+            this.greenPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer3.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer3.Name = "greenPlayer3";
+            this.greenPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer3.TabIndex = 50;
+            this.greenPlayer3.TabStop = true;
+            this.greenPlayer3.Tag = "32";
+            this.greenPlayer3.UseVisualStyleBackColor = true;
+            this.greenPlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // redPlayer3
+            // 
+            this.redPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.redPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.redToken;
+            this.redPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.redPlayer3.FlatAppearance.BorderSize = 0;
+            this.redPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.redPlayer3.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer3.Name = "redPlayer3";
+            this.redPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer3.TabIndex = 0;
+            this.redPlayer3.TabStop = true;
+            this.redPlayer3.Tag = "31";
+            this.redPlayer3.UseVisualStyleBackColor = true;
+            this.redPlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // player4Cols
+            // 
+            this.player4Cols.Controls.Add(this.redPlayer4);
+            this.player4Cols.Controls.Add(this.greenPlayer4);
+            this.player4Cols.Controls.Add(this.yellowPlayer4);
+            this.player4Cols.Controls.Add(this.bluePlayer4);
+            this.player4Cols.Location = new System.Drawing.Point(375, 357);
+            this.player4Cols.Name = "player4Cols";
+            this.player4Cols.Size = new System.Drawing.Size(220, 34);
+            this.player4Cols.TabIndex = 52;
+            // 
+            // bluePlayer4
+            // 
+            this.bluePlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer4.FlatAppearance.BorderSize = 0;
+            this.bluePlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer4.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer4.Name = "bluePlayer4";
+            this.bluePlayer4.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer4.TabIndex = 50;
+            this.bluePlayer4.TabStop = true;
+            this.bluePlayer4.Tag = "44";
+            this.bluePlayer4.UseVisualStyleBackColor = true;
+            this.bluePlayer4.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer4
+            // 
+            this.yellowPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer4.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer4.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer4.Name = "yellowPlayer4";
+            this.yellowPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer4.TabIndex = 50;
+            this.yellowPlayer4.TabStop = true;
+            this.yellowPlayer4.Tag = "43";
+            this.yellowPlayer4.UseVisualStyleBackColor = true;
+            this.yellowPlayer4.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // greenPlayer4
+            // 
+            this.greenPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer4.FlatAppearance.BorderSize = 0;
+            this.greenPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer4.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer4.Name = "greenPlayer4";
+            this.greenPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer4.TabIndex = 50;
+            this.greenPlayer4.TabStop = true;
+            this.greenPlayer4.Tag = "42";
+            this.greenPlayer4.UseVisualStyleBackColor = true;
+            this.greenPlayer4.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // redPlayer4
+            // 
+            this.redPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.redPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.redToken;
+            this.redPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.redPlayer4.FlatAppearance.BorderSize = 0;
+            this.redPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.redPlayer4.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer4.Name = "redPlayer4";
+            this.redPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer4.TabIndex = 0;
+            this.redPlayer4.TabStop = true;
+            this.redPlayer4.Tag = "41";
+            this.redPlayer4.UseVisualStyleBackColor = true;
+            this.redPlayer4.Click += new System.EventHandler(this.colorChoosed);
+            // 
             // colorPlayerFour
             // 
             this.colorPlayerFour.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerFour.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.colorPlayerFour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPlayerFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayerFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayerFour.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerFour.Location = new System.Drawing.Point(99, 330);
+            this.colorPlayerFour.Location = new System.Drawing.Point(230, 359);
             this.colorPlayerFour.Name = "colorPlayerFour";
-            this.colorPlayerFour.Size = new System.Drawing.Size(100, 22);
+            this.colorPlayerFour.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayerFour.Size = new System.Drawing.Size(100, 32);
             this.colorPlayerFour.TabIndex = 48;
             this.colorPlayerFour.Text = "Player 4";
-            this.colorPlayerFour.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // colorPlyrFourRed
-            // 
-            this.colorPlyrFourRed.BackColor = System.Drawing.Color.Red;
-            this.colorPlyrFourRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrFourRed.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrFourRed.Location = new System.Drawing.Point(637, 336);
-            this.colorPlyrFourRed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrFourRed.Name = "colorPlyrFourRed";
-            this.colorPlyrFourRed.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrFourRed.TabIndex = 47;
-            this.colorPlyrFourRed.Text = "Red";
-            this.colorPlyrFourRed.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrFourYellow
-            // 
-            this.colorPlyrFourYellow.BackColor = System.Drawing.Color.Yellow;
-            this.colorPlyrFourYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrFourYellow.ForeColor = System.Drawing.Color.Black;
-            this.colorPlyrFourYellow.Location = new System.Drawing.Point(384, 335);
-            this.colorPlyrFourYellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrFourYellow.Name = "colorPlyrFourYellow";
-            this.colorPlyrFourYellow.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrFourYellow.TabIndex = 46;
-            this.colorPlyrFourYellow.Text = "Yellow";
-            this.colorPlyrFourYellow.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrFourGreen
-            // 
-            this.colorPlyrFourGreen.BackColor = System.Drawing.Color.LimeGreen;
-            this.colorPlyrFourGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrFourGreen.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrFourGreen.Location = new System.Drawing.Point(505, 335);
-            this.colorPlyrFourGreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrFourGreen.Name = "colorPlyrFourGreen";
-            this.colorPlyrFourGreen.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrFourGreen.TabIndex = 45;
-            this.colorPlyrFourGreen.Text = "Green";
-            this.colorPlyrFourGreen.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrFourBlue
-            // 
-            this.colorPlyrFourBlue.BackColor = System.Drawing.Color.RoyalBlue;
-            this.colorPlyrFourBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrFourBlue.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrFourBlue.Location = new System.Drawing.Point(260, 332);
-            this.colorPlyrFourBlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrFourBlue.Name = "colorPlyrFourBlue";
-            this.colorPlyrFourBlue.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrFourBlue.TabIndex = 44;
-            this.colorPlyrFourBlue.Text = "Blue";
-            this.colorPlyrFourBlue.UseVisualStyleBackColor = false;
+            this.colorPlayerFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colorPlayerThree
             // 
             this.colorPlayerThree.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerThree.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.colorPlayerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPlayerThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayerThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayerThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerThree.Location = new System.Drawing.Point(99, 284);
+            this.colorPlayerThree.Location = new System.Drawing.Point(230, 299);
             this.colorPlayerThree.Name = "colorPlayerThree";
-            this.colorPlayerThree.Size = new System.Drawing.Size(100, 22);
+            this.colorPlayerThree.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayerThree.Size = new System.Drawing.Size(100, 32);
             this.colorPlayerThree.TabIndex = 43;
             this.colorPlayerThree.Text = "Player 3";
-            this.colorPlayerThree.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // colorPlyrThreeRed
-            // 
-            this.colorPlyrThreeRed.BackColor = System.Drawing.Color.Red;
-            this.colorPlyrThreeRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrThreeRed.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrThreeRed.Location = new System.Drawing.Point(637, 290);
-            this.colorPlyrThreeRed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrThreeRed.Name = "colorPlyrThreeRed";
-            this.colorPlyrThreeRed.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrThreeRed.TabIndex = 42;
-            this.colorPlyrThreeRed.Text = "Red";
-            this.colorPlyrThreeRed.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrThreeYellow
-            // 
-            this.colorPlyrThreeYellow.BackColor = System.Drawing.Color.Yellow;
-            this.colorPlyrThreeYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrThreeYellow.ForeColor = System.Drawing.Color.Black;
-            this.colorPlyrThreeYellow.Location = new System.Drawing.Point(384, 289);
-            this.colorPlyrThreeYellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrThreeYellow.Name = "colorPlyrThreeYellow";
-            this.colorPlyrThreeYellow.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrThreeYellow.TabIndex = 41;
-            this.colorPlyrThreeYellow.Text = "Yellow";
-            this.colorPlyrThreeYellow.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrThreeGreen
-            // 
-            this.colorPlyrThreeGreen.BackColor = System.Drawing.Color.LimeGreen;
-            this.colorPlyrThreeGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrThreeGreen.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrThreeGreen.Location = new System.Drawing.Point(505, 289);
-            this.colorPlyrThreeGreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrThreeGreen.Name = "colorPlyrThreeGreen";
-            this.colorPlyrThreeGreen.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrThreeGreen.TabIndex = 40;
-            this.colorPlyrThreeGreen.Text = "Green";
-            this.colorPlyrThreeGreen.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrThreeBlue
-            // 
-            this.colorPlyrThreeBlue.BackColor = System.Drawing.Color.RoyalBlue;
-            this.colorPlyrThreeBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrThreeBlue.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrThreeBlue.Location = new System.Drawing.Point(260, 287);
-            this.colorPlyrThreeBlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrThreeBlue.Name = "colorPlyrThreeBlue";
-            this.colorPlyrThreeBlue.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrThreeBlue.TabIndex = 39;
-            this.colorPlyrThreeBlue.Text = "Blue";
-            this.colorPlyrThreeBlue.UseVisualStyleBackColor = false;
+            this.colorPlayerThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colorPlayeTwo
             // 
             this.colorPlayeTwo.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayeTwo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.colorPlayeTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPlayeTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayeTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayeTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayeTwo.Location = new System.Drawing.Point(99, 234);
+            this.colorPlayeTwo.Location = new System.Drawing.Point(230, 239);
             this.colorPlayeTwo.Name = "colorPlayeTwo";
-            this.colorPlayeTwo.Size = new System.Drawing.Size(100, 22);
+            this.colorPlayeTwo.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayeTwo.Size = new System.Drawing.Size(100, 32);
             this.colorPlayeTwo.TabIndex = 38;
             this.colorPlayeTwo.Text = "Player 2";
-            this.colorPlayeTwo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // colorPlyrTwoRed
-            // 
-            this.colorPlyrTwoRed.BackColor = System.Drawing.Color.Red;
-            this.colorPlyrTwoRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrTwoRed.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrTwoRed.Location = new System.Drawing.Point(637, 240);
-            this.colorPlyrTwoRed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrTwoRed.Name = "colorPlyrTwoRed";
-            this.colorPlyrTwoRed.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrTwoRed.TabIndex = 37;
-            this.colorPlyrTwoRed.Text = "Red";
-            this.colorPlyrTwoRed.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrTwoYellow
-            // 
-            this.colorPlyrTwoYellow.BackColor = System.Drawing.Color.Yellow;
-            this.colorPlyrTwoYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrTwoYellow.ForeColor = System.Drawing.Color.Black;
-            this.colorPlyrTwoYellow.Location = new System.Drawing.Point(384, 239);
-            this.colorPlyrTwoYellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrTwoYellow.Name = "colorPlyrTwoYellow";
-            this.colorPlyrTwoYellow.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrTwoYellow.TabIndex = 36;
-            this.colorPlyrTwoYellow.Text = "Yellow";
-            this.colorPlyrTwoYellow.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrTwoGreen
-            // 
-            this.colorPlyrTwoGreen.BackColor = System.Drawing.Color.LimeGreen;
-            this.colorPlyrTwoGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrTwoGreen.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrTwoGreen.Location = new System.Drawing.Point(505, 239);
-            this.colorPlyrTwoGreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrTwoGreen.Name = "colorPlyrTwoGreen";
-            this.colorPlyrTwoGreen.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrTwoGreen.TabIndex = 35;
-            this.colorPlyrTwoGreen.Text = "Green";
-            this.colorPlyrTwoGreen.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrTwoBlue
-            // 
-            this.colorPlyrTwoBlue.BackColor = System.Drawing.Color.RoyalBlue;
-            this.colorPlyrTwoBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrTwoBlue.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrTwoBlue.Location = new System.Drawing.Point(260, 236);
-            this.colorPlyrTwoBlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrTwoBlue.Name = "colorPlyrTwoBlue";
-            this.colorPlyrTwoBlue.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrTwoBlue.TabIndex = 34;
-            this.colorPlyrTwoBlue.Text = "Blue";
-            this.colorPlyrTwoBlue.UseVisualStyleBackColor = false;
+            this.colorPlayeTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colorPlayerOne
             // 
             this.colorPlayerOne.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerOne.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.colorPlayerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.colorPlayerOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayerOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayerOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerOne.Location = new System.Drawing.Point(99, 178);
+            this.colorPlayerOne.Location = new System.Drawing.Point(230, 179);
             this.colorPlayerOne.Name = "colorPlayerOne";
-            this.colorPlayerOne.Size = new System.Drawing.Size(100, 22);
+            this.colorPlayerOne.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayerOne.Size = new System.Drawing.Size(100, 32);
             this.colorPlayerOne.TabIndex = 33;
             this.colorPlayerOne.Text = "Player 1";
-            this.colorPlayerOne.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // continueBtn
-            // 
-            this.continueBtn.Location = new System.Drawing.Point(467, 409);
-            this.continueBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(100, 41);
-            this.continueBtn.TabIndex = 32;
-            this.continueBtn.Text = "Continue";
-            this.continueBtn.UseVisualStyleBackColor = true;
-            // 
-            // colorPlyrOneRed
-            // 
-            this.colorPlyrOneRed.BackColor = System.Drawing.Color.Red;
-            this.colorPlyrOneRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrOneRed.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrOneRed.Location = new System.Drawing.Point(637, 185);
-            this.colorPlyrOneRed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrOneRed.Name = "colorPlyrOneRed";
-            this.colorPlyrOneRed.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrOneRed.TabIndex = 31;
-            this.colorPlyrOneRed.Text = "Red";
-            this.colorPlyrOneRed.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrOneYellow
-            // 
-            this.colorPlyrOneYellow.BackColor = System.Drawing.Color.Yellow;
-            this.colorPlyrOneYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrOneYellow.ForeColor = System.Drawing.Color.Black;
-            this.colorPlyrOneYellow.Location = new System.Drawing.Point(384, 183);
-            this.colorPlyrOneYellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrOneYellow.Name = "colorPlyrOneYellow";
-            this.colorPlyrOneYellow.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrOneYellow.TabIndex = 30;
-            this.colorPlyrOneYellow.Text = "Yellow";
-            this.colorPlyrOneYellow.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrOneGreen
-            // 
-            this.colorPlyrOneGreen.BackColor = System.Drawing.Color.LimeGreen;
-            this.colorPlyrOneGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrOneGreen.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrOneGreen.Location = new System.Drawing.Point(505, 183);
-            this.colorPlyrOneGreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrOneGreen.Name = "colorPlyrOneGreen";
-            this.colorPlyrOneGreen.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrOneGreen.TabIndex = 29;
-            this.colorPlyrOneGreen.Text = "Green";
-            this.colorPlyrOneGreen.UseVisualStyleBackColor = false;
-            // 
-            // colorPlyrOneBlue
-            // 
-            this.colorPlyrOneBlue.BackColor = System.Drawing.Color.RoyalBlue;
-            this.colorPlyrOneBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlyrOneBlue.ForeColor = System.Drawing.Color.White;
-            this.colorPlyrOneBlue.Location = new System.Drawing.Point(260, 181);
-            this.colorPlyrOneBlue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.colorPlyrOneBlue.Name = "colorPlyrOneBlue";
-            this.colorPlyrOneBlue.Size = new System.Drawing.Size(85, 20);
-            this.colorPlyrOneBlue.TabIndex = 28;
-            this.colorPlyrOneBlue.Text = "Blue";
-            this.colorPlyrOneBlue.UseVisualStyleBackColor = false;
+            this.colorPlayerOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chooseColourTitle
             // 
@@ -836,6 +931,46 @@ namespace WindowsFormsApp4
             this.PlayerOneRegisterPanel.Name = "PlayerOneRegisterPanel";
             this.PlayerOneRegisterPanel.Size = new System.Drawing.Size(812, 534);
             this.PlayerOneRegisterPanel.TabIndex = 16;
+            // 
+            // femaleLabel
+            // 
+            this.femaleLabel.AutoSize = true;
+            this.femaleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.femaleLabel.Location = new System.Drawing.Point(486, 252);
+            this.femaleLabel.Name = "femaleLabel";
+            this.femaleLabel.Size = new System.Drawing.Size(54, 17);
+            this.femaleLabel.TabIndex = 35;
+            this.femaleLabel.Text = "Female";
+            // 
+            // regFemale
+            // 
+            this.regFemale.AutoSize = true;
+            this.regFemale.Location = new System.Drawing.Point(463, 252);
+            this.regFemale.Name = "regFemale";
+            this.regFemale.Size = new System.Drawing.Size(17, 16);
+            this.regFemale.TabIndex = 34;
+            this.regFemale.TabStop = true;
+            this.regFemale.UseVisualStyleBackColor = true;
+            // 
+            // maleLabel
+            // 
+            this.maleLabel.AutoSize = true;
+            this.maleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.maleLabel.Location = new System.Drawing.Point(407, 252);
+            this.maleLabel.Name = "maleLabel";
+            this.maleLabel.Size = new System.Drawing.Size(38, 17);
+            this.maleLabel.TabIndex = 33;
+            this.maleLabel.Text = "Male";
+            // 
+            // regMale
+            // 
+            this.regMale.AutoSize = true;
+            this.regMale.Location = new System.Drawing.Point(384, 252);
+            this.regMale.Name = "regMale";
+            this.regMale.Size = new System.Drawing.Size(17, 16);
+            this.regMale.TabIndex = 32;
+            this.regMale.TabStop = true;
+            this.regMale.UseVisualStyleBackColor = true;
             // 
             // regRePassword
             // 
@@ -1449,46 +1584,6 @@ namespace WindowsFormsApp4
             this.decisionTitle.Text = "Tournament_Name_1";
             this.decisionTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // regMale
-            // 
-            this.regMale.AutoSize = true;
-            this.regMale.Location = new System.Drawing.Point(384, 252);
-            this.regMale.Name = "regMale";
-            this.regMale.Size = new System.Drawing.Size(17, 16);
-            this.regMale.TabIndex = 32;
-            this.regMale.TabStop = true;
-            this.regMale.UseVisualStyleBackColor = true;
-            // 
-            // maleLabel
-            // 
-            this.maleLabel.AutoSize = true;
-            this.maleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.maleLabel.Location = new System.Drawing.Point(407, 252);
-            this.maleLabel.Name = "maleLabel";
-            this.maleLabel.Size = new System.Drawing.Size(38, 17);
-            this.maleLabel.TabIndex = 33;
-            this.maleLabel.Text = "Male";
-            // 
-            // femaleLabel
-            // 
-            this.femaleLabel.AutoSize = true;
-            this.femaleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.femaleLabel.Location = new System.Drawing.Point(486, 252);
-            this.femaleLabel.Name = "femaleLabel";
-            this.femaleLabel.Size = new System.Drawing.Size(54, 17);
-            this.femaleLabel.TabIndex = 35;
-            this.femaleLabel.Text = "Female";
-            // 
-            // regFemale
-            // 
-            this.regFemale.AutoSize = true;
-            this.regFemale.Location = new System.Drawing.Point(463, 252);
-            this.regFemale.Name = "regFemale";
-            this.regFemale.Size = new System.Drawing.Size(17, 16);
-            this.regFemale.TabIndex = 34;
-            this.regFemale.TabStop = true;
-            this.regFemale.UseVisualStyleBackColor = true;
-            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1497,18 +1592,18 @@ namespace WindowsFormsApp4
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1097, 750);
-            this.Controls.Add(this.PlayerOneRegisterPanel);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.DecisionPagePanel);
-            this.Controls.Add(this.FixurePanel);
-            this.Controls.Add(this.OngoingTournamentPanel);
-            this.Controls.Add(this.PlayerChoicePanel);
             this.Controls.Add(this.ChooseColourPanel);
             this.Controls.Add(this.HomePanel);
             this.Controls.Add(this.welcPanel);
             this.Controls.Add(this.tourNamePanel);
             this.Controls.Add(this.PlayerOneLoginPanel);
+            this.Controls.Add(this.PlayerOneRegisterPanel);
+            this.Controls.Add(this.DecisionPagePanel);
+            this.Controls.Add(this.FixurePanel);
+            this.Controls.Add(this.OngoingTournamentPanel);
+            this.Controls.Add(this.PlayerChoicePanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainPage";
@@ -1525,6 +1620,10 @@ namespace WindowsFormsApp4
             this.PlayerOneLoginPanel.ResumeLayout(false);
             this.PlayerOneLoginPanel.PerformLayout();
             this.ChooseColourPanel.ResumeLayout(false);
+            this.player1Cols.ResumeLayout(false);
+            this.player2Cols.ResumeLayout(false);
+            this.player3Cols.ResumeLayout(false);
+            this.player4Cols.ResumeLayout(false);
             this.PlayerOneRegisterPanel.ResumeLayout(false);
             this.PlayerOneRegisterPanel.PerformLayout();
             this.OngoingTournamentPanel.ResumeLayout(false);
@@ -1573,26 +1672,10 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel ChooseColourPanel;
         private System.Windows.Forms.Label colorPlayerFour;
-        private System.Windows.Forms.CheckBox colorPlyrFourRed;
-        private System.Windows.Forms.CheckBox colorPlyrFourYellow;
-        private System.Windows.Forms.CheckBox colorPlyrFourGreen;
-        private System.Windows.Forms.CheckBox colorPlyrFourBlue;
         private System.Windows.Forms.Label colorPlayerThree;
-        private System.Windows.Forms.CheckBox colorPlyrThreeRed;
-        private System.Windows.Forms.CheckBox colorPlyrThreeYellow;
-        private System.Windows.Forms.CheckBox colorPlyrThreeGreen;
-        private System.Windows.Forms.CheckBox colorPlyrThreeBlue;
         private System.Windows.Forms.Label colorPlayeTwo;
-        private System.Windows.Forms.CheckBox colorPlyrTwoRed;
-        private System.Windows.Forms.CheckBox colorPlyrTwoYellow;
-        private System.Windows.Forms.CheckBox colorPlyrTwoGreen;
-        private System.Windows.Forms.CheckBox colorPlyrTwoBlue;
         private System.Windows.Forms.Label colorPlayerOne;
-        private System.Windows.Forms.Button continueBtn;
-        private System.Windows.Forms.CheckBox colorPlyrOneRed;
-        private System.Windows.Forms.CheckBox colorPlyrOneYellow;
-        private System.Windows.Forms.CheckBox colorPlyrOneGreen;
-        private System.Windows.Forms.CheckBox colorPlyrOneBlue;
+        private System.Windows.Forms.Button gameStartBtn;
         private System.Windows.Forms.Label chooseColourTitle;
         private System.Windows.Forms.Panel OngoingTournamentPanel;
         private System.Windows.Forms.Button ongTourDelThreeBtn;
@@ -1637,5 +1720,25 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.RadioButton regFemale;
         private System.Windows.Forms.Label maleLabel;
         private System.Windows.Forms.RadioButton regMale;
+        private System.Windows.Forms.RadioButton redPlayer1;
+        private System.Windows.Forms.Panel player4Cols;
+        private System.Windows.Forms.RadioButton bluePlayer4;
+        private System.Windows.Forms.RadioButton yellowPlayer4;
+        private System.Windows.Forms.RadioButton greenPlayer4;
+        private System.Windows.Forms.RadioButton redPlayer4;
+        private System.Windows.Forms.Panel player3Cols;
+        private System.Windows.Forms.RadioButton bluePlayer3;
+        private System.Windows.Forms.RadioButton yellowPlayer3;
+        private System.Windows.Forms.RadioButton greenPlayer3;
+        private System.Windows.Forms.RadioButton redPlayer3;
+        private System.Windows.Forms.Panel player2Cols;
+        private System.Windows.Forms.RadioButton bluePlayer2;
+        private System.Windows.Forms.RadioButton yellowPlayer2;
+        private System.Windows.Forms.RadioButton greenPlayer2;
+        private System.Windows.Forms.RadioButton redPlayer2;
+        private System.Windows.Forms.Panel player1Cols;
+        private System.Windows.Forms.RadioButton bluePlayer1;
+        private System.Windows.Forms.RadioButton yellowPlayer1;
+        private System.Windows.Forms.RadioButton greenPlayer1;
     }
 }
