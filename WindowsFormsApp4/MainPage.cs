@@ -85,7 +85,8 @@ namespace WindowsFormsApp4
             prData.tourState = 4;//jehetu new tournament, to quaterfinal state e thakbe
 
             prData.playerSerial = 1;
-            //ekhon prData playerchoice e pass kore dibo
+
+            tourNameInp.Text = "";
             hideAll();
             goBack = tourNamePanel;
             showPlayerChoice();
@@ -135,6 +136,7 @@ namespace WindowsFormsApp4
         }
         private void ongTourBtn_Click(object sender, EventArgs e)
         {
+
             hideAll();
             goBack = HomePanel;
             OngoingTournamentPanel.Show();
@@ -395,6 +397,22 @@ namespace WindowsFormsApp4
             {
                 prData.dbs.dataSend("insert into tournament_players values(" +prData.tourID+ ", " + prData.playersId[i] + ", " +prData.playerColors[i]+ ", 0, 0)");
             }
+        }
+
+        private void MainPage_SizeChanged(object sender, EventArgs e)
+        {
+            this.mainPanel.Left = this.Width / 4;
+            this.mainPanel.Top = this.Height / 8;
+        }
+
+        private void fixureQuarFour_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fixureWinnerLebel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

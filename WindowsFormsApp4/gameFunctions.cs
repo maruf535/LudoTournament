@@ -12,9 +12,10 @@ namespace WindowsFormsApp4
     public class gameFunctions
     {
         //properties starts
-        private bool test = true;
+        public int rank = 1;
         public Panel theBoard = new Panel();
         Random rnd = new Random();//random number generate korar object
+        public Panel gameRankPage = new Panel();
         public playersObj[] playersArray = new playersObj[5];
         public PictureBox[] playerRollBtns = new PictureBox[5];//array of roll buttins of 4 players,[1]=red,[2]=green,[3]=yellow,[4]=blue
         public PictureBox[] diceBoxes = new PictureBox[7];//array of diceBox objects
@@ -278,6 +279,21 @@ namespace WindowsFormsApp4
             {
                 multTokInThisPos(tokenNum);
                 tokenNow.moveIt(2);
+                if (tokenNow.tokenState == 2)
+                {
+                    playersArray[playerTurn].tokensInGoalCnt++;
+                    if (playersArray[playerTurn].tokensInGoalCnt == 4)
+                    {
+                        playersArray[playerTurn].showRank(rank);
+                        rank++;
+                        diceNumber = 1;
+                    }
+
+                    if (rank == prData.tourState)
+                    {
+                        gameOver();
+                    }
+                }
                 removeDice();
                 if (diceNumber == 1)
                     changeTurn();
@@ -389,6 +405,28 @@ namespace WindowsFormsApp4
             if (diceNumber > 1)
             {
                 selectDiceBox(diceNumber - 1);
+            }
+        }
+
+        public void gameOver()
+        {
+            gameRankPage.Show();
+
+            for(int i = 1; i <= 4; i++)
+            {
+                gameRankPage.Controls[i].Hide();
+            }
+
+            for(int i=1; i <= prData.tourState; i++)
+            {
+                for(int j = 1; j <= 4; j++)
+                {
+                    if (playersArray[j].playerRank == i)
+                    {
+                        gameRankPage.Controls[i].Text = playersArray[j].playerName;
+                        break;
+                    }
+                }
             }
         }
     }

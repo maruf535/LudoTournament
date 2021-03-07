@@ -26,9 +26,12 @@ namespace WindowsFormsApp4
             gmf.initPlayers();
             setPlayerRollBtns();//sets the player roll buttons to an array which is contained in gameFunctions class
             setDiceBoxes();//sets the 6 dice roll result boxes to an array which is contained in gameFunctions class
+            setRankBoxes();
             setTokens();
             setPotraits();
             setNames();
+            gmf.gameRankPage = GameResultPanel;
+            gmf.gameRankPage.Hide();
             gmf.theBoard = ludoBoard;
             gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
@@ -80,6 +83,17 @@ namespace WindowsFormsApp4
             gmf.diceBoxes[5] = diceBox5;
             gmf.diceBoxes[6] = diceBox6;
             gmf.hideAllDiceBoxes();
+        }
+
+        public void setRankBoxes()
+        {
+            gmf.playersArray[1].playerRankBox = playerRankBox1;
+            gmf.playersArray[2].playerRankBox = playerRankBox2;
+            gmf.playersArray[3].playerRankBox = playerRankBox3;
+            gmf.playersArray[4].playerRankBox = playerRankBox4;
+
+            for (int i = 1; i <= 4; i++)
+                gmf.playersArray[i].playerRankBox.Hide();
         }
 
         public void setTokens()
@@ -287,6 +301,11 @@ namespace WindowsFormsApp4
         {
             this.gamePanel.Left = this.Width / 4;
             this.gamePanel.Top = this.Height / 8;
+        }
+
+        private void goHomeBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
 
 

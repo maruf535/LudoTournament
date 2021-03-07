@@ -21,6 +21,15 @@ namespace WindowsFormsApp4
         //form objects
         public PictureBox playerPotrait;
         public Label playerNameLabel;
+        public Label playerRankBox;
+
+
+        public void showRank(int rank)
+        {
+            playerRank = rank;
+            playerRankBox.Text = rank.ToString();
+            playerRankBox.Show();
+        }
 
         public void initTokenArray()
         {

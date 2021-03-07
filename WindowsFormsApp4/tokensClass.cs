@@ -247,6 +247,10 @@ namespace WindowsFormsApp4
                 positionsX[2] = x;
                 positionsY[2] = y;
 
+                if(movesX[x,y]==0 && movesY[x, y] == 0)
+                {
+                    tokenState = 2;
+                }
             }
 
             return possible;
