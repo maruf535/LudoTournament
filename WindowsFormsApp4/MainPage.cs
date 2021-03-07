@@ -25,7 +25,6 @@ namespace WindowsFormsApp4
         private void MainPage_Load(object sender, EventArgs e)
         {
             //ChooseColourPanel.Show();
-            prData.initPlayerArray();
             hideAll();
             hideTopButtons();
             welcPanel.Show();
@@ -382,9 +381,20 @@ namespace WindowsFormsApp4
                 return;
             }
 
+            assignPlayersToTournament();
+
             game quaterFinal = new game();
+            quaterFinal.gmf.prData = prData;
             this.Hide();
             quaterFinal.Show();
+        }
+
+        public void assignPlayersToTournament()
+        {
+            for(int i=1; i<=4; i++)
+            {
+                prData.dbs.dataSend("insert into tournament_players values(" +prData.tourID+ ", " + prData.playersId[i] + ", " +prData.playerColors[i]+ ", 0, 0)");
+            }
         }
     }
 }

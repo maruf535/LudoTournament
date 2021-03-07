@@ -23,9 +23,12 @@ namespace WindowsFormsApp4
 
         private void game_Load(object sender, EventArgs e)
         {
+            gmf.initPlayers();
             setPlayerRollBtns();//sets the player roll buttons to an array which is contained in gameFunctions class
             setDiceBoxes();//sets the 6 dice roll result boxes to an array which is contained in gameFunctions class
             setTokens();
+            setPotraits();
+            setNames();
             gmf.theBoard = ludoBoard;
             gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
@@ -53,7 +56,7 @@ namespace WindowsFormsApp4
         //ei 4 tar khetre eki kaaj hocche, tai shob gular click event e same function die diechi
 
         
-        public async void hitRollBtn_Click(object sender, EventArgs e)
+        public void hitRollBtn_Click(object sender, EventArgs e)
         {
 
             gmf.rollDice();
@@ -81,7 +84,6 @@ namespace WindowsFormsApp4
 
         public void setTokens()
         {
-            gmf.initPlayerArray();
             gmf.playersArray[1].PlayerTokens[1].setAll(redToken1,1);
             gmf.playersArray[1].PlayerTokens[2].setAll(redToken2,1);
             gmf.playersArray[1].PlayerTokens[3].setAll(redToken3,1);
@@ -99,6 +101,23 @@ namespace WindowsFormsApp4
             gmf.playersArray[4].PlayerTokens[3].setAll(blueToken3,4);
             gmf.playersArray[4].PlayerTokens[4].setAll(blueToken4,4);
         }
+
+        public void setPotraits()
+        {
+            redPlayerPotrait.Image = gmf.getPotrait(gmf.playersArray[1].playerGender);
+            greenPlayerPotrait.Image = gmf.getPotrait(gmf.playersArray[2].playerGender);
+            yellowPlayerPotrait.Image = gmf.getPotrait(gmf.playersArray[3].playerGender);
+            bluePlayerPotrait.Image = gmf.getPotrait(gmf.playersArray[4].playerGender);
+        }
+
+        public void setNames()
+        {
+            redPlayerName.Text = gmf.playersArray[1].playerName;
+            greenPlayerName.Text = gmf.playersArray[2].playerName;
+            yellowPlayerName.Text = gmf.playersArray[3].playerName;
+            bluePlayerName.Text = gmf.playersArray[4].playerName;
+        }
+
         private void diceBox1_Click(object sender, EventArgs e)
         {
             gmf.selectDiceBox(1);

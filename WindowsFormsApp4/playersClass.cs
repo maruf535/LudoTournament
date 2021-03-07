@@ -11,9 +11,11 @@ namespace WindowsFormsApp4
     {
         public tokensObj[] PlayerTokens = new tokensObj[5];//4 ta token er jonno 4 ta array
         public int playerId;//from database
-        public int playerName;//from database
+        public string playerName;//from database
+        public int playerGender;//from database
         public int playerColor;//1 for red, 2 for green, 3 for yellow, 4 for blue
         public int playerRank=0;//it will be 0 zero initially, jodi tar game complete hoye jay, take rank die deoa hobe
+        public int tokensInGoalCnt = 0;
         //rank 0 thaklei she turn pabe, nahole tar turn skip hoye jabe
 
         //form objects

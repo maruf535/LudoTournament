@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +24,47 @@ namespace WindowsFormsApp4
         public int playerTurn = 1; //kon plater er turn ekhon
         public bool playerMove = false;
         public int shot=0;//joto shot ashe roll korar por
-        public processData prdata = new processData();
+        public processData prData = new processData();
         //properties end
+
+
+
+        public void initPlayers()
+        {
+            initPlayerArray();
+            prData.dbs.dataGet("select * from tournament_players where T_id = '" + prData.tourID + "'");
+            DataTable dt = new DataTable();
+            prData.dbs.sda.Fill(dt);
+
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int index = int.Parse(row["P_color"].ToString());
+                int tRank = int.Parse(row["P_tour_rank"].ToString());
+                int playerId = int.Parse(row["P_id"].ToString());
+
+                playersArray[index].playerId = playerId;
+                playersArray[index].playerColor = index;
+                if (tRank < prData.tourID)
+                {
+                    playersArray[index].playerRank = 0;
+                }
+                else
+                {
+                    playersArray[index].playerRank = tRank;
+                }
+
+                DataTable playerTable = new DataTable();
+                prData.dbs.dataGet("select * from players where P_id = " + playerId);
+                prData.dbs.sda.Fill(playerTable);
+
+                foreach(DataRow plyr in playerTable.Rows)
+                {
+                    playersArray[index].playerName = plyr["P_name"].ToString();
+                    playersArray[index].playerGender = int.Parse(plyr["P_gender"].ToString());
+                }
+            }
+        }
 
         public System.Drawing.Bitmap getPotrait(int g)
         {
@@ -171,6 +211,11 @@ namespace WindowsFormsApp4
                 playerTurn++;
             else
                 playerTurn = 1;
+            if (playersArray[playerTurn].playerRank != 0)
+            {
+                changeTurn();
+                return;
+            }
             showPlayerRollBtn();
             diceNumber = 1;
             selectedDice = -1;
@@ -316,7 +361,7 @@ namespace WindowsFormsApp4
             return false; 
         }
 
-        public async void alignInSamePos(List<tokensObj> similars, int size)
+        public void alignInSamePos(List<tokensObj> similars, int size)
         {
             int limit = size / 2;
             int shiftBy = limit * 8;

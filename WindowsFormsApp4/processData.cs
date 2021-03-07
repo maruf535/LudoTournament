@@ -35,7 +35,6 @@ namespace processHelper
         public DBAccess dbs = new DBAccess();
 
 
-        }
     }
 
 }
