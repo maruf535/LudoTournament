@@ -57,31 +57,31 @@ namespace WindowsFormsApp4
             this.lgnUserNameLebel = new System.Windows.Forms.Label();
             this.lgnPageTitle = new System.Windows.Forms.Label();
             this.ChooseColourPanel = new System.Windows.Forms.Panel();
-            this.gameStartBtn = new System.Windows.Forms.Button();
             this.player1Cols = new System.Windows.Forms.Panel();
-            this.bluePlayer1 = new System.Windows.Forms.RadioButton();
-            this.yellowPlayer1 = new System.Windows.Forms.RadioButton();
-            this.greenPlayer1 = new System.Windows.Forms.RadioButton();
             this.redPlayer1 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer1 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer1 = new System.Windows.Forms.RadioButton();
+            this.bluePlayer1 = new System.Windows.Forms.RadioButton();
             this.player2Cols = new System.Windows.Forms.Panel();
-            this.bluePlayer2 = new System.Windows.Forms.RadioButton();
-            this.yellowPlayer2 = new System.Windows.Forms.RadioButton();
-            this.greenPlayer2 = new System.Windows.Forms.RadioButton();
             this.redPlayer2 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer2 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer2 = new System.Windows.Forms.RadioButton();
+            this.bluePlayer2 = new System.Windows.Forms.RadioButton();
             this.player3Cols = new System.Windows.Forms.Panel();
-            this.bluePlayer3 = new System.Windows.Forms.RadioButton();
-            this.yellowPlayer3 = new System.Windows.Forms.RadioButton();
-            this.greenPlayer3 = new System.Windows.Forms.RadioButton();
             this.redPlayer3 = new System.Windows.Forms.RadioButton();
+            this.greenPlayer3 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer3 = new System.Windows.Forms.RadioButton();
+            this.bluePlayer3 = new System.Windows.Forms.RadioButton();
             this.player4Cols = new System.Windows.Forms.Panel();
-            this.bluePlayer4 = new System.Windows.Forms.RadioButton();
-            this.yellowPlayer4 = new System.Windows.Forms.RadioButton();
-            this.greenPlayer4 = new System.Windows.Forms.RadioButton();
             this.redPlayer4 = new System.Windows.Forms.RadioButton();
-            this.colorPlayerFour = new System.Windows.Forms.Label();
-            this.colorPlayerThree = new System.Windows.Forms.Label();
-            this.colorPlayeTwo = new System.Windows.Forms.Label();
-            this.colorPlayerOne = new System.Windows.Forms.Label();
+            this.greenPlayer4 = new System.Windows.Forms.RadioButton();
+            this.yellowPlayer4 = new System.Windows.Forms.RadioButton();
+            this.bluePlayer4 = new System.Windows.Forms.RadioButton();
+            this.gameStartBtn = new System.Windows.Forms.Button();
+            this.colorPlayer1 = new System.Windows.Forms.Label();
+            this.colorPlayer2 = new System.Windows.Forms.Label();
+            this.colorPlayer3 = new System.Windows.Forms.Label();
+            this.colorPlayer4 = new System.Windows.Forms.Label();
             this.chooseColourTitle = new System.Windows.Forms.Label();
             this.PlayerOneRegisterPanel = new System.Windows.Forms.Panel();
             this.femaleLabel = new System.Windows.Forms.Label();
@@ -513,28 +513,16 @@ namespace WindowsFormsApp4
             this.ChooseColourPanel.Controls.Add(this.player3Cols);
             this.ChooseColourPanel.Controls.Add(this.player4Cols);
             this.ChooseColourPanel.Controls.Add(this.gameStartBtn);
-            this.ChooseColourPanel.Controls.Add(this.colorPlayerFour);
-            this.ChooseColourPanel.Controls.Add(this.colorPlayerThree);
-            this.ChooseColourPanel.Controls.Add(this.colorPlayeTwo);
-            this.ChooseColourPanel.Controls.Add(this.colorPlayerOne);
+            this.ChooseColourPanel.Controls.Add(this.colorPlayer1);
+            this.ChooseColourPanel.Controls.Add(this.colorPlayer2);
+            this.ChooseColourPanel.Controls.Add(this.colorPlayer3);
+            this.ChooseColourPanel.Controls.Add(this.colorPlayer4);
             this.ChooseColourPanel.Controls.Add(this.chooseColourTitle);
             this.ChooseColourPanel.Location = new System.Drawing.Point(160, 107);
             this.ChooseColourPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChooseColourPanel.Name = "ChooseColourPanel";
             this.ChooseColourPanel.Size = new System.Drawing.Size(812, 534);
             this.ChooseColourPanel.TabIndex = 17;
-            // 
-            // gameStartBtn
-            // 
-            this.gameStartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gameStartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.gameStartBtn.Location = new System.Drawing.Point(495, 416);
-            this.gameStartBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.gameStartBtn.Name = "gameStartBtn";
-            this.gameStartBtn.Size = new System.Drawing.Size(100, 41);
-            this.gameStartBtn.TabIndex = 32;
-            this.gameStartBtn.Text = "Continue";
-            this.gameStartBtn.UseVisualStyleBackColor = true;
             // 
             // player1Cols
             // 
@@ -546,54 +534,6 @@ namespace WindowsFormsApp4
             this.player1Cols.Name = "player1Cols";
             this.player1Cols.Size = new System.Drawing.Size(220, 34);
             this.player1Cols.TabIndex = 49;
-            // 
-            // bluePlayer1
-            // 
-            this.bluePlayer1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.bluePlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.bluePlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bluePlayer1.FlatAppearance.BorderSize = 0;
-            this.bluePlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer1.Location = new System.Drawing.Point(185, 7);
-            this.bluePlayer1.Name = "bluePlayer1";
-            this.bluePlayer1.Size = new System.Drawing.Size(25, 21);
-            this.bluePlayer1.TabIndex = 50;
-            this.bluePlayer1.TabStop = true;
-            this.bluePlayer1.Tag = "14";
-            this.bluePlayer1.UseVisualStyleBackColor = true;
-            this.bluePlayer1.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // yellowPlayer1
-            // 
-            this.yellowPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.yellowPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
-            this.yellowPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.yellowPlayer1.FlatAppearance.BorderSize = 0;
-            this.yellowPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer1.Location = new System.Drawing.Point(125, 7);
-            this.yellowPlayer1.Name = "yellowPlayer1";
-            this.yellowPlayer1.Size = new System.Drawing.Size(25, 21);
-            this.yellowPlayer1.TabIndex = 50;
-            this.yellowPlayer1.TabStop = true;
-            this.yellowPlayer1.Tag = "13";
-            this.yellowPlayer1.UseVisualStyleBackColor = true;
-            this.yellowPlayer1.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // greenPlayer1
-            // 
-            this.greenPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.greenPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
-            this.greenPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.greenPlayer1.FlatAppearance.BorderSize = 0;
-            this.greenPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer1.Location = new System.Drawing.Point(65, 7);
-            this.greenPlayer1.Name = "greenPlayer1";
-            this.greenPlayer1.Size = new System.Drawing.Size(25, 21);
-            this.greenPlayer1.TabIndex = 50;
-            this.greenPlayer1.TabStop = true;
-            this.greenPlayer1.Tag = "12";
-            this.greenPlayer1.UseVisualStyleBackColor = true;
-            this.greenPlayer1.Click += new System.EventHandler(this.colorChoosed);
             // 
             // redPlayer1
             // 
@@ -612,6 +552,54 @@ namespace WindowsFormsApp4
             this.redPlayer1.UseVisualStyleBackColor = true;
             this.redPlayer1.Click += new System.EventHandler(this.colorChoosed);
             // 
+            // greenPlayer1
+            // 
+            this.greenPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer1.FlatAppearance.BorderSize = 0;
+            this.greenPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer1.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer1.Name = "greenPlayer1";
+            this.greenPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer1.TabIndex = 50;
+            this.greenPlayer1.TabStop = true;
+            this.greenPlayer1.Tag = "12";
+            this.greenPlayer1.UseVisualStyleBackColor = true;
+            this.greenPlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer1
+            // 
+            this.yellowPlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer1.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer1.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer1.Name = "yellowPlayer1";
+            this.yellowPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer1.TabIndex = 50;
+            this.yellowPlayer1.TabStop = true;
+            this.yellowPlayer1.Tag = "13";
+            this.yellowPlayer1.UseVisualStyleBackColor = true;
+            this.yellowPlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // bluePlayer1
+            // 
+            this.bluePlayer1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer1.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer1.FlatAppearance.BorderSize = 0;
+            this.bluePlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer1.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer1.Name = "bluePlayer1";
+            this.bluePlayer1.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer1.TabIndex = 50;
+            this.bluePlayer1.TabStop = true;
+            this.bluePlayer1.Tag = "14";
+            this.bluePlayer1.UseVisualStyleBackColor = true;
+            this.bluePlayer1.Click += new System.EventHandler(this.colorChoosed);
+            // 
             // player2Cols
             // 
             this.player2Cols.Controls.Add(this.redPlayer2);
@@ -622,54 +610,6 @@ namespace WindowsFormsApp4
             this.player2Cols.Name = "player2Cols";
             this.player2Cols.Size = new System.Drawing.Size(220, 34);
             this.player2Cols.TabIndex = 50;
-            // 
-            // bluePlayer2
-            // 
-            this.bluePlayer2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.bluePlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.bluePlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bluePlayer2.FlatAppearance.BorderSize = 0;
-            this.bluePlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer2.Location = new System.Drawing.Point(185, 7);
-            this.bluePlayer2.Name = "bluePlayer2";
-            this.bluePlayer2.Size = new System.Drawing.Size(25, 21);
-            this.bluePlayer2.TabIndex = 50;
-            this.bluePlayer2.TabStop = true;
-            this.bluePlayer2.Tag = "24";
-            this.bluePlayer2.UseVisualStyleBackColor = true;
-            this.bluePlayer2.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // yellowPlayer2
-            // 
-            this.yellowPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.yellowPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
-            this.yellowPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.yellowPlayer2.FlatAppearance.BorderSize = 0;
-            this.yellowPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer2.Location = new System.Drawing.Point(125, 7);
-            this.yellowPlayer2.Name = "yellowPlayer2";
-            this.yellowPlayer2.Size = new System.Drawing.Size(25, 21);
-            this.yellowPlayer2.TabIndex = 50;
-            this.yellowPlayer2.TabStop = true;
-            this.yellowPlayer2.Tag = "23";
-            this.yellowPlayer2.UseVisualStyleBackColor = true;
-            this.yellowPlayer2.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // greenPlayer2
-            // 
-            this.greenPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.greenPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
-            this.greenPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.greenPlayer2.FlatAppearance.BorderSize = 0;
-            this.greenPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer2.Location = new System.Drawing.Point(65, 7);
-            this.greenPlayer2.Name = "greenPlayer2";
-            this.greenPlayer2.Size = new System.Drawing.Size(25, 21);
-            this.greenPlayer2.TabIndex = 50;
-            this.greenPlayer2.TabStop = true;
-            this.greenPlayer2.Tag = "22";
-            this.greenPlayer2.UseVisualStyleBackColor = true;
-            this.greenPlayer2.Click += new System.EventHandler(this.colorChoosed);
             // 
             // redPlayer2
             // 
@@ -687,6 +627,54 @@ namespace WindowsFormsApp4
             this.redPlayer2.UseVisualStyleBackColor = true;
             this.redPlayer2.Click += new System.EventHandler(this.colorChoosed);
             // 
+            // greenPlayer2
+            // 
+            this.greenPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer2.FlatAppearance.BorderSize = 0;
+            this.greenPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer2.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer2.Name = "greenPlayer2";
+            this.greenPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer2.TabIndex = 50;
+            this.greenPlayer2.TabStop = true;
+            this.greenPlayer2.Tag = "22";
+            this.greenPlayer2.UseVisualStyleBackColor = true;
+            this.greenPlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer2
+            // 
+            this.yellowPlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer2.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer2.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer2.Name = "yellowPlayer2";
+            this.yellowPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer2.TabIndex = 50;
+            this.yellowPlayer2.TabStop = true;
+            this.yellowPlayer2.Tag = "23";
+            this.yellowPlayer2.UseVisualStyleBackColor = true;
+            this.yellowPlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // bluePlayer2
+            // 
+            this.bluePlayer2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer2.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer2.FlatAppearance.BorderSize = 0;
+            this.bluePlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer2.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer2.Name = "bluePlayer2";
+            this.bluePlayer2.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer2.TabIndex = 50;
+            this.bluePlayer2.TabStop = true;
+            this.bluePlayer2.Tag = "24";
+            this.bluePlayer2.UseVisualStyleBackColor = true;
+            this.bluePlayer2.Click += new System.EventHandler(this.colorChoosed);
+            // 
             // player3Cols
             // 
             this.player3Cols.Controls.Add(this.redPlayer3);
@@ -697,54 +685,6 @@ namespace WindowsFormsApp4
             this.player3Cols.Name = "player3Cols";
             this.player3Cols.Size = new System.Drawing.Size(220, 34);
             this.player3Cols.TabIndex = 51;
-            // 
-            // bluePlayer3
-            // 
-            this.bluePlayer3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.bluePlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.bluePlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bluePlayer3.FlatAppearance.BorderSize = 0;
-            this.bluePlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer3.Location = new System.Drawing.Point(185, 7);
-            this.bluePlayer3.Name = "bluePlayer3";
-            this.bluePlayer3.Size = new System.Drawing.Size(25, 21);
-            this.bluePlayer3.TabIndex = 50;
-            this.bluePlayer3.TabStop = true;
-            this.bluePlayer3.Tag = "34";
-            this.bluePlayer3.UseVisualStyleBackColor = true;
-            this.bluePlayer3.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // yellowPlayer3
-            // 
-            this.yellowPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.yellowPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
-            this.yellowPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.yellowPlayer3.FlatAppearance.BorderSize = 0;
-            this.yellowPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer3.Location = new System.Drawing.Point(125, 7);
-            this.yellowPlayer3.Name = "yellowPlayer3";
-            this.yellowPlayer3.Size = new System.Drawing.Size(25, 21);
-            this.yellowPlayer3.TabIndex = 50;
-            this.yellowPlayer3.TabStop = true;
-            this.yellowPlayer3.Tag = "33";
-            this.yellowPlayer3.UseVisualStyleBackColor = true;
-            this.yellowPlayer3.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // greenPlayer3
-            // 
-            this.greenPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.greenPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
-            this.greenPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.greenPlayer3.FlatAppearance.BorderSize = 0;
-            this.greenPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer3.Location = new System.Drawing.Point(65, 7);
-            this.greenPlayer3.Name = "greenPlayer3";
-            this.greenPlayer3.Size = new System.Drawing.Size(25, 21);
-            this.greenPlayer3.TabIndex = 50;
-            this.greenPlayer3.TabStop = true;
-            this.greenPlayer3.Tag = "32";
-            this.greenPlayer3.UseVisualStyleBackColor = true;
-            this.greenPlayer3.Click += new System.EventHandler(this.colorChoosed);
             // 
             // redPlayer3
             // 
@@ -762,6 +702,54 @@ namespace WindowsFormsApp4
             this.redPlayer3.UseVisualStyleBackColor = true;
             this.redPlayer3.Click += new System.EventHandler(this.colorChoosed);
             // 
+            // greenPlayer3
+            // 
+            this.greenPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer3.FlatAppearance.BorderSize = 0;
+            this.greenPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer3.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer3.Name = "greenPlayer3";
+            this.greenPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer3.TabIndex = 50;
+            this.greenPlayer3.TabStop = true;
+            this.greenPlayer3.Tag = "32";
+            this.greenPlayer3.UseVisualStyleBackColor = true;
+            this.greenPlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // yellowPlayer3
+            // 
+            this.yellowPlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer3.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer3.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer3.Name = "yellowPlayer3";
+            this.yellowPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer3.TabIndex = 50;
+            this.yellowPlayer3.TabStop = true;
+            this.yellowPlayer3.Tag = "33";
+            this.yellowPlayer3.UseVisualStyleBackColor = true;
+            this.yellowPlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
+            // bluePlayer3
+            // 
+            this.bluePlayer3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer3.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer3.FlatAppearance.BorderSize = 0;
+            this.bluePlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer3.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer3.Name = "bluePlayer3";
+            this.bluePlayer3.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer3.TabIndex = 50;
+            this.bluePlayer3.TabStop = true;
+            this.bluePlayer3.Tag = "34";
+            this.bluePlayer3.UseVisualStyleBackColor = true;
+            this.bluePlayer3.Click += new System.EventHandler(this.colorChoosed);
+            // 
             // player4Cols
             // 
             this.player4Cols.Controls.Add(this.redPlayer4);
@@ -772,54 +760,6 @@ namespace WindowsFormsApp4
             this.player4Cols.Name = "player4Cols";
             this.player4Cols.Size = new System.Drawing.Size(220, 34);
             this.player4Cols.TabIndex = 52;
-            // 
-            // bluePlayer4
-            // 
-            this.bluePlayer4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.bluePlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
-            this.bluePlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bluePlayer4.FlatAppearance.BorderSize = 0;
-            this.bluePlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer4.Location = new System.Drawing.Point(185, 7);
-            this.bluePlayer4.Name = "bluePlayer4";
-            this.bluePlayer4.Size = new System.Drawing.Size(25, 21);
-            this.bluePlayer4.TabIndex = 50;
-            this.bluePlayer4.TabStop = true;
-            this.bluePlayer4.Tag = "44";
-            this.bluePlayer4.UseVisualStyleBackColor = true;
-            this.bluePlayer4.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // yellowPlayer4
-            // 
-            this.yellowPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.yellowPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
-            this.yellowPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.yellowPlayer4.FlatAppearance.BorderSize = 0;
-            this.yellowPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer4.Location = new System.Drawing.Point(125, 7);
-            this.yellowPlayer4.Name = "yellowPlayer4";
-            this.yellowPlayer4.Size = new System.Drawing.Size(25, 21);
-            this.yellowPlayer4.TabIndex = 50;
-            this.yellowPlayer4.TabStop = true;
-            this.yellowPlayer4.Tag = "43";
-            this.yellowPlayer4.UseVisualStyleBackColor = true;
-            this.yellowPlayer4.Click += new System.EventHandler(this.colorChoosed);
-            // 
-            // greenPlayer4
-            // 
-            this.greenPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.greenPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
-            this.greenPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.greenPlayer4.FlatAppearance.BorderSize = 0;
-            this.greenPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer4.Location = new System.Drawing.Point(65, 7);
-            this.greenPlayer4.Name = "greenPlayer4";
-            this.greenPlayer4.Size = new System.Drawing.Size(25, 21);
-            this.greenPlayer4.TabIndex = 50;
-            this.greenPlayer4.TabStop = true;
-            this.greenPlayer4.Tag = "42";
-            this.greenPlayer4.UseVisualStyleBackColor = true;
-            this.greenPlayer4.Click += new System.EventHandler(this.colorChoosed);
             // 
             // redPlayer4
             // 
@@ -837,65 +777,126 @@ namespace WindowsFormsApp4
             this.redPlayer4.UseVisualStyleBackColor = true;
             this.redPlayer4.Click += new System.EventHandler(this.colorChoosed);
             // 
-            // colorPlayerFour
+            // greenPlayer4
             // 
-            this.colorPlayerFour.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerFour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.colorPlayerFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlayerFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorPlayerFour.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerFour.Location = new System.Drawing.Point(230, 359);
-            this.colorPlayerFour.Name = "colorPlayerFour";
-            this.colorPlayerFour.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayerFour.Size = new System.Drawing.Size(100, 32);
-            this.colorPlayerFour.TabIndex = 48;
-            this.colorPlayerFour.Text = "Player 4";
-            this.colorPlayerFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.greenPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.greenPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.greenToken;
+            this.greenPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.greenPlayer4.FlatAppearance.BorderSize = 0;
+            this.greenPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.greenPlayer4.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer4.Name = "greenPlayer4";
+            this.greenPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer4.TabIndex = 50;
+            this.greenPlayer4.TabStop = true;
+            this.greenPlayer4.Tag = "42";
+            this.greenPlayer4.UseVisualStyleBackColor = true;
+            this.greenPlayer4.Click += new System.EventHandler(this.colorChoosed);
             // 
-            // colorPlayerThree
+            // yellowPlayer4
             // 
-            this.colorPlayerThree.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.colorPlayerThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlayerThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorPlayerThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerThree.Location = new System.Drawing.Point(230, 299);
-            this.colorPlayerThree.Name = "colorPlayerThree";
-            this.colorPlayerThree.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayerThree.Size = new System.Drawing.Size(100, 32);
-            this.colorPlayerThree.TabIndex = 43;
-            this.colorPlayerThree.Text = "Player 3";
-            this.colorPlayerThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.yellowPlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.yellowPlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.yellowToken;
+            this.yellowPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.yellowPlayer4.FlatAppearance.BorderSize = 0;
+            this.yellowPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yellowPlayer4.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer4.Name = "yellowPlayer4";
+            this.yellowPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer4.TabIndex = 50;
+            this.yellowPlayer4.TabStop = true;
+            this.yellowPlayer4.Tag = "43";
+            this.yellowPlayer4.UseVisualStyleBackColor = true;
+            this.yellowPlayer4.Click += new System.EventHandler(this.colorChoosed);
             // 
-            // colorPlayeTwo
+            // bluePlayer4
             // 
-            this.colorPlayeTwo.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayeTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.colorPlayeTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlayeTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorPlayeTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayeTwo.Location = new System.Drawing.Point(230, 239);
-            this.colorPlayeTwo.Name = "colorPlayeTwo";
-            this.colorPlayeTwo.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayeTwo.Size = new System.Drawing.Size(100, 32);
-            this.colorPlayeTwo.TabIndex = 38;
-            this.colorPlayeTwo.Text = "Player 2";
-            this.colorPlayeTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bluePlayer4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bluePlayer4.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.blueToken;
+            this.bluePlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bluePlayer4.FlatAppearance.BorderSize = 0;
+            this.bluePlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bluePlayer4.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer4.Name = "bluePlayer4";
+            this.bluePlayer4.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer4.TabIndex = 50;
+            this.bluePlayer4.TabStop = true;
+            this.bluePlayer4.Tag = "44";
+            this.bluePlayer4.UseVisualStyleBackColor = true;
+            this.bluePlayer4.Click += new System.EventHandler(this.colorChoosed);
             // 
-            // colorPlayerOne
+            // gameStartBtn
             // 
-            this.colorPlayerOne.BackColor = System.Drawing.Color.Transparent;
-            this.colorPlayerOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.colorPlayerOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colorPlayerOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorPlayerOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayerOne.Location = new System.Drawing.Point(230, 179);
-            this.colorPlayerOne.Name = "colorPlayerOne";
-            this.colorPlayerOne.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayerOne.Size = new System.Drawing.Size(100, 32);
-            this.colorPlayerOne.TabIndex = 33;
-            this.colorPlayerOne.Text = "Player 1";
-            this.colorPlayerOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gameStartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gameStartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.gameStartBtn.Location = new System.Drawing.Point(495, 416);
+            this.gameStartBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.gameStartBtn.Name = "gameStartBtn";
+            this.gameStartBtn.Size = new System.Drawing.Size(100, 41);
+            this.gameStartBtn.TabIndex = 32;
+            this.gameStartBtn.Text = "Continue";
+            this.gameStartBtn.UseVisualStyleBackColor = true;
+            this.gameStartBtn.Click += new System.EventHandler(this.gameStartBtn_Click);
+            // 
+            // colorPlayer1
+            // 
+            this.colorPlayer1.BackColor = System.Drawing.Color.Transparent;
+            this.colorPlayer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colorPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorPlayer1.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.colorPlayer1.Location = new System.Drawing.Point(230, 179);
+            this.colorPlayer1.Name = "colorPlayer1";
+            this.colorPlayer1.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayer1.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer1.TabIndex = 33;
+            this.colorPlayer1.Text = "Player 1";
+            this.colorPlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // colorPlayer2
+            // 
+            this.colorPlayer2.BackColor = System.Drawing.Color.Transparent;
+            this.colorPlayer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colorPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorPlayer2.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.colorPlayer2.Location = new System.Drawing.Point(230, 239);
+            this.colorPlayer2.Name = "colorPlayer2";
+            this.colorPlayer2.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayer2.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer2.TabIndex = 38;
+            this.colorPlayer2.Text = "Player 2";
+            this.colorPlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // colorPlayer3
+            // 
+            this.colorPlayer3.BackColor = System.Drawing.Color.Transparent;
+            this.colorPlayer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colorPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorPlayer3.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.colorPlayer3.Location = new System.Drawing.Point(230, 299);
+            this.colorPlayer3.Name = "colorPlayer3";
+            this.colorPlayer3.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayer3.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer3.TabIndex = 43;
+            this.colorPlayer3.Text = "Player 3";
+            this.colorPlayer3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // colorPlayer4
+            // 
+            this.colorPlayer4.BackColor = System.Drawing.Color.Transparent;
+            this.colorPlayer4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.colorPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colorPlayer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorPlayer4.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.colorPlayer4.Location = new System.Drawing.Point(230, 359);
+            this.colorPlayer4.Name = "colorPlayer4";
+            this.colorPlayer4.Padding = new System.Windows.Forms.Padding(3);
+            this.colorPlayer4.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer4.TabIndex = 48;
+            this.colorPlayer4.Text = "Player 4";
+            this.colorPlayer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // chooseColourTitle
             // 
@@ -1671,10 +1672,10 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel ChooseColourPanel;
-        private System.Windows.Forms.Label colorPlayerFour;
-        private System.Windows.Forms.Label colorPlayerThree;
-        private System.Windows.Forms.Label colorPlayeTwo;
-        private System.Windows.Forms.Label colorPlayerOne;
+        private System.Windows.Forms.Label colorPlayer4;
+        private System.Windows.Forms.Label colorPlayer3;
+        private System.Windows.Forms.Label colorPlayer2;
+        private System.Windows.Forms.Label colorPlayer1;
         private System.Windows.Forms.Button gameStartBtn;
         private System.Windows.Forms.Label chooseColourTitle;
         private System.Windows.Forms.Panel OngoingTournamentPanel;

@@ -69,17 +69,18 @@ namespace WindowsFormsApp4
 
             string tourName = tourNameInp.Text;
             //first check korte hobe ei naam e kono tournament already ache kina
+            int ifUnique = getIdFromTable("tournament", tourName, "T_Name", "T_id");
             //thakle abr input dite bolte hobe, insert hobe na, retrun kore dibo function
+            if (ifUnique != -1)
+            {
+                MessageBox.Show("Enter a unique tournament name...");
+                return ;
+            }
             //then eta ke insert  kore dibo
             prData.dbs.dataSend("insert into tournament values('" + tourName + "' , 4)");
-            prData.dbs.dataGet("select * from tournament where T_name = '" + tourName + "'");
-            DataTable dt = new DataTable();
-            prData.dbs.sda.Fill(dt);
 
-            foreach (DataRow row in dt.Rows)//jehetu username unique to ektai row pabe, no tension
-            {
-                prData.tourID = int.Parse(row["T_id"].ToString());
-            }
+            //then etar id ta nibo
+            prData.tourID = getIdFromTable("tournament", tourName, "T_Name", "T_id");
 
             //MessageBox.Show(prData.tourID.ToString()); //check kortesi
             prData.tourState = 4;//jehetu new tournament, to quaterfinal state e thakbe
@@ -171,6 +172,7 @@ namespace WindowsFormsApp4
 
             int playerId = getIdFromTable("players", userName, "P_name","P_id");
             prData.playersId[prData.playerSerial] = playerId;
+            prData.playerNames[prData.playerSerial] = userName;
             goToNextPlayer();
         }
         public void clearRegisterPage()
@@ -201,9 +203,46 @@ namespace WindowsFormsApp4
 
         private void plyrLgnBtn_Click(object sender, EventArgs e)
         {
-            //data entry korte hbe
+            //first e userName r password nie nei
+            string userName = lgnUserName.Text;
+            string pass = lgnPassword.Text;
 
+            //aage check korbo ei username ache kina
+            int id = getIdFromTable("players", userName, "P_name", "P_id");
+
+            if (id == -1)
+            {
+                MessageBox.Show("This username does not exist...");
+                return;
+            }
+
+            prData.dbs.dataGet("select * from players where P_name = '" + userName + "' and P_password = '" + pass +"'");
+            DataTable dt = new DataTable();
+            prData.dbs.sda.Fill(dt);
+
+            id = -1;
+            foreach (DataRow row in dt.Rows)
+            {
+                id = int.Parse(row["P_id"].ToString());
+            }
+
+            if (id == -1)
+            {
+                MessageBox.Show("Wrong password...");
+                return;
+            }
+
+
+            prData.playersId[prData.playerSerial] = id;
+            prData.playerNames[prData.playerSerial] = userName;
+            clearLoginPage();
             goToNextPlayer();
+        }
+
+        public void clearLoginPage()
+        {
+            lgnUserName.Text = "";
+            lgnPassword.Text = "";
         }
 
         private void FixurePanel_Paint(object sender, PaintEventArgs e)
@@ -244,11 +283,8 @@ namespace WindowsFormsApp4
                 {
                     //colorChocie page load korte hobe;
                     hideAll();
+                    showColorChoicePanel();
                     
-                    //game quaterFinal = new game();
-                    //quaterFinal.gmf.prdata = prData;
-                    //this.Hide();
-                    //quaterFinal.Show();
                 }
             }
         }
@@ -281,6 +317,19 @@ namespace WindowsFormsApp4
             HomePanel.Show();
         }
 
+        public void showColorChoicePanel()
+        {
+            backBtn.Hide();
+            int childNum = 4;
+            
+            for(int i = 1; i <= 4; i++)
+            {
+                (ChooseColourPanel.Controls[i + childNum] as Label).Text = prData.playerNames[i];
+                prData.playerColors[i] = 0;
+            }
+            hideAll();
+            ChooseColourPanel.Show();
+        }
 
         public void colorChoosed(object sender, EventArgs e)
         {
@@ -313,6 +362,29 @@ namespace WindowsFormsApp4
             (ChooseColourPanel.Controls[colorTakenBy-1].Controls[color-1] as RadioButton).Checked = false;
 
             prData.playerColors[colorTakenBy] = 0;
+        }
+
+        private void gameStartBtn_Click(object sender, EventArgs e)
+        {
+            bool allSelected = true;
+            for(int i = 1; i <= 4; i++)
+            {
+                if (prData.playerColors[i] == 0)
+                {
+                    allSelected = false;
+                    break;
+                }
+            }
+
+            if (!allSelected)
+            {
+                MessageBox.Show("Please select color for all players....");
+                return;
+            }
+
+            game quaterFinal = new game();
+            this.Hide();
+            quaterFinal.Show();
         }
     }
 }
