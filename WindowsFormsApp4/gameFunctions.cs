@@ -286,16 +286,22 @@ namespace WindowsFormsApp4
                     {
                         playersArray[playerTurn].showRank(rank);
                         rank++;
-                        diceNumber = 1;
+                        diceNumber = 2;
+                    }
+                    else
+                    {
+                        playerMove = false;
+                        MessageBox.Show("Roll the dice again !!");
+                        playerRollBtns[playerTurn].Image = getDiceImage(0);
                     }
 
-                    if (rank == prData.tourState)
+                    if (rank == prData.tourState-1)
                     {
                         gameOver();
                     }
                 }
                 removeDice();
-                if (diceNumber == 1)
+                if (diceNumber == 1 && playerMove==true)
                     changeTurn();
             }
             else
@@ -332,6 +338,9 @@ namespace WindowsFormsApp4
                         //ektar beshi same color er token okhane thakle oder eliminate korte parbe na
                         //different jekono color er ekta token thaklei take eliminate kore dibe
                         similars[0].gotoHome();
+                        playerMove = false;
+                        MessageBox.Show("Roll The dice Again !!");
+                        playerRollBtns[playerTurn].Image = getDiceImage(0);
                     }
                 }
             }
