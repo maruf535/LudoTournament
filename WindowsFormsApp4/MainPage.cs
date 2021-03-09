@@ -73,7 +73,7 @@ namespace WindowsFormsApp4
             if (ifUnique != -1)
             {
                 MessageBox.Show("Enter a unique tournament name...");
-                return ;
+                return;
             }
             //then eta ke insert  kore dibo
             prData.dbs.dataSend("insert into tournament values('" + tourName + "' , 4)");
@@ -117,7 +117,7 @@ namespace WindowsFormsApp4
             //kintu jehetu ei player login panel amra aro koek jayga theke show korte pari
             //tai etake playerLoginPanelShow naame ekta function e rekhe dibo
             //shudhu playerCnt disilam, sathe"Player " eta add kore dite hobe shurute
-            lgnPageTitle.Text ="PLAYER " + prData.playerSerial.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
+            lgnPageTitle.Text = "PLAYER " + prData.playerSerial.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
             PlayerOneLoginPanel.Show();
         }
 
@@ -153,7 +153,7 @@ namespace WindowsFormsApp4
                 return;
             }
 
-            if(getIdFromTable("players", userName,"P_name","P_id")!=-1)
+            if (getIdFromTable("players", userName, "P_name", "P_id") != -1)
             {
                 MessageBox.Show("This user name is taken, Enter a new one !");
                 return;
@@ -163,7 +163,7 @@ namespace WindowsFormsApp4
 
             clearRegisterPage();
 
-            int playerId = getIdFromTable("players", userName, "P_name","P_id");
+            int playerId = getIdFromTable("players", userName, "P_name", "P_id");
             prData.playersId[prData.playerSerial] = playerId;
             prData.playerNames[prData.playerSerial] = userName;
             goToNextPlayer();
@@ -177,7 +177,7 @@ namespace WindowsFormsApp4
             regFemale.Checked = false;
         }
 
-       public int getIdFromTable(string TableName, string toMatch, string colName, string idCol)
+        public int getIdFromTable(string TableName, string toMatch, string colName, string idCol)
         {
 
             prData.dbs.dataGet("select * from " + TableName + " where " + colName + " = '" + toMatch + "'");
@@ -185,9 +185,9 @@ namespace WindowsFormsApp4
             prData.dbs.sda.Fill(dt);
 
             int id = -1;
-            foreach(DataRow row in dt.Rows)
+            foreach (DataRow row in dt.Rows)
             {
-                id =int.Parse(row[idCol].ToString());
+                id = int.Parse(row[idCol].ToString());
             }
 
             return id;
@@ -209,7 +209,7 @@ namespace WindowsFormsApp4
                 return;
             }
 
-            prData.dbs.dataGet("select * from players where P_name = '" + userName + "' and P_password = '" + pass +"'");
+            prData.dbs.dataGet("select * from players where P_name = '" + userName + "' and P_password = '" + pass + "'");
             DataTable dt = new DataTable();
             prData.dbs.sda.Fill(dt);
 
@@ -263,7 +263,7 @@ namespace WindowsFormsApp4
             if (pageNum < 1)
                 pageNum = 1;
             int pageF = (pageNum - 1) * 5;
-            for (int i = 0; i < 5 && i<(maxSerial-pageF); i++)
+            for (int i = 0; i < 5 && i < (maxSerial - pageF); i++)
             {
                 ongTourListPanel.Controls[i].Show();
                 string tourName = prData.ongTourTable.Rows[pageF + i]["T_name"].ToString();
@@ -300,15 +300,162 @@ namespace WindowsFormsApp4
         private void enterTournament(object sender, EventArgs e)
         {
             string temp = (sender as Button).Tag.ToString();
-            MessageBox.Show(temp);
+            int tourId = int.Parse(temp);
+            prData.tourID = tourId;
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + tourId);
+            prData.setTempTable();
+
+            if (prData.tempTable.Rows.Count < 4)
+            {
+                prData.tourType = 1;
+                prData.tourState = 4;//jehetu new tournament, to quaterfinal state e thakbe
+
+                int till = prData.tempTable.Rows.Count;
+                int i;
+                for(i = 1; i <=till; i++)
+                {
+                    prData.playersId[i] = int.Parse(prData.tempTable.Rows[i]["T_id"].ToString());
+                }
+                prData.playerSerial = i;
+
+                hideAll();
+                goBack = OngoingTournamentPanel;
+                showPlayerChoice();
+                return;
+            }
+
+            prData.setTourDetails();
+            hideAll();
+            goBack = OngoingTournamentPanel;
+            TourHomeTitle.Text = prData.tempTable.Rows[0]["T_name"].ToString();
+            tourResumeBtn.Tag = prData.tempTable.Rows[0]["T_id"];
+            tourRestartBtn.Tag = prData.tempTable.Rows[0]["T_id"];
+            tournamentHomePanel.Show();
         }
 
         private void deleteTournament(object sender, EventArgs e)
         {
             string temp = (sender as Button).Tag.ToString();
-            MessageBox.Show(temp);
+            int tourId = int.Parse(temp);
+            DialogResult dialogResult = MessageBox.Show("Are your sure ?","Delete tournament", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                prData.dbs.dataSend("delete from tournament where T_id = " + tourId);
+                prData.dbs.dataSend("delete from tournament_players where T_id = " + tourId);
+                prData.dbs.dataSend("delete from game_results where T_id = " + tourId);
+                MessageBox.Show("Tournament deleted...");
+                prData.ongTourTable.Clear();
+                prData.dbs.dataGet("select * from tournament");
+                prData.dbs.sda.Fill(prData.ongTourTable);
+                prData.ongTourPnum = 1;
+                showOngTourListPage(prData.ongTourPnum);
+
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
         }
 
+        private void tourSearchBtn_Click(object sender, EventArgs e)
+        {
+            prData.ongTourTable.Clear();
+            string tourName = tourSrchInp.Text;
+            prData.dbs.dataGet("select * from tournament where T_name like '%" + tourName + "%'");
+            prData.dbs.sda.Fill(prData.ongTourTable);
+            prData.ongTourPnum = 1;
+            showOngTourListPage(prData.ongTourPnum);
+        }
+
+        private void tourResumeBtn_Click(object sender, EventArgs e)
+        {
+            string temp = (sender as Button).Tag.ToString();
+            int tourId = int.Parse(temp);
+            string tourName = "";
+            foreach (DataRow row in prData.ongTourTable.Select("T_id = " + tourId))
+            {
+                tourName = row["T_name"].ToString();
+            }
+            fixureTitle.Text = tourName.ToString();
+            resetTourFixture();
+            for(int i = 4; i >= prData.tourState; i--)
+            {
+                setTourFixture(i);
+            }
+
+            if (prData.tourState != 1)
+            {
+                (FixurePanel.Controls[prData.tourState].Controls[prData.tourState] as Button).Show();
+            }
+            FixurePanel.Show();
+        }
+
+        public void setTourFixture(int state)
+        {
+            if (state == 4)
+            {
+                for(int i = 0; i < state; i++)
+                {
+                    (FixurePanel.Controls[state].Controls[i] as Label).Text = prData.tempTable.Rows[i]["P_name"].ToString();
+                    if(state == prData.tourState)
+                    {
+                        (FixurePanel.Controls[state].Controls[i] as Label).BackColor = System.Drawing.Color.LightGreen;
+                    }
+                }
+            }
+            else
+            {
+                DataTable gameTable =  getGameData(state + 1);
+
+                for(int i=0; i<state; i++)
+                {
+                    for(int j = 0; j < state + 1; j++)
+                    {
+                        if (int.Parse(gameTable.Rows[j]["P_rank"].ToString()) == i+1)
+                        {
+                            (FixurePanel.Controls[state].Controls[i] as Label).Text = gameTable.Rows[j]["P_name"].ToString();
+                            if (state == prData.tourState)
+                            {
+                                (FixurePanel.Controls[state].Controls[i] as Label).BackColor = System.Drawing.Color.LightGreen;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        public DataTable getGameData(int state)
+        {
+            DataTable dt = new DataTable();
+            prData.dbs.dataGet("select players.P_Name,game_results.P_rank from players, game_results where players.P_id = game_results.P_id and game_results.T_id = " + prData.tourID + " and game_results.T_state = " + state);
+            prData.dbs.sda.Fill(dt);
+            return dt;
+        }
+
+        private void goToTheGame(object sender, EventArgs e)
+        {
+            game theGame = new game();
+            theGame.gmf.prData = prData;
+            this.Hide();
+            theGame.Show();
+        }
+
+        public void resetTourFixture()
+        {
+            int i, j;
+            for( i = 1; i <= 4; i++)
+            {
+                for( j = 0; j < i; j++)
+                {
+                    (FixurePanel.Controls[i].Controls[j] as Label).Text = "?";
+                    (FixurePanel.Controls[i].Controls[j] as Label).BackColor = System.Drawing.Color.Yellow;
+                }
+                if (i > 1)
+                {
+                    (FixurePanel.Controls[i].Controls[j] as Button).Visible = false;
+                }
+            }
+        }
         public void goToNextPlayer()
         {
             backBtn.Hide();
@@ -325,12 +472,12 @@ namespace WindowsFormsApp4
             }
             else
             {
-                if(prData.tourType == 1)
+                if (prData.tourType == 1)
                 {
                     //colorChocie page load korte hobe;
                     hideAll();
                     showColorChoicePanel();
-                    
+
                 }
             }
         }
@@ -344,7 +491,7 @@ namespace WindowsFormsApp4
             PlayerOneRegisterPanel.Hide();
             ChooseColourPanel.Hide();
             OngoingTournamentPanel.Hide();
-            DecisionPagePanel.Hide();
+            tournamentHomePanel.Hide();
             FixurePanel.Hide();
         }
         public void hideTopButtons()
@@ -367,8 +514,8 @@ namespace WindowsFormsApp4
         {
             backBtn.Hide();
             int childNum = 4;
-            
-            for(int i = 1; i <= 4; i++)
+
+            for (int i = 1; i <= 4; i++)
             {
                 (ChooseColourPanel.Controls[i + childNum] as Label).Text = prData.playerNames[i];
                 prData.playerColors[i] = 0;
@@ -386,7 +533,7 @@ namespace WindowsFormsApp4
             int player = tagInt / 10;
             int colorTakenBy = checkIfColorTaken(color);
 
-            if (colorTakenBy!=-1)
+            if (colorTakenBy != -1)
             {
                 removeColorFrom(color, colorTakenBy);
             }
@@ -395,7 +542,7 @@ namespace WindowsFormsApp4
 
         public int checkIfColorTaken(int color)
         {
-            for(int i=1; i < 5; i++)
+            for (int i = 1; i < 5; i++)
             {
                 if (prData.playerColors[i] == color)
                     return i;
@@ -405,7 +552,7 @@ namespace WindowsFormsApp4
 
         public void removeColorFrom(int color, int colorTakenBy)
         {
-            (ChooseColourPanel.Controls[colorTakenBy-1].Controls[color-1] as RadioButton).Checked = false;
+            (ChooseColourPanel.Controls[colorTakenBy - 1].Controls[color - 1] as RadioButton).Checked = false;
 
             prData.playerColors[colorTakenBy] = 0;
         }
@@ -413,7 +560,7 @@ namespace WindowsFormsApp4
         private void gameStartBtn_Click(object sender, EventArgs e)
         {
             bool allSelected = true;
-            for(int i = 1; i <= 4; i++)
+            for (int i = 1; i <= 4; i++)
             {
                 if (prData.playerColors[i] == 0)
                 {
@@ -438,9 +585,9 @@ namespace WindowsFormsApp4
 
         public void assignPlayersToTournament()
         {
-            for(int i=1; i<=4; i++)
+            for (int i = 1; i <= 4; i++)
             {
-                prData.dbs.dataSend("insert into tournament_players values(" +prData.tourID+ ", " + prData.playersId[i] + ", " +prData.playerColors[i]+ ", 0, 0)");
+                prData.dbs.dataSend("insert into tournament_players values(" + prData.tourID + ", " + prData.playersId[i] + ", " + prData.playerColors[i] + ", 0, 0)");
             }
         }
 
@@ -448,16 +595,6 @@ namespace WindowsFormsApp4
         {
             this.mainPanel.Left = this.Width / 4;
             this.mainPanel.Top = this.Height / 8;
-        }
-
-        private void fixureQuarFour_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fixureWinnerLebel_Click(object sender, EventArgs e)
-        {
-
         }
 
     }

@@ -35,8 +35,25 @@ namespace processHelper
         public int tourID; //tournament er ID
         public DBAccess dbs = new DBAccess();
         public DataTable ongTourTable = new DataTable();
+        public DataTable tempTable = new DataTable();
         public int ongTourPnum;
 
+
+        public void setTempTable()
+        {
+            tempTable.Clear();
+            dbs.sda.Fill(tempTable);
+        }
+
+        public void setTourDetails()
+        {
+            tourState =int.Parse(tempTable.Rows[0]["T_state"].ToString());
+            int i = 1;
+            foreach(DataRow row in tempTable.Rows)
+            {
+                playersId[i++] = int.Parse(row["P_id"].ToString());
+            }
+        }
     }
 
 }

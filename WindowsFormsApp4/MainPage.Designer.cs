@@ -98,6 +98,8 @@ namespace WindowsFormsApp4
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.OngoingTournamentPanel = new System.Windows.Forms.Panel();
+            this.tourSearchBtn = new System.Windows.Forms.Label();
+            this.tourSrchInp = new System.Windows.Forms.TextBox();
             this.ongTourListPanel = new System.Windows.Forms.Panel();
             this.ongTourList1 = new System.Windows.Forms.Panel();
             this.ongTourDelBtn1 = new System.Windows.Forms.Button();
@@ -125,27 +127,33 @@ namespace WindowsFormsApp4
             this.label36 = new System.Windows.Forms.Label();
             this.ongTourTitle = new System.Windows.Forms.Label();
             this.FixurePanel = new System.Windows.Forms.Panel();
+            this.fixureTitle = new System.Windows.Forms.Label();
+            this.winnerPanel = new System.Windows.Forms.Panel();
             this.fixureWinner = new System.Windows.Forms.Label();
-            this.fixureFinalTwo = new System.Windows.Forms.Label();
+            this.finalPanel = new System.Windows.Forms.Panel();
             this.fixureFinalOne = new System.Windows.Forms.Label();
-            this.fixureSemiThree = new System.Windows.Forms.Label();
-            this.fixureSemiTwo = new System.Windows.Forms.Label();
+            this.fixureFinalTwo = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.semiFinalPanel = new System.Windows.Forms.Panel();
             this.fixureSemiOne = new System.Windows.Forms.Label();
-            this.fixureQuarFour = new System.Windows.Forms.Label();
-            this.fixureQuarThree = new System.Windows.Forms.Label();
-            this.fixureQuarTwo = new System.Windows.Forms.Label();
-            this.fixureQuarOne = new System.Windows.Forms.Label();
+            this.fixureSemiTwo = new System.Windows.Forms.Label();
+            this.fixureSemiThree = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.quaterFinalPanel = new System.Windows.Forms.Panel();
+            this.fixureQua1 = new System.Windows.Forms.Label();
+            this.fixureQua2 = new System.Windows.Forms.Label();
+            this.fixureQua3 = new System.Windows.Forms.Label();
+            this.fixureQua4 = new System.Windows.Forms.Label();
+            this.fixureGoBtn = new System.Windows.Forms.Button();
             this.fixureWinnerLebel = new System.Windows.Forms.Label();
             this.fixureFinalLebel = new System.Windows.Forms.Label();
             this.fixureSemiLebel = new System.Windows.Forms.Label();
-            this.fixureGoBtn = new System.Windows.Forms.Button();
             this.fixureQuarLebel = new System.Windows.Forms.Label();
-            this.fixureTitle = new System.Windows.Forms.Label();
-            this.DecisionPagePanel = new System.Windows.Forms.Panel();
-            this.showRankBtn = new System.Windows.Forms.Button();
-            this.restartBtn = new System.Windows.Forms.Button();
-            this.resumeBtn = new System.Windows.Forms.Button();
-            this.decisionTitle = new System.Windows.Forms.Label();
+            this.tournamentHomePanel = new System.Windows.Forms.Panel();
+            this.tourShowRankBtn = new System.Windows.Forms.Button();
+            this.tourRestartBtn = new System.Windows.Forms.Button();
+            this.tourResumeBtn = new System.Windows.Forms.Button();
+            this.TourHomeTitle = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.welcPanel.SuspendLayout();
@@ -169,7 +177,11 @@ namespace WindowsFormsApp4
             this.ongTourList4.SuspendLayout();
             this.ongTourList5.SuspendLayout();
             this.FixurePanel.SuspendLayout();
-            this.DecisionPagePanel.SuspendLayout();
+            this.winnerPanel.SuspendLayout();
+            this.finalPanel.SuspendLayout();
+            this.semiFinalPanel.SuspendLayout();
+            this.quaterFinalPanel.SuspendLayout();
+            this.tournamentHomePanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1117,6 +1129,8 @@ namespace WindowsFormsApp4
             // OngoingTournamentPanel
             // 
             this.OngoingTournamentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.OngoingTournamentPanel.Controls.Add(this.tourSearchBtn);
+            this.OngoingTournamentPanel.Controls.Add(this.tourSrchInp);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourListPanel);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourNextBtn);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourPrevBtn);
@@ -1130,6 +1144,28 @@ namespace WindowsFormsApp4
             this.OngoingTournamentPanel.Size = new System.Drawing.Size(746, 522);
             this.OngoingTournamentPanel.TabIndex = 18;
             // 
+            // tourSearchBtn
+            // 
+            this.tourSearchBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tourSearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tourSearchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourSearchBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tourSearchBtn.Location = new System.Drawing.Point(427, 86);
+            this.tourSearchBtn.Name = "tourSearchBtn";
+            this.tourSearchBtn.Size = new System.Drawing.Size(100, 29);
+            this.tourSearchBtn.TabIndex = 32;
+            this.tourSearchBtn.Text = "Search";
+            this.tourSearchBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tourSearchBtn.Click += new System.EventHandler(this.tourSearchBtn_Click);
+            // 
+            // tourSrchInp
+            // 
+            this.tourSrchInp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourSrchInp.Location = new System.Drawing.Point(241, 86);
+            this.tourSrchInp.Name = "tourSrchInp";
+            this.tourSrchInp.Size = new System.Drawing.Size(184, 29);
+            this.tourSrchInp.TabIndex = 31;
+            // 
             // ongTourListPanel
             // 
             this.ongTourListPanel.Controls.Add(this.ongTourList1);
@@ -1137,9 +1173,9 @@ namespace WindowsFormsApp4
             this.ongTourListPanel.Controls.Add(this.ongTourList3);
             this.ongTourListPanel.Controls.Add(this.ongTourList4);
             this.ongTourListPanel.Controls.Add(this.ongTourList5);
-            this.ongTourListPanel.Location = new System.Drawing.Point(81, 91);
+            this.ongTourListPanel.Location = new System.Drawing.Point(109, 132);
             this.ongTourListPanel.Name = "ongTourListPanel";
-            this.ongTourListPanel.Size = new System.Drawing.Size(598, 370);
+            this.ongTourListPanel.Size = new System.Drawing.Size(547, 326);
             this.ongTourListPanel.TabIndex = 30;
             // 
             // ongTourList1
@@ -1147,7 +1183,7 @@ namespace WindowsFormsApp4
             this.ongTourList1.Controls.Add(this.ongTourDelBtn1);
             this.ongTourList1.Controls.Add(this.ongTourEntrBtn1);
             this.ongTourList1.Controls.Add(this.ongTourNameLabel1);
-            this.ongTourList1.Location = new System.Drawing.Point(33, 22);
+            this.ongTourList1.Location = new System.Drawing.Point(3, 3);
             this.ongTourList1.Name = "ongTourList1";
             this.ongTourList1.Size = new System.Drawing.Size(540, 60);
             this.ongTourList1.TabIndex = 51;
@@ -1209,7 +1245,7 @@ namespace WindowsFormsApp4
             this.ongTourList2.Controls.Add(this.ongTourDelBtn2);
             this.ongTourList2.Controls.Add(this.ongTourEntrBtn2);
             this.ongTourList2.Controls.Add(this.ongTourNameLabel2);
-            this.ongTourList2.Location = new System.Drawing.Point(33, 85);
+            this.ongTourList2.Location = new System.Drawing.Point(3, 66);
             this.ongTourList2.Name = "ongTourList2";
             this.ongTourList2.Size = new System.Drawing.Size(540, 60);
             this.ongTourList2.TabIndex = 52;
@@ -1271,7 +1307,7 @@ namespace WindowsFormsApp4
             this.ongTourList3.Controls.Add(this.ongTourDelBtn3);
             this.ongTourList3.Controls.Add(this.ongTourEntrBtn3);
             this.ongTourList3.Controls.Add(this.ongTourNameLabel3);
-            this.ongTourList3.Location = new System.Drawing.Point(33, 149);
+            this.ongTourList3.Location = new System.Drawing.Point(3, 130);
             this.ongTourList3.Name = "ongTourList3";
             this.ongTourList3.Size = new System.Drawing.Size(540, 60);
             this.ongTourList3.TabIndex = 52;
@@ -1333,7 +1369,7 @@ namespace WindowsFormsApp4
             this.ongTourList4.Controls.Add(this.ongTourDelBtn4);
             this.ongTourList4.Controls.Add(this.ongTourEntrBtn4);
             this.ongTourList4.Controls.Add(this.ongTourNameLabel4);
-            this.ongTourList4.Location = new System.Drawing.Point(33, 213);
+            this.ongTourList4.Location = new System.Drawing.Point(3, 194);
             this.ongTourList4.Name = "ongTourList4";
             this.ongTourList4.Size = new System.Drawing.Size(540, 60);
             this.ongTourList4.TabIndex = 52;
@@ -1395,7 +1431,7 @@ namespace WindowsFormsApp4
             this.ongTourList5.Controls.Add(this.ongTourDelBtn5);
             this.ongTourList5.Controls.Add(this.ongTourEntrBtn5);
             this.ongTourList5.Controls.Add(this.ongTourNameLabel5);
-            this.ongTourList5.Location = new System.Drawing.Point(33, 278);
+            this.ongTourList5.Location = new System.Drawing.Point(3, 259);
             this.ongTourList5.Name = "ongTourList5";
             this.ongTourList5.Size = new System.Drawing.Size(540, 60);
             this.ongTourList5.TabIndex = 53;
@@ -1511,7 +1547,7 @@ namespace WindowsFormsApp4
             this.ongTourTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourTitle.Location = new System.Drawing.Point(219, 25);
+            this.ongTourTitle.Location = new System.Drawing.Point(215, 1);
             this.ongTourTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ongTourTitle.Name = "ongTourTitle";
             this.ongTourTitle.Padding = new System.Windows.Forms.Padding(8);
@@ -1523,22 +1559,15 @@ namespace WindowsFormsApp4
             // FixurePanel
             // 
             this.FixurePanel.BackColor = System.Drawing.Color.Transparent;
-            this.FixurePanel.Controls.Add(this.fixureWinner);
-            this.FixurePanel.Controls.Add(this.fixureFinalTwo);
-            this.FixurePanel.Controls.Add(this.fixureFinalOne);
-            this.FixurePanel.Controls.Add(this.fixureSemiThree);
-            this.FixurePanel.Controls.Add(this.fixureSemiTwo);
-            this.FixurePanel.Controls.Add(this.fixureSemiOne);
-            this.FixurePanel.Controls.Add(this.fixureQuarFour);
-            this.FixurePanel.Controls.Add(this.fixureQuarThree);
-            this.FixurePanel.Controls.Add(this.fixureQuarTwo);
-            this.FixurePanel.Controls.Add(this.fixureQuarOne);
+            this.FixurePanel.Controls.Add(this.fixureTitle);
+            this.FixurePanel.Controls.Add(this.winnerPanel);
+            this.FixurePanel.Controls.Add(this.finalPanel);
+            this.FixurePanel.Controls.Add(this.semiFinalPanel);
+            this.FixurePanel.Controls.Add(this.quaterFinalPanel);
             this.FixurePanel.Controls.Add(this.fixureWinnerLebel);
             this.FixurePanel.Controls.Add(this.fixureFinalLebel);
             this.FixurePanel.Controls.Add(this.fixureSemiLebel);
-            this.FixurePanel.Controls.Add(this.fixureGoBtn);
             this.FixurePanel.Controls.Add(this.fixureQuarLebel);
-            this.FixurePanel.Controls.Add(this.fixureTitle);
             this.FixurePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FixurePanel.Location = new System.Drawing.Point(0, 0);
             this.FixurePanel.Margin = new System.Windows.Forms.Padding(2);
@@ -1546,136 +1575,246 @@ namespace WindowsFormsApp4
             this.FixurePanel.Size = new System.Drawing.Size(746, 522);
             this.FixurePanel.TabIndex = 20;
             // 
+            // fixureTitle
+            // 
+            this.fixureTitle.BackColor = System.Drawing.Color.Transparent;
+            this.fixureTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.fixureTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureTitle.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.fixureTitle.Location = new System.Drawing.Point(0, 0);
+            this.fixureTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureTitle.Name = "fixureTitle";
+            this.fixureTitle.Size = new System.Drawing.Size(746, 37);
+            this.fixureTitle.TabIndex = 35;
+            this.fixureTitle.Text = "Tournament_Name_1";
+            this.fixureTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // winnerPanel
+            // 
+            this.winnerPanel.Controls.Add(this.fixureWinner);
+            this.winnerPanel.Location = new System.Drawing.Point(566, 262);
+            this.winnerPanel.Name = "winnerPanel";
+            this.winnerPanel.Size = new System.Drawing.Size(150, 100);
+            this.winnerPanel.TabIndex = 54;
+            // 
             // fixureWinner
             // 
             this.fixureWinner.BackColor = System.Drawing.Color.LightGreen;
             this.fixureWinner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureWinner.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureWinner.Location = new System.Drawing.Point(578, 273);
+            this.fixureWinner.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureWinner.Location = new System.Drawing.Point(15, 10);
             this.fixureWinner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureWinner.Name = "fixureWinner";
             this.fixureWinner.Size = new System.Drawing.Size(120, 41);
-            this.fixureWinner.TabIndex = 50;
+            this.fixureWinner.TabIndex = 51;
+            this.fixureWinner.Text = "?";
             this.fixureWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureFinalTwo
+            // finalPanel
             // 
-            this.fixureFinalTwo.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureFinalTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureFinalTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureFinalTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalTwo.Location = new System.Drawing.Point(406, 301);
-            this.fixureFinalTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureFinalTwo.Name = "fixureFinalTwo";
-            this.fixureFinalTwo.Size = new System.Drawing.Size(120, 41);
-            this.fixureFinalTwo.TabIndex = 49;
-            this.fixureFinalTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.finalPanel.Controls.Add(this.fixureFinalOne);
+            this.finalPanel.Controls.Add(this.fixureFinalTwo);
+            this.finalPanel.Controls.Add(this.button2);
+            this.finalPanel.Location = new System.Drawing.Point(395, 233);
+            this.finalPanel.Name = "finalPanel";
+            this.finalPanel.Size = new System.Drawing.Size(150, 167);
+            this.finalPanel.TabIndex = 53;
             // 
             // fixureFinalOne
             // 
             this.fixureFinalOne.BackColor = System.Drawing.Color.LightGreen;
             this.fixureFinalOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureFinalOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureFinalOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalOne.Location = new System.Drawing.Point(406, 245);
+            this.fixureFinalOne.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureFinalOne.Location = new System.Drawing.Point(15, 11);
             this.fixureFinalOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureFinalOne.Name = "fixureFinalOne";
             this.fixureFinalOne.Size = new System.Drawing.Size(120, 41);
-            this.fixureFinalOne.TabIndex = 48;
+            this.fixureFinalOne.TabIndex = 50;
+            this.fixureFinalOne.Text = "?";
             this.fixureFinalOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureSemiThree
+            // fixureFinalTwo
             // 
-            this.fixureSemiThree.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureSemiThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureSemiThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureSemiThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiThree.Location = new System.Drawing.Point(233, 330);
-            this.fixureSemiThree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureSemiThree.Name = "fixureSemiThree";
-            this.fixureSemiThree.Size = new System.Drawing.Size(120, 41);
-            this.fixureSemiThree.TabIndex = 47;
-            this.fixureSemiThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fixureFinalTwo.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureFinalTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureFinalTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureFinalTwo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureFinalTwo.Location = new System.Drawing.Point(15, 67);
+            this.fixureFinalTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureFinalTwo.Name = "fixureFinalTwo";
+            this.fixureFinalTwo.Size = new System.Drawing.Size(120, 41);
+            this.fixureFinalTwo.TabIndex = 51;
+            this.fixureFinalTwo.Text = "?";
+            this.fixureFinalTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureSemiTwo
+            // button2
             // 
-            this.fixureSemiTwo.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureSemiTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureSemiTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureSemiTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiTwo.Location = new System.Drawing.Point(233, 273);
-            this.fixureSemiTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureSemiTwo.Name = "fixureSemiTwo";
-            this.fixureSemiTwo.Size = new System.Drawing.Size(120, 41);
-            this.fixureSemiTwo.TabIndex = 46;
-            this.fixureSemiTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.button2.Location = new System.Drawing.Point(36, 120);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 41);
+            this.button2.TabIndex = 52;
+            this.button2.Text = "GO";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.goToTheGame);
+            // 
+            // semiFinalPanel
+            // 
+            this.semiFinalPanel.Controls.Add(this.fixureSemiOne);
+            this.semiFinalPanel.Controls.Add(this.fixureSemiTwo);
+            this.semiFinalPanel.Controls.Add(this.fixureSemiThree);
+            this.semiFinalPanel.Controls.Add(this.button1);
+            this.semiFinalPanel.Location = new System.Drawing.Point(220, 204);
+            this.semiFinalPanel.Name = "semiFinalPanel";
+            this.semiFinalPanel.Size = new System.Drawing.Size(150, 230);
+            this.semiFinalPanel.TabIndex = 52;
             // 
             // fixureSemiOne
             // 
             this.fixureSemiOne.BackColor = System.Drawing.Color.LightGreen;
             this.fixureSemiOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureSemiOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureSemiOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiOne.Location = new System.Drawing.Point(233, 216);
+            this.fixureSemiOne.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureSemiOne.Location = new System.Drawing.Point(15, 12);
             this.fixureSemiOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureSemiOne.Name = "fixureSemiOne";
             this.fixureSemiOne.Size = new System.Drawing.Size(120, 41);
-            this.fixureSemiOne.TabIndex = 45;
+            this.fixureSemiOne.TabIndex = 48;
+            this.fixureSemiOne.Text = "?";
             this.fixureSemiOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureQuarFour
+            // fixureSemiTwo
             // 
-            this.fixureQuarFour.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureQuarFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureQuarFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureQuarFour.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarFour.Location = new System.Drawing.Point(61, 358);
-            this.fixureQuarFour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureQuarFour.Name = "fixureQuarFour";
-            this.fixureQuarFour.Size = new System.Drawing.Size(120, 41);
-            this.fixureQuarFour.TabIndex = 44;
-            this.fixureQuarFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.fixureQuarFour.Click += new System.EventHandler(this.fixureQuarFour_Click);
+            this.fixureSemiTwo.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureSemiTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureSemiTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureSemiTwo.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureSemiTwo.Location = new System.Drawing.Point(15, 69);
+            this.fixureSemiTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureSemiTwo.Name = "fixureSemiTwo";
+            this.fixureSemiTwo.Size = new System.Drawing.Size(120, 41);
+            this.fixureSemiTwo.TabIndex = 49;
+            this.fixureSemiTwo.Text = "?";
+            this.fixureSemiTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureQuarThree
+            // fixureSemiThree
             // 
-            this.fixureQuarThree.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureQuarThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureQuarThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureQuarThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarThree.Location = new System.Drawing.Point(61, 301);
-            this.fixureQuarThree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureQuarThree.Name = "fixureQuarThree";
-            this.fixureQuarThree.Size = new System.Drawing.Size(120, 41);
-            this.fixureQuarThree.TabIndex = 43;
-            this.fixureQuarThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.fixureSemiThree.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureSemiThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureSemiThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureSemiThree.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureSemiThree.Location = new System.Drawing.Point(15, 126);
+            this.fixureSemiThree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureSemiThree.Name = "fixureSemiThree";
+            this.fixureSemiThree.Size = new System.Drawing.Size(120, 41);
+            this.fixureSemiThree.TabIndex = 50;
+            this.fixureSemiThree.Text = "?";
+            this.fixureSemiThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureQuarTwo
+            // button1
             // 
-            this.fixureQuarTwo.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureQuarTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureQuarTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureQuarTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarTwo.Location = new System.Drawing.Point(61, 245);
-            this.fixureQuarTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureQuarTwo.Name = "fixureQuarTwo";
-            this.fixureQuarTwo.Size = new System.Drawing.Size(120, 41);
-            this.fixureQuarTwo.TabIndex = 42;
-            this.fixureQuarTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.button1.Location = new System.Drawing.Point(35, 178);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 41);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "GO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.goToTheGame);
             // 
-            // fixureQuarOne
+            // quaterFinalPanel
             // 
-            this.fixureQuarOne.BackColor = System.Drawing.Color.LightGreen;
-            this.fixureQuarOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureQuarOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureQuarOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarOne.Location = new System.Drawing.Point(61, 188);
-            this.fixureQuarOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureQuarOne.Name = "fixureQuarOne";
-            this.fixureQuarOne.Size = new System.Drawing.Size(120, 41);
-            this.fixureQuarOne.TabIndex = 41;
-            this.fixureQuarOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.quaterFinalPanel.Controls.Add(this.fixureQua1);
+            this.quaterFinalPanel.Controls.Add(this.fixureQua2);
+            this.quaterFinalPanel.Controls.Add(this.fixureQua3);
+            this.quaterFinalPanel.Controls.Add(this.fixureQua4);
+            this.quaterFinalPanel.Controls.Add(this.fixureGoBtn);
+            this.quaterFinalPanel.Location = new System.Drawing.Point(46, 183);
+            this.quaterFinalPanel.Name = "quaterFinalPanel";
+            this.quaterFinalPanel.Size = new System.Drawing.Size(150, 290);
+            this.quaterFinalPanel.TabIndex = 51;
+            // 
+            // fixureQua1
+            // 
+            this.fixureQua1.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureQua1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureQua1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureQua1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureQua1.Location = new System.Drawing.Point(14, 6);
+            this.fixureQua1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureQua1.Name = "fixureQua1";
+            this.fixureQua1.Size = new System.Drawing.Size(120, 41);
+            this.fixureQua1.TabIndex = 46;
+            this.fixureQua1.Text = "?";
+            this.fixureQua1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fixureQua2
+            // 
+            this.fixureQua2.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureQua2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureQua2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureQua2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureQua2.Location = new System.Drawing.Point(14, 63);
+            this.fixureQua2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureQua2.Name = "fixureQua2";
+            this.fixureQua2.Size = new System.Drawing.Size(120, 41);
+            this.fixureQua2.TabIndex = 47;
+            this.fixureQua2.Text = "?";
+            this.fixureQua2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fixureQua3
+            // 
+            this.fixureQua3.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureQua3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureQua3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureQua3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureQua3.Location = new System.Drawing.Point(14, 119);
+            this.fixureQua3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureQua3.Name = "fixureQua3";
+            this.fixureQua3.Size = new System.Drawing.Size(120, 41);
+            this.fixureQua3.TabIndex = 48;
+            this.fixureQua3.Text = "?";
+            this.fixureQua3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fixureQua4
+            // 
+            this.fixureQua4.BackColor = System.Drawing.Color.LightGreen;
+            this.fixureQua4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureQua4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureQua4.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.fixureQua4.Location = new System.Drawing.Point(14, 176);
+            this.fixureQua4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.fixureQua4.Name = "fixureQua4";
+            this.fixureQua4.Size = new System.Drawing.Size(120, 41);
+            this.fixureQua4.TabIndex = 49;
+            this.fixureQua4.Text = "?";
+            this.fixureQua4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // fixureGoBtn
+            // 
+            this.fixureGoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.fixureGoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fixureGoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fixureGoBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.fixureGoBtn.Location = new System.Drawing.Point(42, 228);
+            this.fixureGoBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.fixureGoBtn.Name = "fixureGoBtn";
+            this.fixureGoBtn.Size = new System.Drawing.Size(75, 41);
+            this.fixureGoBtn.TabIndex = 45;
+            this.fixureGoBtn.Text = "GO";
+            this.fixureGoBtn.UseVisualStyleBackColor = false;
+            this.fixureGoBtn.Click += new System.EventHandler(this.goToTheGame);
             // 
             // fixureWinnerLebel
             // 
@@ -1691,7 +1830,6 @@ namespace WindowsFormsApp4
             this.fixureWinnerLebel.TabIndex = 40;
             this.fixureWinnerLebel.Text = "Winner";
             this.fixureWinnerLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.fixureWinnerLebel.Click += new System.EventHandler(this.fixureWinnerLebel_Click);
             // 
             // fixureFinalLebel
             // 
@@ -1700,7 +1838,7 @@ namespace WindowsFormsApp4
             this.fixureFinalLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureFinalLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureFinalLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalLebel.Location = new System.Drawing.Point(437, 205);
+            this.fixureFinalLebel.Location = new System.Drawing.Point(443, 205);
             this.fixureFinalLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureFinalLebel.Name = "fixureFinalLebel";
             this.fixureFinalLebel.Size = new System.Drawing.Size(54, 25);
@@ -1722,20 +1860,6 @@ namespace WindowsFormsApp4
             this.fixureSemiLebel.Text = "Semi Final";
             this.fixureSemiLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureGoBtn
-            // 
-            this.fixureGoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.fixureGoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureGoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureGoBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureGoBtn.Location = new System.Drawing.Point(89, 410);
-            this.fixureGoBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.fixureGoBtn.Name = "fixureGoBtn";
-            this.fixureGoBtn.Size = new System.Drawing.Size(75, 41);
-            this.fixureGoBtn.TabIndex = 37;
-            this.fixureGoBtn.Text = "GO";
-            this.fixureGoBtn.UseVisualStyleBackColor = false;
-            // 
             // fixureQuarLebel
             // 
             this.fixureQuarLebel.BackColor = System.Drawing.Color.Transparent;
@@ -1750,106 +1874,93 @@ namespace WindowsFormsApp4
             this.fixureQuarLebel.Text = "Quater Final";
             this.fixureQuarLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // fixureTitle
+            // tournamentHomePanel
             // 
-            this.fixureTitle.AutoSize = true;
-            this.fixureTitle.BackColor = System.Drawing.Color.Transparent;
-            this.fixureTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fixureTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fixureTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureTitle.Location = new System.Drawing.Point(225, 33);
-            this.fixureTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.fixureTitle.Name = "fixureTitle";
-            this.fixureTitle.Size = new System.Drawing.Size(329, 37);
-            this.fixureTitle.TabIndex = 35;
-            this.fixureTitle.Text = "Tournament_Name_1";
-            this.fixureTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tournamentHomePanel.BackColor = System.Drawing.Color.Transparent;
+            this.tournamentHomePanel.Controls.Add(this.tourShowRankBtn);
+            this.tournamentHomePanel.Controls.Add(this.tourRestartBtn);
+            this.tournamentHomePanel.Controls.Add(this.tourResumeBtn);
+            this.tournamentHomePanel.Controls.Add(this.TourHomeTitle);
+            this.tournamentHomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tournamentHomePanel.Location = new System.Drawing.Point(0, 0);
+            this.tournamentHomePanel.Margin = new System.Windows.Forms.Padding(2);
+            this.tournamentHomePanel.Name = "tournamentHomePanel";
+            this.tournamentHomePanel.Size = new System.Drawing.Size(746, 522);
+            this.tournamentHomePanel.TabIndex = 19;
             // 
-            // DecisionPagePanel
+            // tourShowRankBtn
             // 
-            this.DecisionPagePanel.BackColor = System.Drawing.Color.Transparent;
-            this.DecisionPagePanel.Controls.Add(this.showRankBtn);
-            this.DecisionPagePanel.Controls.Add(this.restartBtn);
-            this.DecisionPagePanel.Controls.Add(this.resumeBtn);
-            this.DecisionPagePanel.Controls.Add(this.decisionTitle);
-            this.DecisionPagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DecisionPagePanel.Location = new System.Drawing.Point(0, 0);
-            this.DecisionPagePanel.Margin = new System.Windows.Forms.Padding(2);
-            this.DecisionPagePanel.Name = "DecisionPagePanel";
-            this.DecisionPagePanel.Size = new System.Drawing.Size(746, 522);
-            this.DecisionPagePanel.TabIndex = 19;
+            this.tourShowRankBtn.AccessibleName = "DecisionPage";
+            this.tourShowRankBtn.BackColor = System.Drawing.Color.Transparent;
+            this.tourShowRankBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tourShowRankBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourShowRankBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tourShowRankBtn.Location = new System.Drawing.Point(176, 333);
+            this.tourShowRankBtn.Name = "tourShowRankBtn";
+            this.tourShowRankBtn.Size = new System.Drawing.Size(393, 78);
+            this.tourShowRankBtn.TabIndex = 9;
+            this.tourShowRankBtn.Text = "Show Ranks";
+            this.tourShowRankBtn.UseVisualStyleBackColor = false;
             // 
-            // showRankBtn
+            // tourRestartBtn
             // 
-            this.showRankBtn.AccessibleName = "DecisionPage";
-            this.showRankBtn.BackColor = System.Drawing.Color.Transparent;
-            this.showRankBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showRankBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showRankBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.showRankBtn.Location = new System.Drawing.Point(144, 294);
-            this.showRankBtn.Name = "showRankBtn";
-            this.showRankBtn.Size = new System.Drawing.Size(320, 50);
-            this.showRankBtn.TabIndex = 9;
-            this.showRankBtn.Text = "Show Ranks";
-            this.showRankBtn.UseVisualStyleBackColor = false;
+            this.tourRestartBtn.AccessibleName = "DecisionPage";
+            this.tourRestartBtn.BackColor = System.Drawing.Color.Transparent;
+            this.tourRestartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tourRestartBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourRestartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tourRestartBtn.Location = new System.Drawing.Point(396, 199);
+            this.tourRestartBtn.Name = "tourRestartBtn";
+            this.tourRestartBtn.Size = new System.Drawing.Size(223, 78);
+            this.tourRestartBtn.TabIndex = 8;
+            this.tourRestartBtn.Text = "Restart";
+            this.tourRestartBtn.UseVisualStyleBackColor = false;
             // 
-            // restartBtn
+            // tourResumeBtn
             // 
-            this.restartBtn.AccessibleName = "DecisionPage";
-            this.restartBtn.BackColor = System.Drawing.Color.Transparent;
-            this.restartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restartBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.restartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.restartBtn.Location = new System.Drawing.Point(314, 209);
-            this.restartBtn.Name = "restartBtn";
-            this.restartBtn.Size = new System.Drawing.Size(150, 50);
-            this.restartBtn.TabIndex = 8;
-            this.restartBtn.Text = "Restart";
-            this.restartBtn.UseVisualStyleBackColor = false;
+            this.tourResumeBtn.AccessibleName = "DecisionPage";
+            this.tourResumeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.tourResumeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tourResumeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourResumeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.tourResumeBtn.Location = new System.Drawing.Point(125, 204);
+            this.tourResumeBtn.Name = "tourResumeBtn";
+            this.tourResumeBtn.Size = new System.Drawing.Size(223, 78);
+            this.tourResumeBtn.TabIndex = 7;
+            this.tourResumeBtn.Text = "Resume";
+            this.tourResumeBtn.UseVisualStyleBackColor = false;
+            this.tourResumeBtn.Click += new System.EventHandler(this.tourResumeBtn_Click);
             // 
-            // resumeBtn
+            // TourHomeTitle
             // 
-            this.resumeBtn.AccessibleName = "DecisionPage";
-            this.resumeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.resumeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.resumeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resumeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.resumeBtn.Location = new System.Drawing.Point(144, 209);
-            this.resumeBtn.Name = "resumeBtn";
-            this.resumeBtn.Size = new System.Drawing.Size(150, 50);
-            this.resumeBtn.TabIndex = 7;
-            this.resumeBtn.Text = "Resume";
-            this.resumeBtn.UseVisualStyleBackColor = false;
-            // 
-            // decisionTitle
-            // 
-            this.decisionTitle.AccessibleName = "DecisionPage";
-            this.decisionTitle.BackColor = System.Drawing.Color.Transparent;
-            this.decisionTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.decisionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.decisionTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.decisionTitle.Location = new System.Drawing.Point(211, 79);
-            this.decisionTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.decisionTitle.Name = "decisionTitle";
-            this.decisionTitle.Size = new System.Drawing.Size(205, 50);
-            this.decisionTitle.TabIndex = 6;
-            this.decisionTitle.Text = "Tournament_Name_1";
-            this.decisionTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TourHomeTitle.AccessibleName = "DecisionPage";
+            this.TourHomeTitle.BackColor = System.Drawing.Color.Transparent;
+            this.TourHomeTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TourHomeTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TourHomeTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TourHomeTitle.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.TourHomeTitle.Location = new System.Drawing.Point(0, 0);
+            this.TourHomeTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TourHomeTitle.Name = "TourHomeTitle";
+            this.TourHomeTitle.Size = new System.Drawing.Size(746, 37);
+            this.TourHomeTitle.TabIndex = 6;
+            this.TourHomeTitle.Text = "Tournament_Name_1";
+            this.TourHomeTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
-            this.mainPanel.Controls.Add(this.HomePanel);
-            this.mainPanel.Controls.Add(this.welcPanel);
             this.mainPanel.Controls.Add(this.FixurePanel);
-            this.mainPanel.Controls.Add(this.DecisionPagePanel);
+            this.mainPanel.Controls.Add(this.tournamentHomePanel);
             this.mainPanel.Controls.Add(this.PlayerOneRegisterPanel);
             this.mainPanel.Controls.Add(this.PlayerChoicePanel);
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
             this.mainPanel.Controls.Add(this.ChooseColourPanel);
             this.mainPanel.Controls.Add(this.tourNamePanel);
-            this.mainPanel.Location = new System.Drawing.Point(51, 61);
+            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
+            this.mainPanel.Controls.Add(this.HomePanel);
+            this.mainPanel.Controls.Add(this.welcPanel);
+            this.mainPanel.Location = new System.Drawing.Point(48, 61);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(746, 522);
@@ -1905,7 +2016,11 @@ namespace WindowsFormsApp4
             this.ongTourList5.PerformLayout();
             this.FixurePanel.ResumeLayout(false);
             this.FixurePanel.PerformLayout();
-            this.DecisionPagePanel.ResumeLayout(false);
+            this.winnerPanel.ResumeLayout(false);
+            this.finalPanel.ResumeLayout(false);
+            this.semiFinalPanel.ResumeLayout(false);
+            this.quaterFinalPanel.ResumeLayout(false);
+            this.tournamentHomePanel.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1956,26 +2071,15 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Label chooseColourTitle;
         private System.Windows.Forms.Panel OngoingTournamentPanel;
         private System.Windows.Forms.Label ongTourTitle;
-        private System.Windows.Forms.Panel DecisionPagePanel;
-        private System.Windows.Forms.Button showRankBtn;
-        private System.Windows.Forms.Button restartBtn;
-        private System.Windows.Forms.Button resumeBtn;
-        private System.Windows.Forms.Label decisionTitle;
+        private System.Windows.Forms.Panel tournamentHomePanel;
+        private System.Windows.Forms.Button tourShowRankBtn;
+        private System.Windows.Forms.Button tourRestartBtn;
+        private System.Windows.Forms.Button tourResumeBtn;
+        private System.Windows.Forms.Label TourHomeTitle;
         private System.Windows.Forms.Panel FixurePanel;
-        private System.Windows.Forms.Label fixureWinner;
-        private System.Windows.Forms.Label fixureFinalTwo;
-        private System.Windows.Forms.Label fixureFinalOne;
-        private System.Windows.Forms.Label fixureSemiThree;
-        private System.Windows.Forms.Label fixureSemiTwo;
-        private System.Windows.Forms.Label fixureSemiOne;
-        private System.Windows.Forms.Label fixureQuarFour;
-        private System.Windows.Forms.Label fixureQuarThree;
-        private System.Windows.Forms.Label fixureQuarTwo;
-        private System.Windows.Forms.Label fixureQuarOne;
         private System.Windows.Forms.Label fixureWinnerLebel;
         private System.Windows.Forms.Label fixureFinalLebel;
         private System.Windows.Forms.Label fixureSemiLebel;
-        private System.Windows.Forms.Button fixureGoBtn;
         private System.Windows.Forms.Label fixureQuarLebel;
         private System.Windows.Forms.Label fixureTitle;
         private System.Windows.Forms.Button plyrLgnBtn;
@@ -2031,5 +2135,24 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Button ongTourDelBtn1;
         private System.Windows.Forms.Button ongTourEntrBtn1;
         private System.Windows.Forms.Label ongTourNameLabel1;
+        private System.Windows.Forms.Label tourSearchBtn;
+        private System.Windows.Forms.TextBox tourSrchInp;
+        private System.Windows.Forms.Panel winnerPanel;
+        private System.Windows.Forms.Label fixureWinner;
+        private System.Windows.Forms.Panel finalPanel;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label fixureFinalTwo;
+        private System.Windows.Forms.Label fixureFinalOne;
+        private System.Windows.Forms.Panel semiFinalPanel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label fixureSemiThree;
+        private System.Windows.Forms.Label fixureSemiTwo;
+        private System.Windows.Forms.Label fixureSemiOne;
+        private System.Windows.Forms.Panel quaterFinalPanel;
+        private System.Windows.Forms.Label fixureQua4;
+        private System.Windows.Forms.Label fixureQua3;
+        private System.Windows.Forms.Label fixureQua2;
+        private System.Windows.Forms.Label fixureQua1;
+        private System.Windows.Forms.Button fixureGoBtn;
     }
 }
