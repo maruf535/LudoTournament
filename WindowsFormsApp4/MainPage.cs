@@ -459,6 +459,7 @@ namespace WindowsFormsApp4
         {
             game theGame = new game();
             theGame.gmf.prData = prData;
+            theGame.gmf.backPage = this;
             this.Hide();
             theGame.Show();
         }

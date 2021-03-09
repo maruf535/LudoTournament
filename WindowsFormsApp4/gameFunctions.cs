@@ -12,6 +12,7 @@ namespace WindowsFormsApp4
     public class gameFunctions
     {
         //properties starts
+        public bool injector = true;
         public int rank = 1;
         public Panel theBoard = new Panel();
         Random rnd = new Random();//random number generate korar object
@@ -26,6 +27,7 @@ namespace WindowsFormsApp4
         public bool playerMove = false;
         public int shot=0;//joto shot ashe roll korar por
         public processData prData = new processData();
+        public MainPage backPage;
         //properties end
 
 
@@ -112,11 +114,28 @@ namespace WindowsFormsApp4
             playerRollBtns[playerTurn].Image = getDiceImage(0);
         }
 
+        public bool atleastOneTokenAtHome()
+        {
+            for(int i = 1; i <= 4; i++)
+            {
+                if (playersArray[playerTurn].PlayerTokens[i].tokenState == 0)
+                    return true;
+            }
+            return false;
+        }
+
         public async void rollDice()
         {
             if (playerMove)
                 return;
             shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
+            
+            if(atleastOneTokenAtHome() && injector)
+            {
+                shot = 6;
+                injector = false;
+            }
+            
             playerRollBtns[playerTurn].Image = getDiceImage(7);
             await System.Threading.Tasks.Task.Delay(300);
             playerRollBtns[playerTurn].Image = getDiceImage(shot);
@@ -207,6 +226,7 @@ namespace WindowsFormsApp4
 
         public void changeTurn()
         {
+            injector = true;
             //player turn change korar shomoy ja ja clear or change kora lage ta ekhane hobe
             if (playerTurn < 4)
                 playerTurn++;
@@ -295,7 +315,7 @@ namespace WindowsFormsApp4
                         playerRollBtns[playerTurn].Image = getDiceImage(0);
                     }
 
-                    if (rank == prData.tourState-1)
+                    if (rank == prData.tourState)
                     {
                         gameOver();
                     }
@@ -419,6 +439,7 @@ namespace WindowsFormsApp4
 
         public void gameOver()
         {
+            theBoard.Show();
             gameRankPage.Show();
 
             for(int i = 1; i <= 4; i++)
@@ -433,10 +454,14 @@ namespace WindowsFormsApp4
                     if (playersArray[j].playerRank == i)
                     {
                         gameRankPage.Controls[i].Text = playersArray[j].playerName;
+                        gameRankPage.Controls[i].Show();
+                        prData.dbs.dataSend("update tournament_players set p_tour_rank = " + playersArray[j].playerRank);
+                        prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[j].playerId+", "+prData.tourState+", "+playersArray[j].playerRank+", 0)");
                         break;
                     }
                 }
             }
+
         }
     }
 }
