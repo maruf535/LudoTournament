@@ -967,6 +967,7 @@ namespace WindowsFormsApp4
             // 
             // PlayerOneRegisterPanel
             // 
+            this.PlayerOneRegisterPanel.AutoSize = true;
             this.PlayerOneRegisterPanel.BackColor = System.Drawing.Color.Transparent;
             this.PlayerOneRegisterPanel.Controls.Add(this.femaleLabel);
             this.PlayerOneRegisterPanel.Controls.Add(this.regFemale);
@@ -987,22 +988,25 @@ namespace WindowsFormsApp4
             this.PlayerOneRegisterPanel.Name = "PlayerOneRegisterPanel";
             this.PlayerOneRegisterPanel.Size = new System.Drawing.Size(746, 522);
             this.PlayerOneRegisterPanel.TabIndex = 16;
+            this.PlayerOneRegisterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.PlayerOneRegisterPanel_Paint);
             // 
             // femaleLabel
             // 
             this.femaleLabel.AutoSize = true;
+            this.femaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.femaleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.femaleLabel.Location = new System.Drawing.Point(364, 205);
+            this.femaleLabel.Location = new System.Drawing.Point(501, 231);
             this.femaleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.femaleLabel.Name = "femaleLabel";
-            this.femaleLabel.Size = new System.Drawing.Size(41, 13);
+            this.femaleLabel.Size = new System.Drawing.Size(74, 24);
             this.femaleLabel.TabIndex = 35;
             this.femaleLabel.Text = "Female";
             // 
             // regFemale
             // 
             this.regFemale.AutoSize = true;
-            this.regFemale.Location = new System.Drawing.Point(347, 205);
+            this.regFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regFemale.Location = new System.Drawing.Point(482, 237);
             this.regFemale.Margin = new System.Windows.Forms.Padding(2);
             this.regFemale.Name = "regFemale";
             this.regFemale.Size = new System.Drawing.Size(14, 13);
@@ -1013,18 +1017,20 @@ namespace WindowsFormsApp4
             // maleLabel
             // 
             this.maleLabel.AutoSize = true;
+            this.maleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.maleLabel.Location = new System.Drawing.Point(305, 205);
+            this.maleLabel.Location = new System.Drawing.Point(411, 230);
             this.maleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.maleLabel.Name = "maleLabel";
-            this.maleLabel.Size = new System.Drawing.Size(30, 13);
+            this.maleLabel.Size = new System.Drawing.Size(51, 24);
             this.maleLabel.TabIndex = 33;
             this.maleLabel.Text = "Male";
             // 
             // regMale
             // 
             this.regMale.AutoSize = true;
-            this.regMale.Location = new System.Drawing.Point(288, 205);
+            this.regMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regMale.Location = new System.Drawing.Point(392, 237);
             this.regMale.Margin = new System.Windows.Forms.Padding(2);
             this.regMale.Name = "regMale";
             this.regMale.Size = new System.Drawing.Size(14, 13);
@@ -1034,42 +1040,46 @@ namespace WindowsFormsApp4
             // 
             // regRePassword
             // 
+            this.regRePassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.regRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regRePassword.ForeColor = System.Drawing.Color.Black;
-            this.regRePassword.Location = new System.Drawing.Point(288, 312);
+            this.regRePassword.Location = new System.Drawing.Point(392, 351);
             this.regRePassword.Name = "regRePassword";
             this.regRePassword.PasswordChar = '*';
-            this.regRePassword.Size = new System.Drawing.Size(160, 20);
+            this.regRePassword.Size = new System.Drawing.Size(183, 22);
             this.regRePassword.TabIndex = 31;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label6.Location = new System.Drawing.Point(161, 312);
+            this.label6.Location = new System.Drawing.Point(169, 349);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(98, 13);
+            this.label6.Size = new System.Drawing.Size(172, 24);
             this.label6.TabIndex = 30;
             this.label6.Text = "Re-Enter Password";
             // 
             // label7
             // 
+            this.label7.AutoSize = true;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label7.Location = new System.Drawing.Point(161, 205);
+            this.label7.Location = new System.Drawing.Point(169, 231);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 13);
+            this.label7.Size = new System.Drawing.Size(74, 24);
             this.label7.TabIndex = 27;
             this.label7.Text = "Gender";
             // 
             // regPageTitle
             // 
             this.regPageTitle.BackColor = System.Drawing.Color.Transparent;
-            this.regPageTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.regPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.regPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regPageTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.regPageTitle.Location = new System.Drawing.Point(183, 54);
+            this.regPageTitle.Location = new System.Drawing.Point(275, 49);
             this.regPageTitle.Name = "regPageTitle";
             this.regPageTitle.Size = new System.Drawing.Size(246, 61);
             this.regPageTitle.TabIndex = 26;
@@ -1078,12 +1088,14 @@ namespace WindowsFormsApp4
             // 
             // playerRegBtn
             // 
+            this.playerRegBtn.AutoSize = true;
             this.playerRegBtn.BackColor = System.Drawing.Color.Transparent;
             this.playerRegBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playerRegBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerRegBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.playerRegBtn.Location = new System.Drawing.Point(372, 358);
+            this.playerRegBtn.Location = new System.Drawing.Point(459, 412);
             this.playerRegBtn.Name = "playerRegBtn";
-            this.playerRegBtn.Size = new System.Drawing.Size(75, 23);
+            this.playerRegBtn.Size = new System.Drawing.Size(116, 36);
             this.playerRegBtn.TabIndex = 25;
             this.playerRegBtn.Text = "REGISTER";
             this.playerRegBtn.UseVisualStyleBackColor = false;
@@ -1091,38 +1103,46 @@ namespace WindowsFormsApp4
             // 
             // regPassword
             // 
+            this.regPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.regPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regPassword.ForeColor = System.Drawing.Color.Black;
-            this.regPassword.Location = new System.Drawing.Point(288, 255);
+            this.regPassword.Location = new System.Drawing.Point(392, 288);
             this.regPassword.Name = "regPassword";
             this.regPassword.PasswordChar = '*';
-            this.regPassword.Size = new System.Drawing.Size(160, 20);
+            this.regPassword.Size = new System.Drawing.Size(183, 22);
             this.regPassword.TabIndex = 24;
             // 
             // regUserName
             // 
+            this.regUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.regUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regUserName.ForeColor = System.Drawing.Color.Black;
-            this.regUserName.Location = new System.Drawing.Point(288, 141);
+            this.regUserName.Location = new System.Drawing.Point(392, 171);
             this.regUserName.Name = "regUserName";
-            this.regUserName.Size = new System.Drawing.Size(160, 20);
+            this.regUserName.Size = new System.Drawing.Size(183, 22);
             this.regUserName.TabIndex = 23;
             // 
             // label9
             // 
+            this.label9.AutoSize = true;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label9.Location = new System.Drawing.Point(161, 262);
+            this.label9.Location = new System.Drawing.Point(169, 286);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(98, 13);
+            this.label9.Size = new System.Drawing.Size(142, 24);
             this.label9.TabIndex = 22;
             this.label9.Text = "Enter Password";
             // 
             // label10
             // 
+            this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label10.Location = new System.Drawing.Point(161, 144);
+            this.label10.Location = new System.Drawing.Point(169, 169);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 13);
+            this.label10.Size = new System.Drawing.Size(147, 24);
             this.label10.TabIndex = 21;
             this.label10.Text = "Enter Username";
             // 
@@ -1915,6 +1935,7 @@ namespace WindowsFormsApp4
             this.tourRestartBtn.TabIndex = 8;
             this.tourRestartBtn.Text = "Restart";
             this.tourRestartBtn.UseVisualStyleBackColor = false;
+            this.tourRestartBtn.Click += new System.EventHandler(this.tourRestartBtn_Click);
             // 
             // tourResumeBtn
             // 
@@ -1950,8 +1971,6 @@ namespace WindowsFormsApp4
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.mainPanel.Controls.Add(this.FixurePanel);
-            this.mainPanel.Controls.Add(this.tournamentHomePanel);
             this.mainPanel.Controls.Add(this.PlayerOneRegisterPanel);
             this.mainPanel.Controls.Add(this.PlayerChoicePanel);
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
@@ -1960,6 +1979,8 @@ namespace WindowsFormsApp4
             this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
             this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Controls.Add(this.welcPanel);
+            this.mainPanel.Controls.Add(this.FixurePanel);
+            this.mainPanel.Controls.Add(this.tournamentHomePanel);
             this.mainPanel.Location = new System.Drawing.Point(48, 61);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
@@ -2022,6 +2043,7 @@ namespace WindowsFormsApp4
             this.quaterFinalPanel.ResumeLayout(false);
             this.tournamentHomePanel.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

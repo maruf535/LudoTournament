@@ -118,6 +118,17 @@ namespace WindowsFormsApp4
             //tai etake playerLoginPanelShow naame ekta function e rekhe dibo
             //shudhu playerCnt disilam, sathe"Player " eta add kore dite hobe shurute
             lgnPageTitle.Text = "PLAYER " + prData.playerSerial.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
+            if (prData.tourType == 2)
+            {
+                lgnPageTitle.Text = prData.tempTable.Rows[prData.playerSerial-1]["P_name"].ToString();
+                lgnUserName.Text = prData.tempTable.Rows[prData.playerSerial-1]["P_name"].ToString();
+                lgnUserName.Hide();
+                lgnUserNameLebel.Hide();
+            }
+            else
+            {
+                lgnUserName.Show();
+            }
             PlayerOneLoginPanel.Show();
         }
 
@@ -371,6 +382,13 @@ namespace WindowsFormsApp4
         {
             string temp = (sender as Button).Tag.ToString();
             int tourId = int.Parse(temp);
+            goBack = tournamentHomePanel;
+            loadFixture(tourId);
+        }
+
+        public void loadFixture(int tourId)
+        {
+            hideAll();
             string tourName = "";
             foreach (DataRow row in prData.ongTourTable.Select("T_id = " + tourId))
             {
@@ -378,7 +396,7 @@ namespace WindowsFormsApp4
             }
             fixureTitle.Text = tourName.ToString();
             resetTourFixture();
-            for(int i = 4; i >= prData.tourState; i--)
+            for (int i = 4; i >= prData.tourState; i--)
             {
                 setTourFixture(i);
             }
@@ -434,6 +452,11 @@ namespace WindowsFormsApp4
 
         private void goToTheGame(object sender, EventArgs e)
         {
+            prData.playerSerial = 1;
+            playerLoginPanelShow();
+        }
+        private void goToGame()
+        {
             game theGame = new game();
             theGame.gmf.prData = prData;
             this.Hide();
@@ -478,6 +501,10 @@ namespace WindowsFormsApp4
                     hideAll();
                     showColorChoicePanel();
 
+                }
+                else if (prData.tourType == 2)
+                {
+                    goToGame();
                 }
             }
         }
@@ -577,10 +604,7 @@ namespace WindowsFormsApp4
 
             assignPlayersToTournament();
 
-            game quaterFinal = new game();
-            quaterFinal.gmf.prData = prData;
-            this.Hide();
-            quaterFinal.Show();
+            goToGame();
         }
 
         public void assignPlayersToTournament()
@@ -597,5 +621,29 @@ namespace WindowsFormsApp4
             this.mainPanel.Top = this.Height / 8;
         }
 
+        private void tourRestartBtn_Click(object sender, EventArgs e)
+        {
+            string temp = (sender as Button).Tag.ToString();
+            int tourId = int.Parse(temp);
+            DialogResult dialogResult = MessageBox.Show("Are your sure ?", "Reset tournament", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                prData.dbs.dataSend("update tournament_players set P_tour_rank=0 where T_id = " + tourId);
+                prData.dbs.dataSend("delete from game_results where T_id = " + tourId);
+                MessageBox.Show("Tournament reset complete...");
+                prData.tourState = 4;
+                goBack = tournamentHomePanel;
+                loadFixture(tourId);
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void PlayerOneRegisterPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
