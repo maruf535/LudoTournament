@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,8 @@ namespace processHelper
         public string[] playerNames = new string[5]; //oi tournament er player der name gula thakbe ekhane
         public int tourID; //tournament er ID
         public DBAccess dbs = new DBAccess();
-
+        public DataTable ongTourTable = new DataTable();
+        public int ongTourPnum;
 
     }
 

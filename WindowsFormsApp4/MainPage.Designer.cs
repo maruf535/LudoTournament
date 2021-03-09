@@ -98,19 +98,31 @@ namespace WindowsFormsApp4
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.OngoingTournamentPanel = new System.Windows.Forms.Panel();
+            this.ongTourListPanel = new System.Windows.Forms.Panel();
+            this.ongTourList1 = new System.Windows.Forms.Panel();
+            this.ongTourDelBtn1 = new System.Windows.Forms.Button();
+            this.ongTourEntrBtn1 = new System.Windows.Forms.Button();
+            this.ongTourNameLabel1 = new System.Windows.Forms.Label();
+            this.ongTourList2 = new System.Windows.Forms.Panel();
+            this.ongTourDelBtn2 = new System.Windows.Forms.Button();
+            this.ongTourEntrBtn2 = new System.Windows.Forms.Button();
+            this.ongTourNameLabel2 = new System.Windows.Forms.Label();
+            this.ongTourList3 = new System.Windows.Forms.Panel();
+            this.ongTourDelBtn3 = new System.Windows.Forms.Button();
+            this.ongTourEntrBtn3 = new System.Windows.Forms.Button();
+            this.ongTourNameLabel3 = new System.Windows.Forms.Label();
+            this.ongTourList4 = new System.Windows.Forms.Panel();
+            this.ongTourDelBtn4 = new System.Windows.Forms.Button();
+            this.ongTourEntrBtn4 = new System.Windows.Forms.Button();
+            this.ongTourNameLabel4 = new System.Windows.Forms.Label();
+            this.ongTourList5 = new System.Windows.Forms.Panel();
+            this.ongTourDelBtn5 = new System.Windows.Forms.Button();
+            this.ongTourEntrBtn5 = new System.Windows.Forms.Button();
+            this.ongTourNameLabel5 = new System.Windows.Forms.Label();
             this.ongTourNextBtn = new System.Windows.Forms.Button();
             this.ongTourPrevBtn = new System.Windows.Forms.Button();
             this.ongTourPageNum = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.ongTourDelBtn3 = new System.Windows.Forms.Button();
-            this.ongTourEntrBtn3 = new System.Windows.Forms.Button();
-            this.ongTourDelBtn2 = new System.Windows.Forms.Button();
-            this.ongTourEntrBtn2 = new System.Windows.Forms.Button();
-            this.ongTourDelBtn1 = new System.Windows.Forms.Button();
-            this.ongTourEntrBtn1 = new System.Windows.Forms.Button();
-            this.ongTourNameLabel3 = new System.Windows.Forms.Label();
-            this.ongTourNameLabel2 = new System.Windows.Forms.Label();
-            this.ongTourNameLabel1 = new System.Windows.Forms.Label();
             this.ongTourTitle = new System.Windows.Forms.Label();
             this.FixurePanel = new System.Windows.Forms.Panel();
             this.fixureWinner = new System.Windows.Forms.Label();
@@ -136,12 +148,6 @@ namespace WindowsFormsApp4
             this.decisionTitle = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
-            this.ongTourDelBtn5 = new System.Windows.Forms.Button();
-            this.ongTourEntrBtn5 = new System.Windows.Forms.Button();
-            this.ongTourDelBtn4 = new System.Windows.Forms.Button();
-            this.ongTourEntrBtn4 = new System.Windows.Forms.Button();
-            this.ongTourNameLabel5 = new System.Windows.Forms.Label();
-            this.ongTourNameLabel4 = new System.Windows.Forms.Label();
             this.welcPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxTwo)).BeginInit();
@@ -156,6 +162,12 @@ namespace WindowsFormsApp4
             this.player4Cols.SuspendLayout();
             this.PlayerOneRegisterPanel.SuspendLayout();
             this.OngoingTournamentPanel.SuspendLayout();
+            this.ongTourListPanel.SuspendLayout();
+            this.ongTourList1.SuspendLayout();
+            this.ongTourList2.SuspendLayout();
+            this.ongTourList3.SuspendLayout();
+            this.ongTourList4.SuspendLayout();
+            this.ongTourList5.SuspendLayout();
             this.FixurePanel.SuspendLayout();
             this.DecisionPagePanel.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -167,10 +179,10 @@ namespace WindowsFormsApp4
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.backBtn.Location = new System.Drawing.Point(17, 10);
-            this.backBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.backBtn.Location = new System.Drawing.Point(13, 8);
+            this.backBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(140, 60);
+            this.backBtn.Size = new System.Drawing.Size(105, 49);
             this.backBtn.TabIndex = 0;
             this.backBtn.Text = "< BACK";
             this.backBtn.UseVisualStyleBackColor = false;
@@ -183,10 +195,10 @@ namespace WindowsFormsApp4
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.homeBtn.Location = new System.Drawing.Point(945, 10);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homeBtn.Location = new System.Drawing.Point(709, 8);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Size = new System.Drawing.Size(140, 60);
+            this.homeBtn.Size = new System.Drawing.Size(105, 49);
             this.homeBtn.TabIndex = 1;
             this.homeBtn.Text = "HOME";
             this.homeBtn.UseVisualStyleBackColor = false;
@@ -203,9 +215,9 @@ namespace WindowsFormsApp4
             this.welcPanel.Controls.Add(this.welcName);
             this.welcPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.welcPanel.Location = new System.Drawing.Point(0, 0);
-            this.welcPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.welcPanel.Margin = new System.Windows.Forms.Padding(2);
             this.welcPanel.Name = "welcPanel";
-            this.welcPanel.Size = new System.Drawing.Size(994, 643);
+            this.welcPanel.Size = new System.Drawing.Size(746, 522);
             this.welcPanel.TabIndex = 2;
             // 
             // welcPictureBoxOne
@@ -214,9 +226,9 @@ namespace WindowsFormsApp4
             this.welcPictureBoxOne.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.welcPictureBoxOne.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
             this.welcPictureBoxOne.Location = new System.Drawing.Point(0, 0);
-            this.welcPictureBoxOne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.welcPictureBoxOne.Margin = new System.Windows.Forms.Padding(2);
             this.welcPictureBoxOne.Name = "welcPictureBoxOne";
-            this.welcPictureBoxOne.Size = new System.Drawing.Size(69, 79);
+            this.welcPictureBoxOne.Size = new System.Drawing.Size(52, 64);
             this.welcPictureBoxOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.welcPictureBoxOne.TabIndex = 7;
             this.welcPictureBoxOne.TabStop = false;
@@ -227,10 +239,10 @@ namespace WindowsFormsApp4
             this.welcPictureBoxTwo.BackColor = System.Drawing.Color.Transparent;
             this.welcPictureBoxTwo.Cursor = System.Windows.Forms.Cursors.Default;
             this.welcPictureBoxTwo.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
-            this.welcPictureBoxTwo.Location = new System.Drawing.Point(922, 0);
-            this.welcPictureBoxTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.welcPictureBoxTwo.Location = new System.Drawing.Point(692, 0);
+            this.welcPictureBoxTwo.Margin = new System.Windows.Forms.Padding(2);
             this.welcPictureBoxTwo.Name = "welcPictureBoxTwo";
-            this.welcPictureBoxTwo.Size = new System.Drawing.Size(69, 79);
+            this.welcPictureBoxTwo.Size = new System.Drawing.Size(52, 64);
             this.welcPictureBoxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.welcPictureBoxTwo.TabIndex = 8;
             this.welcPictureBoxTwo.TabStop = false;
@@ -242,9 +254,10 @@ namespace WindowsFormsApp4
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label2.Location = new System.Drawing.Point(533, 331);
+            this.label2.Location = new System.Drawing.Point(400, 269);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 20);
+            this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "By cypherTrio";
             // 
@@ -255,10 +268,9 @@ namespace WindowsFormsApp4
             this.enterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.enterBtn.Location = new System.Drawing.Point(325, 485);
-            this.enterBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.enterBtn.Location = new System.Drawing.Point(244, 394);
             this.enterBtn.Name = "enterBtn";
-            this.enterBtn.Size = new System.Drawing.Size(381, 60);
+            this.enterBtn.Size = new System.Drawing.Size(286, 49);
             this.enterBtn.TabIndex = 5;
             this.enterBtn.Text = "Let\'s  Roll";
             this.enterBtn.UseVisualStyleBackColor = false;
@@ -271,10 +283,11 @@ namespace WindowsFormsApp4
             this.welcName.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.welcName.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcName.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.welcName.Location = new System.Drawing.Point(107, 213);
+            this.welcName.Location = new System.Drawing.Point(80, 173);
+            this.welcName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.welcName.Name = "welcName";
             this.welcName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.welcName.Size = new System.Drawing.Size(693, 110);
+            this.welcName.Size = new System.Drawing.Size(520, 89);
             this.welcName.TabIndex = 4;
             this.welcName.Text = "Ludo Tournament";
             this.welcName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,9 +302,9 @@ namespace WindowsFormsApp4
             this.HomePanel.Controls.Add(this.newTourBtn);
             this.HomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HomePanel.Location = new System.Drawing.Point(0, 0);
-            this.HomePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(2);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(994, 643);
+            this.HomePanel.Size = new System.Drawing.Size(746, 522);
             this.HomePanel.TabIndex = 9;
             // 
             // ongTourBtn
@@ -300,10 +313,9 @@ namespace WindowsFormsApp4
             this.ongTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourBtn.Location = new System.Drawing.Point(471, 231);
-            this.ongTourBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ongTourBtn.Location = new System.Drawing.Point(353, 188);
             this.ongTourBtn.Name = "ongTourBtn";
-            this.ongTourBtn.Size = new System.Drawing.Size(257, 66);
+            this.ongTourBtn.Size = new System.Drawing.Size(193, 54);
             this.ongTourBtn.TabIndex = 3;
             this.ongTourBtn.Text = "Ongoing Tournaments";
             this.ongTourBtn.UseVisualStyleBackColor = false;
@@ -315,10 +327,9 @@ namespace WindowsFormsApp4
             this.newTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.newTourBtn.Location = new System.Drawing.Point(99, 231);
-            this.newTourBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.newTourBtn.Location = new System.Drawing.Point(74, 188);
             this.newTourBtn.Name = "newTourBtn";
-            this.newTourBtn.Size = new System.Drawing.Size(260, 66);
+            this.newTourBtn.Size = new System.Drawing.Size(195, 54);
             this.newTourBtn.TabIndex = 2;
             this.newTourBtn.Text = "New Tournament";
             this.newTourBtn.UseVisualStyleBackColor = false;
@@ -332,9 +343,9 @@ namespace WindowsFormsApp4
             this.tourNamePanel.Controls.Add(this.enterTourName);
             this.tourNamePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tourNamePanel.Location = new System.Drawing.Point(0, 0);
-            this.tourNamePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tourNamePanel.Margin = new System.Windows.Forms.Padding(2);
             this.tourNamePanel.Name = "tourNamePanel";
-            this.tourNamePanel.Size = new System.Drawing.Size(994, 643);
+            this.tourNamePanel.Size = new System.Drawing.Size(746, 522);
             this.tourNamePanel.TabIndex = 10;
             // 
             // tourCreateBtn
@@ -344,10 +355,9 @@ namespace WindowsFormsApp4
             this.tourCreateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tourCreateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourCreateBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.tourCreateBtn.Location = new System.Drawing.Point(323, 445);
-            this.tourCreateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.tourCreateBtn.Location = new System.Drawing.Point(242, 362);
             this.tourCreateBtn.Name = "tourCreateBtn";
-            this.tourCreateBtn.Size = new System.Drawing.Size(349, 60);
+            this.tourCreateBtn.Size = new System.Drawing.Size(262, 49);
             this.tourCreateBtn.TabIndex = 13;
             this.tourCreateBtn.Text = "Next";
             this.tourCreateBtn.UseVisualStyleBackColor = false;
@@ -357,11 +367,10 @@ namespace WindowsFormsApp4
             // 
             this.tourNameInp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tourNameInp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tourNameInp.Location = new System.Drawing.Point(189, 316);
-            this.tourNameInp.Margin = new System.Windows.Forms.Padding(4);
+            this.tourNameInp.Location = new System.Drawing.Point(142, 257);
             this.tourNameInp.Multiline = true;
             this.tourNameInp.Name = "tourNameInp";
-            this.tourNameInp.Size = new System.Drawing.Size(617, 50);
+            this.tourNameInp.Size = new System.Drawing.Size(463, 41);
             this.tourNameInp.TabIndex = 12;
             // 
             // enterTourName
@@ -371,10 +380,9 @@ namespace WindowsFormsApp4
             this.enterTourName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterTourName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterTourName.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.enterTourName.Location = new System.Drawing.Point(204, 136);
-            this.enterTourName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.enterTourName.Location = new System.Drawing.Point(153, 110);
             this.enterTourName.Name = "enterTourName";
-            this.enterTourName.Size = new System.Drawing.Size(587, 164);
+            this.enterTourName.Size = new System.Drawing.Size(440, 133);
             this.enterTourName.TabIndex = 11;
             this.enterTourName.Text = "Enter the Tournament Name";
             this.enterTourName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -387,9 +395,9 @@ namespace WindowsFormsApp4
             this.PlayerChoicePanel.Controls.Add(this.lgnChcBtn);
             this.PlayerChoicePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PlayerChoicePanel.Location = new System.Drawing.Point(0, 0);
-            this.PlayerChoicePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PlayerChoicePanel.Margin = new System.Windows.Forms.Padding(2);
             this.PlayerChoicePanel.Name = "PlayerChoicePanel";
-            this.PlayerChoicePanel.Size = new System.Drawing.Size(994, 643);
+            this.PlayerChoicePanel.Size = new System.Drawing.Size(746, 522);
             this.PlayerChoicePanel.TabIndex = 14;
             // 
             // PlayerTitle
@@ -398,10 +406,9 @@ namespace WindowsFormsApp4
             this.PlayerTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayerTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayerTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.PlayerTitle.Location = new System.Drawing.Point(253, 81);
-            this.PlayerTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PlayerTitle.Location = new System.Drawing.Point(190, 66);
             this.PlayerTitle.Name = "PlayerTitle";
-            this.PlayerTitle.Size = new System.Drawing.Size(328, 75);
+            this.PlayerTitle.Size = new System.Drawing.Size(246, 61);
             this.PlayerTitle.TabIndex = 7;
             this.PlayerTitle.Text = "Player 1";
             this.PlayerTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -412,10 +419,9 @@ namespace WindowsFormsApp4
             this.regChcBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.regChcBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regChcBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.regChcBtn.Location = new System.Drawing.Point(484, 278);
-            this.regChcBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.regChcBtn.Location = new System.Drawing.Point(363, 226);
             this.regChcBtn.Name = "regChcBtn";
-            this.regChcBtn.Size = new System.Drawing.Size(257, 66);
+            this.regChcBtn.Size = new System.Drawing.Size(193, 54);
             this.regChcBtn.TabIndex = 6;
             this.regChcBtn.Text = "REGISTER";
             this.regChcBtn.UseVisualStyleBackColor = false;
@@ -427,10 +433,9 @@ namespace WindowsFormsApp4
             this.lgnChcBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnChcBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgnChcBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.lgnChcBtn.Location = new System.Drawing.Point(103, 278);
-            this.lgnChcBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.lgnChcBtn.Location = new System.Drawing.Point(77, 226);
             this.lgnChcBtn.Name = "lgnChcBtn";
-            this.lgnChcBtn.Size = new System.Drawing.Size(260, 66);
+            this.lgnChcBtn.Size = new System.Drawing.Size(195, 54);
             this.lgnChcBtn.TabIndex = 5;
             this.lgnChcBtn.Text = "LOGIN";
             this.lgnChcBtn.UseVisualStyleBackColor = false;
@@ -447,9 +452,9 @@ namespace WindowsFormsApp4
             this.PlayerOneLoginPanel.Controls.Add(this.lgnPageTitle);
             this.PlayerOneLoginPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PlayerOneLoginPanel.Location = new System.Drawing.Point(0, 0);
-            this.PlayerOneLoginPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PlayerOneLoginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PlayerOneLoginPanel.Name = "PlayerOneLoginPanel";
-            this.PlayerOneLoginPanel.Size = new System.Drawing.Size(994, 643);
+            this.PlayerOneLoginPanel.Size = new System.Drawing.Size(746, 522);
             this.PlayerOneLoginPanel.TabIndex = 15;
             // 
             // plyrLgnBtn
@@ -457,10 +462,9 @@ namespace WindowsFormsApp4
             this.plyrLgnBtn.BackColor = System.Drawing.Color.Transparent;
             this.plyrLgnBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.plyrLgnBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.plyrLgnBtn.Location = new System.Drawing.Point(503, 327);
-            this.plyrLgnBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.plyrLgnBtn.Location = new System.Drawing.Point(377, 266);
             this.plyrLgnBtn.Name = "plyrLgnBtn";
-            this.plyrLgnBtn.Size = new System.Drawing.Size(100, 28);
+            this.plyrLgnBtn.Size = new System.Drawing.Size(75, 23);
             this.plyrLgnBtn.TabIndex = 15;
             this.plyrLgnBtn.Text = "LOGIN";
             this.plyrLgnBtn.UseVisualStyleBackColor = false;
@@ -468,19 +472,17 @@ namespace WindowsFormsApp4
             // 
             // lgnPassword
             // 
-            this.lgnPassword.Location = new System.Drawing.Point(405, 271);
-            this.lgnPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.lgnPassword.Location = new System.Drawing.Point(304, 220);
             this.lgnPassword.Name = "lgnPassword";
             this.lgnPassword.PasswordChar = '*';
-            this.lgnPassword.Size = new System.Drawing.Size(196, 22);
+            this.lgnPassword.Size = new System.Drawing.Size(148, 20);
             this.lgnPassword.TabIndex = 14;
             // 
             // lgnUserName
             // 
-            this.lgnUserName.Location = new System.Drawing.Point(405, 210);
-            this.lgnUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.lgnUserName.Location = new System.Drawing.Point(304, 171);
             this.lgnUserName.Name = "lgnUserName";
-            this.lgnUserName.Size = new System.Drawing.Size(196, 22);
+            this.lgnUserName.Size = new System.Drawing.Size(148, 20);
             this.lgnUserName.TabIndex = 13;
             // 
             // lgnPasswordLebel
@@ -488,9 +490,10 @@ namespace WindowsFormsApp4
             this.lgnPasswordLebel.AutoSize = true;
             this.lgnPasswordLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnPasswordLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.lgnPasswordLebel.Location = new System.Drawing.Point(235, 272);
+            this.lgnPasswordLebel.Location = new System.Drawing.Point(176, 221);
+            this.lgnPasswordLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lgnPasswordLebel.Name = "lgnPasswordLebel";
-            this.lgnPasswordLebel.Size = new System.Drawing.Size(107, 17);
+            this.lgnPasswordLebel.Size = new System.Drawing.Size(81, 13);
             this.lgnPasswordLebel.TabIndex = 12;
             this.lgnPasswordLebel.Text = "Enter Password";
             // 
@@ -499,9 +502,10 @@ namespace WindowsFormsApp4
             this.lgnUserNameLebel.AutoSize = true;
             this.lgnUserNameLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnUserNameLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.lgnUserNameLebel.Location = new System.Drawing.Point(235, 217);
+            this.lgnUserNameLebel.Location = new System.Drawing.Point(176, 176);
+            this.lgnUserNameLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lgnUserNameLebel.Name = "lgnUserNameLebel";
-            this.lgnUserNameLebel.Size = new System.Drawing.Size(111, 17);
+            this.lgnUserNameLebel.Size = new System.Drawing.Size(83, 13);
             this.lgnUserNameLebel.TabIndex = 11;
             this.lgnUserNameLebel.Text = "Enter Username";
             // 
@@ -511,10 +515,9 @@ namespace WindowsFormsApp4
             this.lgnPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgnPageTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.lgnPageTitle.Location = new System.Drawing.Point(253, 81);
-            this.lgnPageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lgnPageTitle.Location = new System.Drawing.Point(190, 66);
             this.lgnPageTitle.Name = "lgnPageTitle";
-            this.lgnPageTitle.Size = new System.Drawing.Size(328, 75);
+            this.lgnPageTitle.Size = new System.Drawing.Size(246, 61);
             this.lgnPageTitle.TabIndex = 7;
             this.lgnPageTitle.Text = "Player 1";
             this.lgnPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -534,9 +537,9 @@ namespace WindowsFormsApp4
             this.ChooseColourPanel.Controls.Add(this.chooseColourTitle);
             this.ChooseColourPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChooseColourPanel.Location = new System.Drawing.Point(0, 0);
-            this.ChooseColourPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ChooseColourPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ChooseColourPanel.Name = "ChooseColourPanel";
-            this.ChooseColourPanel.Size = new System.Drawing.Size(994, 643);
+            this.ChooseColourPanel.Size = new System.Drawing.Size(746, 522);
             this.ChooseColourPanel.TabIndex = 17;
             // 
             // player1Cols
@@ -545,9 +548,10 @@ namespace WindowsFormsApp4
             this.player1Cols.Controls.Add(this.greenPlayer1);
             this.player1Cols.Controls.Add(this.yellowPlayer1);
             this.player1Cols.Controls.Add(this.bluePlayer1);
-            this.player1Cols.Location = new System.Drawing.Point(376, 177);
+            this.player1Cols.Location = new System.Drawing.Point(282, 144);
+            this.player1Cols.Margin = new System.Windows.Forms.Padding(2);
             this.player1Cols.Name = "player1Cols";
-            this.player1Cols.Size = new System.Drawing.Size(220, 34);
+            this.player1Cols.Size = new System.Drawing.Size(165, 28);
             this.player1Cols.TabIndex = 49;
             // 
             // redPlayer1
@@ -558,9 +562,10 @@ namespace WindowsFormsApp4
             this.redPlayer1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.redPlayer1.FlatAppearance.BorderSize = 0;
             this.redPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.redPlayer1.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer1.Location = new System.Drawing.Point(4, 6);
+            this.redPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.redPlayer1.Name = "redPlayer1";
-            this.redPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer1.Size = new System.Drawing.Size(19, 17);
             this.redPlayer1.TabIndex = 0;
             this.redPlayer1.TabStop = true;
             this.redPlayer1.Tag = "11";
@@ -574,9 +579,10 @@ namespace WindowsFormsApp4
             this.greenPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.greenPlayer1.FlatAppearance.BorderSize = 0;
             this.greenPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer1.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer1.Location = new System.Drawing.Point(49, 6);
+            this.greenPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.greenPlayer1.Name = "greenPlayer1";
-            this.greenPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer1.Size = new System.Drawing.Size(19, 17);
             this.greenPlayer1.TabIndex = 50;
             this.greenPlayer1.TabStop = true;
             this.greenPlayer1.Tag = "12";
@@ -590,9 +596,10 @@ namespace WindowsFormsApp4
             this.yellowPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.yellowPlayer1.FlatAppearance.BorderSize = 0;
             this.yellowPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer1.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer1.Location = new System.Drawing.Point(94, 6);
+            this.yellowPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.yellowPlayer1.Name = "yellowPlayer1";
-            this.yellowPlayer1.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer1.Size = new System.Drawing.Size(19, 17);
             this.yellowPlayer1.TabIndex = 50;
             this.yellowPlayer1.TabStop = true;
             this.yellowPlayer1.Tag = "13";
@@ -606,9 +613,10 @@ namespace WindowsFormsApp4
             this.bluePlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bluePlayer1.FlatAppearance.BorderSize = 0;
             this.bluePlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer1.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer1.Location = new System.Drawing.Point(139, 6);
+            this.bluePlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.bluePlayer1.Name = "bluePlayer1";
-            this.bluePlayer1.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer1.Size = new System.Drawing.Size(19, 17);
             this.bluePlayer1.TabIndex = 50;
             this.bluePlayer1.TabStop = true;
             this.bluePlayer1.Tag = "14";
@@ -621,9 +629,10 @@ namespace WindowsFormsApp4
             this.player2Cols.Controls.Add(this.greenPlayer2);
             this.player2Cols.Controls.Add(this.yellowPlayer2);
             this.player2Cols.Controls.Add(this.bluePlayer2);
-            this.player2Cols.Location = new System.Drawing.Point(376, 238);
+            this.player2Cols.Location = new System.Drawing.Point(282, 193);
+            this.player2Cols.Margin = new System.Windows.Forms.Padding(2);
             this.player2Cols.Name = "player2Cols";
-            this.player2Cols.Size = new System.Drawing.Size(220, 34);
+            this.player2Cols.Size = new System.Drawing.Size(165, 28);
             this.player2Cols.TabIndex = 50;
             // 
             // redPlayer2
@@ -633,9 +642,10 @@ namespace WindowsFormsApp4
             this.redPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.redPlayer2.FlatAppearance.BorderSize = 0;
             this.redPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.redPlayer2.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer2.Location = new System.Drawing.Point(4, 6);
+            this.redPlayer2.Margin = new System.Windows.Forms.Padding(2);
             this.redPlayer2.Name = "redPlayer2";
-            this.redPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer2.Size = new System.Drawing.Size(19, 17);
             this.redPlayer2.TabIndex = 0;
             this.redPlayer2.TabStop = true;
             this.redPlayer2.Tag = "21";
@@ -649,9 +659,10 @@ namespace WindowsFormsApp4
             this.greenPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.greenPlayer2.FlatAppearance.BorderSize = 0;
             this.greenPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer2.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer2.Location = new System.Drawing.Point(49, 6);
+            this.greenPlayer2.Margin = new System.Windows.Forms.Padding(2);
             this.greenPlayer2.Name = "greenPlayer2";
-            this.greenPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer2.Size = new System.Drawing.Size(19, 17);
             this.greenPlayer2.TabIndex = 50;
             this.greenPlayer2.TabStop = true;
             this.greenPlayer2.Tag = "22";
@@ -665,9 +676,10 @@ namespace WindowsFormsApp4
             this.yellowPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.yellowPlayer2.FlatAppearance.BorderSize = 0;
             this.yellowPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer2.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer2.Location = new System.Drawing.Point(94, 6);
+            this.yellowPlayer2.Margin = new System.Windows.Forms.Padding(2);
             this.yellowPlayer2.Name = "yellowPlayer2";
-            this.yellowPlayer2.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer2.Size = new System.Drawing.Size(19, 17);
             this.yellowPlayer2.TabIndex = 50;
             this.yellowPlayer2.TabStop = true;
             this.yellowPlayer2.Tag = "23";
@@ -681,9 +693,10 @@ namespace WindowsFormsApp4
             this.bluePlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bluePlayer2.FlatAppearance.BorderSize = 0;
             this.bluePlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer2.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer2.Location = new System.Drawing.Point(139, 6);
+            this.bluePlayer2.Margin = new System.Windows.Forms.Padding(2);
             this.bluePlayer2.Name = "bluePlayer2";
-            this.bluePlayer2.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer2.Size = new System.Drawing.Size(19, 17);
             this.bluePlayer2.TabIndex = 50;
             this.bluePlayer2.TabStop = true;
             this.bluePlayer2.Tag = "24";
@@ -696,9 +709,10 @@ namespace WindowsFormsApp4
             this.player3Cols.Controls.Add(this.greenPlayer3);
             this.player3Cols.Controls.Add(this.yellowPlayer3);
             this.player3Cols.Controls.Add(this.bluePlayer3);
-            this.player3Cols.Location = new System.Drawing.Point(375, 297);
+            this.player3Cols.Location = new System.Drawing.Point(281, 241);
+            this.player3Cols.Margin = new System.Windows.Forms.Padding(2);
             this.player3Cols.Name = "player3Cols";
-            this.player3Cols.Size = new System.Drawing.Size(220, 34);
+            this.player3Cols.Size = new System.Drawing.Size(165, 28);
             this.player3Cols.TabIndex = 51;
             // 
             // redPlayer3
@@ -708,9 +722,10 @@ namespace WindowsFormsApp4
             this.redPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.redPlayer3.FlatAppearance.BorderSize = 0;
             this.redPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.redPlayer3.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer3.Location = new System.Drawing.Point(4, 6);
+            this.redPlayer3.Margin = new System.Windows.Forms.Padding(2);
             this.redPlayer3.Name = "redPlayer3";
-            this.redPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer3.Size = new System.Drawing.Size(19, 17);
             this.redPlayer3.TabIndex = 0;
             this.redPlayer3.TabStop = true;
             this.redPlayer3.Tag = "31";
@@ -724,9 +739,10 @@ namespace WindowsFormsApp4
             this.greenPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.greenPlayer3.FlatAppearance.BorderSize = 0;
             this.greenPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer3.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer3.Location = new System.Drawing.Point(49, 6);
+            this.greenPlayer3.Margin = new System.Windows.Forms.Padding(2);
             this.greenPlayer3.Name = "greenPlayer3";
-            this.greenPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer3.Size = new System.Drawing.Size(19, 17);
             this.greenPlayer3.TabIndex = 50;
             this.greenPlayer3.TabStop = true;
             this.greenPlayer3.Tag = "32";
@@ -740,9 +756,10 @@ namespace WindowsFormsApp4
             this.yellowPlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.yellowPlayer3.FlatAppearance.BorderSize = 0;
             this.yellowPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer3.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer3.Location = new System.Drawing.Point(94, 6);
+            this.yellowPlayer3.Margin = new System.Windows.Forms.Padding(2);
             this.yellowPlayer3.Name = "yellowPlayer3";
-            this.yellowPlayer3.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer3.Size = new System.Drawing.Size(19, 17);
             this.yellowPlayer3.TabIndex = 50;
             this.yellowPlayer3.TabStop = true;
             this.yellowPlayer3.Tag = "33";
@@ -756,9 +773,10 @@ namespace WindowsFormsApp4
             this.bluePlayer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bluePlayer3.FlatAppearance.BorderSize = 0;
             this.bluePlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer3.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer3.Location = new System.Drawing.Point(139, 6);
+            this.bluePlayer3.Margin = new System.Windows.Forms.Padding(2);
             this.bluePlayer3.Name = "bluePlayer3";
-            this.bluePlayer3.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer3.Size = new System.Drawing.Size(19, 17);
             this.bluePlayer3.TabIndex = 50;
             this.bluePlayer3.TabStop = true;
             this.bluePlayer3.Tag = "34";
@@ -771,9 +789,10 @@ namespace WindowsFormsApp4
             this.player4Cols.Controls.Add(this.greenPlayer4);
             this.player4Cols.Controls.Add(this.yellowPlayer4);
             this.player4Cols.Controls.Add(this.bluePlayer4);
-            this.player4Cols.Location = new System.Drawing.Point(375, 357);
+            this.player4Cols.Location = new System.Drawing.Point(281, 290);
+            this.player4Cols.Margin = new System.Windows.Forms.Padding(2);
             this.player4Cols.Name = "player4Cols";
-            this.player4Cols.Size = new System.Drawing.Size(220, 34);
+            this.player4Cols.Size = new System.Drawing.Size(165, 28);
             this.player4Cols.TabIndex = 52;
             // 
             // redPlayer4
@@ -783,9 +802,10 @@ namespace WindowsFormsApp4
             this.redPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.redPlayer4.FlatAppearance.BorderSize = 0;
             this.redPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.redPlayer4.Location = new System.Drawing.Point(5, 7);
+            this.redPlayer4.Location = new System.Drawing.Point(4, 6);
+            this.redPlayer4.Margin = new System.Windows.Forms.Padding(2);
             this.redPlayer4.Name = "redPlayer4";
-            this.redPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.redPlayer4.Size = new System.Drawing.Size(19, 17);
             this.redPlayer4.TabIndex = 0;
             this.redPlayer4.TabStop = true;
             this.redPlayer4.Tag = "41";
@@ -799,9 +819,10 @@ namespace WindowsFormsApp4
             this.greenPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.greenPlayer4.FlatAppearance.BorderSize = 0;
             this.greenPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.greenPlayer4.Location = new System.Drawing.Point(65, 7);
+            this.greenPlayer4.Location = new System.Drawing.Point(49, 6);
+            this.greenPlayer4.Margin = new System.Windows.Forms.Padding(2);
             this.greenPlayer4.Name = "greenPlayer4";
-            this.greenPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.greenPlayer4.Size = new System.Drawing.Size(19, 17);
             this.greenPlayer4.TabIndex = 50;
             this.greenPlayer4.TabStop = true;
             this.greenPlayer4.Tag = "42";
@@ -815,9 +836,10 @@ namespace WindowsFormsApp4
             this.yellowPlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.yellowPlayer4.FlatAppearance.BorderSize = 0;
             this.yellowPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yellowPlayer4.Location = new System.Drawing.Point(125, 7);
+            this.yellowPlayer4.Location = new System.Drawing.Point(94, 6);
+            this.yellowPlayer4.Margin = new System.Windows.Forms.Padding(2);
             this.yellowPlayer4.Name = "yellowPlayer4";
-            this.yellowPlayer4.Size = new System.Drawing.Size(25, 21);
+            this.yellowPlayer4.Size = new System.Drawing.Size(19, 17);
             this.yellowPlayer4.TabIndex = 50;
             this.yellowPlayer4.TabStop = true;
             this.yellowPlayer4.Tag = "43";
@@ -831,9 +853,10 @@ namespace WindowsFormsApp4
             this.bluePlayer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bluePlayer4.FlatAppearance.BorderSize = 0;
             this.bluePlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bluePlayer4.Location = new System.Drawing.Point(185, 7);
+            this.bluePlayer4.Location = new System.Drawing.Point(139, 6);
+            this.bluePlayer4.Margin = new System.Windows.Forms.Padding(2);
             this.bluePlayer4.Name = "bluePlayer4";
-            this.bluePlayer4.Size = new System.Drawing.Size(25, 21);
+            this.bluePlayer4.Size = new System.Drawing.Size(19, 17);
             this.bluePlayer4.TabIndex = 50;
             this.bluePlayer4.TabStop = true;
             this.bluePlayer4.Tag = "44";
@@ -844,10 +867,9 @@ namespace WindowsFormsApp4
             // 
             this.gameStartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gameStartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.gameStartBtn.Location = new System.Drawing.Point(495, 416);
-            this.gameStartBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.gameStartBtn.Location = new System.Drawing.Point(371, 338);
             this.gameStartBtn.Name = "gameStartBtn";
-            this.gameStartBtn.Size = new System.Drawing.Size(100, 41);
+            this.gameStartBtn.Size = new System.Drawing.Size(75, 33);
             this.gameStartBtn.TabIndex = 32;
             this.gameStartBtn.Text = "Continue";
             this.gameStartBtn.UseVisualStyleBackColor = true;
@@ -860,10 +882,11 @@ namespace WindowsFormsApp4
             this.colorPlayer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayer1.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayer1.Location = new System.Drawing.Point(230, 179);
+            this.colorPlayer1.Location = new System.Drawing.Point(172, 145);
+            this.colorPlayer1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorPlayer1.Name = "colorPlayer1";
-            this.colorPlayer1.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayer1.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer1.Padding = new System.Windows.Forms.Padding(2);
+            this.colorPlayer1.Size = new System.Drawing.Size(76, 26);
             this.colorPlayer1.TabIndex = 33;
             this.colorPlayer1.Text = "Player 1";
             this.colorPlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -875,10 +898,11 @@ namespace WindowsFormsApp4
             this.colorPlayer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayer2.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayer2.Location = new System.Drawing.Point(230, 239);
+            this.colorPlayer2.Location = new System.Drawing.Point(172, 194);
+            this.colorPlayer2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorPlayer2.Name = "colorPlayer2";
-            this.colorPlayer2.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayer2.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer2.Padding = new System.Windows.Forms.Padding(2);
+            this.colorPlayer2.Size = new System.Drawing.Size(76, 26);
             this.colorPlayer2.TabIndex = 38;
             this.colorPlayer2.Text = "Player 2";
             this.colorPlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -890,10 +914,11 @@ namespace WindowsFormsApp4
             this.colorPlayer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayer3.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayer3.Location = new System.Drawing.Point(230, 299);
+            this.colorPlayer3.Location = new System.Drawing.Point(172, 243);
+            this.colorPlayer3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorPlayer3.Name = "colorPlayer3";
-            this.colorPlayer3.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayer3.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer3.Padding = new System.Windows.Forms.Padding(2);
+            this.colorPlayer3.Size = new System.Drawing.Size(76, 26);
             this.colorPlayer3.TabIndex = 43;
             this.colorPlayer3.Text = "Player 3";
             this.colorPlayer3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -905,10 +930,11 @@ namespace WindowsFormsApp4
             this.colorPlayer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colorPlayer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorPlayer4.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.colorPlayer4.Location = new System.Drawing.Point(230, 359);
+            this.colorPlayer4.Location = new System.Drawing.Point(172, 292);
+            this.colorPlayer4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorPlayer4.Name = "colorPlayer4";
-            this.colorPlayer4.Padding = new System.Windows.Forms.Padding(3);
-            this.colorPlayer4.Size = new System.Drawing.Size(100, 32);
+            this.colorPlayer4.Padding = new System.Windows.Forms.Padding(2);
+            this.colorPlayer4.Size = new System.Drawing.Size(76, 26);
             this.colorPlayer4.TabIndex = 48;
             this.colorPlayer4.Text = "Player 4";
             this.colorPlayer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -919,9 +945,10 @@ namespace WindowsFormsApp4
             this.chooseColourTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chooseColourTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseColourTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.chooseColourTitle.Location = new System.Drawing.Point(289, 70);
+            this.chooseColourTitle.Location = new System.Drawing.Point(217, 57);
+            this.chooseColourTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.chooseColourTitle.Name = "chooseColourTitle";
-            this.chooseColourTitle.Size = new System.Drawing.Size(255, 62);
+            this.chooseColourTitle.Size = new System.Drawing.Size(191, 50);
             this.chooseColourTitle.TabIndex = 27;
             this.chooseColourTitle.Text = "Choose Colour";
             this.chooseColourTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -944,27 +971,29 @@ namespace WindowsFormsApp4
             this.PlayerOneRegisterPanel.Controls.Add(this.label10);
             this.PlayerOneRegisterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PlayerOneRegisterPanel.Location = new System.Drawing.Point(0, 0);
-            this.PlayerOneRegisterPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PlayerOneRegisterPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PlayerOneRegisterPanel.Name = "PlayerOneRegisterPanel";
-            this.PlayerOneRegisterPanel.Size = new System.Drawing.Size(994, 643);
+            this.PlayerOneRegisterPanel.Size = new System.Drawing.Size(746, 522);
             this.PlayerOneRegisterPanel.TabIndex = 16;
             // 
             // femaleLabel
             // 
             this.femaleLabel.AutoSize = true;
             this.femaleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.femaleLabel.Location = new System.Drawing.Point(486, 252);
+            this.femaleLabel.Location = new System.Drawing.Point(364, 205);
+            this.femaleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.femaleLabel.Name = "femaleLabel";
-            this.femaleLabel.Size = new System.Drawing.Size(54, 17);
+            this.femaleLabel.Size = new System.Drawing.Size(41, 13);
             this.femaleLabel.TabIndex = 35;
             this.femaleLabel.Text = "Female";
             // 
             // regFemale
             // 
             this.regFemale.AutoSize = true;
-            this.regFemale.Location = new System.Drawing.Point(463, 252);
+            this.regFemale.Location = new System.Drawing.Point(347, 205);
+            this.regFemale.Margin = new System.Windows.Forms.Padding(2);
             this.regFemale.Name = "regFemale";
-            this.regFemale.Size = new System.Drawing.Size(17, 16);
+            this.regFemale.Size = new System.Drawing.Size(14, 13);
             this.regFemale.TabIndex = 34;
             this.regFemale.TabStop = true;
             this.regFemale.UseVisualStyleBackColor = true;
@@ -973,18 +1002,20 @@ namespace WindowsFormsApp4
             // 
             this.maleLabel.AutoSize = true;
             this.maleLabel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.maleLabel.Location = new System.Drawing.Point(407, 252);
+            this.maleLabel.Location = new System.Drawing.Point(305, 205);
+            this.maleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.maleLabel.Name = "maleLabel";
-            this.maleLabel.Size = new System.Drawing.Size(38, 17);
+            this.maleLabel.Size = new System.Drawing.Size(30, 13);
             this.maleLabel.TabIndex = 33;
             this.maleLabel.Text = "Male";
             // 
             // regMale
             // 
             this.regMale.AutoSize = true;
-            this.regMale.Location = new System.Drawing.Point(384, 252);
+            this.regMale.Location = new System.Drawing.Point(288, 205);
+            this.regMale.Margin = new System.Windows.Forms.Padding(2);
             this.regMale.Name = "regMale";
-            this.regMale.Size = new System.Drawing.Size(17, 16);
+            this.regMale.Size = new System.Drawing.Size(14, 13);
             this.regMale.TabIndex = 32;
             this.regMale.TabStop = true;
             this.regMale.UseVisualStyleBackColor = true;
@@ -992,11 +1023,10 @@ namespace WindowsFormsApp4
             // regRePassword
             // 
             this.regRePassword.ForeColor = System.Drawing.Color.Black;
-            this.regRePassword.Location = new System.Drawing.Point(384, 384);
-            this.regRePassword.Margin = new System.Windows.Forms.Padding(4);
+            this.regRePassword.Location = new System.Drawing.Point(288, 312);
             this.regRePassword.Name = "regRePassword";
             this.regRePassword.PasswordChar = '*';
-            this.regRePassword.Size = new System.Drawing.Size(212, 22);
+            this.regRePassword.Size = new System.Drawing.Size(160, 20);
             this.regRePassword.TabIndex = 31;
             // 
             // label6
@@ -1004,10 +1034,9 @@ namespace WindowsFormsApp4
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label6.Location = new System.Drawing.Point(215, 384);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(161, 312);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 17);
+            this.label6.Size = new System.Drawing.Size(98, 13);
             this.label6.TabIndex = 30;
             this.label6.Text = "Re-Enter Password";
             // 
@@ -1015,10 +1044,9 @@ namespace WindowsFormsApp4
             // 
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label7.Location = new System.Drawing.Point(215, 252);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(161, 205);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 16);
+            this.label7.Size = new System.Drawing.Size(98, 13);
             this.label7.TabIndex = 27;
             this.label7.Text = "Gender";
             // 
@@ -1029,10 +1057,9 @@ namespace WindowsFormsApp4
             this.regPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.regPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regPageTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.regPageTitle.Location = new System.Drawing.Point(244, 66);
-            this.regPageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.regPageTitle.Location = new System.Drawing.Point(183, 54);
             this.regPageTitle.Name = "regPageTitle";
-            this.regPageTitle.Size = new System.Drawing.Size(327, 75);
+            this.regPageTitle.Size = new System.Drawing.Size(246, 61);
             this.regPageTitle.TabIndex = 26;
             this.regPageTitle.Text = "Player 1";
             this.regPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1042,10 +1069,9 @@ namespace WindowsFormsApp4
             this.playerRegBtn.BackColor = System.Drawing.Color.Transparent;
             this.playerRegBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playerRegBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.playerRegBtn.Location = new System.Drawing.Point(496, 441);
-            this.playerRegBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.playerRegBtn.Location = new System.Drawing.Point(372, 358);
             this.playerRegBtn.Name = "playerRegBtn";
-            this.playerRegBtn.Size = new System.Drawing.Size(100, 28);
+            this.playerRegBtn.Size = new System.Drawing.Size(75, 23);
             this.playerRegBtn.TabIndex = 25;
             this.playerRegBtn.Text = "REGISTER";
             this.playerRegBtn.UseVisualStyleBackColor = false;
@@ -1054,30 +1080,27 @@ namespace WindowsFormsApp4
             // regPassword
             // 
             this.regPassword.ForeColor = System.Drawing.Color.Black;
-            this.regPassword.Location = new System.Drawing.Point(384, 314);
-            this.regPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.regPassword.Location = new System.Drawing.Point(288, 255);
             this.regPassword.Name = "regPassword";
             this.regPassword.PasswordChar = '*';
-            this.regPassword.Size = new System.Drawing.Size(212, 22);
+            this.regPassword.Size = new System.Drawing.Size(160, 20);
             this.regPassword.TabIndex = 24;
             // 
             // regUserName
             // 
             this.regUserName.ForeColor = System.Drawing.Color.Black;
-            this.regUserName.Location = new System.Drawing.Point(384, 174);
-            this.regUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.regUserName.Location = new System.Drawing.Point(288, 141);
             this.regUserName.Name = "regUserName";
-            this.regUserName.Size = new System.Drawing.Size(212, 22);
+            this.regUserName.Size = new System.Drawing.Size(160, 20);
             this.regUserName.TabIndex = 23;
             // 
             // label9
             // 
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label9.Location = new System.Drawing.Point(215, 322);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(161, 262);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 16);
+            this.label9.Size = new System.Drawing.Size(98, 13);
             this.label9.TabIndex = 22;
             this.label9.Text = "Enter Password";
             // 
@@ -1085,52 +1108,359 @@ namespace WindowsFormsApp4
             // 
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.label10.Location = new System.Drawing.Point(215, 177);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(161, 144);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 16);
+            this.label10.Size = new System.Drawing.Size(98, 13);
             this.label10.TabIndex = 21;
             this.label10.Text = "Enter Username";
             // 
             // OngoingTournamentPanel
             // 
             this.OngoingTournamentPanel.BackColor = System.Drawing.Color.Transparent;
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourDelBtn5);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourEntrBtn5);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourDelBtn4);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourEntrBtn4);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourNameLabel5);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourNameLabel4);
+            this.OngoingTournamentPanel.Controls.Add(this.ongTourListPanel);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourNextBtn);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourPrevBtn);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourPageNum);
             this.OngoingTournamentPanel.Controls.Add(this.label36);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourDelBtn3);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourEntrBtn3);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourDelBtn2);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourEntrBtn2);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourDelBtn1);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourEntrBtn1);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourNameLabel3);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourNameLabel2);
-            this.OngoingTournamentPanel.Controls.Add(this.ongTourNameLabel1);
             this.OngoingTournamentPanel.Controls.Add(this.ongTourTitle);
             this.OngoingTournamentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OngoingTournamentPanel.Location = new System.Drawing.Point(0, 0);
-            this.OngoingTournamentPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.OngoingTournamentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.OngoingTournamentPanel.Name = "OngoingTournamentPanel";
-            this.OngoingTournamentPanel.Size = new System.Drawing.Size(994, 643);
+            this.OngoingTournamentPanel.Size = new System.Drawing.Size(746, 522);
             this.OngoingTournamentPanel.TabIndex = 18;
+            // 
+            // ongTourListPanel
+            // 
+            this.ongTourListPanel.Controls.Add(this.ongTourList1);
+            this.ongTourListPanel.Controls.Add(this.ongTourList2);
+            this.ongTourListPanel.Controls.Add(this.ongTourList3);
+            this.ongTourListPanel.Controls.Add(this.ongTourList4);
+            this.ongTourListPanel.Controls.Add(this.ongTourList5);
+            this.ongTourListPanel.Location = new System.Drawing.Point(81, 91);
+            this.ongTourListPanel.Name = "ongTourListPanel";
+            this.ongTourListPanel.Size = new System.Drawing.Size(598, 370);
+            this.ongTourListPanel.TabIndex = 30;
+            // 
+            // ongTourList1
+            // 
+            this.ongTourList1.Controls.Add(this.ongTourDelBtn1);
+            this.ongTourList1.Controls.Add(this.ongTourEntrBtn1);
+            this.ongTourList1.Controls.Add(this.ongTourNameLabel1);
+            this.ongTourList1.Location = new System.Drawing.Point(33, 22);
+            this.ongTourList1.Name = "ongTourList1";
+            this.ongTourList1.Size = new System.Drawing.Size(540, 60);
+            this.ongTourList1.TabIndex = 51;
+            // 
+            // ongTourDelBtn1
+            // 
+            this.ongTourDelBtn1.AutoSize = true;
+            this.ongTourDelBtn1.BackColor = System.Drawing.Color.Red;
+            this.ongTourDelBtn1.FlatAppearance.BorderSize = 0;
+            this.ongTourDelBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourDelBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourDelBtn1.ForeColor = System.Drawing.Color.White;
+            this.ongTourDelBtn1.Location = new System.Drawing.Point(430, 10);
+            this.ongTourDelBtn1.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourDelBtn1.Name = "ongTourDelBtn1";
+            this.ongTourDelBtn1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourDelBtn1.Size = new System.Drawing.Size(102, 44);
+            this.ongTourDelBtn1.TabIndex = 43;
+            this.ongTourDelBtn1.Text = "DELETE";
+            this.ongTourDelBtn1.UseVisualStyleBackColor = false;
+            this.ongTourDelBtn1.Click += new System.EventHandler(this.deleteTournament);
+            // 
+            // ongTourEntrBtn1
+            // 
+            this.ongTourEntrBtn1.AutoSize = true;
+            this.ongTourEntrBtn1.BackColor = System.Drawing.Color.LimeGreen;
+            this.ongTourEntrBtn1.FlatAppearance.BorderSize = 0;
+            this.ongTourEntrBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourEntrBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourEntrBtn1.ForeColor = System.Drawing.Color.White;
+            this.ongTourEntrBtn1.Location = new System.Drawing.Point(327, 10);
+            this.ongTourEntrBtn1.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourEntrBtn1.Name = "ongTourEntrBtn1";
+            this.ongTourEntrBtn1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourEntrBtn1.Size = new System.Drawing.Size(93, 44);
+            this.ongTourEntrBtn1.TabIndex = 42;
+            this.ongTourEntrBtn1.Text = "ENTER";
+            this.ongTourEntrBtn1.UseVisualStyleBackColor = false;
+            this.ongTourEntrBtn1.Click += new System.EventHandler(this.enterTournament);
+            // 
+            // ongTourNameLabel1
+            // 
+            this.ongTourNameLabel1.AutoSize = true;
+            this.ongTourNameLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.ongTourNameLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourNameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourNameLabel1.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourNameLabel1.Location = new System.Drawing.Point(6, 11);
+            this.ongTourNameLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ongTourNameLabel1.Name = "ongTourNameLabel1";
+            this.ongTourNameLabel1.Padding = new System.Windows.Forms.Padding(4);
+            this.ongTourNameLabel1.Size = new System.Drawing.Size(231, 34);
+            this.ongTourNameLabel1.TabIndex = 41;
+            this.ongTourNameLabel1.Text = "Tournament_Name_1";
+            this.ongTourNameLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ongTourList2
+            // 
+            this.ongTourList2.Controls.Add(this.ongTourDelBtn2);
+            this.ongTourList2.Controls.Add(this.ongTourEntrBtn2);
+            this.ongTourList2.Controls.Add(this.ongTourNameLabel2);
+            this.ongTourList2.Location = new System.Drawing.Point(33, 85);
+            this.ongTourList2.Name = "ongTourList2";
+            this.ongTourList2.Size = new System.Drawing.Size(540, 60);
+            this.ongTourList2.TabIndex = 52;
+            // 
+            // ongTourDelBtn2
+            // 
+            this.ongTourDelBtn2.AutoSize = true;
+            this.ongTourDelBtn2.BackColor = System.Drawing.Color.Red;
+            this.ongTourDelBtn2.FlatAppearance.BorderSize = 0;
+            this.ongTourDelBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourDelBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourDelBtn2.ForeColor = System.Drawing.Color.White;
+            this.ongTourDelBtn2.Location = new System.Drawing.Point(430, 10);
+            this.ongTourDelBtn2.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourDelBtn2.Name = "ongTourDelBtn2";
+            this.ongTourDelBtn2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourDelBtn2.Size = new System.Drawing.Size(102, 44);
+            this.ongTourDelBtn2.TabIndex = 43;
+            this.ongTourDelBtn2.Text = "DELETE";
+            this.ongTourDelBtn2.UseVisualStyleBackColor = false;
+            this.ongTourDelBtn2.Click += new System.EventHandler(this.deleteTournament);
+            // 
+            // ongTourEntrBtn2
+            // 
+            this.ongTourEntrBtn2.AutoSize = true;
+            this.ongTourEntrBtn2.BackColor = System.Drawing.Color.LimeGreen;
+            this.ongTourEntrBtn2.FlatAppearance.BorderSize = 0;
+            this.ongTourEntrBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourEntrBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourEntrBtn2.ForeColor = System.Drawing.Color.White;
+            this.ongTourEntrBtn2.Location = new System.Drawing.Point(327, 10);
+            this.ongTourEntrBtn2.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourEntrBtn2.Name = "ongTourEntrBtn2";
+            this.ongTourEntrBtn2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourEntrBtn2.Size = new System.Drawing.Size(93, 44);
+            this.ongTourEntrBtn2.TabIndex = 42;
+            this.ongTourEntrBtn2.Text = "ENTER";
+            this.ongTourEntrBtn2.UseVisualStyleBackColor = false;
+            this.ongTourEntrBtn2.Click += new System.EventHandler(this.enterTournament);
+            // 
+            // ongTourNameLabel2
+            // 
+            this.ongTourNameLabel2.AutoSize = true;
+            this.ongTourNameLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.ongTourNameLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourNameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourNameLabel2.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourNameLabel2.Location = new System.Drawing.Point(6, 11);
+            this.ongTourNameLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ongTourNameLabel2.Name = "ongTourNameLabel2";
+            this.ongTourNameLabel2.Padding = new System.Windows.Forms.Padding(4);
+            this.ongTourNameLabel2.Size = new System.Drawing.Size(231, 34);
+            this.ongTourNameLabel2.TabIndex = 41;
+            this.ongTourNameLabel2.Text = "Tournament_Name_1";
+            this.ongTourNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ongTourList3
+            // 
+            this.ongTourList3.Controls.Add(this.ongTourDelBtn3);
+            this.ongTourList3.Controls.Add(this.ongTourEntrBtn3);
+            this.ongTourList3.Controls.Add(this.ongTourNameLabel3);
+            this.ongTourList3.Location = new System.Drawing.Point(33, 149);
+            this.ongTourList3.Name = "ongTourList3";
+            this.ongTourList3.Size = new System.Drawing.Size(540, 60);
+            this.ongTourList3.TabIndex = 52;
+            // 
+            // ongTourDelBtn3
+            // 
+            this.ongTourDelBtn3.AutoSize = true;
+            this.ongTourDelBtn3.BackColor = System.Drawing.Color.Red;
+            this.ongTourDelBtn3.FlatAppearance.BorderSize = 0;
+            this.ongTourDelBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourDelBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourDelBtn3.ForeColor = System.Drawing.Color.White;
+            this.ongTourDelBtn3.Location = new System.Drawing.Point(430, 10);
+            this.ongTourDelBtn3.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourDelBtn3.Name = "ongTourDelBtn3";
+            this.ongTourDelBtn3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourDelBtn3.Size = new System.Drawing.Size(102, 44);
+            this.ongTourDelBtn3.TabIndex = 43;
+            this.ongTourDelBtn3.Text = "DELETE";
+            this.ongTourDelBtn3.UseVisualStyleBackColor = false;
+            this.ongTourDelBtn3.Click += new System.EventHandler(this.deleteTournament);
+            // 
+            // ongTourEntrBtn3
+            // 
+            this.ongTourEntrBtn3.AutoSize = true;
+            this.ongTourEntrBtn3.BackColor = System.Drawing.Color.LimeGreen;
+            this.ongTourEntrBtn3.FlatAppearance.BorderSize = 0;
+            this.ongTourEntrBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourEntrBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourEntrBtn3.ForeColor = System.Drawing.Color.White;
+            this.ongTourEntrBtn3.Location = new System.Drawing.Point(327, 10);
+            this.ongTourEntrBtn3.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourEntrBtn3.Name = "ongTourEntrBtn3";
+            this.ongTourEntrBtn3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourEntrBtn3.Size = new System.Drawing.Size(93, 44);
+            this.ongTourEntrBtn3.TabIndex = 42;
+            this.ongTourEntrBtn3.Text = "ENTER";
+            this.ongTourEntrBtn3.UseVisualStyleBackColor = false;
+            this.ongTourEntrBtn3.Click += new System.EventHandler(this.enterTournament);
+            // 
+            // ongTourNameLabel3
+            // 
+            this.ongTourNameLabel3.AutoSize = true;
+            this.ongTourNameLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.ongTourNameLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourNameLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourNameLabel3.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourNameLabel3.Location = new System.Drawing.Point(6, 11);
+            this.ongTourNameLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ongTourNameLabel3.Name = "ongTourNameLabel3";
+            this.ongTourNameLabel3.Padding = new System.Windows.Forms.Padding(4);
+            this.ongTourNameLabel3.Size = new System.Drawing.Size(231, 34);
+            this.ongTourNameLabel3.TabIndex = 41;
+            this.ongTourNameLabel3.Text = "Tournament_Name_1";
+            this.ongTourNameLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ongTourList4
+            // 
+            this.ongTourList4.Controls.Add(this.ongTourDelBtn4);
+            this.ongTourList4.Controls.Add(this.ongTourEntrBtn4);
+            this.ongTourList4.Controls.Add(this.ongTourNameLabel4);
+            this.ongTourList4.Location = new System.Drawing.Point(33, 213);
+            this.ongTourList4.Name = "ongTourList4";
+            this.ongTourList4.Size = new System.Drawing.Size(540, 60);
+            this.ongTourList4.TabIndex = 52;
+            // 
+            // ongTourDelBtn4
+            // 
+            this.ongTourDelBtn4.AutoSize = true;
+            this.ongTourDelBtn4.BackColor = System.Drawing.Color.Red;
+            this.ongTourDelBtn4.FlatAppearance.BorderSize = 0;
+            this.ongTourDelBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourDelBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourDelBtn4.ForeColor = System.Drawing.Color.White;
+            this.ongTourDelBtn4.Location = new System.Drawing.Point(430, 10);
+            this.ongTourDelBtn4.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourDelBtn4.Name = "ongTourDelBtn4";
+            this.ongTourDelBtn4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourDelBtn4.Size = new System.Drawing.Size(102, 44);
+            this.ongTourDelBtn4.TabIndex = 43;
+            this.ongTourDelBtn4.Text = "DELETE";
+            this.ongTourDelBtn4.UseVisualStyleBackColor = false;
+            this.ongTourDelBtn4.Click += new System.EventHandler(this.deleteTournament);
+            // 
+            // ongTourEntrBtn4
+            // 
+            this.ongTourEntrBtn4.AutoSize = true;
+            this.ongTourEntrBtn4.BackColor = System.Drawing.Color.LimeGreen;
+            this.ongTourEntrBtn4.FlatAppearance.BorderSize = 0;
+            this.ongTourEntrBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourEntrBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourEntrBtn4.ForeColor = System.Drawing.Color.White;
+            this.ongTourEntrBtn4.Location = new System.Drawing.Point(327, 10);
+            this.ongTourEntrBtn4.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourEntrBtn4.Name = "ongTourEntrBtn4";
+            this.ongTourEntrBtn4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourEntrBtn4.Size = new System.Drawing.Size(93, 44);
+            this.ongTourEntrBtn4.TabIndex = 42;
+            this.ongTourEntrBtn4.Text = "ENTER";
+            this.ongTourEntrBtn4.UseVisualStyleBackColor = false;
+            this.ongTourEntrBtn4.Click += new System.EventHandler(this.enterTournament);
+            // 
+            // ongTourNameLabel4
+            // 
+            this.ongTourNameLabel4.AutoSize = true;
+            this.ongTourNameLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.ongTourNameLabel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourNameLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourNameLabel4.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourNameLabel4.Location = new System.Drawing.Point(6, 11);
+            this.ongTourNameLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ongTourNameLabel4.Name = "ongTourNameLabel4";
+            this.ongTourNameLabel4.Padding = new System.Windows.Forms.Padding(4);
+            this.ongTourNameLabel4.Size = new System.Drawing.Size(231, 34);
+            this.ongTourNameLabel4.TabIndex = 41;
+            this.ongTourNameLabel4.Text = "Tournament_Name_1";
+            this.ongTourNameLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ongTourList5
+            // 
+            this.ongTourList5.Controls.Add(this.ongTourDelBtn5);
+            this.ongTourList5.Controls.Add(this.ongTourEntrBtn5);
+            this.ongTourList5.Controls.Add(this.ongTourNameLabel5);
+            this.ongTourList5.Location = new System.Drawing.Point(33, 278);
+            this.ongTourList5.Name = "ongTourList5";
+            this.ongTourList5.Size = new System.Drawing.Size(540, 60);
+            this.ongTourList5.TabIndex = 53;
+            // 
+            // ongTourDelBtn5
+            // 
+            this.ongTourDelBtn5.AutoSize = true;
+            this.ongTourDelBtn5.BackColor = System.Drawing.Color.Red;
+            this.ongTourDelBtn5.FlatAppearance.BorderSize = 0;
+            this.ongTourDelBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourDelBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourDelBtn5.ForeColor = System.Drawing.Color.White;
+            this.ongTourDelBtn5.Location = new System.Drawing.Point(430, 10);
+            this.ongTourDelBtn5.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourDelBtn5.Name = "ongTourDelBtn5";
+            this.ongTourDelBtn5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourDelBtn5.Size = new System.Drawing.Size(102, 44);
+            this.ongTourDelBtn5.TabIndex = 43;
+            this.ongTourDelBtn5.Text = "DELETE";
+            this.ongTourDelBtn5.UseVisualStyleBackColor = false;
+            this.ongTourDelBtn5.Click += new System.EventHandler(this.deleteTournament);
+            // 
+            // ongTourEntrBtn5
+            // 
+            this.ongTourEntrBtn5.AutoSize = true;
+            this.ongTourEntrBtn5.BackColor = System.Drawing.Color.LimeGreen;
+            this.ongTourEntrBtn5.FlatAppearance.BorderSize = 0;
+            this.ongTourEntrBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourEntrBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourEntrBtn5.ForeColor = System.Drawing.Color.White;
+            this.ongTourEntrBtn5.Location = new System.Drawing.Point(327, 10);
+            this.ongTourEntrBtn5.Margin = new System.Windows.Forms.Padding(2);
+            this.ongTourEntrBtn5.Name = "ongTourEntrBtn5";
+            this.ongTourEntrBtn5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ongTourEntrBtn5.Size = new System.Drawing.Size(93, 44);
+            this.ongTourEntrBtn5.TabIndex = 42;
+            this.ongTourEntrBtn5.Text = "ENTER";
+            this.ongTourEntrBtn5.UseVisualStyleBackColor = false;
+            this.ongTourEntrBtn5.Click += new System.EventHandler(this.enterTournament);
+            // 
+            // ongTourNameLabel5
+            // 
+            this.ongTourNameLabel5.AutoSize = true;
+            this.ongTourNameLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.ongTourNameLabel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ongTourNameLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ongTourNameLabel5.ForeColor = System.Drawing.Color.DarkKhaki;
+            this.ongTourNameLabel5.Location = new System.Drawing.Point(6, 11);
+            this.ongTourNameLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ongTourNameLabel5.Name = "ongTourNameLabel5";
+            this.ongTourNameLabel5.Padding = new System.Windows.Forms.Padding(4);
+            this.ongTourNameLabel5.Size = new System.Drawing.Size(231, 34);
+            this.ongTourNameLabel5.TabIndex = 41;
+            this.ongTourNameLabel5.Text = "Tournament_Name_1";
+            this.ongTourNameLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ongTourNextBtn
             // 
             this.ongTourNextBtn.BackColor = System.Drawing.Color.Transparent;
             this.ongTourNextBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourNextBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNextBtn.Location = new System.Drawing.Point(525, 590);
-            this.ongTourNextBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ongTourNextBtn.Location = new System.Drawing.Point(394, 479);
+            this.ongTourNextBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ongTourNextBtn.Name = "ongTourNextBtn";
-            this.ongTourNextBtn.Size = new System.Drawing.Size(75, 31);
+            this.ongTourNextBtn.Size = new System.Drawing.Size(56, 25);
             this.ongTourNextBtn.TabIndex = 29;
             this.ongTourNextBtn.Text = ">";
             this.ongTourNextBtn.UseVisualStyleBackColor = false;
@@ -1141,13 +1471,14 @@ namespace WindowsFormsApp4
             this.ongTourPrevBtn.BackColor = System.Drawing.Color.Transparent;
             this.ongTourPrevBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourPrevBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourPrevBtn.Location = new System.Drawing.Point(382, 591);
-            this.ongTourPrevBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ongTourPrevBtn.Location = new System.Drawing.Point(286, 480);
+            this.ongTourPrevBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ongTourPrevBtn.Name = "ongTourPrevBtn";
-            this.ongTourPrevBtn.Size = new System.Drawing.Size(75, 31);
+            this.ongTourPrevBtn.Size = new System.Drawing.Size(56, 25);
             this.ongTourPrevBtn.TabIndex = 28;
             this.ongTourPrevBtn.Text = "<";
             this.ongTourPrevBtn.UseVisualStyleBackColor = false;
+            this.ongTourPrevBtn.Click += new System.EventHandler(this.ongTourPrevBtn_Click);
             // 
             // ongTourPageNum
             // 
@@ -1155,9 +1486,10 @@ namespace WindowsFormsApp4
             this.ongTourPageNum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourPageNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourPageNum.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourPageNum.Location = new System.Drawing.Point(479, 592);
+            this.ongTourPageNum.Location = new System.Drawing.Point(359, 481);
+            this.ongTourPageNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ongTourPageNum.Name = "ongTourPageNum";
-            this.ongTourPageNum.Size = new System.Drawing.Size(26, 29);
+            this.ongTourPageNum.Size = new System.Drawing.Size(20, 24);
             this.ongTourPageNum.TabIndex = 27;
             this.ongTourPageNum.Text = "1";
             this.ongTourPageNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1166,157 +1498,11 @@ namespace WindowsFormsApp4
             // 
             this.label36.AutoSize = true;
             this.label36.Location = new System.Drawing.Point(0, 0);
+            this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(54, 17);
+            this.label36.Size = new System.Drawing.Size(41, 13);
             this.label36.TabIndex = 26;
             this.label36.Text = "label36";
-            // 
-            // ongTourDelBtn3
-            // 
-            this.ongTourDelBtn3.AutoSize = true;
-            this.ongTourDelBtn3.BackColor = System.Drawing.Color.Red;
-            this.ongTourDelBtn3.FlatAppearance.BorderSize = 0;
-            this.ongTourDelBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourDelBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourDelBtn3.ForeColor = System.Drawing.Color.White;
-            this.ongTourDelBtn3.Location = new System.Drawing.Point(709, 312);
-            this.ongTourDelBtn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourDelBtn3.Name = "ongTourDelBtn3";
-            this.ongTourDelBtn3.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourDelBtn3.Size = new System.Drawing.Size(129, 51);
-            this.ongTourDelBtn3.TabIndex = 25;
-            this.ongTourDelBtn3.Text = "DELETE";
-            this.ongTourDelBtn3.UseVisualStyleBackColor = false;
-            // 
-            // ongTourEntrBtn3
-            // 
-            this.ongTourEntrBtn3.AutoSize = true;
-            this.ongTourEntrBtn3.BackColor = System.Drawing.Color.LimeGreen;
-            this.ongTourEntrBtn3.FlatAppearance.BorderSize = 0;
-            this.ongTourEntrBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourEntrBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourEntrBtn3.ForeColor = System.Drawing.Color.White;
-            this.ongTourEntrBtn3.Location = new System.Drawing.Point(572, 312);
-            this.ongTourEntrBtn3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourEntrBtn3.Name = "ongTourEntrBtn3";
-            this.ongTourEntrBtn3.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourEntrBtn3.Size = new System.Drawing.Size(118, 51);
-            this.ongTourEntrBtn3.TabIndex = 24;
-            this.ongTourEntrBtn3.Text = "ENTER";
-            this.ongTourEntrBtn3.UseVisualStyleBackColor = false;
-            // 
-            // ongTourDelBtn2
-            // 
-            this.ongTourDelBtn2.AutoSize = true;
-            this.ongTourDelBtn2.BackColor = System.Drawing.Color.Red;
-            this.ongTourDelBtn2.FlatAppearance.BorderSize = 0;
-            this.ongTourDelBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourDelBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourDelBtn2.ForeColor = System.Drawing.Color.White;
-            this.ongTourDelBtn2.Location = new System.Drawing.Point(709, 237);
-            this.ongTourDelBtn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourDelBtn2.Name = "ongTourDelBtn2";
-            this.ongTourDelBtn2.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourDelBtn2.Size = new System.Drawing.Size(129, 51);
-            this.ongTourDelBtn2.TabIndex = 23;
-            this.ongTourDelBtn2.Text = "DELETE";
-            this.ongTourDelBtn2.UseVisualStyleBackColor = false;
-            // 
-            // ongTourEntrBtn2
-            // 
-            this.ongTourEntrBtn2.AutoSize = true;
-            this.ongTourEntrBtn2.BackColor = System.Drawing.Color.LimeGreen;
-            this.ongTourEntrBtn2.FlatAppearance.BorderSize = 0;
-            this.ongTourEntrBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourEntrBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourEntrBtn2.ForeColor = System.Drawing.Color.White;
-            this.ongTourEntrBtn2.Location = new System.Drawing.Point(572, 237);
-            this.ongTourEntrBtn2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourEntrBtn2.Name = "ongTourEntrBtn2";
-            this.ongTourEntrBtn2.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourEntrBtn2.Size = new System.Drawing.Size(118, 51);
-            this.ongTourEntrBtn2.TabIndex = 22;
-            this.ongTourEntrBtn2.Text = "ENTER";
-            this.ongTourEntrBtn2.UseVisualStyleBackColor = false;
-            // 
-            // ongTourDelBtn1
-            // 
-            this.ongTourDelBtn1.AutoSize = true;
-            this.ongTourDelBtn1.BackColor = System.Drawing.Color.Red;
-            this.ongTourDelBtn1.FlatAppearance.BorderSize = 0;
-            this.ongTourDelBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourDelBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourDelBtn1.ForeColor = System.Drawing.Color.White;
-            this.ongTourDelBtn1.Location = new System.Drawing.Point(709, 164);
-            this.ongTourDelBtn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourDelBtn1.Name = "ongTourDelBtn1";
-            this.ongTourDelBtn1.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourDelBtn1.Size = new System.Drawing.Size(129, 51);
-            this.ongTourDelBtn1.TabIndex = 21;
-            this.ongTourDelBtn1.Text = "DELETE";
-            this.ongTourDelBtn1.UseVisualStyleBackColor = false;
-            // 
-            // ongTourEntrBtn1
-            // 
-            this.ongTourEntrBtn1.AutoSize = true;
-            this.ongTourEntrBtn1.BackColor = System.Drawing.Color.LimeGreen;
-            this.ongTourEntrBtn1.FlatAppearance.BorderSize = 0;
-            this.ongTourEntrBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourEntrBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourEntrBtn1.ForeColor = System.Drawing.Color.White;
-            this.ongTourEntrBtn1.Location = new System.Drawing.Point(572, 164);
-            this.ongTourEntrBtn1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourEntrBtn1.Name = "ongTourEntrBtn1";
-            this.ongTourEntrBtn1.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourEntrBtn1.Size = new System.Drawing.Size(118, 51);
-            this.ongTourEntrBtn1.TabIndex = 20;
-            this.ongTourEntrBtn1.Text = "ENTER";
-            this.ongTourEntrBtn1.UseVisualStyleBackColor = false;
-            // 
-            // ongTourNameLabel3
-            // 
-            this.ongTourNameLabel3.AutoSize = true;
-            this.ongTourNameLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.ongTourNameLabel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourNameLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourNameLabel3.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNameLabel3.Location = new System.Drawing.Point(144, 315);
-            this.ongTourNameLabel3.Name = "ongTourNameLabel3";
-            this.ongTourNameLabel3.Padding = new System.Windows.Forms.Padding(5);
-            this.ongTourNameLabel3.Size = new System.Drawing.Size(287, 41);
-            this.ongTourNameLabel3.TabIndex = 19;
-            this.ongTourNameLabel3.Text = "Tournament_Name_9";
-            this.ongTourNameLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ongTourNameLabel2
-            // 
-            this.ongTourNameLabel2.AutoSize = true;
-            this.ongTourNameLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.ongTourNameLabel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourNameLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourNameLabel2.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNameLabel2.Location = new System.Drawing.Point(144, 240);
-            this.ongTourNameLabel2.Name = "ongTourNameLabel2";
-            this.ongTourNameLabel2.Padding = new System.Windows.Forms.Padding(5);
-            this.ongTourNameLabel2.Size = new System.Drawing.Size(287, 41);
-            this.ongTourNameLabel2.TabIndex = 18;
-            this.ongTourNameLabel2.Text = "Tournament_Name_6";
-            this.ongTourNameLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ongTourNameLabel1
-            // 
-            this.ongTourNameLabel1.AutoSize = true;
-            this.ongTourNameLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.ongTourNameLabel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourNameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourNameLabel1.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNameLabel1.Location = new System.Drawing.Point(144, 165);
-            this.ongTourNameLabel1.Name = "ongTourNameLabel1";
-            this.ongTourNameLabel1.Padding = new System.Windows.Forms.Padding(5);
-            this.ongTourNameLabel1.Size = new System.Drawing.Size(287, 41);
-            this.ongTourNameLabel1.TabIndex = 17;
-            this.ongTourNameLabel1.Text = "Tournament_Name_1";
-            this.ongTourNameLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ongTourTitle
             // 
@@ -1325,10 +1511,11 @@ namespace WindowsFormsApp4
             this.ongTourTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourTitle.Location = new System.Drawing.Point(292, 31);
+            this.ongTourTitle.Location = new System.Drawing.Point(219, 25);
+            this.ongTourTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ongTourTitle.Name = "ongTourTitle";
-            this.ongTourTitle.Padding = new System.Windows.Forms.Padding(10);
-            this.ongTourTitle.Size = new System.Drawing.Size(436, 66);
+            this.ongTourTitle.Padding = new System.Windows.Forms.Padding(8);
+            this.ongTourTitle.Size = new System.Drawing.Size(354, 53);
             this.ongTourTitle.TabIndex = 16;
             this.ongTourTitle.Text = "Ongoing Tournaments";
             this.ongTourTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1354,11 +1541,10 @@ namespace WindowsFormsApp4
             this.FixurePanel.Controls.Add(this.fixureTitle);
             this.FixurePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FixurePanel.Location = new System.Drawing.Point(0, 0);
-            this.FixurePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FixurePanel.Margin = new System.Windows.Forms.Padding(2);
             this.FixurePanel.Name = "FixurePanel";
-            this.FixurePanel.Size = new System.Drawing.Size(994, 643);
+            this.FixurePanel.Size = new System.Drawing.Size(746, 522);
             this.FixurePanel.TabIndex = 20;
-            this.FixurePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.FixurePanel_Paint);
             // 
             // fixureWinner
             // 
@@ -1366,9 +1552,10 @@ namespace WindowsFormsApp4
             this.fixureWinner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureWinner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureWinner.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureWinner.Location = new System.Drawing.Point(771, 336);
+            this.fixureWinner.Location = new System.Drawing.Point(578, 273);
+            this.fixureWinner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureWinner.Name = "fixureWinner";
-            this.fixureWinner.Size = new System.Drawing.Size(160, 50);
+            this.fixureWinner.Size = new System.Drawing.Size(120, 41);
             this.fixureWinner.TabIndex = 50;
             this.fixureWinner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1378,9 +1565,10 @@ namespace WindowsFormsApp4
             this.fixureFinalTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureFinalTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureFinalTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalTwo.Location = new System.Drawing.Point(541, 371);
+            this.fixureFinalTwo.Location = new System.Drawing.Point(406, 301);
+            this.fixureFinalTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureFinalTwo.Name = "fixureFinalTwo";
-            this.fixureFinalTwo.Size = new System.Drawing.Size(160, 50);
+            this.fixureFinalTwo.Size = new System.Drawing.Size(120, 41);
             this.fixureFinalTwo.TabIndex = 49;
             this.fixureFinalTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1390,9 +1578,10 @@ namespace WindowsFormsApp4
             this.fixureFinalOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureFinalOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureFinalOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalOne.Location = new System.Drawing.Point(541, 301);
+            this.fixureFinalOne.Location = new System.Drawing.Point(406, 245);
+            this.fixureFinalOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureFinalOne.Name = "fixureFinalOne";
-            this.fixureFinalOne.Size = new System.Drawing.Size(160, 50);
+            this.fixureFinalOne.Size = new System.Drawing.Size(120, 41);
             this.fixureFinalOne.TabIndex = 48;
             this.fixureFinalOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1402,9 +1591,10 @@ namespace WindowsFormsApp4
             this.fixureSemiThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureSemiThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureSemiThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiThree.Location = new System.Drawing.Point(311, 406);
+            this.fixureSemiThree.Location = new System.Drawing.Point(233, 330);
+            this.fixureSemiThree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureSemiThree.Name = "fixureSemiThree";
-            this.fixureSemiThree.Size = new System.Drawing.Size(160, 50);
+            this.fixureSemiThree.Size = new System.Drawing.Size(120, 41);
             this.fixureSemiThree.TabIndex = 47;
             this.fixureSemiThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1414,9 +1604,10 @@ namespace WindowsFormsApp4
             this.fixureSemiTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureSemiTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureSemiTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiTwo.Location = new System.Drawing.Point(311, 336);
+            this.fixureSemiTwo.Location = new System.Drawing.Point(233, 273);
+            this.fixureSemiTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureSemiTwo.Name = "fixureSemiTwo";
-            this.fixureSemiTwo.Size = new System.Drawing.Size(160, 50);
+            this.fixureSemiTwo.Size = new System.Drawing.Size(120, 41);
             this.fixureSemiTwo.TabIndex = 46;
             this.fixureSemiTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1426,9 +1617,10 @@ namespace WindowsFormsApp4
             this.fixureSemiOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureSemiOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureSemiOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiOne.Location = new System.Drawing.Point(311, 266);
+            this.fixureSemiOne.Location = new System.Drawing.Point(233, 216);
+            this.fixureSemiOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureSemiOne.Name = "fixureSemiOne";
-            this.fixureSemiOne.Size = new System.Drawing.Size(160, 50);
+            this.fixureSemiOne.Size = new System.Drawing.Size(120, 41);
             this.fixureSemiOne.TabIndex = 45;
             this.fixureSemiOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1438,9 +1630,10 @@ namespace WindowsFormsApp4
             this.fixureQuarFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureQuarFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureQuarFour.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarFour.Location = new System.Drawing.Point(81, 441);
+            this.fixureQuarFour.Location = new System.Drawing.Point(61, 358);
+            this.fixureQuarFour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureQuarFour.Name = "fixureQuarFour";
-            this.fixureQuarFour.Size = new System.Drawing.Size(160, 50);
+            this.fixureQuarFour.Size = new System.Drawing.Size(120, 41);
             this.fixureQuarFour.TabIndex = 44;
             this.fixureQuarFour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.fixureQuarFour.Click += new System.EventHandler(this.fixureQuarFour_Click);
@@ -1451,9 +1644,10 @@ namespace WindowsFormsApp4
             this.fixureQuarThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureQuarThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureQuarThree.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarThree.Location = new System.Drawing.Point(81, 371);
+            this.fixureQuarThree.Location = new System.Drawing.Point(61, 301);
+            this.fixureQuarThree.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureQuarThree.Name = "fixureQuarThree";
-            this.fixureQuarThree.Size = new System.Drawing.Size(160, 50);
+            this.fixureQuarThree.Size = new System.Drawing.Size(120, 41);
             this.fixureQuarThree.TabIndex = 43;
             this.fixureQuarThree.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1463,9 +1657,10 @@ namespace WindowsFormsApp4
             this.fixureQuarTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureQuarTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureQuarTwo.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarTwo.Location = new System.Drawing.Point(81, 301);
+            this.fixureQuarTwo.Location = new System.Drawing.Point(61, 245);
+            this.fixureQuarTwo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureQuarTwo.Name = "fixureQuarTwo";
-            this.fixureQuarTwo.Size = new System.Drawing.Size(160, 50);
+            this.fixureQuarTwo.Size = new System.Drawing.Size(120, 41);
             this.fixureQuarTwo.TabIndex = 42;
             this.fixureQuarTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1475,9 +1670,10 @@ namespace WindowsFormsApp4
             this.fixureQuarOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureQuarOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureQuarOne.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarOne.Location = new System.Drawing.Point(81, 231);
+            this.fixureQuarOne.Location = new System.Drawing.Point(61, 188);
+            this.fixureQuarOne.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureQuarOne.Name = "fixureQuarOne";
-            this.fixureQuarOne.Size = new System.Drawing.Size(160, 50);
+            this.fixureQuarOne.Size = new System.Drawing.Size(120, 41);
             this.fixureQuarOne.TabIndex = 41;
             this.fixureQuarOne.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1488,9 +1684,10 @@ namespace WindowsFormsApp4
             this.fixureWinnerLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureWinnerLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureWinnerLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureWinnerLebel.Location = new System.Drawing.Point(806, 283);
+            this.fixureWinnerLebel.Location = new System.Drawing.Point(604, 230);
+            this.fixureWinnerLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureWinnerLebel.Name = "fixureWinnerLebel";
-            this.fixureWinnerLebel.Size = new System.Drawing.Size(93, 29);
+            this.fixureWinnerLebel.Size = new System.Drawing.Size(75, 25);
             this.fixureWinnerLebel.TabIndex = 40;
             this.fixureWinnerLebel.Text = "Winner";
             this.fixureWinnerLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1503,9 +1700,10 @@ namespace WindowsFormsApp4
             this.fixureFinalLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureFinalLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureFinalLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureFinalLebel.Location = new System.Drawing.Point(583, 252);
+            this.fixureFinalLebel.Location = new System.Drawing.Point(437, 205);
+            this.fixureFinalLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureFinalLebel.Name = "fixureFinalLebel";
-            this.fixureFinalLebel.Size = new System.Drawing.Size(68, 29);
+            this.fixureFinalLebel.Size = new System.Drawing.Size(54, 25);
             this.fixureFinalLebel.TabIndex = 39;
             this.fixureFinalLebel.Text = "Final";
             this.fixureFinalLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1516,9 +1714,10 @@ namespace WindowsFormsApp4
             this.fixureSemiLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureSemiLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureSemiLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureSemiLebel.Location = new System.Drawing.Point(316, 199);
+            this.fixureSemiLebel.Location = new System.Drawing.Point(237, 162);
+            this.fixureSemiLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureSemiLebel.Name = "fixureSemiLebel";
-            this.fixureSemiLebel.Size = new System.Drawing.Size(155, 50);
+            this.fixureSemiLebel.Size = new System.Drawing.Size(116, 41);
             this.fixureSemiLebel.TabIndex = 38;
             this.fixureSemiLebel.Text = "Semi Final";
             this.fixureSemiLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1529,10 +1728,10 @@ namespace WindowsFormsApp4
             this.fixureGoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureGoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureGoBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureGoBtn.Location = new System.Drawing.Point(119, 504);
-            this.fixureGoBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.fixureGoBtn.Location = new System.Drawing.Point(89, 410);
+            this.fixureGoBtn.Margin = new System.Windows.Forms.Padding(2);
             this.fixureGoBtn.Name = "fixureGoBtn";
-            this.fixureGoBtn.Size = new System.Drawing.Size(100, 50);
+            this.fixureGoBtn.Size = new System.Drawing.Size(75, 41);
             this.fixureGoBtn.TabIndex = 37;
             this.fixureGoBtn.Text = "GO";
             this.fixureGoBtn.UseVisualStyleBackColor = false;
@@ -1543,9 +1742,10 @@ namespace WindowsFormsApp4
             this.fixureQuarLebel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureQuarLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureQuarLebel.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureQuarLebel.Location = new System.Drawing.Point(81, 163);
+            this.fixureQuarLebel.Location = new System.Drawing.Point(61, 132);
+            this.fixureQuarLebel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureQuarLebel.Name = "fixureQuarLebel";
-            this.fixureQuarLebel.Size = new System.Drawing.Size(160, 50);
+            this.fixureQuarLebel.Size = new System.Drawing.Size(120, 41);
             this.fixureQuarLebel.TabIndex = 36;
             this.fixureQuarLebel.Text = "Quater Final";
             this.fixureQuarLebel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1557,9 +1757,10 @@ namespace WindowsFormsApp4
             this.fixureTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fixureTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fixureTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.fixureTitle.Location = new System.Drawing.Point(300, 41);
+            this.fixureTitle.Location = new System.Drawing.Point(225, 33);
+            this.fixureTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fixureTitle.Name = "fixureTitle";
-            this.fixureTitle.Size = new System.Drawing.Size(406, 46);
+            this.fixureTitle.Size = new System.Drawing.Size(329, 37);
             this.fixureTitle.TabIndex = 35;
             this.fixureTitle.Text = "Tournament_Name_1";
             this.fixureTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1573,9 +1774,9 @@ namespace WindowsFormsApp4
             this.DecisionPagePanel.Controls.Add(this.decisionTitle);
             this.DecisionPagePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DecisionPagePanel.Location = new System.Drawing.Point(0, 0);
-            this.DecisionPagePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.DecisionPagePanel.Margin = new System.Windows.Forms.Padding(2);
             this.DecisionPagePanel.Name = "DecisionPagePanel";
-            this.DecisionPagePanel.Size = new System.Drawing.Size(994, 643);
+            this.DecisionPagePanel.Size = new System.Drawing.Size(746, 522);
             this.DecisionPagePanel.TabIndex = 19;
             // 
             // showRankBtn
@@ -1585,10 +1786,9 @@ namespace WindowsFormsApp4
             this.showRankBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showRankBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showRankBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.showRankBtn.Location = new System.Drawing.Point(192, 362);
-            this.showRankBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.showRankBtn.Location = new System.Drawing.Point(144, 294);
             this.showRankBtn.Name = "showRankBtn";
-            this.showRankBtn.Size = new System.Drawing.Size(427, 62);
+            this.showRankBtn.Size = new System.Drawing.Size(320, 50);
             this.showRankBtn.TabIndex = 9;
             this.showRankBtn.Text = "Show Ranks";
             this.showRankBtn.UseVisualStyleBackColor = false;
@@ -1600,10 +1800,9 @@ namespace WindowsFormsApp4
             this.restartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.restartBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restartBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.restartBtn.Location = new System.Drawing.Point(419, 257);
-            this.restartBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.restartBtn.Location = new System.Drawing.Point(314, 209);
             this.restartBtn.Name = "restartBtn";
-            this.restartBtn.Size = new System.Drawing.Size(200, 62);
+            this.restartBtn.Size = new System.Drawing.Size(150, 50);
             this.restartBtn.TabIndex = 8;
             this.restartBtn.Text = "Restart";
             this.restartBtn.UseVisualStyleBackColor = false;
@@ -1615,10 +1814,9 @@ namespace WindowsFormsApp4
             this.resumeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resumeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resumeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.resumeBtn.Location = new System.Drawing.Point(192, 257);
-            this.resumeBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.resumeBtn.Location = new System.Drawing.Point(144, 209);
             this.resumeBtn.Name = "resumeBtn";
-            this.resumeBtn.Size = new System.Drawing.Size(200, 62);
+            this.resumeBtn.Size = new System.Drawing.Size(150, 50);
             this.resumeBtn.TabIndex = 7;
             this.resumeBtn.Text = "Resume";
             this.resumeBtn.UseVisualStyleBackColor = false;
@@ -1630,9 +1828,10 @@ namespace WindowsFormsApp4
             this.decisionTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.decisionTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.decisionTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.decisionTitle.Location = new System.Drawing.Point(281, 97);
+            this.decisionTitle.Location = new System.Drawing.Point(211, 79);
+            this.decisionTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.decisionTitle.Name = "decisionTitle";
-            this.decisionTitle.Size = new System.Drawing.Size(273, 62);
+            this.decisionTitle.Size = new System.Drawing.Size(205, 50);
             this.decisionTitle.TabIndex = 6;
             this.decisionTitle.Text = "Tournament_Name_1";
             this.decisionTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1640,6 +1839,9 @@ namespace WindowsFormsApp4
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
+            this.mainPanel.Controls.Add(this.HomePanel);
+            this.mainPanel.Controls.Add(this.welcPanel);
             this.mainPanel.Controls.Add(this.FixurePanel);
             this.mainPanel.Controls.Add(this.DecisionPagePanel);
             this.mainPanel.Controls.Add(this.PlayerOneRegisterPanel);
@@ -1647,125 +1849,25 @@ namespace WindowsFormsApp4
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
             this.mainPanel.Controls.Add(this.ChooseColourPanel);
             this.mainPanel.Controls.Add(this.tourNamePanel);
-            this.mainPanel.Controls.Add(this.HomePanel);
-            this.mainPanel.Controls.Add(this.welcPanel);
-            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
-            this.mainPanel.Location = new System.Drawing.Point(68, 75);
+            this.mainPanel.Location = new System.Drawing.Point(51, 61);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(994, 643);
+            this.mainPanel.Size = new System.Drawing.Size(746, 522);
             this.mainPanel.TabIndex = 21;
-            // 
-            // ongTourDelBtn5
-            // 
-            this.ongTourDelBtn5.AutoSize = true;
-            this.ongTourDelBtn5.BackColor = System.Drawing.Color.Red;
-            this.ongTourDelBtn5.FlatAppearance.BorderSize = 0;
-            this.ongTourDelBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourDelBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourDelBtn5.ForeColor = System.Drawing.Color.White;
-            this.ongTourDelBtn5.Location = new System.Drawing.Point(709, 459);
-            this.ongTourDelBtn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourDelBtn5.Name = "ongTourDelBtn5";
-            this.ongTourDelBtn5.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourDelBtn5.Size = new System.Drawing.Size(129, 51);
-            this.ongTourDelBtn5.TabIndex = 35;
-            this.ongTourDelBtn5.Text = "DELETE";
-            this.ongTourDelBtn5.UseVisualStyleBackColor = false;
-            // 
-            // ongTourEntrBtn5
-            // 
-            this.ongTourEntrBtn5.AutoSize = true;
-            this.ongTourEntrBtn5.BackColor = System.Drawing.Color.LimeGreen;
-            this.ongTourEntrBtn5.FlatAppearance.BorderSize = 0;
-            this.ongTourEntrBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourEntrBtn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourEntrBtn5.ForeColor = System.Drawing.Color.White;
-            this.ongTourEntrBtn5.Location = new System.Drawing.Point(572, 459);
-            this.ongTourEntrBtn5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourEntrBtn5.Name = "ongTourEntrBtn5";
-            this.ongTourEntrBtn5.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourEntrBtn5.Size = new System.Drawing.Size(118, 51);
-            this.ongTourEntrBtn5.TabIndex = 34;
-            this.ongTourEntrBtn5.Text = "ENTER";
-            this.ongTourEntrBtn5.UseVisualStyleBackColor = false;
-            // 
-            // ongTourDelBtn4
-            // 
-            this.ongTourDelBtn4.AutoSize = true;
-            this.ongTourDelBtn4.BackColor = System.Drawing.Color.Red;
-            this.ongTourDelBtn4.FlatAppearance.BorderSize = 0;
-            this.ongTourDelBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourDelBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourDelBtn4.ForeColor = System.Drawing.Color.White;
-            this.ongTourDelBtn4.Location = new System.Drawing.Point(709, 384);
-            this.ongTourDelBtn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourDelBtn4.Name = "ongTourDelBtn4";
-            this.ongTourDelBtn4.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourDelBtn4.Size = new System.Drawing.Size(129, 51);
-            this.ongTourDelBtn4.TabIndex = 33;
-            this.ongTourDelBtn4.Text = "DELETE";
-            this.ongTourDelBtn4.UseVisualStyleBackColor = false;
-            // 
-            // ongTourEntrBtn4
-            // 
-            this.ongTourEntrBtn4.AutoSize = true;
-            this.ongTourEntrBtn4.BackColor = System.Drawing.Color.LimeGreen;
-            this.ongTourEntrBtn4.FlatAppearance.BorderSize = 0;
-            this.ongTourEntrBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourEntrBtn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourEntrBtn4.ForeColor = System.Drawing.Color.White;
-            this.ongTourEntrBtn4.Location = new System.Drawing.Point(572, 384);
-            this.ongTourEntrBtn4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ongTourEntrBtn4.Name = "ongTourEntrBtn4";
-            this.ongTourEntrBtn4.Padding = new System.Windows.Forms.Padding(6);
-            this.ongTourEntrBtn4.Size = new System.Drawing.Size(118, 51);
-            this.ongTourEntrBtn4.TabIndex = 32;
-            this.ongTourEntrBtn4.Text = "ENTER";
-            this.ongTourEntrBtn4.UseVisualStyleBackColor = false;
-            // 
-            // ongTourNameLabel5
-            // 
-            this.ongTourNameLabel5.AutoSize = true;
-            this.ongTourNameLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.ongTourNameLabel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourNameLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourNameLabel5.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNameLabel5.Location = new System.Drawing.Point(144, 462);
-            this.ongTourNameLabel5.Name = "ongTourNameLabel5";
-            this.ongTourNameLabel5.Padding = new System.Windows.Forms.Padding(5);
-            this.ongTourNameLabel5.Size = new System.Drawing.Size(287, 41);
-            this.ongTourNameLabel5.TabIndex = 31;
-            this.ongTourNameLabel5.Text = "Tournament_Name_9";
-            this.ongTourNameLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ongTourNameLabel4
-            // 
-            this.ongTourNameLabel4.AutoSize = true;
-            this.ongTourNameLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.ongTourNameLabel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ongTourNameLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ongTourNameLabel4.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourNameLabel4.Location = new System.Drawing.Point(144, 387);
-            this.ongTourNameLabel4.Name = "ongTourNameLabel4";
-            this.ongTourNameLabel4.Padding = new System.Windows.Forms.Padding(5);
-            this.ongTourNameLabel4.Size = new System.Drawing.Size(287, 41);
-            this.ongTourNameLabel4.TabIndex = 30;
-            this.ongTourNameLabel4.Text = "Tournament_Name_6";
-            this.ongTourNameLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = global::WindowsFormsApp4.Properties.Resources.background2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1097, 750);
+            this.ClientSize = new System.Drawing.Size(823, 609);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainPage";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1790,6 +1892,17 @@ namespace WindowsFormsApp4
             this.PlayerOneRegisterPanel.PerformLayout();
             this.OngoingTournamentPanel.ResumeLayout(false);
             this.OngoingTournamentPanel.PerformLayout();
+            this.ongTourListPanel.ResumeLayout(false);
+            this.ongTourList1.ResumeLayout(false);
+            this.ongTourList1.PerformLayout();
+            this.ongTourList2.ResumeLayout(false);
+            this.ongTourList2.PerformLayout();
+            this.ongTourList3.ResumeLayout(false);
+            this.ongTourList3.PerformLayout();
+            this.ongTourList4.ResumeLayout(false);
+            this.ongTourList4.PerformLayout();
+            this.ongTourList5.ResumeLayout(false);
+            this.ongTourList5.PerformLayout();
             this.FixurePanel.ResumeLayout(false);
             this.FixurePanel.PerformLayout();
             this.DecisionPagePanel.ResumeLayout(false);
@@ -1842,15 +1955,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Button gameStartBtn;
         private System.Windows.Forms.Label chooseColourTitle;
         private System.Windows.Forms.Panel OngoingTournamentPanel;
-        private System.Windows.Forms.Button ongTourDelBtn3;
-        private System.Windows.Forms.Button ongTourEntrBtn3;
-        private System.Windows.Forms.Button ongTourDelBtn2;
-        private System.Windows.Forms.Button ongTourEntrBtn2;
-        private System.Windows.Forms.Button ongTourDelBtn1;
-        private System.Windows.Forms.Button ongTourEntrBtn1;
-        private System.Windows.Forms.Label ongTourNameLabel3;
-        private System.Windows.Forms.Label ongTourNameLabel2;
-        private System.Windows.Forms.Label ongTourNameLabel1;
         private System.Windows.Forms.Label ongTourTitle;
         private System.Windows.Forms.Panel DecisionPagePanel;
         private System.Windows.Forms.Button showRankBtn;
@@ -1906,11 +2010,26 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.RadioButton greenPlayer1;
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Panel ongTourListPanel;
+        private System.Windows.Forms.Panel ongTourList5;
         private System.Windows.Forms.Button ongTourDelBtn5;
         private System.Windows.Forms.Button ongTourEntrBtn5;
+        private System.Windows.Forms.Label ongTourNameLabel5;
+        private System.Windows.Forms.Panel ongTourList4;
         private System.Windows.Forms.Button ongTourDelBtn4;
         private System.Windows.Forms.Button ongTourEntrBtn4;
-        private System.Windows.Forms.Label ongTourNameLabel5;
         private System.Windows.Forms.Label ongTourNameLabel4;
+        private System.Windows.Forms.Panel ongTourList3;
+        private System.Windows.Forms.Button ongTourDelBtn3;
+        private System.Windows.Forms.Button ongTourEntrBtn3;
+        private System.Windows.Forms.Label ongTourNameLabel3;
+        private System.Windows.Forms.Panel ongTourList2;
+        private System.Windows.Forms.Button ongTourDelBtn2;
+        private System.Windows.Forms.Button ongTourEntrBtn2;
+        private System.Windows.Forms.Label ongTourNameLabel2;
+        private System.Windows.Forms.Panel ongTourList1;
+        private System.Windows.Forms.Button ongTourDelBtn1;
+        private System.Windows.Forms.Button ongTourEntrBtn1;
+        private System.Windows.Forms.Label ongTourNameLabel1;
     }
 }

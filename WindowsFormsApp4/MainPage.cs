@@ -134,14 +134,6 @@ namespace WindowsFormsApp4
             regPageTitle.Text = "PLAYER " + prData.playerSerial.ToString();
             PlayerOneRegisterPanel.Show();
         }
-        private void ongTourBtn_Click(object sender, EventArgs e)
-        {
-
-            hideAll();
-            goBack = HomePanel;
-            OngoingTournamentPanel.Show();
-            showTopButtons();
-        }
 
         private void playerRegBtn_Click(object sender, EventArgs e)
         {
@@ -246,22 +238,75 @@ namespace WindowsFormsApp4
             lgnPassword.Text = "";
         }
 
-        private void FixurePanel_Paint(object sender, PaintEventArgs e)
+        private void ongTourBtn_Click(object sender, EventArgs e)
         {
-
+            prData.tourType = 2;
+            prData.dbs.dataGet("select * from tournament");
+            prData.dbs.sda.Fill(prData.ongTourTable);
+            prData.ongTourPnum = 1;
+            showOngTourListPage(prData.ongTourPnum);
+            hideAll();
+            goBack = HomePanel;
+            OngoingTournamentPanel.Show();
+            showTopButtons();
         }
 
-
-        private void button8_Click(object sender, EventArgs e)
+        public void showOngTourListPage(int pageNum)
         {
-            hideAll();
-            goBack = OngoingTournamentPanel;
-            FixurePanel.Show();
+            hideOngTourList();
+            int maxSerial = prData.ongTourTable.Rows.Count;
+            int maxPage = maxSerial / 5;
+            if (maxSerial % 5 != 0)
+                maxPage++;
+            if (pageNum > maxPage)
+                pageNum = maxPage;
+            if (pageNum < 1)
+                pageNum = 1;
+            int pageF = (pageNum - 1) * 5;
+            for (int i = 0; i < 5 && i<(maxSerial-pageF); i++)
+            {
+                ongTourListPanel.Controls[i].Show();
+                string tourName = prData.ongTourTable.Rows[pageF + i]["T_name"].ToString();
+                string tourId = prData.ongTourTable.Rows[pageF + i]["T_id"].ToString();
+                (ongTourListPanel.Controls[i].Controls[0] as Button).Tag = tourId;
+                (ongTourListPanel.Controls[i].Controls[1] as Button).Tag = tourId;
+                (ongTourListPanel.Controls[i].Controls[2] as Label).Text = tourName;
+            }
+            prData.ongTourPnum = pageNum;
+        }
+
+        public void hideOngTourList()
+        {
+
+            for (int i = 0; i < 5; i++)
+            {
+                ongTourListPanel.Controls[i].Hide();
+            }
         }
 
         private void ongTourNextBtn_Click(object sender, EventArgs e)
         {
+            prData.ongTourPnum++;
+            showOngTourListPage(prData.ongTourPnum);
 
+        }
+
+        private void ongTourPrevBtn_Click(object sender, EventArgs e)
+        {
+            prData.ongTourPnum--;
+            showOngTourListPage(prData.ongTourPnum);
+        }
+
+        private void enterTournament(object sender, EventArgs e)
+        {
+            string temp = (sender as Button).Tag.ToString();
+            MessageBox.Show(temp);
+        }
+
+        private void deleteTournament(object sender, EventArgs e)
+        {
+            string temp = (sender as Button).Tag.ToString();
+            MessageBox.Show(temp);
         }
 
         public void goToNextPlayer()
@@ -414,5 +459,6 @@ namespace WindowsFormsApp4
         {
 
         }
+
     }
 }
