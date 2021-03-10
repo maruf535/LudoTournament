@@ -27,7 +27,6 @@ namespace WindowsFormsApp4
         public bool playerMove = false;
         public int shot=0;//joto shot ashe roll korar por
         public processData prData = new processData();
-        public MainPage backPage;
         //properties end
 
 
@@ -35,7 +34,7 @@ namespace WindowsFormsApp4
         public void initPlayers()
         {
             initPlayerArray();
-            prData.dbs.dataGet("select * from tournament_players where T_id = '" + prData.tourID + "'");
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + prData.tourID);
             DataTable dt = new DataTable();
             prData.dbs.sda.Fill(dt);
 
@@ -45,26 +44,17 @@ namespace WindowsFormsApp4
                 int index = int.Parse(row["P_color"].ToString());
                 int tRank = int.Parse(row["P_tour_rank"].ToString());
                 int playerId = int.Parse(row["P_id"].ToString());
-
+                playersArray[index].playerName = row["P_name"].ToString();
+                playersArray[index].playerGender = int.Parse(row["P_gender"].ToString());
                 playersArray[index].playerId = playerId;
                 playersArray[index].playerColor = index;
-                if (tRank < prData.tourID)
+                if (tRank <= prData.tourState)
                 {
                     playersArray[index].playerRank = 0;
                 }
                 else
                 {
                     playersArray[index].playerRank = tRank;
-                }
-
-                DataTable playerTable = new DataTable();
-                prData.dbs.dataGet("select * from players where P_id = " + playerId);
-                prData.dbs.sda.Fill(playerTable);
-
-                foreach(DataRow plyr in playerTable.Rows)
-                {
-                    playersArray[index].playerName = plyr["P_name"].ToString();
-                    playersArray[index].playerGender = int.Parse(plyr["P_gender"].ToString());
                 }
             }
         }
@@ -439,7 +429,7 @@ namespace WindowsFormsApp4
 
         public void gameOver()
         {
-            theBoard.Show();
+            theBoard.Hide();
             gameRankPage.Show();
 
             for(int i = 1; i <= 4; i++)
@@ -455,12 +445,13 @@ namespace WindowsFormsApp4
                     {
                         gameRankPage.Controls[i].Text = playersArray[j].playerName;
                         gameRankPage.Controls[i].Show();
-                        prData.dbs.dataSend("update tournament_players set p_tour_rank = " + playersArray[j].playerRank);
-                        prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[j].playerId+", "+prData.tourState+", "+playersArray[j].playerRank+", 0)");
                         break;
                     }
                 }
+                prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[i].playerId+", "+prData.tourState+", "+playersArray[i].playerRank+", 0)");
+                prData.dbs.dataSend("update tournament_players set P_tour_rank = " + playersArray[i].playerRank);
             }
+            prData.dbs.dataSend("update tournament set T_state = " + (prData.tourState - 1) + "where T_id = " + prData.tourID);
 
         }
     }

@@ -14,7 +14,7 @@ namespace WindowsFormsApp4
     public partial class game : Form
     {
         public gameFunctions gmf = new gameFunctions();//ei class er bhitore shob method and properties ache
-        
+        public MainPage backPage;
         public game()
         {
             InitializeComponent();
@@ -299,12 +299,16 @@ namespace WindowsFormsApp4
 
         private void game_SizeChanged(object sender, EventArgs e)
         {
-            this.gamePanel.Left = this.Width / 4;
-            this.gamePanel.Top = this.Height / 8;
+            this.gamePanel.Left = this.Width / 3;
+            this.gamePanel.Top = this.Height / 7;
+            this.GameResultPanel.Left = this.Width / 4;
+            this.GameResultPanel.Top = this.Height / 8;
         }
 
         private void goHomeBtn_Click(object sender, EventArgs e)
         {
+            backPage.Show();
+            backPage.loadFixture(gmf.prData.tourID);
             this.Hide();
         }
 

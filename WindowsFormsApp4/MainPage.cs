@@ -459,7 +459,7 @@ namespace WindowsFormsApp4
         {
             game theGame = new game();
             theGame.gmf.prData = prData;
-            theGame.gmf.backPage = this;
+            theGame.backPage = this;
             this.Hide();
             theGame.Show();
         }
@@ -630,6 +630,7 @@ namespace WindowsFormsApp4
             if (dialogResult == DialogResult.Yes)
             {
                 prData.dbs.dataSend("update tournament_players set P_tour_rank=0 where T_id = " + tourId);
+                prData.dbs.dataSend("update tournament set T_state=4 where T_id = " + tourId);
                 prData.dbs.dataSend("delete from game_results where T_id = " + tourId);
                 MessageBox.Show("Tournament reset complete...");
                 prData.tourState = 4;
