@@ -189,7 +189,7 @@ namespace WindowsFormsApp4
             // 
             this.backBtn.BackColor = System.Drawing.Color.Transparent;
             this.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.Color.DarkKhaki;
             this.backBtn.Location = new System.Drawing.Point(17, 10);
             this.backBtn.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -205,7 +205,7 @@ namespace WindowsFormsApp4
             this.homeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.homeBtn.BackColor = System.Drawing.Color.Transparent;
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
             this.homeBtn.Location = new System.Drawing.Point(945, 10);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -421,13 +421,14 @@ namespace WindowsFormsApp4
             // PlayerTitle
             // 
             this.PlayerTitle.BackColor = System.Drawing.Color.Transparent;
+            this.PlayerTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.PlayerTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayerTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayerTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.PlayerTitle.Location = new System.Drawing.Point(312, 125);
+            this.PlayerTitle.Location = new System.Drawing.Point(0, 0);
             this.PlayerTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PlayerTitle.Name = "PlayerTitle";
-            this.PlayerTitle.Size = new System.Drawing.Size(328, 75);
+            this.PlayerTitle.Size = new System.Drawing.Size(995, 75);
             this.PlayerTitle.TabIndex = 7;
             this.PlayerTitle.Text = "Player 1";
             this.PlayerTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -541,13 +542,14 @@ namespace WindowsFormsApp4
             // lgnPageTitle
             // 
             this.lgnPageTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lgnPageTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lgnPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lgnPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgnPageTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.lgnPageTitle.Location = new System.Drawing.Point(332, 57);
+            this.lgnPageTitle.Location = new System.Drawing.Point(0, 0);
             this.lgnPageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lgnPageTitle.Name = "lgnPageTitle";
-            this.lgnPageTitle.Size = new System.Drawing.Size(328, 75);
+            this.lgnPageTitle.Size = new System.Drawing.Size(995, 75);
             this.lgnPageTitle.TabIndex = 7;
             this.lgnPageTitle.Text = "Player 1";
             this.lgnPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1099,13 +1101,14 @@ namespace WindowsFormsApp4
             // regPageTitle
             // 
             this.regPageTitle.BackColor = System.Drawing.Color.Transparent;
+            this.regPageTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.regPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.regPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regPageTitle.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.regPageTitle.Location = new System.Drawing.Point(367, 60);
+            this.regPageTitle.Location = new System.Drawing.Point(0, 0);
             this.regPageTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.regPageTitle.Name = "regPageTitle";
-            this.regPageTitle.Size = new System.Drawing.Size(328, 75);
+            this.regPageTitle.Size = new System.Drawing.Size(995, 75);
             this.regPageTitle.TabIndex = 26;
             this.regPageTitle.Text = "Player 1";
             this.regPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1991,6 +1994,7 @@ namespace WindowsFormsApp4
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
             this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Controls.Add(this.welcPanel);
             this.mainPanel.Controls.Add(this.FixurePanel);
@@ -2000,7 +2004,6 @@ namespace WindowsFormsApp4
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
             this.mainPanel.Controls.Add(this.ChooseColourPanel);
             this.mainPanel.Controls.Add(this.tourNamePanel);
-            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
             this.mainPanel.Location = new System.Drawing.Point(64, 75);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPanel.Name = "mainPanel";
