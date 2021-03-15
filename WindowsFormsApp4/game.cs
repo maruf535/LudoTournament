@@ -30,6 +30,7 @@ namespace WindowsFormsApp4
             setTokens();
             setPotraits();
             setNames();
+            hidePlayerNotInGame();
             gmf.gameRankPage = GameResultPanel;
             gmf.gameRankPage.Hide();
             gmf.theBoard = ludoBoard;
@@ -131,6 +132,46 @@ namespace WindowsFormsApp4
             yellowPlayerName.Text = gmf.playersArray[3].playerName;
             bluePlayerName.Text = gmf.playersArray[4].playerName;
         }
+        public void hidePlayerNotInGame()
+        {
+            for(int i = 1; i <= 4; i++)
+            {
+                if (gmf.playersArray[i].playerRank != 0)
+                {
+                    hidePlayer(i);
+                }
+            }
+        }
+
+        public void hidePlayer(int ind)
+        {
+            for(int i = 1; i <= 4; i++)
+            {
+                gmf.playersArray[ind].PlayerTokens[i].tokenPicture.Hide();
+            }
+
+            if (ind == 1)
+            {
+                redPlayerName.Hide();
+                redPlayerPotrait.Hide();
+            }
+            else if (ind == 2)
+            {
+                greenPlayerName.Hide();
+                greenPlayerPotrait.Hide();
+            }
+            else if (ind == 3)
+            {
+                yellowPlayerName.Hide();
+                yellowPlayerPotrait.Hide();
+            }
+            else if (ind == 4)
+            {
+                bluePlayerName.Hide();
+                bluePlayerPotrait.Hide();
+            }
+        }
+
 
         private void diceBox1_Click(object sender, EventArgs e)
         {
@@ -299,8 +340,8 @@ namespace WindowsFormsApp4
 
         private void game_SizeChanged(object sender, EventArgs e)
         {
-            this.gamePanel.Left = this.Width / 3;
-            this.gamePanel.Top = this.Height / 7;
+            this.gamePanel.Left = this.Width / 4;
+            this.gamePanel.Top = this.Height / 8;
             this.GameResultPanel.Left = this.Width / 4;
             this.GameResultPanel.Top = this.Height / 8;
         }
@@ -310,6 +351,54 @@ namespace WindowsFormsApp4
             backPage.Show();
             backPage.loadFixture(gmf.prData.tourID);
             this.Hide();
+        }
+
+        private void quitBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("None of the Data will be saved\nAre your sure ?","Quit Game", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                backPage.Show();
+                backPage.loadFixture(gmf.prData.tourID);
+                this.Hide();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are your sure you want to exit?", "Exit", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                backPage.Close();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void redPlayerName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bluePlayerName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yellowPlayerName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void greenPlayerName_Click(object sender, EventArgs e)
+        {
+
         }
 
 

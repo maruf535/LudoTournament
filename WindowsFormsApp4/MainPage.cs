@@ -89,6 +89,7 @@ namespace WindowsFormsApp4
             tourNameInp.Text = "";
             hideAll();
             goBack = tourNamePanel;
+            backBtn.Show();
             showPlayerChoice();
 
         }
@@ -264,15 +265,25 @@ namespace WindowsFormsApp4
 
         public void showOngTourListPage(int pageNum)
         {
+            ongTourPageNum.Text = pageNum.ToString();
             hideOngTourList();
             int maxSerial = prData.ongTourTable.Rows.Count;
             int maxPage = maxSerial / 5;
+
             if (maxSerial % 5 != 0)
                 maxPage++;
-            if (pageNum > maxPage)
-                pageNum = maxPage;
-            if (pageNum < 1)
-                pageNum = 1;
+
+            if (pageNum == maxPage)
+                ongTourNextBtn.Hide();
+            else
+                ongTourNextBtn.Show();
+
+            if (pageNum == 1)
+                ongTourPrevBtn.Hide();
+            else
+                ongTourPrevBtn.Show();
+
+
             int pageF = (pageNum - 1) * 5;
             for (int i = 0; i < 5 && i < (maxSerial - pageF); i++)
             {
@@ -383,6 +394,7 @@ namespace WindowsFormsApp4
             string temp = (sender as Button).Tag.ToString();
             int tourId = int.Parse(temp);
             goBack = tournamentHomePanel;
+            backBtn.Show();
             loadFixture(tourId);
         }
 
@@ -452,6 +464,7 @@ namespace WindowsFormsApp4
 
         private void goToTheGame(object sender, EventArgs e)
         {
+            FixurePanel.Hide();
             prData.playerSerial = 1;
             playerLoginPanelShow();
         }
@@ -484,7 +497,7 @@ namespace WindowsFormsApp4
         {
             backBtn.Hide();
             //MessageBox.Show("All ok");
-            if (prData.playerSerial < prData.tourState)
+            if (prData.playerSerial < 4)
             {
                 hideAll();
                 prData.playerSerial++;
@@ -492,7 +505,14 @@ namespace WindowsFormsApp4
                 if (prData.tourType == 1)
                     showPlayerChoice();
                 else if (prData.tourType == 2)
+                {
+                    if (int.Parse(prData.tempTable.Rows[prData.playerSerial - 1]["P_tour_rank"].ToString()) > prData.tourState)
+                    {
+                        goToNextPlayer();
+                        return;
+                    }
                     playerLoginPanelShow();
+                }
             }
             else
             {
@@ -644,6 +664,39 @@ namespace WindowsFormsApp4
         }
 
         private void PlayerOneRegisterPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are your sure you want to exit ?", "Exit", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+        }
+
+        private void PlayerChoicePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void yellowPlayer1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yellowPlayer2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void yellowPlayer3_CheckedChanged(object sender, EventArgs e)
         {
 
         }
