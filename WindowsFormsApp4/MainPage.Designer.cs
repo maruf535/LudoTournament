@@ -33,7 +33,6 @@ namespace WindowsFormsApp4
             this.backBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.welcPanel = new System.Windows.Forms.Panel();
-            this.welcPictureBoxOne = new System.Windows.Forms.PictureBox();
             this.welcPictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.enterBtn = new System.Windows.Forms.Button();
@@ -166,8 +165,8 @@ namespace WindowsFormsApp4
             this.player2 = new System.Windows.Forms.Label();
             this.player3 = new System.Windows.Forms.Label();
             this.player4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.welcPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxTwo)).BeginInit();
             this.HomePanel.SuspendLayout();
             this.tourNamePanel.SuspendLayout();
@@ -196,6 +195,7 @@ namespace WindowsFormsApp4
             this.ongTourDetailsPanel.SuspendLayout();
             this.tourStatePanel.SuspendLayout();
             this.playersListPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // backBtn
@@ -220,7 +220,7 @@ namespace WindowsFormsApp4
             this.homeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.homeBtn.Location = new System.Drawing.Point(985, 10);
+            this.homeBtn.Location = new System.Drawing.Point(986, 10);
             this.homeBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.Size = new System.Drawing.Size(140, 60);
@@ -233,8 +233,6 @@ namespace WindowsFormsApp4
             // 
             this.welcPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.welcPanel.BackColor = System.Drawing.Color.Transparent;
-            this.welcPanel.Controls.Add(this.welcPictureBoxOne);
-            this.welcPanel.Controls.Add(this.welcPictureBoxTwo);
             this.welcPanel.Controls.Add(this.label2);
             this.welcPanel.Controls.Add(this.enterBtn);
             this.welcPanel.Controls.Add(this.welcName);
@@ -245,29 +243,16 @@ namespace WindowsFormsApp4
             this.welcPanel.Size = new System.Drawing.Size(995, 642);
             this.welcPanel.TabIndex = 2;
             // 
-            // welcPictureBoxOne
-            // 
-            this.welcPictureBoxOne.BackColor = System.Drawing.Color.Transparent;
-            this.welcPictureBoxOne.Cursor = System.Windows.Forms.Cursors.PanNW;
-            this.welcPictureBoxOne.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
-            this.welcPictureBoxOne.Location = new System.Drawing.Point(0, 0);
-            this.welcPictureBoxOne.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.welcPictureBoxOne.Name = "welcPictureBoxOne";
-            this.welcPictureBoxOne.Size = new System.Drawing.Size(69, 79);
-            this.welcPictureBoxOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.welcPictureBoxOne.TabIndex = 7;
-            this.welcPictureBoxOne.TabStop = false;
-            // 
             // welcPictureBoxTwo
             // 
             this.welcPictureBoxTwo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.welcPictureBoxTwo.BackColor = System.Drawing.Color.Transparent;
             this.welcPictureBoxTwo.Cursor = System.Windows.Forms.Cursors.Default;
             this.welcPictureBoxTwo.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
-            this.welcPictureBoxTwo.Location = new System.Drawing.Point(923, 0);
+            this.welcPictureBoxTwo.Location = new System.Drawing.Point(836, 10);
             this.welcPictureBoxTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.welcPictureBoxTwo.Name = "welcPictureBoxTwo";
-            this.welcPictureBoxTwo.Size = new System.Drawing.Size(69, 79);
+            this.welcPictureBoxTwo.Size = new System.Drawing.Size(140, 150);
             this.welcPictureBoxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.welcPictureBoxTwo.TabIndex = 8;
             this.welcPictureBoxTwo.TabStop = false;
@@ -338,10 +323,10 @@ namespace WindowsFormsApp4
             this.ongTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ongTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ongTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.ongTourBtn.Location = new System.Drawing.Point(543, 297);
+            this.ongTourBtn.Location = new System.Drawing.Point(530, 280);
             this.ongTourBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ongTourBtn.Name = "ongTourBtn";
-            this.ongTourBtn.Size = new System.Drawing.Size(393, 68);
+            this.ongTourBtn.Size = new System.Drawing.Size(320, 68);
             this.ongTourBtn.TabIndex = 3;
             this.ongTourBtn.Text = "Ongoing Tournaments";
             this.ongTourBtn.UseVisualStyleBackColor = false;
@@ -354,7 +339,7 @@ namespace WindowsFormsApp4
             this.newTourBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newTourBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newTourBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.newTourBtn.Location = new System.Drawing.Point(159, 297);
+            this.newTourBtn.Location = new System.Drawing.Point(146, 280);
             this.newTourBtn.Margin = new System.Windows.Forms.Padding(4);
             this.newTourBtn.Name = "newTourBtn";
             this.newTourBtn.Size = new System.Drawing.Size(320, 68);
@@ -2006,8 +1991,6 @@ namespace WindowsFormsApp4
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
-            this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Controls.Add(this.welcPanel);
             this.mainPanel.Controls.Add(this.FixurePanel);
             this.mainPanel.Controls.Add(this.tournamentHomePanel);
@@ -2016,6 +1999,8 @@ namespace WindowsFormsApp4
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
             this.mainPanel.Controls.Add(this.ChooseColourPanel);
             this.mainPanel.Controls.Add(this.tourNamePanel);
+            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
+            this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Location = new System.Drawing.Point(64, 75);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPanel.Name = "mainPanel";
@@ -2029,7 +2014,7 @@ namespace WindowsFormsApp4
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.ForeColor = System.Drawing.Color.DarkKhaki;
-            this.exitBtn.Location = new System.Drawing.Point(989, 698);
+            this.exitBtn.Location = new System.Drawing.Point(985, 692);
             this.exitBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(140, 60);
@@ -2152,6 +2137,19 @@ namespace WindowsFormsApp4
             this.player4.TabIndex = 1;
             this.player4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
+            this.pictureBox1.Location = new System.Drawing.Point(170, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(136, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2161,6 +2159,8 @@ namespace WindowsFormsApp4
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1137, 764);
             this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.welcPictureBoxTwo);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.homeBtn);
             this.Controls.Add(this.backBtn);
@@ -2174,7 +2174,6 @@ namespace WindowsFormsApp4
             this.SizeChanged += new System.EventHandler(this.MainPage_SizeChanged);
             this.welcPanel.ResumeLayout(false);
             this.welcPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.welcPictureBoxTwo)).EndInit();
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
@@ -2216,6 +2215,7 @@ namespace WindowsFormsApp4
             this.ongTourDetailsPanel.ResumeLayout(false);
             this.tourStatePanel.ResumeLayout(false);
             this.playersListPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2225,7 +2225,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.Button homeBtn;
         private System.Windows.Forms.Panel welcPanel;
-        private System.Windows.Forms.PictureBox welcPictureBoxOne;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button enterBtn;
         private System.Windows.Forms.Label welcName;
@@ -2358,5 +2357,6 @@ namespace WindowsFormsApp4
         private System.Windows.Forms.Label player3;
         private System.Windows.Forms.Label player2;
         private System.Windows.Forms.Label player1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -340,17 +340,16 @@ namespace WindowsFormsApp4
 
         private void game_SizeChanged(object sender, EventArgs e)
         {
-            this.gamePanel.Left = this.Width / 4;
-            this.gamePanel.Top = this.Height / 8;
-            this.GameResultPanel.Left = this.Width / 4;
-            this.GameResultPanel.Top = this.Height / 8;
+            this.gamePanel.Left = this.Width / 2 - gamePanel.Width / 2;
+            this.gamePanel.Top = this.Height / 2 - gamePanel.Height / 2;
+            this.GameResultPanel.Left = this.Width / 2 - GameResultPanel.Width / 2 ;
+            this.GameResultPanel.Top = this.Height / 2 - GameResultPanel.Height / 2;
         }
 
         private void goHomeBtn_Click(object sender, EventArgs e)
         {
             backPage.Show();
-            backPage.prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " +gmf.prData.tourID);
-            backPage.prData.setTempTable();
+            backPage.prData = gmf.prData;
             backPage.loadFixture(gmf.prData.tourID);
             this.Hide();
         }

@@ -36,6 +36,7 @@ namespace processHelper
         public DBAccess dbs = new DBAccess();
         public DataTable ongTourTable = new DataTable();
         public DataTable tempTable = new DataTable();
+        public DataTable ongTourDetTable = new DataTable();
         public int ongTourPnum;
 
 
@@ -43,6 +44,12 @@ namespace processHelper
         {
             tempTable.Clear();
             dbs.sda.Fill(tempTable);
+        }
+
+        public void setongTourDetTable()
+        {
+            ongTourDetTable.Clear();
+            dbs.sda.Fill(ongTourDetTable);
         }
 
         public void setTourDetails()

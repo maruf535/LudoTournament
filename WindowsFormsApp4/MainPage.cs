@@ -256,6 +256,8 @@ namespace WindowsFormsApp4
             prData.dbs.dataGet("select * from tournament");
             prData.dbs.sda.Fill(prData.ongTourTable);
             prData.ongTourPnum = 1;
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id");
+            prData.setongTourDetTable();
             showOngTourListPage(prData.ongTourPnum);
             hideAll();
             goBack = HomePanel;
@@ -395,8 +397,6 @@ namespace WindowsFormsApp4
         {
             int tourId = int.Parse((sender as Label).Tag.ToString());
 
-            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + tourId);
-            prData.setTempTable();
 
             string stateName ="";
             foreach (DataRow row in prData.ongTourTable.Select("T_id = " + tourId))
@@ -414,15 +414,22 @@ namespace WindowsFormsApp4
 
             ongTourDetailsPanel.Controls[0].Controls[1].Text = stateName;
 
-            for (int i = 1; i <= 4; i++)
+            DataRow[] details = prData.ongTourDetTable.Select("T_id = " + tourId);
+            
+            if (1 >= details.Length)
             {
-                if (i - 1 >= prData.tempTable.Rows.Count)
+                ongTourDetailsPanel.Controls[1].Controls[1].Text = "Not Assigned";
+
+                for (int i = 2; i <= 4; i++)
                 {
-                    ongTourDetailsPanel.Controls[1].Controls[i].Text = "Not Assigned";
+                    ongTourDetailsPanel.Controls[1].Controls[i].Text = "";
                 }
-                else
+            }
+            else
+            {
+                for (int i = 1; i <= 4; i++)
                 {
-                    ongTourDetailsPanel.Controls[1].Controls[i].Text = prData.tempTable.Rows[i-1]["P_name"].ToString();
+                    ongTourDetailsPanel.Controls[1].Controls[i].Text = details[i-1]["P_name"].ToString();
                 }
             }
 
@@ -446,6 +453,8 @@ namespace WindowsFormsApp4
         public void loadFixture(int tourId)
         {
             hideAll();
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + tourId);
+            prData.setTempTable();
             string tourName = "";
             foreach (DataRow row in prData.ongTourTable.Select("T_id = " + tourId))
             {
@@ -511,6 +520,7 @@ namespace WindowsFormsApp4
         {
             FixurePanel.Hide();
             prData.playerSerial = 1;
+            prData.tourType = 2;
             playerLoginPanelShow();
         }
         private void goToGame()
@@ -578,15 +588,15 @@ namespace WindowsFormsApp4
         {
             welcPanel.Hide();
             HomePanel.Hide();
-            tourNamePanel.Hide();
-            PlayerChoicePanel.Hide();
-            PlayerOneLoginPanel.Hide();
-            PlayerOneRegisterPanel.Hide();
-            ChooseColourPanel.Hide();
-            OngoingTournamentPanel.Hide();
-            tournamentHomePanel.Hide();
             FixurePanel.Hide();
+            tourNamePanel.Hide();
+            ChooseColourPanel.Hide();
+            PlayerChoicePanel.Hide();
+            tournamentHomePanel.Hide();
+            PlayerOneLoginPanel.Hide();
             ongTourDetailsPanel.Hide();
+            PlayerOneRegisterPanel.Hide();
+            OngoingTournamentPanel.Hide();
         }
         public void hideTopButtons()
         {

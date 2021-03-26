@@ -453,7 +453,9 @@ namespace WindowsFormsApp4
                 prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[i].playerId+", "+prData.tourState+", "+playersArray[i].playerRank+", 0)");
                 prData.dbs.dataSend("update tournament_players set P_tour_rank = " + playersArray[i].playerRank);
             }
-            prData.dbs.dataSend("update tournament set T_state = " + (prData.tourState - 1) + "where T_id = " + prData.tourID);
+            prData.tourState--;
+            prData.tourType = 2;
+            prData.dbs.dataSend("update tournament set T_state = " + prData.tourState + "where T_id = " + prData.tourID);
 
         }
     }
