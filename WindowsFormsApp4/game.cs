@@ -33,7 +33,7 @@ namespace WindowsFormsApp4
             hidePlayerNotInGame();
             gmf.gameRankPage = GameResultPanel;
             gmf.gameRankPage.Hide();
-            gmf.theBoard = ludoBoard;
+            gmf.theBoard = gamePanel;
             gmf.showPlayerRollBtn();//shows the roll button for the player who has its turn now
         }
 
@@ -349,6 +349,8 @@ namespace WindowsFormsApp4
         private void goHomeBtn_Click(object sender, EventArgs e)
         {
             backPage.Show();
+            backPage.prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " +gmf.prData.tourID);
+            backPage.prData.setTempTable();
             backPage.loadFixture(gmf.prData.tourID);
             this.Hide();
         }
@@ -397,6 +399,16 @@ namespace WindowsFormsApp4
         }
 
         private void greenPlayerName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

@@ -288,7 +288,6 @@ namespace WindowsFormsApp4
             if (diceUsed)
             {
                 multTokInThisPos(tokenNum);
-                tokenNow.moveIt(2);
                 if (tokenNow.tokenState == 2)
                 {
                     playersArray[playerTurn].tokensInGoalCnt++;
@@ -372,7 +371,7 @@ namespace WindowsFormsApp4
                     }
                 }
             }
-
+            tokenThis.moveIt(2);
             if (counter > 1)
             {
                 alignInSamePos(similars,counter);
@@ -398,17 +397,19 @@ namespace WindowsFormsApp4
 
         public void alignInSamePos(List<tokensObj> similars, int size)
         {
+            int i;
             int limit = size / 2;
-            int shiftBy = limit * 8;
-
-            for(int i=0; i<limit; i++)
+            int diff = (limit-1) * 8 + 4;
+            if (size % 2 == 1)
+                diff += 4;
+            int midX = similars[0].getXpoint(similars[0].positionsX[2]);
+            int shiftBy = midX - diff;
+            for (i = 0; i < size; i++)
             {
                 similars[i].shiftX(shiftBy);
-                similars[size-1-i].shiftX((-1)*shiftBy);
-                shiftBy -= 4;
+                shiftBy += 8;
+                similars[i].tokenPicture.BringToFront();
             }
-            if (limit * 2 != size)
-                similars[limit + 1].tokenPicture.BringToFront();
         }
 
         public void removeDice()
@@ -431,6 +432,7 @@ namespace WindowsFormsApp4
         {
             theBoard.Hide();
             gameRankPage.Show();
+            gameRankPage.BringToFront();
 
             for(int i = 1; i <= 4; i++)
             {
@@ -443,7 +445,7 @@ namespace WindowsFormsApp4
                 {
                     if (playersArray[j].playerRank == i)
                     {
-                        gameRankPage.Controls[i].Text = playersArray[j].playerName;
+                        gameRankPage.Controls[i].Controls[1].Text = playersArray[j].playerName;
                         gameRankPage.Controls[i].Show();
                         break;
                     }

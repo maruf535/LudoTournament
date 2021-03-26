@@ -294,7 +294,8 @@ namespace WindowsFormsApp4
         {
             int nowX = tokenPicture.Location.X;
             int nowY = tokenPicture.Location.Y;
-            nowX += shiftBy;
+            //tokenPicture.Scale(1.5);
+            nowX = shiftBy;
             tokenPicture.Location = new System.Drawing.Point(nowX, nowY);
         }
     }

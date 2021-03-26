@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="playersClass.cs" />
     <Compile Include="processData.cs" />
+    <Compile Include="tokenEliminatedAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tokenEliminatedAnimation.Designer.cs">
+      <DependentUpon>tokenEliminatedAnimation.cs</DependentUpon>
+    </Compile>
     <Compile Include="tokensClass.cs" />
     <Compile Include="welcomePage.cs">
       <SubType>Form</SubType>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlayerRegister.resx">
       <DependentUpon>PlayerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tokenEliminatedAnimation.resx">
+      <DependentUpon>tokenEliminatedAnimation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomePage.resx">
       <DependentUpon>welcomePage.cs</DependentUpon>
@@ -256,6 +265,7 @@
     <None Include="Resources\diceRoll.gif" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\fireworks animation.gif" />
     <Content Include="tournamentDtBase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

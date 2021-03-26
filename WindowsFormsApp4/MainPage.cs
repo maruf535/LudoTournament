@@ -14,7 +14,7 @@ namespace WindowsFormsApp4
 {
     public partial class MainPage : Form
     {
-        processData prData = new processData();
+        public processData prData = new processData();
         Panel goBack;
         public MainPage()
         {
@@ -265,6 +265,7 @@ namespace WindowsFormsApp4
 
         public void showOngTourListPage(int pageNum)
         {
+            ongTourDetailsPanel.Hide();
             ongTourPageNum.Text = pageNum.ToString();
             hideOngTourList();
             int maxSerial = prData.ongTourTable.Rows.Count;
@@ -292,6 +293,7 @@ namespace WindowsFormsApp4
                 string tourId = prData.ongTourTable.Rows[pageF + i]["T_id"].ToString();
                 (ongTourListPanel.Controls[i].Controls[0] as Button).Tag = tourId;
                 (ongTourListPanel.Controls[i].Controls[1] as Button).Tag = tourId;
+                (ongTourListPanel.Controls[i].Controls[2] as Label).Tag = tourId;
                 (ongTourListPanel.Controls[i].Controls[2] as Label).Text = tourName;
             }
             prData.ongTourPnum = pageNum;
@@ -387,6 +389,49 @@ namespace WindowsFormsApp4
             prData.dbs.sda.Fill(prData.ongTourTable);
             prData.ongTourPnum = 1;
             showOngTourListPage(prData.ongTourPnum);
+        }
+
+        private void ongTourNameLabel_MouseEnter(object sender, EventArgs e)
+        {
+            int tourId = int.Parse((sender as Label).Tag.ToString());
+
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + tourId);
+            prData.setTempTable();
+
+            string stateName ="";
+            foreach (DataRow row in prData.ongTourTable.Select("T_id = " + tourId))
+            {
+                    string tourSt = row["T_state"].ToString();
+                    if (tourSt == "4")
+                        stateName = "Quater Final";
+                    else if (tourSt == "3")
+                        stateName = "Semi Final";
+                    else if (tourSt == "2")
+                        stateName = "Final";
+                    else
+                        stateName = "Finished";
+            }
+
+            ongTourDetailsPanel.Controls[0].Controls[1].Text = stateName;
+
+            for (int i = 1; i <= 4; i++)
+            {
+                if (i - 1 >= prData.tempTable.Rows.Count)
+                {
+                    ongTourDetailsPanel.Controls[1].Controls[i].Text = "Not Assigned";
+                }
+                else
+                {
+                    ongTourDetailsPanel.Controls[1].Controls[i].Text = prData.tempTable.Rows[i-1]["P_name"].ToString();
+                }
+            }
+
+            ongTourDetailsPanel.Show();
+
+        }
+        private void ongTourNameLabel_MouseLeave(object sender, EventArgs e)
+        {
+            ongTourDetailsPanel.Hide();
         }
 
         private void tourResumeBtn_Click(object sender, EventArgs e)
@@ -541,6 +586,7 @@ namespace WindowsFormsApp4
             OngoingTournamentPanel.Hide();
             tournamentHomePanel.Hide();
             FixurePanel.Hide();
+            ongTourDetailsPanel.Hide();
         }
         public void hideTopButtons()
         {
@@ -638,8 +684,8 @@ namespace WindowsFormsApp4
 
         private void MainPage_SizeChanged(object sender, EventArgs e)
         {
-            this.mainPanel.Left = this.Width / 4;
-            this.mainPanel.Top = this.Height / 8;
+            this.mainPanel.Left = this.Width / 2 - mainPanel.Width/2;
+            this.mainPanel.Top = this.Height / 2 - mainPanel.Height/2;
         }
 
         private void tourRestartBtn_Click(object sender, EventArgs e)
@@ -700,5 +746,12 @@ namespace WindowsFormsApp4
         {
 
         }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
