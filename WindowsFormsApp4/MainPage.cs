@@ -119,7 +119,7 @@ namespace WindowsFormsApp4
             //tai etake playerLoginPanelShow naame ekta function e rekhe dibo
             //shudhu playerCnt disilam, sathe"Player " eta add kore dite hobe shurute
             lgnPageTitle.Text = "PLAYER " + prData.playerSerial.ToString();//text ta jehetu string, tai etake .toString() die dite hobe
-            if (prData.tourType == 2)
+            if (prData.tourType == 2 || prData.tourType==3)
             {
                 lgnPageTitle.Text = prData.tempTable.Rows[prData.playerSerial-1]["P_name"].ToString();
                 lgnUserName.Text = prData.tempTable.Rows[prData.playerSerial-1]["P_name"].ToString();
@@ -362,25 +362,51 @@ namespace WindowsFormsApp4
         private void deleteTournament(object sender, EventArgs e)
         {
             string temp = (sender as Button).Tag.ToString();
-            int tourId = int.Parse(temp);
+            prData.tourID = int.Parse(temp);
             DialogResult dialogResult = MessageBox.Show("Are your sure ?","Delete tournament", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                prData.dbs.dataSend("delete from tournament where T_id = " + tourId);
-                prData.dbs.dataSend("delete from tournament_players where T_id = " + tourId);
-                prData.dbs.dataSend("delete from game_results where T_id = " + tourId);
-                MessageBox.Show("Tournament deleted...");
-                prData.ongTourTable.Clear();
-                prData.dbs.dataGet("select * from tournament");
-                prData.dbs.sda.Fill(prData.ongTourTable);
-                prData.ongTourPnum = 1;
-                showOngTourListPage(prData.ongTourPnum);
+                prData.tourType = 3;
+                prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + prData.tourID);
+                prData.setTempTable();
+
+                if (prData.tempTable.Rows.Count == 4)
+                {
+                    prData.setTourDetails();
+                    prData.playerSerial = 0;
+                    goToNextPlayer();
+                }
+                else
+                {
+                    deleteTheTournament(prData.tourID);
+                }
+                
 
             }
             else if (dialogResult == DialogResult.No)
             {
                 return;
             }
+        }
+
+        public void deleteTheTournament(int tourId)
+        {
+            prData.dbs.dataSend("delete from tournament where T_id = " + tourId);
+            prData.dbs.dataSend("delete from tournament_players where T_id = " + tourId);
+            prData.dbs.dataSend("delete from game_results where T_id = " + tourId);
+            MessageBox.Show("Tournament deleted...");
+            prData.tourType = 2;
+            prData.ongTourTable.Clear();
+            prData.dbs.dataGet("select * from tournament");
+            prData.dbs.sda.Fill(prData.ongTourTable);
+            prData.ongTourPnum = 1;
+            prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id");
+            prData.setongTourDetTable();
+            showOngTourListPage(prData.ongTourPnum);
+            hideAll();
+            goBack = HomePanel;
+            OngoingTournamentPanel.Show();
+            showTopButtons();
         }
 
         private void tourSearchBtn_Click(object sender, EventArgs e)
@@ -559,7 +585,7 @@ namespace WindowsFormsApp4
                 //PlayerChoicePanel.Show();
                 if (prData.tourType == 1)
                     showPlayerChoice();
-                else if (prData.tourType == 2)
+                else if (prData.tourType == 2 || prData.tourType==3)
                 {
                     if (int.Parse(prData.tempTable.Rows[prData.playerSerial - 1]["P_tour_rank"].ToString()) > prData.tourState)
                     {
@@ -581,6 +607,10 @@ namespace WindowsFormsApp4
                 else if (prData.tourType == 2)
                 {
                     goToGame();
+                }
+                else if (prData.tourType == 3)
+                {
+                    deleteTheTournament(prData.tourID);
                 }
             }
         }

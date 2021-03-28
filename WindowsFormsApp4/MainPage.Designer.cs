@@ -33,10 +33,10 @@ namespace WindowsFormsApp4
             this.backBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
             this.welcPanel = new System.Windows.Forms.Panel();
-            this.welcPictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.enterBtn = new System.Windows.Forms.Button();
             this.welcName = new System.Windows.Forms.Label();
+            this.welcPictureBoxTwo = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.ongTourBtn = new System.Windows.Forms.Button();
             this.newTourBtn = new System.Windows.Forms.Button();
@@ -243,20 +243,6 @@ namespace WindowsFormsApp4
             this.welcPanel.Size = new System.Drawing.Size(995, 642);
             this.welcPanel.TabIndex = 2;
             // 
-            // welcPictureBoxTwo
-            // 
-            this.welcPictureBoxTwo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.welcPictureBoxTwo.BackColor = System.Drawing.Color.Transparent;
-            this.welcPictureBoxTwo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.welcPictureBoxTwo.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
-            this.welcPictureBoxTwo.Location = new System.Drawing.Point(836, 10);
-            this.welcPictureBoxTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.welcPictureBoxTwo.Name = "welcPictureBoxTwo";
-            this.welcPictureBoxTwo.Size = new System.Drawing.Size(140, 150);
-            this.welcPictureBoxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.welcPictureBoxTwo.TabIndex = 8;
-            this.welcPictureBoxTwo.TabStop = false;
-            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -301,7 +287,20 @@ namespace WindowsFormsApp4
             this.welcName.Text = "Ludo Tournament";
             this.welcName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.welcName.UseCompatibleTextRendering = true;
-            this.welcName.UseWaitCursor = true;
+            // 
+            // welcPictureBoxTwo
+            // 
+            this.welcPictureBoxTwo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.welcPictureBoxTwo.BackColor = System.Drawing.Color.Transparent;
+            this.welcPictureBoxTwo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.welcPictureBoxTwo.Image = global::WindowsFormsApp4.Properties.Resources.dice_169063;
+            this.welcPictureBoxTwo.Location = new System.Drawing.Point(836, 10);
+            this.welcPictureBoxTwo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.welcPictureBoxTwo.Name = "welcPictureBoxTwo";
+            this.welcPictureBoxTwo.Size = new System.Drawing.Size(140, 150);
+            this.welcPictureBoxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.welcPictureBoxTwo.TabIndex = 8;
+            this.welcPictureBoxTwo.TabStop = false;
             // 
             // HomePanel
             // 
@@ -381,11 +380,11 @@ namespace WindowsFormsApp4
             // 
             this.tourNameInp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tourNameInp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tourNameInp.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tourNameInp.Location = new System.Drawing.Point(189, 316);
             this.tourNameInp.Margin = new System.Windows.Forms.Padding(4);
-            this.tourNameInp.Multiline = true;
             this.tourNameInp.Name = "tourNameInp";
-            this.tourNameInp.Size = new System.Drawing.Size(617, 50);
+            this.tourNameInp.Size = new System.Drawing.Size(617, 31);
             this.tourNameInp.TabIndex = 12;
             // 
             // enterTourName
@@ -393,7 +392,7 @@ namespace WindowsFormsApp4
             this.enterTourName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.enterTourName.BackColor = System.Drawing.Color.Transparent;
             this.enterTourName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.enterTourName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enterTourName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enterTourName.ForeColor = System.Drawing.Color.DarkKhaki;
             this.enterTourName.Location = new System.Drawing.Point(204, 135);
             this.enterTourName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1991,6 +1990,9 @@ namespace WindowsFormsApp4
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainPanel.Controls.Add(this.tourNamePanel);
+            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
+            this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Controls.Add(this.welcPanel);
             this.mainPanel.Controls.Add(this.FixurePanel);
             this.mainPanel.Controls.Add(this.tournamentHomePanel);
@@ -1998,9 +2000,6 @@ namespace WindowsFormsApp4
             this.mainPanel.Controls.Add(this.PlayerChoicePanel);
             this.mainPanel.Controls.Add(this.PlayerOneLoginPanel);
             this.mainPanel.Controls.Add(this.ChooseColourPanel);
-            this.mainPanel.Controls.Add(this.tourNamePanel);
-            this.mainPanel.Controls.Add(this.OngoingTournamentPanel);
-            this.mainPanel.Controls.Add(this.HomePanel);
             this.mainPanel.Location = new System.Drawing.Point(64, 75);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mainPanel.Name = "mainPanel";
