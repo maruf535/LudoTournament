@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ludo Tournament by CypherTrio.exe" size="3332064">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ludo Tournament by CypherTrio.exe" size="3332576">
       <assemblyIdentity name="Ludo Tournament by CypherTrio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FQYBM37kuTZyqkIolHcvD2NRo37ru3WmAU2zlgqOXSw=</dsig:DigestValue>
+        <dsig:DigestValue>wbLn3E2HsBXsqRLcdTyd5sGIJOwoaWMpUe11B0QnPLY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

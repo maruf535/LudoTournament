@@ -545,11 +545,11 @@ namespace WindowsFormsApp4
 
         private void goToTheGame(object sender, EventArgs e)
         {
-            MessageBox.Show("TourState = " + prData.tourState.ToString());
-            //FixurePanel.Hide();
-            //prData.playerSerial = 1;
-            //prData.tourType = 2;
-            //playerLoginPanelShow();
+            //MessageBox.Show("TourState = " + prData.tourState.ToString());
+            FixurePanel.Hide();
+            prData.playerSerial = 1;
+            prData.tourType = 2;
+            playerLoginPanelShow();
         }
         private void goToGame()
         {
