@@ -12,7 +12,7 @@ namespace WindowsFormsApp4
     public class gameFunctions
     {
         //properties starts
-        public bool injector = true;
+        //public bool injector = true;
         public int rank = 1;
         public Panel theBoard = new Panel();
         Random rnd = new Random();//random number generate korar object
@@ -120,11 +120,11 @@ namespace WindowsFormsApp4
                 return;
             shot = rnd.Next(1, 7);//generates a number between [1,7), that is 1 is included but 7 is not
             
-            if(atleastOneTokenAtHome() && injector)
-            {
-                shot = 6;
-                injector = false;
-            }
+            //if(atleastOneTokenAtHome() && injector)
+            //{
+            //    shot = 6;
+            //    injector = false;
+            //}
             
             playerRollBtns[playerTurn].Image = getDiceImage(7);
             await System.Threading.Tasks.Task.Delay(300);
@@ -216,7 +216,7 @@ namespace WindowsFormsApp4
 
         public void changeTurn()
         {
-            injector = true;
+            //injector = true;
             //player turn change korar shomoy ja ja clear or change kora lage ta ekhane hobe
             if (playerTurn < 4)
                 playerTurn++;
@@ -438,20 +438,22 @@ namespace WindowsFormsApp4
             {
                 gameRankPage.Controls[i].Hide();
             }
+            
 
-            for(int i=1; i <= prData.tourState; i++)
+            for(int i=1; i <= 4; i++)
             {
                 for(int j = 1; j <= 4; j++)
                 {
-                    if (playersArray[j].playerRank == i)
+                    int rank = playersArray[i].playerRank;
+                    if (rank == i && rank<=prData.tourState)
                     {
-                        gameRankPage.Controls[i].Controls[1].Text = playersArray[j].playerName;
-                        gameRankPage.Controls[i].Show();
+                        gameRankPage.Controls[rank].Controls[1].Text = playersArray[j].playerName;
+                        gameRankPage.Controls[rank].Show();
+                        prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[i].playerId+", "+prData.tourState+", "+rank+", 0)");
                         break;
                     }
                 }
-                prData.dbs.dataSend("insert into game_results values("+prData.tourID+", "+playersArray[i].playerId+", "+prData.tourState+", "+playersArray[i].playerRank+", 0)");
-                prData.dbs.dataSend("update tournament_players set P_tour_rank = " + playersArray[i].playerRank);
+                prData.dbs.dataSend("update tournament_players set P_tour_rank = " + rank + "where T_id = " +  prData.tourID + " and P_id = " + playersArray[i].playerId);
             }
             prData.tourState--;
             prData.tourType = 2;

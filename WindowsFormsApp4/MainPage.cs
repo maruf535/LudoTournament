@@ -328,6 +328,7 @@ namespace WindowsFormsApp4
             string temp = (sender as Button).Tag.ToString();
             int tourId = int.Parse(temp);
             prData.tourID = tourId;
+            prData.tourType = 2;
             prData.dbs.dataGet("select tournament.T_id,T_state,T_name,Players.P_id,P_name,P_tour_rank,P_gender,P_color from tournament, tournament_players, players where tournament.T_id = tournament_players.T_id and tournament_players.P_id = players.P_id and tournament.T_id = " + tourId);
             prData.setTempTable();
 
@@ -544,10 +545,11 @@ namespace WindowsFormsApp4
 
         private void goToTheGame(object sender, EventArgs e)
         {
-            FixurePanel.Hide();
-            prData.playerSerial = 1;
-            prData.tourType = 2;
-            playerLoginPanelShow();
+            MessageBox.Show("TourState = " + prData.tourState.ToString());
+            //FixurePanel.Hide();
+            //prData.playerSerial = 1;
+            //prData.tourType = 2;
+            //playerLoginPanelShow();
         }
         private void goToGame()
         {
@@ -585,7 +587,7 @@ namespace WindowsFormsApp4
                 //PlayerChoicePanel.Show();
                 if (prData.tourType == 1)
                     showPlayerChoice();
-                else if (prData.tourType == 2 || prData.tourType==3)
+                else if (prData.tourType == 2)
                 {
                     if (int.Parse(prData.tempTable.Rows[prData.playerSerial - 1]["P_tour_rank"].ToString()) > prData.tourState)
                     {

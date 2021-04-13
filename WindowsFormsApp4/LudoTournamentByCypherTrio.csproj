@@ -7,13 +7,13 @@
     <ProjectGuid>{C6D485F9-0FB9-4F7F-B22A-16FF6A23904B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp4</RootNamespace>
-    <AssemblyName>WindowsFormsApp4</AssemblyName>
+    <AssemblyName>Ludo Tournament by CypherTrio</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Jahin\BUBT\Fall 2020\Project files\Installer\</PublishUrl>
+    <PublishUrl>C:\Jahin\BUBT\Fall 2020\Project files\Ludo Tournament Installer\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,8 +23,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ProductName>Ludo Tournament</ProductName>
+    <PublisherName>ChypherTrio</PublisherName>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

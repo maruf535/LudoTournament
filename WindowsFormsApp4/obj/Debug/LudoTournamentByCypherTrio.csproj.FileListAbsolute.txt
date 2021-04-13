@@ -1,0 +1,26 @@
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\tournamentDtBase.mdf
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\tournamentDtBase_log.ldf
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\LudoTournamentByCypherTrio.csprojAssemblyReference.cache
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.game.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.MainPage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.playerChoice.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.PlayerRegister.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.tokenEliminatedAnimation.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.welcomePage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Homepage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form5.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.colourChoicePage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.tournamentNamePage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.ongoingTournamentHomepage.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\LudoTournamentByCypherTrio.csproj.GenerateResource.cache
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\LudoTournamentByCypherTrio.csproj.CoreCompileInputs.cache
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\Ludo Tournament by CypherTrio.exe.config
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\Ludo Tournament by CypherTrio.exe.manifest
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\Ludo Tournament by CypherTrio.application
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\Ludo Tournament by CypherTrio.exe
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\bin\Debug\Ludo Tournament by CypherTrio.pdb
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\Ludo Tournament by CypherTrio.exe.manifest
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\Ludo Tournament by CypherTrio.application
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\Ludo Tournament by CypherTrio.exe
+C:\Jahin\BUBT\Fall 2020\Project files\project\LudoTournament\WindowsFormsApp4\obj\Debug\Ludo Tournament by CypherTrio.pdb
